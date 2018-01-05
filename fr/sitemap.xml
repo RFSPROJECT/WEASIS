@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://nroduit.github.io/fr/categories/</loc>
+    <loc>https://nroduit.github.io/fr/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nroduit.github.io/categories/"
+                href="https://nroduit.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://nroduit.github.io/fr/categories/"
+                href="https://nroduit.github.io/fr/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/fr/</loc>
+    <loc>https://nroduit.github.io/fr/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nroduit.github.io/"
+                href="https://nroduit.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://nroduit.github.io/fr/"
+                href="https://nroduit.github.io/fr/"
                 />
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/fr/tags/</loc>
+    <loc>https://nroduit.github.io/fr/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nroduit.github.io/tags/"
+                href="https://nroduit.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://nroduit.github.io/fr/tags/"
+                href="https://nroduit.github.io/fr/tags/"
                 />
   </url>
   

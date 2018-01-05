@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Weasis Medical Viewer on Documentation</title>
-    <link>http://nroduit.github.io/</link>
+    <link>https://nroduit.github.io/</link>
     <description>Recent content in Weasis Medical Viewer on Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="http://nroduit.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nroduit.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Embedding in dcm4chee</title>
-      <link>http://nroduit.github.io/getting-started/dcm4chee/</link>
+      <link>https://nroduit.github.io/getting-started/dcm4chee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/getting-started/dcm4chee/</guid>
+      <guid>https://nroduit.github.io/getting-started/dcm4chee/</guid>
       <description>This page describes how to install Weasis to be the default web viewer of dcm4chee web interface.
 Weasis is launched from the dcm4chee administrative web interface, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.
    Weasis in dcm4chee-arc-light
@@ -25,10 +25,10 @@ Weasis is launched from the dcm4chee administrative web interface, as shown in t
     
     <item>
       <title>Integration</title>
-      <link>http://nroduit.github.io/basics/customize/integration/</link>
+      <link>https://nroduit.github.io/basics/customize/integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/customize/integration/</guid>
+      <guid>https://nroduit.github.io/basics/customize/integration/</guid>
       <description>How to launch Weasis from any environments There are two Weasis distributions: the WEB distribution (weasis.war) and the portable distribution (weasis-portable.zip). Here we are presenting how to connect the WEB distribution with any web application. This documentation is adapted for Weasis 2.5 and superior.
 The easiest way to launch Weasis from a web context is to use weasis-pacs-connector.
 For connecting to dcm4chee web interface, follow the instructions in Installing Weasis in DCM4CHEE.</description>
@@ -36,20 +36,20 @@ For connecting to dcm4chee web interface, follow the instructions in Installing 
     
     <item>
       <title>Weasis Architecture</title>
-      <link>http://nroduit.github.io/basics/architecture/</link>
+      <link>https://nroduit.github.io/basics/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/architecture/</guid>
+      <guid>https://nroduit.github.io/basics/architecture/</guid>
       <description>Weasis has a modular architecture based on OSGi: the dynamic module system for Java. It uses the Apache Felix OSGi framework which is an open source implementation of the OSGi Release 4.2 specification (OSGi Certified).
 The following schemas show the main different plug-in types (bundle in OSGi language) and their relationships. Viewer, Viewer Tool Pane, Tool Bar, Data Explorer and Codec bundles are registered dynamically by the Declarative Services (a way to push or to consume services in OSGi environment).</description>
     </item>
     
     <item>
       <title>Preferences</title>
-      <link>http://nroduit.github.io/basics/customize/preferences/</link>
+      <link>https://nroduit.github.io/basics/customize/preferences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/customize/preferences/</guid>
+      <guid>https://nroduit.github.io/basics/customize/preferences/</guid>
       <description>The WEB distribution (weasis.war) allows to deliver preferences from the server side to the client side. Some preferences on the server side are used by Weasis only during the first launch, because they can be changed lately in the Weasis user interface. The other preferences at server side are used by Weasis at every launch.
 Local preferences can be modified:
  in the Weasis user interface: File &amp;gt; Preferences in files stored in ${user.</description>
@@ -57,40 +57,40 @@ Local preferences can be modified:
     
     <item>
       <title>Shortcuts</title>
-      <link>http://nroduit.github.io/basics/shortcuts/</link>
+      <link>https://nroduit.github.io/basics/shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/shortcuts/</guid>
+      <guid>https://nroduit.github.io/basics/shortcuts/</guid>
       <description>Keyboard and Mouse Shortcuts  IHE recommendations in Basic Image Review profile.
 Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) the image canvas    W Window / Level    S Series scroll    Z Zoom    R Rotation   C Cine Start / Stop   M Measure   D Distance measurement    A Angle measurement    Y Polyline measurement   B Text box   Q Context menu   Ctrl + Spacebar Change to the next action   Ctrl + mouse drag Accelerate the current action    Ctrl + Shift + mouse drag Accelerate more the current action   0 1 2 3&amp;hellip; DICOM presets   K Toggle key image state   Spacebar Show/Hide all the annotations (three states)   I Show/Hide all the annotations (three states)    Escape Reset the selected view    P Print view(s) with the operating system printer    Right click Open the contextual menu for more options   Double click Toggle fullscreen   Drag files/directories</description>
     </item>
     
     <item>
       <title>Build KO and PR</title>
-      <link>http://nroduit.github.io/tutorials/build-ko-pr/</link>
+      <link>https://nroduit.github.io/tutorials/build-ko-pr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/tutorials/build-ko-pr/</guid>
+      <guid>https://nroduit.github.io/tutorials/build-ko-pr/</guid>
       <description>How to build and export DICOM KO and PR Key Object Selection (KO)  To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
   Presentation State (PR or GSPS)  Open PR: Since Weasis 2.</description>
     </item>
     
     <item>
       <title>Build Plug-ins</title>
-      <link>http://nroduit.github.io/basics/customize/build-plugins/</link>
+      <link>https://nroduit.github.io/basics/customize/build-plugins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/customize/build-plugins/</guid>
+      <guid>https://nroduit.github.io/basics/customize/build-plugins/</guid>
       <description>How to build and install a plug-in This page describes how to build new Weasis plug-ins and how they can be incorporated to the distributions, see also this page for the IDE configuration.
 List of plug-ins types  Media viewer or editor (main central panel that implements ViewerPlugin or ImageViewerPlugin and the factory implements SeriesViewerFactory) Toolbar associated to a viewer (implements Toolbar) Tool associated to a viewer (right panel that implements DockableTool) Data explorer (data model implements DataExplorerModel and data view implements DataExplorerView, and the factory implements DataExplorerViewFactory) Import data into an explorer (ex.</description>
     </item>
     
     <item>
       <title>Building Weasis</title>
-      <link>http://nroduit.github.io/getting-started/building-weasis/</link>
+      <link>https://nroduit.github.io/getting-started/building-weasis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/getting-started/building-weasis/</guid>
+      <guid>https://nroduit.github.io/getting-started/building-weasis/</guid>
       <description>These instructions describe how to build Weasis directly from the Git repository on any platform. For building Weasis from an IDE, see Weasis plug-in development guidelines.
 Prerequisites
  JDK 8 or higher Maven 3 or higher
@@ -99,29 +99,29 @@ If your computer is behind a proxy server, configure maven. Git or directly down
     
     <item>
       <title>Guidelines</title>
-      <link>http://nroduit.github.io/getting-started/guidelines/</link>
+      <link>https://nroduit.github.io/getting-started/guidelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/getting-started/guidelines/</guid>
+      <guid>https://nroduit.github.io/getting-started/guidelines/</guid>
       <description>Weasis Plug-in Development This page is intended for developers who want to contribute to Weasis and it is a recommendation for developers who want to create their own plug-ins, see also How to build and install a plug-in.
 We highly recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless to have a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in Debug or Run from Eclipse.</description>
     </item>
     
     <item>
       <title>Spatial Calibration</title>
-      <link>http://nroduit.github.io/tutorials/calibration/</link>
+      <link>https://nroduit.github.io/tutorials/calibration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/tutorials/calibration/</guid>
+      <guid>https://nroduit.github.io/tutorials/calibration/</guid>
       <description> How to change the spatial calibration   </description>
     </item>
     
     <item>
       <title>Weasis Commands</title>
-      <link>http://nroduit.github.io/basics/commands/</link>
+      <link>https://nroduit.github.io/basics/commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/commands/</guid>
+      <guid>https://nroduit.github.io/basics/commands/</guid>
       <description>The commands listed below can be applied at start-up or in a telnet session. All the commands starting by &amp;ldquo;dcmview2d:&amp;rdquo; allow to drive Weasis and are not adapted to be used at start-up.
 This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSIX.
  For getting the list of commands, after starting Weasis, open a local telnet session of the OSGI Console and type lb for getting the list of bundles and their state or type help for getting all the available commands:</description>
@@ -129,28 +129,28 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
     
     <item>
       <title>Dicom Conformance</title>
-      <link>http://nroduit.github.io/basics/dicom/</link>
+      <link>https://nroduit.github.io/basics/dicom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/dicom/</guid>
+      <guid>https://nroduit.github.io/basics/dicom/</guid>
       <description>Compatibility of DICOM Transfer Syntax    Transfer Syntax UID Description Supported     1.2.840.10008.1.2 Implicit VR - Little Endian yes   1.2.840.10008.1.2.1 Explicit VR - Little Endian yes   1.2.840.10008.1.2.2 Explicit VR - Big Endian yes   1.2.840.10008.1.2.5 RLE (Run Length Encoding) Lossless yes   1.2.840.10008.1.2.4.50 JPEG Baseline (Process 1): Default Transfer Syntax for Lossy JPEG 8 Bit Image Compression yes   1.</description>
     </item>
     
     <item>
       <title>Rebuild dcm4chee-web</title>
-      <link>http://nroduit.github.io/basics/customize/rebuild-dcm4chee-web/</link>
+      <link>https://nroduit.github.io/basics/customize/rebuild-dcm4chee-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/basics/customize/rebuild-dcm4chee-web/</guid>
+      <guid>https://nroduit.github.io/basics/customize/rebuild-dcm4chee-web/</guid>
       <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems  JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
     </item>
     
     <item>
       <title>Internationalization</title>
-      <link>http://nroduit.github.io/getting-started/translating/</link>
+      <link>https://nroduit.github.io/getting-started/translating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/getting-started/translating/</guid>
+      <guid>https://nroduit.github.io/getting-started/translating/</guid>
       <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help translating to your language! If your language is missing, just head over to Transifex and request a new language.
 Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
  Special characters: Some characters representing values (%d, %s), new line (\n) and html tags must not be translated.</description>
@@ -158,10 +158,10 @@ Text length: The translations for many languages frequently exceed the length of
     
     <item>
       <title>FAQs</title>
-      <link>http://nroduit.github.io/faq/</link>
+      <link>https://nroduit.github.io/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/faq/</guid>
+      <guid>https://nroduit.github.io/faq/</guid>
       <description>Frequently Asked Questions 
   Why the Weasis license is Eclipse Public License?    The Eclipse Public License is an OSI approved license and a commercially friendly copyleft license.
 EPL is more business-friendly about some patent retaliation and reverse engineering clauses than LGPL. With EPL, derivative work (weasis plugin) can be distributed in any license type: open source, freeware, commercial&amp;hellip; However, if you distribute Weasis with some modifications (changing existing source code of the open source Weasis plug-ins), even if it is a free distribution, you are obligated to make your modifications available to others.</description>
@@ -169,10 +169,10 @@ EPL is more business-friendly about some patent retaliation and reverse engineer
     
     <item>
       <title>Get Involved!</title>
-      <link>http://nroduit.github.io/get-involved/</link>
+      <link>https://nroduit.github.io/get-involved/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/get-involved/</guid>
+      <guid>https://nroduit.github.io/get-involved/</guid>
       <description>Report Bugs and Enhancements First, search the JIRA system, the forum and/or this website (like FAQs or Getting Started) to see if your problem has not been reported yet.
 Only then, fill a bug on JIRA with the most details:
  For categorizing the issue, select the appropriate type:  Bug: a bug, anything that does not work as expected Improvement: an enhancement over an existing feature New Feature: a new feature Task: everything else, something that needs to be done  Use the short summary field to describe the main goal of your issue.</description>
@@ -180,10 +180,10 @@ Only then, fill a bug on JIRA with the most details:
     
     <item>
       <title>Launch Weasis</title>
-      <link>http://nroduit.github.io/demo/</link>
+      <link>https://nroduit.github.io/demo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://nroduit.github.io/demo/</guid>
+      <guid>https://nroduit.github.io/demo/</guid>
       <description>Demo with multiple DICOM Samples This page shows a list of DICOM samples for testing viewer capabilities.
 Naming convention
  Patient name starting with &amp;ldquo;TEST^&amp;rdquo; and then the general test purpose. &amp;ldquo;TEST-i18n-&amp;rdquo; prefix is for internationalization test. In study description: general test description In series description: test description   The demo server is on free cloud system, so sometime it requires to launch two times the viewer because the server has to wake up (is turned &amp;ldquo;idle&amp;rdquo; after a period of inactivity).</description>

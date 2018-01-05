@@ -3,134 +3,134 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://nroduit.github.io/getting-started/</loc>
+    <loc>https://nroduit.github.io/getting-started/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/</loc>
+    <loc>https://nroduit.github.io/basics/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/getting-started/dcm4chee/</loc>
+    <loc>https://nroduit.github.io/getting-started/dcm4chee/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/customize/integration/</loc>
+    <loc>https://nroduit.github.io/basics/customize/integration/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/architecture/</loc>
+    <loc>https://nroduit.github.io/basics/architecture/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/customize/preferences/</loc>
+    <loc>https://nroduit.github.io/basics/customize/preferences/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/shortcuts/</loc>
+    <loc>https://nroduit.github.io/basics/shortcuts/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/tutorials/</loc>
+    <loc>https://nroduit.github.io/tutorials/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/tutorials/build-ko-pr/</loc>
+    <loc>https://nroduit.github.io/tutorials/build-ko-pr/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/customize/build-plugins/</loc>
+    <loc>https://nroduit.github.io/basics/customize/build-plugins/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/getting-started/building-weasis/</loc>
+    <loc>https://nroduit.github.io/getting-started/building-weasis/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/customize/</loc>
+    <loc>https://nroduit.github.io/basics/customize/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/getting-started/guidelines/</loc>
+    <loc>https://nroduit.github.io/getting-started/guidelines/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/tutorials/calibration/</loc>
+    <loc>https://nroduit.github.io/tutorials/calibration/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/stories/</loc>
+    <loc>https://nroduit.github.io/stories/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/commands/</loc>
+    <loc>https://nroduit.github.io/basics/commands/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/dicom/</loc>
+    <loc>https://nroduit.github.io/basics/dicom/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/basics/customize/rebuild-dcm4chee-web/</loc>
+    <loc>https://nroduit.github.io/basics/customize/rebuild-dcm4chee-web/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/getting-started/translating/</loc>
+    <loc>https://nroduit.github.io/getting-started/translating/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/categories/</loc>
+    <loc>https://nroduit.github.io/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://nroduit.github.io/fr/categories/"
+                href="https://nroduit.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nroduit.github.io/categories/"
+                href="https://nroduit.github.io/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/faq/</loc>
+    <loc>https://nroduit.github.io/faq/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/get-involved/</loc>
+    <loc>https://nroduit.github.io/get-involved/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/demo/</loc>
+    <loc>https://nroduit.github.io/demo/</loc>
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/tags/</loc>
+    <loc>https://nroduit.github.io/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://nroduit.github.io/fr/tags/"
+                href="https://nroduit.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nroduit.github.io/tags/"
+                href="https://nroduit.github.io/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://nroduit.github.io/</loc>
+    <loc>https://nroduit.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://nroduit.github.io/fr/"
+                href="https://nroduit.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nroduit.github.io/"
+                href="https://nroduit.github.io/"
                 />
   </url>
   
