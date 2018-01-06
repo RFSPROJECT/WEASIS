@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Weasis Medical Viewer :: Documentation</title>
+    <title>Integration :: Documentation</title>
 
     
     <link href="/css/nucleus.css?1515228130" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/">
+  <body class="" data-url="/en/basics/customize/integration/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -529,7 +529,7 @@
   
     
     <li data-nav-id="/en/basics/" title="Basics" class="dd-item 
-        
+        parent
         
         
         ">
@@ -596,7 +596,7 @@
   
     
     <li data-nav-id="/en/basics/customize/" title="Customize" class="dd-item 
-        
+        parent
         
         
         ">
@@ -622,7 +622,7 @@
  
   
     
-      <li data-nav-id="/en/basics/customize/integration/" title="Integration" class="dd-item ">
+      <li data-nav-id="/en/basics/customize/integration/" title="Integration" class="dd-item active">
         <a href="/en/basics/customize/integration/">
         Integration
         <i class="fa fa-check read-icon"></i>
@@ -885,22 +885,10 @@
                   
                     
                     
-                      <option id="en" value="/en/" selected>English</option>
+                      <option id="en" value="/en/basics/customize/integration/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="fr" value="/fr/">Français</option>
-                    
                   
               
           
@@ -954,184 +942,273 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/basics/customize/integration.en.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/basics/'>Basics</a> > <a href='/en/basics/customize/'>Customize</a> > Integration
+          
+         
+          
+         
+          
+         
+          
+        
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#center-how-to-launch-weasis-from-any-environments-center"><center>How to launch Weasis from any environments</center></a></li>
+<li><a href="#use-weasis-pacs-connector">Use weasis-pacs-connector</a></li>
+<li><a href="#build-your-own-connector">Build your own connector</a>
+<ul>
+<li><a href="#build-a-jnlp">Build a JNLP</a></li>
+<li><a href="#build-an-xml-manifest">Build an XML manifest</a></li>
+<li><a href="#build-an-xml-manifest-no-wado-server">Build an XML manifest (no WADO server)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
 
         
         <div id="body-inner">
           
+            <h1>Integration</h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
-
- 
-
-
-<h1 id="center-weasis-medical-viewer-center"><center>Weasis Medical Viewer</center></h1>
-
-<p>Weasis is a multipurpose standalone and web-based DICOM viewer with a highly <a href="../basics/architecture">modular architecture</a>.</p>
-
-<p>It has been designed to meet several expectations of clinical information systems and their future evolution regarding medical imaging: providing a web-based access to radiological images, as well as offering multimedia capabilities.</p>
 
 
 
+<h2 id="center-how-to-launch-weasis-from-any-environments-center"><center>How to launch Weasis from any environments</center></h2>
+
+<p>There are two Weasis distributions: the WEB distribution (weasis.war) and the portable distribution (weasis-portable.zip). Here we are presenting how to connect the WEB distribution with any web application. This documentation is adapted for Weasis 2.5 and superior.</p>
+
+<p>The easiest way to launch Weasis from a web context is to use <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector">weasis-pacs-connector</a>.</p>
+
+<div class="notices info" ><p>For connecting to dcm4chee web interface, follow the instructions in <a href="../../../getting-started/dcm4chee">Installing Weasis in DCM4CHEE</a>.<br><br>
+See also the new way of launching <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#new-way-to-launch-jnlp">Java Westart</a>.</p>
+</div>
 
 
-  
+<h2 id="use-weasis-pacs-connector">Use weasis-pacs-connector</h2>
+
+<p>Standard workflow when connecting Weasis to a PACS, RIS, EMR or any web interface:
+<img src="/images/connector-wk-std.png?classes=border" alt="standard usage workflow" title="Standard workflow" />
+<div class="notices note" ><p>The schema above shows that the queries to the PACS are made at the same time the viewer starting.</p>
+</div>
+
+Workflow where the manifest is embedded in the jnlp file (synchrone processes):
+<img src="/images/connector-wk-emb.png?classes=border" alt="embedding the xml manifest" title="Embedding the xml manifest" /></p>
+
+<h2 id="build-your-own-connector">Build your own connector</h2>
+
+<p>This method have two requirements:</p>
+
+<ol>
+<li>Building a jnlp file for launching Weasis</li>
+<li>Building a xml manifest to donwload images</li>
+</ol>
+
+<h3 id="build-a-jnlp">Build a JNLP</h3>
+
+<p>Build a <a target="_blank" href="https://docs.oracle.com/javase/8/docs/technotes/guides/javaws/developersguide/contents.html">Java Webstart</a> file (.jnlp) for launching Weasis. This file has at least one dynamic parameter (<code>&lt;argument&gt;$dicom:get ... &lt;/argument&gt;</code>) to download images. Generally it is the <a href="#build-an-xml-manifest">xml file</a> containing the UIDs.</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span class="cp">&lt;!DOCTYPE jnlp PUBLIC &#34;-//Sun Microsystems, Inc//DTD JNLP Descriptor 6.0//EN&#34; &#34;http://java.sun.com/dtd/JNLP-6.0.dtd&#34;&gt;</span>
+  <span class="nt">&lt;jnlp</span> <span class="na">spec=</span><span class="s">&#34;1.6+&#34;</span> <span class="na">codebase=</span><span class="s">&#34;http://localhost:8080/weasis&#34;</span> <span class="na">href=</span><span class="s">&#34;&#34;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;information&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Weasis<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;vendor&gt;</span>Weasis Team<span class="nt">&lt;/vendor&gt;</span>
+    <span class="nt">&lt;description&gt;</span>DICOM images viewer<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;description</span> <span class="na">kind=</span><span class="s">&#34;short&#34;</span><span class="nt">&gt;</span>An application to visualize and analyze DICOM images.<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;description</span> <span class="na">kind=</span><span class="s">&#34;one-line&#34;</span><span class="nt">&gt;</span>DICOM images viewer<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;description</span> <span class="na">kind=</span><span class="s">&#34;tooltip&#34;</span><span class="nt">&gt;</span>Weasis<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;/information&gt;</span>
+  <span class="nt">&lt;security&gt;</span>
+    <span class="nt">&lt;all-permissions</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/security&gt;</span>
+
+  <span class="nt">&lt;resources&gt;</span>
+    <span class="c">&lt;!-- Requires Java SE 8 for Weasis 2.5 and superior --&gt;</span>
+    <span class="nt">&lt;j2se</span> <span class="na">version=</span><span class="s">&#34;1.8+&#34;</span> <span class="na">href=</span><span class="s">&#34;http://java.sun.com/products/autodl/j2se&#34;</span> <span class="na">initial-heap-size=</span><span class="s">&#34;128m&#34;</span> <span class="na">max-heap-size=</span><span class="s">&#34;768m&#34;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;j2se</span> <span class="na">version=</span><span class="s">&#34;1.8+&#34;</span> <span class="na">initial-heap-size=</span><span class="s">&#34;128m&#34;</span> <span class="na">max-heap-size=</span><span class="s">&#34;768m&#34;</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;jar</span> <span class="na">href=</span><span class="s">&#34;http://localhost:8080/weasis/weasis-launcher.jar&#34;</span> <span class="na">main=</span><span class="s">&#34;true&#34;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;jar</span> <span class="na">href=</span><span class="s">&#34;http://localhost:8080/weasis/felix.jar&#34;</span> <span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- Optional library (Substance Look and feel, only since version 1.0.8). Requires the new Java Plug-in introduced in the Java SE 6 update 10 release.For previous JRE 6, substance.jnlp needs a static codebase URL --&gt;</span>
+    <span class="nt">&lt;extension</span> <span class="na">href=</span><span class="s">&#34;http://localhost:8080/weasis/substance.jnlp&#34;</span> <span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- Allows to get files in pack200 compression, only since Weasis 1.1.2 --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.packEnabled&#34;</span> <span class="na">value=</span><span class="s">&#34;true&#34;</span> <span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- ================================================================================================================= --&gt;</span>
+    <span class="c">&lt;!-- Security Workaround. Add prefix &#34;jnlp.weasis&#34; for having a fully trusted application without signing jnlp (only since weasis 1.2.9), http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6653241 --&gt;</span>
+    <span class="c">&lt;!-- Required parameter. Define the location of config.properties (the OSGI configuration and the list of plug-ins to install/start) --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.felix.config.properties&#34;</span> <span class="na">value=</span><span class="s">&#34;http://localhost:8080/weasis/conf/config.properties&#34;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Optional parameter. Define the location of ext-config.properties (extend/override config.properties) --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.felix.extended.config.properties&#34;</span> <span class="na">value=</span><span class="s">&#34;http://localhost:8080/weasis-ext/conf/ext-config.properties&#34;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Required parameter. Define the code base of Weasis for the JNLP --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.weasis.codebase.url&#34;</span> <span class="na">value=</span><span class="s">&#34;http://localhost:8080/weasis&#34;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Optional parameter. Define the code base ext of Weasis for the JNLP --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.weasis.codebase.ext.url&#34;</span> <span class="na">value=</span><span class="s">&#34;http://localhost:8080/weasis-ext&#34;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Required parameter. OSGI console parameter --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.gosh.args&#34;</span> <span class="na">value=</span><span class="s">&#34;-sc telnetd -p 17179 start&#34;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Optional parameter. Allows to have the Weasis menu bar in the top bar on Mac OS X (works only with the native Aqua look and feel) --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.apple.laf.useScreenMenuBar&#34;</span> <span class="na">value=</span><span class="s">&#34;true&#34;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Optional parameter. Allows to get plug-ins translations --&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.weasis.i18n&#34;</span> <span class="na">value=</span><span class="s">&#34;http://localhost:8080/weasis-i18n&#34;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Optional Weasis Documentation --&gt;</span>
+    <span class="c">&lt;!-- &lt;property name=&#34;jnlp.weasis.weasis.help.url&#34; value=&#34;${cdb}/../weasis-doc&#34; /&gt; --&gt;</span>
+    <span class="c">&lt;!-- ================================================================================================================= --&gt;</span>
+  <span class="nt">&lt;/resources&gt;</span>
+
+  <span class="nt">&lt;application-desc</span> <span class="na">main-class=</span><span class="s">&#34;org.weasis.launcher.WebstartLauncher&#34;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Example for opening dicom files from remote xml file --&gt;</span>
+    <span class="nt">&lt;argument&gt;</span>$dicom:get -w &#34;http://localhost:8080/dcm4chee-web/wadoQueries/wado_query3888637380.xml.gz&#34;<span class="nt">&lt;/argument&gt;</span>
+
+    <span class="c">&lt;!-- Example for opening dicom files from local foler --&gt;</span>
+        <span class="nt">&lt;argument&gt;</span>$dicom:get -l &#34;/home/Images/MRIX LUMBAR/&#34;<span class="nt">&lt;/argument&gt;</span>
+
+    <span class="c">&lt;!-- Example for opening dicom files by embedding the xml file encoded in gzip and then in base64, it must be in one line without space at the beginning --&gt;</span>
+    <span class="nt">&lt;argument&gt;</span>$dicom:get -i &#34;H4sIAAAAAAAAALVV7Y+aMBz+vr+i6XdLXwDBHHdxpy4mvgX0dvtkOqnaBOGO1qn//RUQnW5uy3JHCC2/1+d5Wsrdw36TgB8iVzJLA0gQhkCkiyyW6SqAW71seBA83H+62/E4m79uR...&#34;<span class="nt">&lt;/argument&gt;</span>
+
+    <span class="c">&lt;!-- Example for opening dicom files from URLs --&gt;</span>
+    <span class="nt">&lt;argument&gt;</span>$dicom:get -r &#34;http://server/images/img1.dcm http://server/images/img2.dcm&#34;<span class="nt">&lt;/argument&gt;</span>
+  <span class="nt">&lt;/application-desc&gt;</span>
+  <span class="nt">&lt;/jnlp&gt;</span></code></pre></div>
+<div class="notices note" ><p>Replace <code>http://localhost:8080/weasis</code> by your server location and <code>&lt;argument&gt;...&lt;/argument&gt;</code> by your data to load. Adapt other parameters if necessary.</p>
+</div>
 
 
-
-<script src="/js/load-photoswipe.js"></script>
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<div class="notices tip" ><p><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector">weasis-pacs-connector</a> services are based on jnlp templates and they allow either to build a manifest from a PACS via DICOM C-Find or to upload the manifest by http POST.</p>
+</div>
 
 
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<h3 id="build-an-xml-manifest">Build an XML manifest</h3>
 
-<div class="pswp__bg"></div>
+<p>Build an XML file containing the UIDs of the images which will be retrieved from Weasis. There is <a target="_blank" href="https://github.com/nroduit/Weasis/blob/master/weasis-dicom/weasis-dicom-explorer/src/main/resources/config/manifest.xsd">XLS</a> to validate the content of xml. This file can be either compressed in gzip or uncompressed. Here is an example (required Weasis 2.5 and superior):</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
+<span class="nt">&lt;manifest</span> <span class="na">xmlns=</span><span class="s">&#34;http://www.weasis.org/xsd/2.5&#34;</span> <span class="na">xmlns:xsi=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;arcQuery</span> <span class="na">additionnalParameters=</span><span class="s">&#34;&#34;</span> <span class="na">arcId=</span><span class="s">&#34;1001&#34;</span> <span class="na">baseUrl=</span><span class="s">&#34;http://archive-weasis.rhcloud.com/archive/wado&#34;</span> <span class="na">requireOnlySOPInstanceUID=</span><span class="s">&#34;false&#34;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Patient</span> <span class="na">PatientID=</span><span class="s">&#34;H13885_9M&#34;</span> <span class="na">PatientName=</span><span class="s">&#34;TEST NON SQUARE PIXELS&#34;</span> <span class="na">PatientSex=</span><span class="s">&#34;F&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Study</span> <span class="na">AccessionNumber=</span><span class="s">&#34;&#34;</span> <span class="na">ReferringPhysicianName=</span><span class="s">&#34;&#34;</span> <span class="na">StudyDate=</span><span class="s">&#34;20130711&#34;</span> <span class="na">StudyDescription=</span><span class="s">&#34;TEST NON SQUARE PIXELS&#34;</span> <span class="na">StudyID=</span><span class="s">&#34;PKD&#34;</span> <span class="na">StudyInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.14391.1373576413.1508&#34;</span> <span class="na">StudyTime=</span><span class="s">&#34;170013&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Series</span> <span class="na">Modality=</span><span class="s">&#34;US&#34;</span> <span class="na">SeriesDescription=</span><span class="s">&#34;NON SQUARE PIXELS: PIXEL ASPECT RATIO&#34;</span> <span class="na">SeriesInstanceUID=</span><span class="s">&#34;1.2.40.0.13.1.1.87878503032592846377547034671833520632&#34;</span> <span class="na">SeriesNumber=</span><span class="s">&#34;2&#34;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;107&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;1.2.40.0.13.1.1.126082073005720329436273995268222863740&#34;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/Series&gt;</span>
+                <span class="nt">&lt;Series</span> <span class="na">Modality=</span><span class="s">&#34;MR&#34;</span> <span class="na">SeriesDescription=</span><span class="s">&#34;NON SQUARE PIXELS: PIXEL SPACING&#34;</span> <span class="na">SeriesInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578035.1&#34;</span> <span class="na">SeriesNumber=</span><span class="s">&#34;40001&#34;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;1&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578035.1.0&#34;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;2&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578035.1.1&#34;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;3&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578035.1.2&#34;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;4&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578035.1.3&#34;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/Series&gt;</span>
+                <span class="nt">&lt;Series</span> <span class="na">Modality=</span><span class="s">&#34;MR&#34;</span> <span class="na">SeriesDescription=</span><span class="s">&#34;NON SQUARE PIXELS: PIXEL SPACING&#34;</span> <span class="na">SeriesInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578664.2&#34;</span> <span class="na">SeriesNumber=</span><span class="s">&#34;50001&#34;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;1&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578664.2.0&#34;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;2&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578664.2.1&#34;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;3&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578664.2.2&#34;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;Instance</span> <span class="na">InstanceNumber=</span><span class="s">&#34;4&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;2.16.756.5.5.100.397184556.7220.1373578664.2.3&#34;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/Series&gt;</span>
+            <span class="nt">&lt;/Study&gt;</span>
+        <span class="nt">&lt;/Patient&gt;</span>
+    <span class="nt">&lt;/arcQuery&gt;</span>
+<span class="nt">&lt;/manifest&gt;</span></code></pre></div>
+<div class="notices note" ><p>Important Parameters (except mandatory parameters):</p>
 
-<div class="pswp__scroll-wrap">
-    
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    
-    <div class="pswp__ui pswp__ui--hidden">
-    <div class="pswp__top-bar">
-      
-      <div class="pswp__counter"></div>
-      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-      <button class="pswp__button pswp__button--share" title="Share"></button>
-      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-      
-      
-      <div class="pswp__preloader">
-        <div class="pswp__preloader__icn">
-          <div class="pswp__preloader__cut">
-            <div class="pswp__preloader__donut"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-      <div class="pswp__share-tooltip"></div>
-    </div>
-    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-    </button>
-    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-    </button>
-    <div class="pswp__caption">
-      <div class="pswp__caption__center"></div>
-    </div>
-    </div>
-    </div>
+<ul>
+<li><code>PatientBirthDate</code> helps to identify a patient.</li>
+<li><code>StudyDate,</code> <code>StudyTime</code>, <code>Modality</code>, <code>SeriesNumber</code> and <code>InstanceNumber</code> help to sort data before downloading images.</li>
+<li><code>SeriesDescription</code> and <code>StudyDescription</code> allow to immediately display the descriptions before downloading the images.</li>
+</ul>
+</div>
+
+
+<div class="notices tip" ><p>From Weasis 2.5 it is possible to have multiple archives (allows to have several arcQuery tags) and the <a target="_blank" href="https://github.com/nroduit/Weasis/blob/master/weasis-dicom/weasis-dicom-explorer/src/main/resources/config/presentations.xsd">presentations</a> tag which contains the image annotations.</p>
+</div>
+
+
+<h3 id="build-an-xml-manifest-no-wado-server">Build an XML manifest (no WADO server)</h3>
+
+<p>This example requires only a WEB server and Weasis 2.5 and superior. Weasis will download files by URLs.</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; ?&gt;</span>
+<span class="nt">&lt;manifest</span> <span class="na">xmlns=</span><span class="s">&#34;http://www.weasis.org/xsd/2.5&#34;</span> <span class="na">xmlns:xsi=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;arcQuery</span> <span class="na">additionnalParameters=</span><span class="s">&#34;&#34;</span> <span class="na">arcId=</span><span class="s">&#34;1001&#34;</span> <span class="na">baseUrl=</span><span class="s">&#34;http://archive-weasis.rhcloud.com/archive/wado&#34;</span> <span class="na">requireOnlySOPInstanceUID=</span><span class="s">&#34;false&#34;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Patient</span> <span class="na">PatientBirthDate=</span><span class="s">&#34;20010901&#34;</span> <span class="na">PatientID=</span><span class="s">&#34;017589&#34;</span> <span class="na">PatientName=</span><span class="s">&#34;Validate WADAKOKOA&#34;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Study</span> <span class="na">StudyDate=</span><span class="s">&#34;20100421&#34;</span> <span class="na">StudyDescription=</span><span class="s">&#34;胸部立位 Ｖ→Ｄ犬4&#34;</span> <span class="na">StudyInstanceUID=</span><span class="s">&#34;1.2.392.200036.9107.500.11141010042100073&#34;</span> <span class="na">StudyTime=</span><span class="s">&#34;113836&#34;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Series</span> <span class="na">DirectDownloadThumbnail=</span><span class="s">&#34;thumb_4563173729424544.jpg&#34;</span> <span class="na">Modality=</span><span class="s">&#34;CR&#34;</span> <span class="na">SeriesDescription=</span><span class="s">&#34;Ｖ→Ｄ犬4&#34;</span> <span class="na">SeriesInstanceUID=</span><span class="s">&#34;1.2.392.200036.9107.500.305.1410.141010042100073.121&#34;</span> <span class="na">SeriesNumber=</span><span class="s">&#34;1&#34;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;Instance</span> <span class="na">DirectDownloadFile=</span><span class="s">&#34;image_4563173729424543.dcm&#34;</span> <span class="na">InstanceNumber=</span><span class="s">&#34;1&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;1.2.392.200036.9107.500.305.1410.20100421.114831.109.101410&#34;</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;Instance</span> <span class="na">DirectDownloadFile=</span><span class="s">&#34;image_4563173729424544.dcm&#34;</span> <span class="na">InstanceNumber=</span><span class="s">&#34;2&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;1.2.392.200036.9107.500.305.1410.20100421.114828.234.101410&#34;</span><span class="nt">/&gt;</span>
+          <span class="nt">&lt;Instance</span> <span class="na">DirectDownloadFile=</span><span class="s">&#34;image_4563173729424545.dcm&#34;</span> <span class="na">InstanceNumber=</span><span class="s">&#34;3&#34;</span> <span class="na">SOPInstanceUID=</span><span class="s">&#34;1.2.392.200036.9107.500.305.1410.20100421.114823.421.101410&#34;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/Series&gt;</span>
+      <span class="nt">&lt;/Study&gt;</span>
+    <span class="nt">&lt;/Patient&gt;</span>
+  <span class="nt">&lt;/arcQuery&gt;</span>
+<span class="nt">&lt;/manifest&gt;</span></code></pre></div>
+<div class="notices note" ><p>Important Parameters:</p>
+
+<ul>
+<li><code>DirectDownloadFile</code> defines the URL of the DICOM file to download (the final URL is the combination of wadoURL + DirectDownloadFile)</li>
+<li><code>DirectDownloadThumbnail</code> defines the URL of the JPEG file representing the series (the final URL is the combination of wadoURL + DirectDownloadThumbnail)</li>
+<li>The same ones as above.</li>
+</ul>
 </div>
 
 
 
-<p>
-<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
-
-<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/Add%20Measurements.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Add Measurements</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/Add%20Measurements.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/Internationalization.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Internationalization</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/Internationalization.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/MPR%20View.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>MPR View</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/MPR%20View.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-</div>
-</p>
-
-<p>Weasis can be easily connect to any PACS supporting WADO via a web portal or as an XDS-I consumer in an IHE (Integrating the Healthcare Enterprise) environment.</p>
-
-<p>
-
-
-<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Cross-lines.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Cross-lines</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Cross-lines.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Display%20DICOM%20ECG.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Display DICOM ECG</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Display%20DICOM%20ECG.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Display%20DICOM%20RT.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Display DICOM RT</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Display%20DICOM%20RT.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-</div>
-</p>
-
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
-
-<p><div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
-</p>
-
-<h2 id="documentation-website">Documentation website</h2>
-
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo</code> &ndash; source code is <a href="https://github.com/nroduit/nroduit.github.io">available here at GitHub</a></p>
+<footer class=" footline" >
 	
-  
+</footer>
+
+
         
         </div> 
         
@@ -1246,6 +1323,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1260,6 +1338,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1293,6 +1374,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1305,6 +1387,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1322,37 +1405,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1361,9 +1415,6 @@
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -1416,6 +1467,41 @@
                     
 
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1474,8 +1560,10 @@
 
 
         
+            <a class="nav nav-prev" href="/en/basics/customize/" title="Customize"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/en/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/en/basics/customize/preferences/" title="Preferences" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1513,3 +1601,4 @@
 </script>
   </body>
 </html>
+

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Weasis Medical Viewer :: Documentation</title>
+    <title>Embedding in dcm4chee :: Documentation</title>
 
     
     <link href="/css/nucleus.css?1515228130" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/">
+  <body class="" data-url="/en/getting-started/dcm4chee/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -419,7 +419,7 @@
   
     
     <li data-nav-id="/en/getting-started/" title="Getting Started" class="dd-item 
-        
+        parent
         
         
         ">
@@ -445,7 +445,7 @@
  
   
     
-      <li data-nav-id="/en/getting-started/dcm4chee/" title="Embedding in dcm4chee" class="dd-item ">
+      <li data-nav-id="/en/getting-started/dcm4chee/" title="Embedding in dcm4chee" class="dd-item active">
         <a href="/en/getting-started/dcm4chee/">
         Embedding in dcm4chee
         <i class="fa fa-check read-icon"></i>
@@ -885,22 +885,10 @@
                   
                     
                     
-                      <option id="en" value="/en/" selected>English</option>
+                      <option id="en" value="/en/getting-started/dcm4chee/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="fr" value="/fr/">Français</option>
-                    
                   
               
           
@@ -954,27 +942,130 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/getting-started/dcm4chee.en.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/getting-started/'>Getting Started</a> > Embedding in dcm4chee
+          
+         
+          
+         
+          
+        
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#for-dcm4chee-arc-light">For dcm4chee-arc-light</a></li>
+<li><a href="#for-dcm4chee-web3">For dcm4chee-web3</a></li>
+<li><a href="#for-dcm4chee-web-old-web-interface-before-2-17-1">For dcm4chee-web (old web interface - before 2.17.1)</a></li>
+<li><a href="#write-weasis-portable-to-dicom-cds-with-dcm4chee-cdw">Write weasis-portable to DICOM CDs with dcm4chee-cdw</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
 
         
         <div id="body-inner">
           
+            <h1>Embedding in dcm4chee</h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
 
+
+
+<p>This page describes how to install Weasis to be the default web viewer of dcm4chee web interface.</p>
+
+<p>Weasis is launched from the dcm4chee administrative web interface, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.</p>
+
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-grow hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery-dcm4chee/1Weasis%20in%20dcm4chee-arc-light.png');" >
+						
+				    </div>
+			      <figcaption>
+		          <p>Weasis in dcm4chee-arc-light</p>
+			      </figcaption>
+				    <a href="https://nroduit.github.io/gallery-dcm4chee/1Weasis%20in%20dcm4chee-arc-light.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery-dcm4chee/2Weasis%20in%20dcm4chee-web3.png');" >
+						
+				    </div>
+			      <figcaption>
+		          <p>Weasis in dcm4chee-web3</p>
+			      </figcaption>
+				    <a href="https://nroduit.github.io/gallery-dcm4chee/2Weasis%20in%20dcm4chee-web3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery-dcm4chee/3Weasis%20in%20dcm4chee-web.png');" >
+						
+				    </div>
+			      <figcaption>
+		          <p>Weasis in dcm4chee-web</p>
+			      </figcaption>
+				    <a href="https://nroduit.github.io/gallery-dcm4chee/3Weasis%20in%20dcm4chee-web.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
  
-
-
-<h1 id="center-weasis-medical-viewer-center"><center>Weasis Medical Viewer</center></h1>
-
-<p>Weasis is a multipurpose standalone and web-based DICOM viewer with a highly <a href="../basics/architecture">modular architecture</a>.</p>
-
-<p>It has been designed to meet several expectations of clinical information systems and their future evolution regarding medical imaging: providing a web-based access to radiological images, as well as offering multimedia capabilities.</p>
-
-
 
 
 
@@ -1036,102 +1127,244 @@
 </div>
 
 
+ </p>
 
-<p>
-<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<h3 id="for-dcm4chee-arc-light">For dcm4chee-arc-light</h3>
 
-<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/Add%20Measurements.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Add Measurements</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/Add%20Measurements.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/Internationalization.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Internationalization</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/Internationalization.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/MPR%20View.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>MPR View</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/MPR%20View.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
+<ol>
+<li><a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki">Install dcm4chee</a>, if not already done.</li>
+
+<li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download these Weasis files.
+<div class="notices warning" ><p><strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.</p>
 </div>
 </p>
 
-<p>Weasis can be easily connect to any PACS supporting WADO via a web portal or as an XDS-I consumer in an IHE (Integrating the Healthcare Enterprise) environment.</p>
+<ul>
+<li>From the folder with the latest version number:
 
-<p>
+<ul>
+<li>weasis.war</li>
+<li>weasis-i18n.war (Optional for internationalization)</li>
+</ul></li>
+<li>From weasis-pacs-connector folder:
 
+<ul>
+<li>weasis-pacs-connector.war</li>
+</ul></li>
+</ul></li>
 
-<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Cross-lines.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Cross-lines</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Cross-lines.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Display%20DICOM%20ECG.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Display DICOM ECG</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Display%20DICOM%20ECG.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Display%20DICOM%20RT.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Display DICOM RT</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Display%20DICOM%20RT.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
+<li><p>Open the <a target="_blank" href="http://localhost:9990/">management console</a>. </p>
+
+<ol>
+<li>Select the “Deployments” tab</li>
+<li>Add the .war files using the “Add” button (Choose Upload a new deployment or select Replace when the file already exists)</li>
+</ol></li>
+
+<li><p>Configure weasis-pacs-connector 6.x and superior (required to change the default WADO configuration).The default configuration is stored in two files inside weasis-pacs-connector.war. To override the default configuration:</p>
+
+<ul>
+<li><p>Download the current <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/weasis-connector-default.properties" download>weasis-connector-default.properties</a> and rename it <code>weasis-pacs-connector.properties</code>, and download <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/dicom-dcm4chee.properties" download>dicom-dcm4chee.properties</a> (configuration of the dcm4chee archive)</p></li>
+
+<li><p>Copy the files into wildfly/standalone/configuration.</p></li>
+
+<li><p>As the default configuration of <strong>dicom-dcm4chee.properties</strong> is defined for dcm4chee-web3, it is necessary to modify at least:   </p>
+
+<ul>
+<li>The WADO url of arc-light: <code>arc.wado.url=${server.base.url}/dcm4chee-arc/aets/DCM4CHEE/wado</code></li>
+<li>To accept all the syntaxes (otherwise arc-light will uncompress all the images): <code>wado.addparams=&amp;transferSyntax=\*</code></li>
+</ul></li>
+
+<li><p>Edit the configuration as needed. For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed. If so, edit <code>weasis-pacs-connector.properties</code> or <code>dicom-dcm4chee.properties</code> (Change pacs.host, pacs.port, and pacs.aet).</p></li>
+
+<li><p>Optional: add new properties or arguments in the JNLP file, see <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#configuration-of-weasis-pacs-connector">configuration of weasis-pacs-connector</a></p></li>
+</ul></li>
+
+<li><p>To activate Weasis in dcm4chee-arc-light user interface (required 5.10.2 or superior), you need need to changes two attributes in the configuration</p>
+
+<ul>
+<li><p>Go to the <a target="_blank" href="http://localhost:8080/dcm4chee-arc/ui2/#/device/edit/dcm4chee-arc/dcmArchiveDevice/properties.dcmArchiveDevice">configuration</a>
+or from Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Archive Device 
+And fill up the following properties: </p>
+
+<ul>
+<li><p>Invoke Image Display Patient URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=PATIENT&amp;patientID={}</code></p></li>
+
+<li><p>Invoke Image Display Study URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID={}</code>
+<div class="notices tip" ><p><strong>Absolute path</strong>: The values above starting by &ldquo;../&rdquo; are the default relative path when weasis-pacs-connector is installed in the same JBoss as dcm4chee. Otherwise replace the relative URL by an absolute value, ex: <code>http://YOUR-host:8080/weasis-pacs-connector/...</code></p>
+</div>
+
+<div class="notices note" ><p><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#new-way-to-launch-jnlp">The new way of launching Java Westart</a> file (jnlp) will also require an absolute URL as the scheme of the URL is different:<br>
+<code>jnlp://YOUR-host:8080/weasis-pacs-connector/...</code><br> <code>jnlps://YOUR-host:8443/weasis-pacs-connector/...</code> (TLS connection)</p>
+</div>
+</p></li>
+</ul></li>
+
+<li><p>Refresh the web page and the view button should appears as in the screenshot above</p></li>
+
+<li><p>Alternative way to configure the activation from a LDAP manager (like Apache Directory Studio)</p>
+
+<ol>
+<li>Connect to LDAP, see <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Installation#import-default-configuration-into-ldap-server">dcm4chee configuration</a></li>
+<li>Import <a target="_blank" href="/attachments/weasis.ldif" download>weasis.ldif</a></li>
+</ol></li>
+</ul></li>
+</ol>
+
+<hr />
+
+<h3 id="for-dcm4chee-web3">For dcm4chee-web3</h3>
+
+<ol>
+<li><p><a target="_blank" href="https://dcm4che.atlassian.net/wiki/spaces/ee2/pages/2555918/Installation">Install dcm4chee</a>, if not already done. For security see also how to limit the <a target="_blank" href="https://github.com/nroduit/openmediavault-dcm4chee/wiki/Configuration-of-dcm4chee#security">server access</a>.</p>
+
+<ul>
+<li>dcm4chee-web3 is not compatible with versions of dcm4chee before 2.16.0</li>
+<li>dcm4chee 2.16.0 to 2.17.0 are compatible with dcm4chee-web3, but the older dcm4chee-web is installed by default.</li>
+
+<li><p>For dcm4chee 2.17.1+, dcm4chee-web3 is already installed.</p>
+
+<p>To check if it is the latest version, start dcm4chee-web3 (<a href="http://localhost:8080/dcm4chee-web3/">http://localhost:8080/dcm4chee-web3/</a>), log in, and mouse over the dcm4chee.org icon in the upper right corner.</p></li>
+</ul></li>
+
+<li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download these Weasis files.
+<div class="notices warning" ><p><strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.</p>
 </div>
 </p>
 
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
+<ul>
+<li>From the folder with the latest version number:
 
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
+<ul>
+<li>weasis.war</li>
+<li>weasis-i18n.war (Optional for internationalization)</li>
+</ul></li>
+<li>From weasis-pacs-connector folder:
 
-<p><div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
+<ul>
+<li>dcm4chee-web-weasis.jar</li>
+<li>weasis-pacs-connector.war</li>
+</ul></li>
+</ul></li>
+
+<li><p>Place these files in the dcm4chee deploy folder (server/default/deploy/).</p></li>
+
+<li><p>To activate Weasis, go to the JMX console (at <a href="http://localhost:8080/jmx-console">http://localhost:8080/jmx-console</a>)</p>
+
+<ul>
+<li><p>In <em>dcm4chee.web</em> select <em>service=WebConfig</em> and set these two values:</p>
+
+<pre><code>WebviewerNames = weasis
+WebviewerBaseUrl = NONE
+</code></pre>
+
+<p>From weasis-pacs-connector 5.0 WebviewerBaseUrl can have different values:</p>
+
+<ul>
+<li>Launch Weasis as an external application (default value when NONE): WebviewerBaseUrl = <code>weasis:/weasis-pacs-connector/viewer</code></li>
+
+<li><p>Launch Weasis as an Applet in the web browser (not recommended as several browsers block Java plugin) : WebviewerBaseUrl = <code>weasis:/weasis-pacs-connector/viewer-applet</code></p></li>
+
+<li><p>Launching Weasis from jnlp protocol. The new way of <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#new-way-to-launch-jnlp">launching Java Westart</a> file (jnlp) will require an absolute URL:</p>
+
+<ul>
+<li>weasis:jnlp://YOUR-host:8080/weasis-pacs-connector/viewer</li>
+<li>weasis:jnlps://YOUR-host:8443/weasis-pacs-connector/viewer</li>
+</ul>
+
+<p>From dcm4chee 2.18.3, it possible to reuse the default host name of dcm4chee:</p>
+
+<ul>
+<li>weasis:jnlp://${server.host}:8080/weasis-pacs-connector/viewer</li>
+<li>weasis:jnlps://${server.host}:8443/weasis-pacs-connector/viewer</li>
+</ul></li>
+</ul></li>
+
+<li><p>Click the <em>Apply Changes</em> button</p></li>
+</ul></li>
+
+<li><p>Configure Weasis (This step is optional if you just want to keep the default configuration. It is required when the AETitle DCM4CHEE has been changed)
+The default configuration is stored in two files inside weasis-pacs-connector.war.
+To override the default configuration:</p>
+
+<ul>
+<li><p>According to the version of  weasis-pacs-connector:</p>
+
+<ul>
+<li><p>weasis-pacs-connector 4.x and 5.x: Download <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/raw/58221aeed3d2abc1929c0753ebeaa53c67fcc46a/src/main/resources/weasis-connector-default.properties" download>weasis-connector-default.properties</a> and rename it <code>weasis-pacs-connector.properties</code></p></li>
+
+<li><p>weasis-pacs-connector 6.x and superior: Download the current <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/weasis-connector-default.properties" download>weasis-connector-default.properties</a> and rename it <code>weasis-pacs-connector.properties</code>, and download <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/dicom-dcm4chee.properties" download>dicom-dcm4chee.properties</a> (configuration of the dcm4chee archive)</p></li>
+</ul></li>
+
+<li><p>Copy the files into a folder in the classpath of the servlet container. In JBoss (inferior to version 7), the best location would typically be server/default/conf.</p></li>
+
+<li><p>Edit the configuration as needed.
+For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed.</p>
+
+<p>If so, edit <em>weasis-pacs-connector.properties</em> or <em>dicom-dcm4chee.properties</em> for weasis-pacs-connector 6.x. Edit the properties: pacs.host, pacs.port, pacs.aet&hellip;</p></li>
+
+<li><p>Optional: add new properties or arguments in the JNLP file, see <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#configuration-of-weasis-pacs-connector">configuration of weasis-pacs-connector</a></p></li>
+</ul></li>
+
+<li><p>That&rsquo;s all, now restart dcm4chee and launch Weasis from the dcm4chee-web3 portal.</p></li>
+</ol>
+
+<hr />
+
+<h3 id="for-dcm4chee-web-old-web-interface-before-2-17-1">For dcm4chee-web (old web interface - before 2.17.1)</h3>
+
+<ol>
+<li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download:</p>
+
+<ul>
+<li>The last Weasis version: weasis.war</li>
+<li>The Weasis internationalization (translation): weasis-i18n.war (optional)</li>
+<li>The modified <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/dcm4chee-web/">dcm4chee web interface</a> dcm4chee-web/<em>version</em>/dcm4chee-web.war)
+<div class="notices info" ><p><strong>dcm4chee version</strong>:   dcm4chee-web.war has been built only for some dcm4chee versions. For other versions see <a href="../../basics/customize/rebuild-dcm4chee-web">rebuild dcm4chee-web</a> from any version.</p>
 </div>
-</p>
+</li>
+</ul></li>
 
-<h2 id="documentation-website">Documentation website</h2>
+<li><p>Place these three files into the deploy folder (server/default/deploy/) of dcm4chee.</p></li>
 
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo</code> &ndash; source code is <a href="https://github.com/nroduit/nroduit.github.io">available here at GitHub</a></p>
+<li><p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+
+<blockquote>
+<p>folder.*=edit,move,delete,<span style="color:red">view</span>,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+
+<p>&hellip;</p>
+
+<p>folder=WebUser(send,<span style="color:red">view</span>);DatacareUser(edit,move,delete,export_xds,<span style="color:red">view</span>);WebAdmin(*)</p>
+</blockquote></li>
+
+<li><p>That&rsquo;s all, now restart dcm4chee and launch Weasis from the web portal.</p></li>
+</ol>
+
+<hr />
+
+<h3 id="write-weasis-portable-to-dicom-cds-with-dcm4chee-cdw">Write weasis-portable to DICOM CDs with dcm4chee-cdw</h3>
+
+<ol>
+<li>Install <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/dcm4chee-cdw/">dcm4chee-cdw</a> (see doc/INSTALL.txt in the archive)</li>
+<li>Extract <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">weasis-portable.zip</a> into the ../dcm4chee/server/default/data/mergedir directory</li>
+<li>Go to the dcm4che jmx console (dcm4chee.cdw):
+
+<ul>
+<li>Select the MediaCreationMgtSCP item and set to <code>true</code> the value of DefaultIncludeDisplayApplication</li>
+<li>Select the MakeIsoImage item and set to <code>4</code> the value of isoLevel</li>
+</ul></li>
+<li>Click on the <em>Apply Changes</em> button
+<div class="notices tip" ><p><strong>Embedding a Java Runtime for Windows</strong>: The executable (viewer-win32.exe) allows to embed a JRE in the relative directory &ldquo;jre/windows&rdquo; (e.g. weasis-portable/jre/windows/bin/java.exe). To support 32 and 64-bit architecture, copy 32-bit Java Rutime from its installed directory.<br>
+<br>Note: the embedded Java Runtime is used only when no runtime is available on the system. When Java is run from CD, it could be a little slow.</p>
+</div>
+</li>
+</ol>
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
+
         
         </div> 
         
@@ -1163,8 +1396,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1178,6 +1409,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1195,132 +1427,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1378,6 +1486,133 @@
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -1474,8 +1709,10 @@
 
 
         
+            <a class="nav nav-prev" href="/en/getting-started/" title="Getting Started"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/en/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/en/getting-started/building-weasis/" title="Building Weasis" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1513,3 +1750,4 @@
 </script>
   </body>
 </html>
+

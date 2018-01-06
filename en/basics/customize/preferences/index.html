@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Weasis Medical Viewer :: Documentation</title>
+    <title>Preferences :: Documentation</title>
 
     
     <link href="/css/nucleus.css?1515228130" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/">
+  <body class="" data-url="/en/basics/customize/preferences/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -529,7 +529,7 @@
   
     
     <li data-nav-id="/en/basics/" title="Basics" class="dd-item 
-        
+        parent
         
         
         ">
@@ -596,7 +596,7 @@
   
     
     <li data-nav-id="/en/basics/customize/" title="Customize" class="dd-item 
-        
+        parent
         
         
         ">
@@ -641,7 +641,7 @@
  
   
     
-      <li data-nav-id="/en/basics/customize/preferences/" title="Preferences" class="dd-item ">
+      <li data-nav-id="/en/basics/customize/preferences/" title="Preferences" class="dd-item active">
         <a href="/en/basics/customize/preferences/">
         Preferences
         <i class="fa fa-check read-icon"></i>
@@ -885,22 +885,10 @@
                   
                     
                     
-                      <option id="en" value="/en/" selected>English</option>
+                      <option id="en" value="/en/basics/customize/preferences/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="fr" value="/fr/">Français</option>
-                    
                   
               
           
@@ -954,184 +942,615 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/basics/customize/preferences.en.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/basics/'>Basics</a> > <a href='/en/basics/customize/'>Customize</a> > Preferences
+          
+         
+          
+         
+          
+         
+          
+        
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#priority-order-for-loading-a-property">Priority order for loading a property</a></li>
+</ul></li>
+<li><a href="#list-of-preferences">List of preferences</a>
+<ul>
+<li><a href="#examples-of-properties-in-ext-config-properties">Examples of properties in ext-config.properties</a></li>
+<li><a href="#customize-resources">Customize resources</a></li>
+<li><a href="#how-to-add-dicom-node-or-dicom-printers-configuration-at-the-server-side-only-from-weasis-2-5-0">How to add DICOM node or DICOM printers configuration at the server side (only from Weasis 2.5.0)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
 
         
         <div id="body-inner">
           
+            <h1>Preferences</h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
-
- 
-
-
-<h1 id="center-weasis-medical-viewer-center"><center>Weasis Medical Viewer</center></h1>
-
-<p>Weasis is a multipurpose standalone and web-based DICOM viewer with a highly <a href="../basics/architecture">modular architecture</a>.</p>
-
-<p>It has been designed to meet several expectations of clinical information systems and their future evolution regarding medical imaging: providing a web-based access to radiological images, as well as offering multimedia capabilities.</p>
 
 
 
+<p>The WEB distribution (weasis.war) allows to deliver preferences from the server side to the client side. Some preferences on the server side are used by Weasis only during the first launch, because they can be changed lately in the Weasis user interface. The other preferences at server side are used by Weasis at every launch.</p>
 
+<p>Local preferences can be modified:</p>
 
-  
+<ul>
+<li>in the Weasis user interface: File &gt; Preferences</li>
+<li>in files stored in ${user.home}/.weasis/preferences/ (not recommended)</li>
+</ul>
 
+<p>Preferences on the server side can be modified:</p>
 
+<ul>
+<li>in the jnlp file (see how to configure weasis-jnlp.xml at <a href="../../../getting-started/dcm4chee">Installing Weasis in DCM4CHEE</a>)</li>
+<li>in ext-config.properties which extends (override) the configuration of config.properties. Files are located in the /weasis/conf directory of weasis.war and in Osirix web server: ~/Library/Application Support/OsiriX/weasis-ext-config.properties.</li>
+</ul>
 
-<script src="/js/load-photoswipe.js"></script>
+<div class="notices tip" ><p>How to modify ext-config.properties:</p>
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
-
-
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-<div class="pswp__bg"></div>
-
-<div class="pswp__scroll-wrap">
-    
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    
-    <div class="pswp__ui pswp__ui--hidden">
-    <div class="pswp__top-bar">
-      
-      <div class="pswp__counter"></div>
-      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-      <button class="pswp__button pswp__button--share" title="Share"></button>
-      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-      
-      
-      <div class="pswp__preloader">
-        <div class="pswp__preloader__icn">
-          <div class="pswp__preloader__cut">
-            <div class="pswp__preloader__donut"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-      <div class="pswp__share-tooltip"></div>
-    </div>
-    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-    </button>
-    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-    </button>
-    <div class="pswp__caption">
-      <div class="pswp__caption__center"></div>
-    </div>
-    </div>
-    </div>
+<ul>
+<li>Unzip weasis.war, modify the file and zip it again.</li>
+<li>It is also possible to change the default location of ext-config.properties with the Java property &ldquo;felix.extended.config.properties&rdquo; either in JNLP file or in the Java VM argument. The ext-config.properties file can also be placed in a plugin package, see <a href="../build-plugins">How to build and install a plug-in</a>.</li>
+</ul>
 </div>
 
 
+<h3 id="priority-order-for-loading-a-property">Priority order for loading a property</h3>
 
-<p>
-<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<p>Here is the priority order to set a property:</p>
 
-<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/Add%20Measurements.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Add Measurements</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/Add%20Measurements.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/Internationalization.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Internationalization</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/Internationalization.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery1/MPR%20View.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>MPR View</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery1/MPR%20View.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
+<ol>
+<li>Java System property (can be passed as arguments to Java Runtime either by VM arguments or in jnlp with Java Web Start)</li>
+<li>Property defined in weasis/conf/ext-config.properties or in weasis/conf/config.properties</li>
+<li>Default value of the property (see table below)</li>
+</ol>
+
+<p>Example to change language property (It will work only during the first launch of Weasis on a user session, otherwise delete ${user.home}/.weasis/preferences/).</p>
+
+<ol>
+<li><p>If you are using weasis-pacs-connector, add in weasis-jnlp.xml the property with the prefix &ldquo;jnlp.weasis.&rdquo; (properties starting by &ldquo;jnlp.&rdquo; are required when jnlp is not signed):</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;jnlp.weasis.locale.lang.code&#34;</span> <span class="na">value=</span><span class="s">&#34;fr_CH&#34;</span> <span class="nt">/&gt;</span></code></pre></div></li>
+
+<li><p>Add the property in weasis/conf/ext-config.properties:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">locale.lang.code<span class="o">=</span>fr_CH</code></pre></div></li>
+
+<li><p>The default value is &ldquo;en_US&rdquo;</p></li>
+</ol>
+
+<h2 id="list-of-preferences">List of preferences</h2>
+
+<ul>
+<li><strong>GUI</strong>: if <strong>yes</strong>, the property can be modified in the Weasis user interface.</li>
+<li><strong>Type</strong>: <strong>F</strong>: only caught at the first launch of the viewer. <strong>A</strong>: always caught by the to the viewer.
+<font size="2"></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default value</th>
+<th>GUI</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>weasis.language</td>
+<td>en</td>
+<td>yes</td>
+<td>F</td>
+<td>Language code defined by <a href="http://lcweb.loc.gov/standards/iso639-2/langcodes.html">ISO 639</a>. Replaced by locale.lang.code in Weasis 2</td>
+</tr>
+
+<tr>
+<td>weasis.country</td>
+<td>US</td>
+<td>yes</td>
+<td>F</td>
+<td>Country or region code defined by <a href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html">ISO 3166</a>. Replaced by locale.lang.code in Weasis 2</td>
+</tr>
+
+<tr>
+<td>weasis.variant</td>
+<td></td>
+<td>yes</td>
+<td>F</td>
+<td>Optional variant code. Replaced by locale.lang.code in Weasis 2</td>
+</tr>
+
+<tr>
+<td>weasis.confirm.closing</td>
+<td>false (from 2.0.0)</td>
+<td>yes</td>
+<td>F</td>
+<td>Show a message of confirmation when closing the application.</td>
+</tr>
+
+<tr>
+<td>weasis.look</td>
+<td>SubstanceTwilight  AquaLookAndFeel (Mac)</td>
+<td>yes</td>
+<td>F</td>
+<td>Look and feel, if the Substance library is not loaded, Nimbus will be used by default.</td>
+</tr>
+
+<tr>
+<td>weasis.look.${system}</td>
+<td>SubstanceTwilight  AquaLookAndFeel (Mac)</td>
+<td>yes</td>
+<td>F</td>
+<td>Look and feel, specific to the platform (macosx, linux, windows).</td>
+</tr>
+
+<tr>
+<td>weasis.show.disclaimer</td>
+<td>true</td>
+<td>no</td>
+<td>A</td>
+<td>Show a disclaimer (requires to be accepted to start the application) during the first launch of Weasis.</td>
+</tr>
+
+<tr>
+<td>weasis.show.release</td>
+<td>true (from 2.0.0)</td>
+<td>no</td>
+<td>A</td>
+<td>Show a message when the release has changed</td>
+</tr>
+
+<tr>
+<td>weasis.export.dicom</td>
+<td>true (from 1.2.5)</td>
+<td>no</td>
+<td>A</td>
+<td>Allows exporting DICOM files.</td>
+</tr>
+
+<tr>
+<td>weasis.portable.dicom.cache</td>
+<td>true</td>
+<td>no</td>
+<td>A</td>
+<td>Cache the images imported from directories defined in weasis.portable.dicom.directory. If true, it is similar to the WEB import.</td>
+</tr>
+
+<tr>
+<td>org.apache.sling.commons.log.level</td>
+<td>INFO</td>
+<td>yes</td>
+<td>F</td>
+<td>Sets the logging level of the loggers. This may be any of the defined logging levels TRACE, DEBUG, INFO, WARN, ERROR.</td>
+</tr>
+
+<tr>
+<td>org.apache.sling.commons.log.file.activate</td>
+<td>false</td>
+<td>yes</td>
+<td>F</td>
+<td>Activate the log file. If this property is false, log messages are written to System.out. Since Weasis 2.0.4</td>
+</tr>
+
+<tr>
+<td>org.apache.sling.commons.log.file.number</td>
+<td>5</td>
+<td>yes</td>
+<td>F</td>
+<td>The number of rotated files to keep.</td>
+</tr>
+
+<tr>
+<td>org.apache.sling.commons.log.file.size</td>
+<td>10MB</td>
+<td>yes</td>
+<td>F</td>
+<td>Defines how the log file is rotated by size.</td>
+</tr>
+
+<tr>
+<td>org.apache.sling.commons.log.pattern</td>
+<td>{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}</td>
+<td>no</td>
+<td>F</td>
+<td>Formatting log messages. java.util.MessageFormat pattern supporting up to six arguments: {0} The timestamp of type java.util.Date, {1} the log marker, {2} the name of the current thread, {3} the name of the logger, {4} the debug level and {5} the actual debug message.</td>
+</tr>
+
+<tr>
+<td><strong>ONLY from Weasis 2.0</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>locale.lang.code</td>
+<td>en</td>
+<td>yes</td>
+<td>F</td>
+<td>Language code (see <a href="http://www.oracle.com/technetwork/java/javase/locales-137662.html">Java Locale</a>). If value is &ldquo;system&rdquo; then the locale of the operating system will be used (client-side).</td>
+</tr>
+
+<tr>
+<td>locale.format.code</td>
+<td>system</td>
+<td>yes</td>
+<td>F</td>
+<td>Format code for number and date (see <a href="http://www.oracle.com/technetwork/java/javase/locales-137662.html">Java Locale</a>). If value is &ldquo;system&rdquo; then the locale of the operating system will be used (client-side).</td>
+</tr>
+
+<tr>
+<td>weasis.name</td>
+<td>Weasis</td>
+<td>no</td>
+<td>A</td>
+<td>Change the name of the application everywhere in UI</td>
+</tr>
+
+<tr>
+<td>weasis.profile</td>
+<td>default</td>
+<td>no</td>
+<td>A</td>
+<td>Application profile, it allows having a custom preferences directory on the client side (will not shared preferences with other Weasis instances)</td>
+</tr>
+
+<tr>
+<td>weasis.resources.url</td>
+<td>${weasis.codebase.url}/resources.zip</td>
+<td>no</td>
+<td>A</td>
+<td>Application resource files (logo, presets, LUTs&hellip;). &ldquo;resources.zip&rdquo; is downloaded again only when the last modified date has changed.</td>
+</tr>
+
+<tr>
+<td>weasis.download.immediately</td>
+<td>true</td>
+<td>yes</td>
+<td>F</td>
+<td>Start to download series immediately</td>
+</tr>
+
+<tr>
+<td>download.concurrent.series</td>
+<td>3</td>
+<td>no</td>
+<td>A</td>
+<td>The number of concurrent series downloads</td>
+</tr>
+
+<tr>
+<td>download.concurrent.series.images</td>
+<td>4</td>
+<td>no</td>
+<td>A</td>
+<td>The number of concurrent image downloads in a series</td>
+</tr>
+
+<tr>
+<td>audit.log</td>
+<td>false</td>
+<td>no</td>
+<td>A</td>
+<td>Audit log for giving statistics about usage of Weasis</td>
+</tr>
+
+<tr>
+<td>weasis.color.wl.apply</td>
+<td>true</td>
+<td>yes</td>
+<td>F</td>
+<td>Allow to apply Window/Level on color images</td>
+</tr>
+
+<tr>
+<td>weasis.dicom.root.uid</td>
+<td><a href="http://www.oid-info.com/get/2.25">2.25</a></td>
+<td>no</td>
+<td>A</td>
+<td>Set value for dicom root UID when creating DICOM objects (KO or PR). See <a href="http://www.iana.org/assignments/enterprise-numbers">company list</a>.</td>
+</tr>
+
+<tr>
+<td>{ui keys}</td>
+<td>true</td>
+<td>no</td>
+<td>A</td>
+<td>Make visible or not the Toolbars, Tools, some buttons, main menu and context menu items (see ext-config.properties file)</td>
+</tr>
+
+<tr>
+<td>weasis.aet</td>
+<td>WEASIS_AE</td>
+<td>no</td>
+<td>A</td>
+<td>Calling AETitle for DICOM send and DICOM print</td>
+</tr>
+
+<tr>
+<td><strong>ONLY from Weasis 2.5.3</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>org.apache.sling.commons.log.stack.limit</td>
+<td>3</td>
+<td>yes</td>
+<td>F</td>
+<td>Defines the maximum number of lines for stack trace (0 =&gt; NONE, -1 =&gt; ALL)</td>
+</tr>
+
+<tr>
+<td>weasis.export.dicom.send</td>
+<td>true</td>
+<td>no</td>
+<td>A</td>
+<td>Allows DICOM send. Is always false when weasis.export.dicom=false.</td>
+</tr>
+
+<tr>
+<td>weasis.import.dicom</td>
+<td>true</td>
+<td>no</td>
+<td>A</td>
+<td>Allows importing DICOMs</td>
+</tr>
+
+<tr>
+<td>weasis.import.dicom.qr</td>
+<td>true</td>
+<td>no</td>
+<td>A</td>
+<td>Allows DICOM Q/R. Is always false when weasis.import.dicom=false.</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.global.display</td>
+<td>PatientID,PatientName, PatientBirthDate, PatientSex, AccessionNumber, StudyDescription</td>
+<td>no</td>
+<td>A</td>
+<td>Global tags at the patient or study level that are visible in Dicomizer</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.global.edit</td>
+<td>StudyDescription</td>
+<td>no</td>
+<td>A</td>
+<td>Global tags which are editable</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.global.required</td>
+<td>PatientID, PatientName, AccessionNumber, StudyDescription</td>
+<td>no</td>
+<td>A</td>
+<td>Global tags which are required for publication</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.series.display</td>
+<td>Modality, OperatorsName, ReferringPhysicianName, BodyPartExamined, SeriesDescription</td>
+<td>no</td>
+<td>A</td>
+<td>Tags at the series level that are visible in Dicomizer</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.series.edit</td>
+<td>ReferringPhysicianName, BodyPartExamined, SeriesDescription</td>
+<td>no</td>
+<td>A</td>
+<td>Series tags which are editable</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.series.required</td>
+<td>Modality, SeriesDescription</td>
+<td>no</td>
+<td>A</td>
+<td>Series tags which are required for publication</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.image.display</td>
+<td>ImageComments, ContentDate, ContentTime</td>
+<td>no</td>
+<td>A</td>
+<td>Tags at the image level that are visible in Dicomizer</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.image.edit</td>
+<td>ImageComments, ContentDate, ContentTime</td>
+<td>no</td>
+<td>A</td>
+<td>Image tags which are editable</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.image.required</td>
+<td>ContentDate</td>
+<td>no</td>
+<td>A</td>
+<td>Image tags which are required for publication</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.dest.host</td>
+<td>localhost</td>
+<td>no</td>
+<td>A</td>
+<td>Host name of DICOM send destination for Dicomizer. If no value, the list of DICOM nodes for storage is displayed.</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.dest.aet</td>
+<td>DCM4CHEE</td>
+<td>no</td>
+<td>A</td>
+<td>AETitle of DICOM send destination for Dicomizer</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.dest.port</td>
+<td>11112</td>
+<td>no</td>
+<td>A</td>
+<td>Port of DICOM send destination for Dicomizer</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.study.description</td>
+<td>Pictures of follow-up,Pictures of observation,Pictures preoperative,Pictures intraoperative,Pictures postoperative</td>
+<td>no</td>
+<td>A</td>
+<td>Comma-separated list of study description elements. Comment this property to have a free text field.</td>
+</tr>
+
+<tr>
+<td>weasis.acquire.meta.series.description</td>
+<td></td>
+<td>no</td>
+<td>A</td>
+<td>Comma-separated list of series description elements. Comment this property to have a free text field.</td>
+</tr>
+
+<tr>
+<td><strong>ONLY from Weasis 2.6.0</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>weasis.level.inverse</td>
+<td>true</td>
+<td>yes</td>
+<td>F</td>
+<td>Inverse level direction (moving the cursor down to increase brightness)</td>
+</tr>
+
+<tr>
+<td>weasis.apply.latest.pr</td>
+<td>false</td>
+<td>yes</td>
+<td>F</td>
+<td>Apply by default the most recent Presentation State to the related image</td>
+</tr>
+</tbody>
+</table>
+
+<p></font>
+<div class="notices info" ><p>Preferences of the portable distribution (weasis-portable.zip)</p>
+
+<ul>
+<li>ext-config.properties is located in weasis/conf</li>
+<li>file resources are located in weasis/resources</li>
+</ul>
 </div>
 </p>
 
-<p>Weasis can be easily connect to any PACS supporting WADO via a web portal or as an XDS-I consumer in an IHE (Integrating the Healthcare Enterprise) environment.</p>
+<h3 id="examples-of-properties-in-ext-config-properties">Examples of properties in ext-config.properties</h3>
 
-<p>
+<p>Changing the default Look and feel</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Define the Look an Feel for the first launch according to the platform (macosx, linux, windows)
+</span><span class="c1"></span>weasis.look<span class="o">=</span>org.pushingpixels.substance.api.skin.SubstanceSaharaLookAndFeel
+weasis.look.macosx<span class="o">=</span>com.apple.laf.AquaLookAndFeel
+weasis.look.linux<span class="o">=</span>org.pushingpixels.substance.api.skin.SubstanceGraphiteAquaLookAndFeel</code></pre></div>
+<h3 id="customize-resources">Customize resources</h3>
+
+<p>The resources are located:</p>
+
+<ul>
+<li>in web distribution: in &rdquo;resources.zip&rdquo; at root of weasis.war (see above how to set a new URL for resources)</li>
+<li>in portable distribution:  in ./weasis/resources</li>
+</ul>
+
+<h3 id="how-to-add-dicom-node-or-dicom-printers-configuration-at-the-server-side-only-from-weasis-2-5-0">How to add DICOM node or DICOM printers configuration at the server side (only from Weasis 2.5.0)</h3>
+
+<ul>
+<li>From the graphical user interface, configure the DICOM printers (File &gt; Print &gt; DICOM Print) or DICOM nodes (File &gt; Preferences &gt; Dicom node list)</li>
+<li>Go to he folder ${user.home}/.weasis/data/weasis-dicom-explorer</li>
+<li>Copy the desired configuration files: dicomNodes.xml, dicomPrinterNodes.xml, dicomWebNodes.xml and dicomCallingNodes.xml</li>
+<li>Paste at the root path of ressources. For web distribution, unzip, place files and zip again.</li>
+<li>The new configurations should appears for all the users as non editable configurations.</li>
+</ul>
 
 
-<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Cross-lines.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Cross-lines</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Cross-lines.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Display%20DICOM%20ECG.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Display DICOM ECG</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Display%20DICOM%20ECG.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://nroduit.github.io/gallery2/Display%20DICOM%20RT.jpg');" >
-						
-				    </div>
-			      <figcaption>
-		          <p>Display DICOM RT</p>
-			      </figcaption>
-				    <a href="https://nroduit.github.io/gallery2/Display%20DICOM%20RT.jpg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-</div>
-</p>
-
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page, and pullrequest it</p>
-
-<p><div class="notices info" ><p>Your modification will be deployed automatically when merged.</p>
-</div>
-</p>
-
-<h2 id="documentation-website">Documentation website</h2>
-
-<p>This current documentation has been statically generated with Hugo with a simple command : <code>hugo</code> &ndash; source code is <a href="https://github.com/nroduit/nroduit.github.io">available here at GitHub</a></p>
+<footer class=" footline" >
 	
-  
+</footer>
+
+
         
         </div> 
         
@@ -1246,6 +1665,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1260,6 +1680,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1293,6 +1716,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1305,6 +1729,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1322,21 +1749,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1354,24 +1766,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -1402,19 +1798,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -1464,6 +1847,54 @@
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1474,8 +1905,10 @@
 
 
         
+            <a class="nav nav-prev" href="/en/basics/customize/integration/" title="Integration"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/en/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/en/basics/customize/build-plugins/" title="Build Plug-ins" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1513,3 +1946,4 @@
 </script>
   </body>
 </html>
+
