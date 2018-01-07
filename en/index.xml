@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Weasis Medical Viewer on Documentation</title>
+    <title>Weasis Medical Viewer on Weasis Documentation</title>
     <link>https://nroduit.github.io/en/</link>
-    <description>Recent content in Weasis Medical Viewer on Documentation</description>
+    <description>Recent content in Weasis Medical Viewer on Weasis Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
-      <description>This page describes how to install Weasis to be the default web viewer of dcm4chee web interface.
+      <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface.
 Weasis is launched from the dcm4chee administrative web interface, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.
    Weasis in dcm4chee-arc-light
       Weasis in dcm4chee-web3
