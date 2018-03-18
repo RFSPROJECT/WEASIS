@@ -108,6 +108,15 @@ We highly recommend the use of Eclipse IDE, because all the following instructio
     </item>
     
     <item>
+      <title>PACS in Bhutan</title>
+      <link>https://nroduit.github.io/en/stories/bhutan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/stories/bhutan/</guid>
+      <description>Read more here&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Spatial Calibration</title>
       <link>https://nroduit.github.io/en/tutorials/calibration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -143,6 +152,15 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       
       <guid>https://nroduit.github.io/en/basics/customize/rebuild-dcm4chee-web/</guid>
       <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems  JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
+    </item>
+    
+    <item>
+      <title>Weasis Multi-Touch</title>
+      <link>https://nroduit.github.io/en/tutorials/touch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/touch/</guid>
+      <description>Master Thesis of Gérôme Pasquier   Try it from the demo server</description>
     </item>
     
     <item>
