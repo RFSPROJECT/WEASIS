@@ -55,10 +55,6 @@
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/stories/bhutan/</loc>
-  </url>
-  
-  <url>
     <loc>https://nroduit.github.io/en/tutorials/calibration/</loc>
   </url>
   
@@ -79,11 +75,19 @@
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/tutorials/touch/</loc>
+    <loc>https://nroduit.github.io/en/getting-started/translating/</loc>
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/getting-started/translating/</loc>
+    <loc>https://nroduit.github.io/en/tutorials/theme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nroduit.github.io/en/tutorials/locale/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nroduit.github.io/en/tutorials/touch/</loc>
   </url>
   
   <url>

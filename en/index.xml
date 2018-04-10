@@ -108,15 +108,6 @@ We highly recommend the use of Eclipse IDE, because all the following instructio
     </item>
     
     <item>
-      <title>PACS in Bhutan</title>
-      <link>https://nroduit.github.io/en/stories/bhutan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nroduit.github.io/en/stories/bhutan/</guid>
-      <description>Read more here&amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>Spatial Calibration</title>
       <link>https://nroduit.github.io/en/tutorials/calibration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -155,15 +146,6 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
     </item>
     
     <item>
-      <title>Weasis Multi-Touch</title>
-      <link>https://nroduit.github.io/en/tutorials/touch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nroduit.github.io/en/tutorials/touch/</guid>
-      <description>Master Thesis of Gérôme Pasquier   Try it from the demo server</description>
-    </item>
-    
-    <item>
       <title>Internationalization</title>
       <link>https://nroduit.github.io/en/getting-started/translating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -172,6 +154,36 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help translating to your language! If your language is missing, just head over to Transifex and request a new language.
 Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
  Special characters: Some characters representing values (%d, %s), new line (\n) and html tags must not be translated.</description>
+    </item>
+    
+    <item>
+      <title>Styles and themes</title>
+      <link>https://nroduit.github.io/en/tutorials/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/theme/</guid>
+      <description>How to apply another theme Changing from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired look and feel (click on show to see a partial preview)
+Changing the default look and feel value See preferences</description>
+    </item>
+    
+    <item>
+      <title>Translation</title>
+      <link>https://nroduit.github.io/en/tutorials/locale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/locale/</guid>
+      <description>How to change the language and regional settings Changing from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired language and the regional format.
+Anywhere in the user interface, date and number should be display with the selected regional format.
+ Changing the default locale setting See preferences</description>
+    </item>
+    
+    <item>
+      <title>Weasis Multi-Touch</title>
+      <link>https://nroduit.github.io/en/tutorials/touch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/touch/</guid>
+      <description>Master Thesis of Gérôme Pasquier   Try it from the demo server</description>
     </item>
     
     <item>
