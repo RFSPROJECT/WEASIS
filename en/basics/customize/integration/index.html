@@ -25,18 +25,18 @@
     <title>Integration :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1523385068" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1523385068" rel="stylesheet">
+    <link href="/css/nucleus.css?1524312223" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1524312223" rel="stylesheet">
     
-    <link href="/css/featherlight.min.css?1523385068" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1523385068" rel="stylesheet">
-    <link href="/css/auto-complete.css?1523385068" rel="stylesheet">
-    <link href="/css/theme.css?1523385068" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1523385068" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1524312223" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1524312223" rel="stylesheet">
+    <link href="/css/auto-complete.css?1524312223" rel="stylesheet">
+    <link href="/css/theme.css?1524312223" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1524312223" rel="stylesheet">
     
-    <link href="/css/syntax.css?1523385068" rel="stylesheet">
+    <link href="/css/syntax.css?1524312223" rel="stylesheet">
 
-    <script src="/js/jquery-2.x.min.js?1523385068"></script>
+    <script src="/js/jquery-2.x.min.js?1524312223"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -409,14 +409,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1523385068"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1523385068"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1524312223"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1524312223"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1523385068"></script>
+<script type="text/javascript" src="/js/search.js?1524312223"></script>
 
     
   </div>
@@ -1072,7 +1072,7 @@
 <ul>
 <li><a href="#center-how-to-launch-weasis-from-any-environments-center"><center>How to launch Weasis from any environments</center></a></li>
 <li><a href="#use-weasis-pacs-connector">Use weasis-pacs-connector</a></li>
-<li><a href="#build-your-own-connector">Build your own connector</a>
+<li><a href="#build-your-connector">Build your connector</a>
 <ul>
 <li><a href="#build-a-jnlp">Build a JNLP</a></li>
 <li><a href="#build-an-xml-manifest">Build an XML manifest</a></li>
@@ -1119,20 +1119,20 @@ See also the new way of launching <a target="_blank" href="https://github.com/nr
 </div>
 
 Workflow where the manifest is embedded in the jnlp file (synchrone processes):
-<img src="/images/connector-wk-emb.png?classes=border" alt="embedding the xml manifest" title="Embedding the xml manifest" /></p>
+<img src="/images/connector-wk-emb.png?classes=border" alt="embedding the XML manifest" title="Embedding the xml manifest" /></p>
 
-<h2 id="build-your-own-connector">Build your own connector</h2>
+<h2 id="build-your-connector">Build your connector</h2>
 
-<p>This method have two requirements:</p>
+<p>This method has two requirements:</p>
 
 <ol>
-<li>Building a jnlp file for launching Weasis</li>
-<li>Building a xml manifest to donwload images</li>
+<li>Building a JNLP file for launching Weasis</li>
+<li>Building a XML manifest to download images</li>
 </ol>
 
 <h3 id="build-a-jnlp">Build a JNLP</h3>
 
-<p>Build a <a target="_blank" href="https://docs.oracle.com/javase/8/docs/technotes/guides/javaws/developersguide/contents.html">Java Webstart</a> file (.jnlp) for launching Weasis. This file has at least one dynamic parameter (<code>&lt;argument&gt;$dicom:get ... &lt;/argument&gt;</code>) to download images. Generally it is the <a href="#build-an-xml-manifest">xml file</a> containing the UIDs.</p>
+<p>Build a <a target="_blank" href="https://docs.oracle.com/javase/8/docs/technotes/guides/javaws/developersguide/contents.html">Java Webstart</a> file (.jnlp) for launching Weasis. This file has at least one dynamic parameter (<code>&lt;argument&gt;$dicom:get ... &lt;/argument&gt;</code>) to download images. Generally, it is the <a href="#build-an-xml-manifest">XML file</a> containing the UIDs.</p>
 <div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
 <span class="cp">&lt;!DOCTYPE jnlp PUBLIC &#34;-//Sun Microsystems, Inc//DTD JNLP Descriptor 6.0//EN&#34; &#34;http://java.sun.com/dtd/JNLP-6.0.dtd&#34;&gt;</span>
   <span class="nt">&lt;jnlp</span> <span class="na">spec=</span><span class="s">&#34;1.6+&#34;</span> <span class="na">codebase=</span><span class="s">&#34;http://localhost:8080/weasis&#34;</span> <span class="na">href=</span><span class="s">&#34;&#34;</span><span class="nt">&gt;</span>
@@ -1189,7 +1189,7 @@ Workflow where the manifest is embedded in the jnlp file (synchrone processes):
     <span class="c">&lt;!-- Example for opening dicom files from remote xml file --&gt;</span>
     <span class="nt">&lt;argument&gt;</span>$dicom:get -w &#34;http://localhost:8080/dcm4chee-web/wadoQueries/wado_query3888637380.xml.gz&#34;<span class="nt">&lt;/argument&gt;</span>
 
-    <span class="c">&lt;!-- Example for opening dicom files from local foler --&gt;</span>
+    <span class="c">&lt;!-- Example for opening dicom files from a local folder --&gt;</span>
         <span class="nt">&lt;argument&gt;</span>$dicom:get -l &#34;/home/Images/MRIX LUMBAR/&#34;<span class="nt">&lt;/argument&gt;</span>
 
     <span class="c">&lt;!-- Example for opening dicom files by embedding the xml file encoded in gzip and then in base64, it must be in one line without space at the beginning --&gt;</span>
@@ -1199,7 +1199,7 @@ Workflow where the manifest is embedded in the jnlp file (synchrone processes):
     <span class="nt">&lt;argument&gt;</span>$dicom:get -r &#34;http://server/images/img1.dcm http://server/images/img2.dcm&#34;<span class="nt">&lt;/argument&gt;</span>
   <span class="nt">&lt;/application-desc&gt;</span>
   <span class="nt">&lt;/jnlp&gt;</span></code></pre></div>
-<div class="notices note" ><p>Replace <code>http://localhost:8080/weasis</code> by your server location and <code>&lt;argument&gt;...&lt;/argument&gt;</code> by your data to load. Adapt other parameters if necessary.</p>
+<div class="notices note" ><p>Replace <code>http://localhost:8080/weasis</code> with your server location and <code>&lt;argument&gt;...&lt;/argument&gt;</code> with your data to load. Adapt other parameters if necessary.</p>
 </div>
 
 
@@ -1692,20 +1692,20 @@ Workflow where the manifest is embedded in the jnlp file (synchrone processes):
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1523385068"></script>
-    <script src="/js/jquery.sticky.js?1523385068"></script>
-    <script src="/js/featherlight.min.js?1523385068"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1523385068"></script>
-    <script src="/js/highlight.pack.js?1523385068"></script>
+    <script src="/js/clipboard.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1524312223"></script>
+    <script src="/js/jquery.sticky.js?1524312223"></script>
+    <script src="/js/featherlight.min.js?1524312223"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1524312223"></script>
+    <script src="/js/highlight.pack.js?1524312223"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1523385068"></script>
-    <script src="/js/learn.js?1523385068"></script>
-    <script src="/js/hugo-learn.js?1523385068"></script>
+    <script src="/js/modernizr.custom.71422.js?1524312223"></script>
+    <script src="/js/learn.js?1524312223"></script>
+    <script src="/js/hugo-learn.js?1524312223"></script>
 
-    <link href="/mermaid/mermaid.css?1523385068" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1523385068"></script>
+    <link href="/mermaid/mermaid.css?1524312223" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1524312223"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

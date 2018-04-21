@@ -25,18 +25,18 @@
     <title>Build Plug-ins :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1523385068" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1523385068" rel="stylesheet">
+    <link href="/css/nucleus.css?1524312223" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1524312223" rel="stylesheet">
     
-    <link href="/css/featherlight.min.css?1523385068" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1523385068" rel="stylesheet">
-    <link href="/css/auto-complete.css?1523385068" rel="stylesheet">
-    <link href="/css/theme.css?1523385068" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1523385068" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1524312223" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1524312223" rel="stylesheet">
+    <link href="/css/auto-complete.css?1524312223" rel="stylesheet">
+    <link href="/css/theme.css?1524312223" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1524312223" rel="stylesheet">
     
-    <link href="/css/syntax.css?1523385068" rel="stylesheet">
+    <link href="/css/syntax.css?1524312223" rel="stylesheet">
 
-    <script src="/js/jquery-2.x.min.js?1523385068"></script>
+    <script src="/js/jquery-2.x.min.js?1524312223"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -409,14 +409,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1523385068"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1523385068"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1524312223"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1524312223"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1523385068"></script>
+<script type="text/javascript" src="/js/search.js?1524312223"></script>
 
     
   </div>
@@ -1079,7 +1079,7 @@
 <li><a href="#for-weasis-portable-distribution">For weasis-portable distribution</a></li>
 <li><a href="#for-the-web-distribution">For the WEB distribution</a></li>
 </ul></li>
-<li><a href="#build-osgi-services">Build OSGI services</a></li>
+<li><a href="#build-osgi-services">Build OSGi services</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1105,20 +1105,20 @@
 
 <h2 id="center-how-to-build-and-install-a-plug-in-center"><center>How to build and install a plug-in</center></h2>
 
-<p>This page describes how to build new Weasis plug-ins and how they can be incorporated to the distributions, see also this <a href="../../../getting-started/guidelines">page</a> for the IDE configuration.</p>
+<p>This page describes how to build new Weasis plug-ins and how they can be incorporated into the distributions, see also this <a href="../../../getting-started/guidelines">page</a> for the IDE configuration.</p>
 
 <h3 id="list-of-plug-ins-types">List of plug-ins types</h3>
 
 <ul>
 <li>Media viewer or editor (main central panel that implements <code>ViewerPlugin</code> or <code>ImageViewerPlugin</code> and the factory implements <code>SeriesViewerFactory</code>)</li>
-<li>Toolbar associated to a viewer (implements <code>Toolbar</code>)</li>
-<li>Tool associated to a viewer (right panel that implements <code>DockableTool</code>)</li>
-<li>Data explorer (data model implements <code>DataExplorerModel</code> and data view implements <code>DataExplorerView</code>, and the factory implements <code>DataExplorerViewFactory</code>)</li>
+<li>Toolbar associated with a viewer (implements <code>Toolbar</code>)</li>
+<li>Tool associated with a viewer (right panel that implements <code>DockableTool</code>)</li>
+<li>Data Explorer (data model implements <code>DataExplorerModel</code> and data view implements <code>DataExplorerView</code>, and the factory implements <code>DataExplorerViewFactory</code>)</li>
 <li>Import data into an explorer (ex. <code>ImportDicom</code> and the factory implements <code>DicomImportFactory</code>)</li>
 <li>Export data into an explorer (ex. <code>ExportDicom</code> and the factory implements <code>DicomExportFactory</code>)</li>
 <li>DICOM editor or viewer for special modalities (<code>DicomSpecialElementFactory</code> and <code>SeriesViewerFactory</code>), see weasis-dicom-sr</li>
 <li>Media codec (implements <code>Codec</code>)</li>
-<li>Perferences (implements <code>PreferencesPageFactory</code>)</li>
+<li>Preferences (implements <code>PreferencesPageFactory</code>)</li>
 <li>UI aggregator. This is the application main user interface bundle. The maven artifact of this bundle must be defined in config.properties (ex. weasis.main.ui=weasis-base-ui)</li>
 </ul>
 
@@ -1186,13 +1186,13 @@
 </div>
 </li>
 
-<li><p>weasis-ext is the default web context when launching Weasis, using another web context requires to modify the property weasis.ext.url, it can be done by:</p>
+<li><p>weasis-ext is the default web context when launching Weasis, using another web context requires modifying the property weasis.ext.url, it can be done by:</p>
 
 <ul>
-<li>changin the property in jnlp template in <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#configuration-of-weasis-pacs-connector">weasis-pacs-connector configuration</a>.</li>
+<li>changing the property in jnlp template in <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#configuration-of-weasis-pacs-connector">weasis-pacs-connector configuration</a>.</li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> weasis.ext.url<span class="o">=</span><span class="si">${</span><span class="nv">server</span><span class="p">.base.url</span><span class="si">}</span>/weasis-newext</code></pre></div>
-<div class="notices note" ><p>It is aslo possible to add the code base for plugins (cdb-ext) directly in the URL: <code>http://localhost:8080/weasis-pacs-connector/viewer?patientID=9702672&amp;cdb-ext=http://localhost:8080/plugins/weasis-ext</code></p>
+<div class="notices note" ><p>It is also possible to add the code base for plugins (cdb-ext) directly in the URL: <code>http://localhost:8080/weasis-pacs-connector/viewer?patientID=9702672&amp;cdb-ext=http://localhost:8080/plugins/weasis-ext</code></p>
 </div>
 </li>
 </ul>
@@ -1202,7 +1202,7 @@
 </div>
 
 
-<p><a href="https://github.com/nroduit/weasis-plugins-war-builder">Example</a> that make a package of <a href="http://github.com/nroduit/weasis-isowriter">weasis-isowriter</a> plugin:</p>
+<p><a href="https://github.com/nroduit/weasis-plugins-war-builder">An example</a> that makes a package of <a href="http://github.com/nroduit/weasis-isowriter">weasis-isowriter</a> plugin:</p>
 
 <ul>
 <li><p>Build &ldquo;weasis-ext.war&rdquo;:</p>
@@ -1216,12 +1216,12 @@
 </code></pre></li>
 </ul>
 
-<h3 id="build-osgi-services">Build OSGI services</h3>
+<h3 id="build-osgi-services">Build OSGi services</h3>
 
-<p>All the plug-in type described in the list above are OSGI services that are registered and aggregated in the GUI. Building the plug-in from the Maven archetype will configure automatically the OSGI service. For adding new OSGI services, here is the procedure:</p>
+<p>All the plug-in type described in the list above are OSGi services that are registered and aggregated in the GUI. Building the plug-in from the Maven archetype will configure the OSGi service automatically. For adding new OSGi services, here is the procedure:</p>
 
 <ol>
-<li><p>Create a class implementing one of the plug-in type and add at least the annotations <em>@Component</em> and <em>@Service</em>, for instance:
+<li><p>Create a class implementing one of the plug-in types and add at least the annotations <em>@Component</em> and <em>@Service</em>, for instance:
 ﻿</p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Component</span><span class="o">(</span><span class="n">immediate</span> <span class="o">=</span> <span class="kc">false</span><span class="o">)</span>
 <span class="nd">@Service</span>
@@ -1232,7 +1232,7 @@
 </div>
 </li>
 
-<li><p>Add in pom.xml of the plug-in the maven-scr-plugin (to generate xml file from the Java annotations) and the property for loading any xml file in maven-bundle-plugin:
+<li><p>Add in pom.xml of the plug-in the maven-scr-plugin (to generate XML file from the Java annotations) and the property for loading any XML file in maven-bundle-plugin:
 ﻿</p>
 <div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;build&gt;</span>
 <span class="nt">&lt;plugins&gt;</span>
@@ -1667,20 +1667,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1523385068"></script>
-    <script src="/js/jquery.sticky.js?1523385068"></script>
-    <script src="/js/featherlight.min.js?1523385068"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1523385068"></script>
-    <script src="/js/highlight.pack.js?1523385068"></script>
+    <script src="/js/clipboard.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1524312223"></script>
+    <script src="/js/jquery.sticky.js?1524312223"></script>
+    <script src="/js/featherlight.min.js?1524312223"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1524312223"></script>
+    <script src="/js/highlight.pack.js?1524312223"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1523385068"></script>
-    <script src="/js/learn.js?1523385068"></script>
-    <script src="/js/hugo-learn.js?1523385068"></script>
+    <script src="/js/modernizr.custom.71422.js?1524312223"></script>
+    <script src="/js/learn.js?1524312223"></script>
+    <script src="/js/hugo-learn.js?1524312223"></script>
 
-    <link href="/mermaid/mermaid.css?1523385068" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1523385068"></script>
+    <link href="/mermaid/mermaid.css?1524312223" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1524312223"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

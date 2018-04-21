@@ -25,18 +25,18 @@
     <title>Guidelines :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1523385068" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1523385068" rel="stylesheet">
+    <link href="/css/nucleus.css?1524312223" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1524312223" rel="stylesheet">
     
-    <link href="/css/featherlight.min.css?1523385068" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1523385068" rel="stylesheet">
-    <link href="/css/auto-complete.css?1523385068" rel="stylesheet">
-    <link href="/css/theme.css?1523385068" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1523385068" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1524312223" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1524312223" rel="stylesheet">
+    <link href="/css/auto-complete.css?1524312223" rel="stylesheet">
+    <link href="/css/theme.css?1524312223" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1524312223" rel="stylesheet">
     
-    <link href="/css/syntax.css?1523385068" rel="stylesheet">
+    <link href="/css/syntax.css?1524312223" rel="stylesheet">
 
-    <script src="/js/jquery-2.x.min.js?1523385068"></script>
+    <script src="/js/jquery-2.x.min.js?1524312223"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -409,14 +409,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1523385068"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1523385068"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1524312223"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1524312223"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1523385068"></script>
+<script type="text/javascript" src="/js/search.js?1524312223"></script>
 
     
   </div>
@@ -1099,7 +1099,7 @@
 
 <p>This page is intended for developers who want to contribute to Weasis and it is a recommendation for developers who want to create their own plug-ins, see also <a href="../../basics/customize/build-plugins">How to build and install a plug-in</a>.</p>
 
-<p>We highly recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless to have a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in <a href="#debug-or-run-from-eclipse">Debug or Run from Eclipse</a>.</p>
+<p>We highly recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless, for having a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in <a href="#debug-or-run-from-eclipse">Debug or Run from Eclipse</a>.</p>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -1121,7 +1121,7 @@
 <h3 id="configure-eclipse">Configure Eclipse</h3>
 
 <ul>
-<li>You can edit the VM options of the <a target="_blank" href="http://wiki.eclipse.org/Eclipse.ini">eclipse.ini</a> file in your eclipse folder. For instance the maximum memory for the JVM or the JVM location can be specified.</li>
+<li>You can edit the VM options of the <a target="_blank" href="http://wiki.eclipse.org/Eclipse.ini">eclipse.ini</a> file in your eclipse folder. For instance, the maximum memory for the JVM or the JVM location can be specified.</li>
 <li>Start Eclipse and select the path of the Weasis workspace
 <div class="notices note" ><p>It is recommended to create a new Workspace for keeping a specific Weasis configuration.</p>
 </div>
@@ -1142,7 +1142,7 @@
 <ol>
 <li>Maximum line length is 120 characters.</li>
 <li>Use spaces instead of tabs.</li>
-<li>Indendation size is 4 spaces.</li>
+<li>Indentation size is 4 spaces.</li>
 <li>Do not insert a new line before opening brace. Insert a new line before closing brace.</li>
 <li>Use fully qualified import statements, i.e. do not use asterisks.</li>
 </ol>
@@ -1188,7 +1188,7 @@
 <li>Press, <em>Next</em> and then <em>Finnish</em></li>
 <li>From Eclipse menu, open <em>File &gt; Import&hellip;</em></li>
 <li>In the <em>New</em> dialog, select <em>Maven &gt; Existing Maven Projects</em>, click <em>Next</em> and select the &ldquo;Weasis&rdquo; or &ldquo;weasis-dev&rdquo; directory.</li>
-<li>As it is generally not necessary to get all the Maven projects visible into Eclipse, <em>Deselect</em> <em>All</em> and select only the plugins your are interested in (at least weasis-launcher and weasis-framework).
+<li>As it is generally not necessary to get all the Maven projects visible into Eclipse, <em>Deselect</em> <em>All</em> and select only the plugins you are interested in (at least weasis-launcher and weasis-framework).
 <div class="notices tip" ><p>See <a target="_blank" href="http://wiki.eclipse.org/EGit/User_Guide">Egit documentation</a></p>
 </div>
 </li>
@@ -1213,11 +1213,11 @@
 <div class="notices warning" ><p>Getting errors on the projects. Try the following instructions:</p>
 
 <ul>
-<li>Right click on the project and <em>Maven &gt; Update Project Configuration</em></li>
-<li>Right click on the project and select <em>Refresh</em></li>
+<li>Right-click on the project and <em>Maven &gt; Update Project Configuration</em></li>
+<li>Right-click on the project and select <em>Refresh</em></li>
 <li><em>Project &gt; Update All Maven Dependencies</em></li>
 <li><em>Project &gt; Clean all projects</em></li>
-<li>Right click <em>Close Project</em> and then <em>Open Project</em></li>
+<li>Right-click <em>Close Project</em> and then <em>Open Project</em></li>
 </ul>
 </div>
 
@@ -1272,7 +1272,7 @@
 <p><div class="notices note" ><p>For more commands at startup see <a href="../../basics/commands">Weasis commands</a>.</p>
 </div>
 
-<div class="notices warning" ><p>In Eclipse launcher parameters, &lsquo;&amp;&rsquo; wihtin URLs needs to be escaped with backslash.</p>
+<div class="notices warning" ><p>In Eclipse launcher parameters, &lsquo;&amp;&rsquo; within URLs needs to be escaped with a backslash.</p>
 </div>
 </p></li>
 
@@ -1716,20 +1716,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1523385068"></script>
-    <script src="/js/jquery.sticky.js?1523385068"></script>
-    <script src="/js/featherlight.min.js?1523385068"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1523385068"></script>
-    <script src="/js/highlight.pack.js?1523385068"></script>
+    <script src="/js/clipboard.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1524312223"></script>
+    <script src="/js/jquery.sticky.js?1524312223"></script>
+    <script src="/js/featherlight.min.js?1524312223"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1524312223"></script>
+    <script src="/js/highlight.pack.js?1524312223"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1523385068"></script>
-    <script src="/js/learn.js?1523385068"></script>
-    <script src="/js/hugo-learn.js?1523385068"></script>
+    <script src="/js/modernizr.custom.71422.js?1524312223"></script>
+    <script src="/js/learn.js?1524312223"></script>
+    <script src="/js/hugo-learn.js?1524312223"></script>
 
-    <link href="/mermaid/mermaid.css?1523385068" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1523385068"></script>
+    <link href="/mermaid/mermaid.css?1524312223" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1524312223"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -25,18 +25,18 @@
     <title>Embedding in dcm4chee :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1523385068" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1523385068" rel="stylesheet">
+    <link href="/css/nucleus.css?1524312223" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1524312223" rel="stylesheet">
     
-    <link href="/css/featherlight.min.css?1523385068" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1523385068" rel="stylesheet">
-    <link href="/css/auto-complete.css?1523385068" rel="stylesheet">
-    <link href="/css/theme.css?1523385068" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1523385068" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1524312223" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1524312223" rel="stylesheet">
+    <link href="/css/auto-complete.css?1524312223" rel="stylesheet">
+    <link href="/css/theme.css?1524312223" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1524312223" rel="stylesheet">
     
-    <link href="/css/syntax.css?1523385068" rel="stylesheet">
+    <link href="/css/syntax.css?1524312223" rel="stylesheet">
 
-    <script src="/js/jquery-2.x.min.js?1523385068"></script>
+    <script src="/js/jquery-2.x.min.js?1524312223"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -409,14 +409,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1523385068"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1523385068"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1524312223"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1524312223"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1523385068"></script>
+<script type="text/javascript" src="/js/search.js?1524312223"></script>
 
     
   </div>
@@ -1223,30 +1223,21 @@
 </ul></li>
 </ul></li>
 
-<li><p>Open the <a target="_blank" href="http://localhost:9990/">management console</a>. </p>
+<li><p>Open the <a target="_blank" href="http://localhost:9990/">wildfly management console</a> (at <code>http://&lt;your-host&gt;:9990</code>).</p>
 
-<ol>
+<ul>
 <li>Select the “Deployments” tab</li>
 <li>Add the .war files using the “Add” button (Choose Upload a new deployment or select Replace when the file already exists)</li>
-</ol></li>
-
-<li><p>Configure weasis-pacs-connector 6.x and superior (required to change the default WADO configuration).The default configuration is stored in two files inside weasis-pacs-connector.war. To override the default configuration:</p>
-
-<ul>
-<li><p>Download the current <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/weasis-connector-default.properties" download>weasis-connector-default.properties</a> and rename it <code>weasis-pacs-connector.properties</code>, and download <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/dicom-dcm4chee.properties" download>dicom-dcm4chee.properties</a> (configuration of the dcm4chee archive)</p></li>
-
-<li><p>Copy the files into wildfly/standalone/configuration.</p></li>
-
-<li><p>As the default configuration of <strong>dicom-dcm4chee.properties</strong> is defined for dcm4chee-web3, it is necessary to modify at least:   </p>
-
-<ul>
-<li>The WADO url of arc-light: <code>arc.wado.url=${server.base.url}/dcm4chee-arc/aets/DCM4CHEE/wado</code></li>
-<li>To accept all the syntaxes (otherwise arc-light will uncompress all the images): <code>wado.addparams=&amp;transferSyntax=\*</code></li>
 </ul></li>
 
-<li><p>Edit the configuration as needed. For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed. If so, edit <code>weasis-pacs-connector.properties</code> or <code>dicom-dcm4chee.properties</code> (Change pacs.host, pacs.port, and pacs.aet).</p></li>
+<li><p>Configure weasis-pacs-connector 6.x and superior. The default configuration is stored in two files inside weasis-pacs-connector.war . To override the default configuration:</p>
 
-<li><p>Optional: add new properties or arguments in the JNLP file, see <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#configuration-of-weasis-pacs-connector">configuration of weasis-pacs-connector</a></p></li>
+<ul>
+<li>Download the current <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/etc/dcm4chee-arc/weasis-pacs-connector.properties" download>weasis-pacs-connector.properties</a> and <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/etc/dcm4chee-arc/dicom-dcm4chee-arc.properties" download>dicom-dcm4chee-arc.properties</a> (configuration of the dcm4chee archive)</li>
+<li>Copy the <code>weasis-pacs-connector.properties</code> or <code>dicom-dcm4chee-arc.properties</code>  into wildfly/standalone/configuration</li>
+<li>Edit the configuration as needed. For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed. If so, edit <code>weasis-pacs-connector.properties</code> or <code>dicom-dcm4chee-arc.properties</code> (Change pacs.host, pacs.port, and pacs.aet).</li>
+<li>Optional: add new properties or arguments in the JNLP file, see the <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#configuration-of-weasis-pacs-connector">configuration of weasis-pacs-connector</a></li>
+<li>For applying the new configuration, from the management console &ldquo;Disable&rdquo; weasis-pacs-connector.war and then &ldquo;Enable&rdquo;</li>
 </ul></li>
 
 <li><p>To activate Weasis in dcm4chee-arc-light user interface (required 5.10.2 or superior), you need need to changes two attributes in the configuration</p>
@@ -1257,21 +1248,20 @@ or from Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Archi
 And fill up the following properties: </p>
 
 <ul>
-<li><p>Invoke Image Display Patient URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=PATIENT&amp;patientID={}</code></p></li>
-
-<li><p>Invoke Image Display Study URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID={}</code>
-<div class="notices tip" ><p><strong>Absolute path</strong>: The values above starting by &ldquo;../&rdquo; are the default relative path when weasis-pacs-connector is installed in the same JBoss as dcm4chee. Otherwise replace the relative URL by an absolute value, ex: <code>http://YOUR-host:8080/weasis-pacs-connector/...</code></p>
+<li>Invoke Image Display Patient URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=PATIENT&amp;patientID={}</code></li>
+<li>Invoke Image Display Study URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID={}</code>
+<div class="notices tip" ><p><strong>Absolute path</strong>: The values above starting by &ldquo;../&rdquo; are the default relative path when weasis-pacs-connector is installed in the same JBoss as dcm4chee. Otherwise replace the relative URL by an absolute value, ex: <code>http://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code></p>
 </div>
 
 <div class="notices note" ><p><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#new-way-to-launch-jnlp">The new way of launching Java Westart</a> file (jnlp) will also require an absolute URL as the scheme of the URL is different:<br>
-<code>jnlp://YOUR-host:8080/weasis-pacs-connector/...</code><br> <code>jnlps://YOUR-host:8443/weasis-pacs-connector/...</code> (TLS connection)</p>
+<code>jnlp://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code><br> <code>jnlps://&lt;your-host&gt;:8443/weasis-pacs-connector/...</code> (TLS connection)<br> Replace &ldquo;&lt;your-host&gt;&rdquo; with your server hostname</p>
 </div>
-</p></li>
+</li>
 </ul></li>
 
-<li><p>Refresh the web page and the view button should appears as in the screenshot above</p></li>
+<li><p>Refresh the web page and the view button should appear as in the screenshot above</p></li>
 
-<li><p>Alternative way to configure the activation from a LDAP manager (like Apache Directory Studio)</p>
+<li><p>An alternative way to configure the activation is with an LDAP manager (like Apache Directory Studio)</p>
 
 <ol>
 <li>Connect to LDAP, see <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Installation#import-default-configuration-into-ldap-server">dcm4chee configuration</a></li>
@@ -1293,7 +1283,7 @@ And fill up the following properties: </p>
 
 <li><p>For dcm4chee 2.17.1+, dcm4chee-web3 is already installed.</p>
 
-<p>To check if it is the latest version, start dcm4chee-web3 (<a href="http://localhost:8080/dcm4chee-web3/">http://localhost:8080/dcm4chee-web3/</a>), log in, and mouse over the dcm4chee.org icon in the upper right corner.</p></li>
+<p>To check if it is the latest version, start dcm4chee-web3 (<code>http://&lt;your-host&gt;:8080/dcm4chee-web3/</code>), log in, and mouse over the dcm4chee.org icon in the upper right corner.</p></li>
 </ul></li>
 
 <li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download these Weasis files.
@@ -1318,7 +1308,7 @@ And fill up the following properties: </p>
 
 <li><p>Place these files in the dcm4chee deploy folder (server/default/deploy/).</p></li>
 
-<li><p>To activate Weasis, go to the JMX console (at <a href="http://localhost:8080/jmx-console">http://localhost:8080/jmx-console</a>)</p>
+<li><p>To activate Weasis, go to the JMX console (at <code>http://&lt;your-host&gt;:8080/jmx-console</code>)</p>
 
 <ul>
 <li><p>In <em>dcm4chee.web</em> select <em>service=WebConfig</em> and set these two values:</p>
@@ -1337,8 +1327,11 @@ WebviewerBaseUrl = NONE
 <li><p>Launching Weasis from jnlp protocol. The new way of <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#new-way-to-launch-jnlp">launching Java Westart</a> file (jnlp) will require an absolute URL:</p>
 
 <ul>
-<li>weasis:jnlp://YOUR-host:8080/weasis-pacs-connector/viewer</li>
-<li>weasis:jnlps://YOUR-host:8443/weasis-pacs-connector/viewer</li>
+<li>weasis:jnlp://&lt;your-host&gt;:8080/weasis-pacs-connector/viewer</li>
+<li>weasis:jnlps://&lt;your-host&gt;:8443/weasis-pacs-connector/viewer
+<div class="notices warning" ><p>Replace &ldquo;&lt;your-host&gt;&rdquo; with your server hostname</p>
+</div>
+</li>
 </ul>
 
 <p>From dcm4chee 2.18.3, it possible to reuse the default host name of dcm4chee:</p>
@@ -1423,7 +1416,7 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
 <li>Select the MakeIsoImage item and set to <code>4</code> the value of isoLevel</li>
 </ul></li>
 <li>Click on the <em>Apply Changes</em> button
-<div class="notices tip" ><p><strong>Embedding a Java Runtime for Windows</strong>: The executable (viewer-win32.exe) allows to embed a JRE in the relative directory &ldquo;jre/windows&rdquo; (e.g. weasis-portable/jre/windows/bin/java.exe). To support 32 and 64-bit architecture, copy 32-bit Java Rutime from its installed directory.<br>
+<div class="notices tip" ><p><strong>Embedding a Java Runtime for Windows</strong>: The executable (viewer-win32.exe) allows to embed a JRE in the relative directory &ldquo;jre/windows&rdquo; (e.g. weasis-portable/jre/windows/bin/java.exe). To support 32 and 64-bit architecture, copy 32-bit Java Runtime from its installed directory.<br>
 <br>Note: the embedded Java Runtime is used only when no runtime is available on the system. When Java is run from CD, it could be a little slow.</p>
 </div>
 </li>
@@ -1839,20 +1832,20 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1523385068"></script>
-    <script src="/js/jquery.sticky.js?1523385068"></script>
-    <script src="/js/featherlight.min.js?1523385068"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1523385068"></script>
-    <script src="/js/highlight.pack.js?1523385068"></script>
+    <script src="/js/clipboard.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1524312223"></script>
+    <script src="/js/jquery.sticky.js?1524312223"></script>
+    <script src="/js/featherlight.min.js?1524312223"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1524312223"></script>
+    <script src="/js/highlight.pack.js?1524312223"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1523385068"></script>
-    <script src="/js/learn.js?1523385068"></script>
-    <script src="/js/hugo-learn.js?1523385068"></script>
+    <script src="/js/modernizr.custom.71422.js?1524312223"></script>
+    <script src="/js/learn.js?1524312223"></script>
+    <script src="/js/hugo-learn.js?1524312223"></script>
 
-    <link href="/mermaid/mermaid.css?1523385068" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1523385068"></script>
+    <link href="/mermaid/mermaid.css?1524312223" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1524312223"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

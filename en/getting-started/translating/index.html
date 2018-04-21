@@ -25,18 +25,18 @@
     <title>Internationalization :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1523385068" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1523385068" rel="stylesheet">
+    <link href="/css/nucleus.css?1524312223" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1524312223" rel="stylesheet">
     
-    <link href="/css/featherlight.min.css?1523385068" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1523385068" rel="stylesheet">
-    <link href="/css/auto-complete.css?1523385068" rel="stylesheet">
-    <link href="/css/theme.css?1523385068" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1523385068" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1524312223" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1524312223" rel="stylesheet">
+    <link href="/css/auto-complete.css?1524312223" rel="stylesheet">
+    <link href="/css/theme.css?1524312223" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1524312223" rel="stylesheet">
     
-    <link href="/css/syntax.css?1523385068" rel="stylesheet">
+    <link href="/css/syntax.css?1524312223" rel="stylesheet">
 
-    <script src="/js/jquery-2.x.min.js?1523385068"></script>
+    <script src="/js/jquery-2.x.min.js?1524312223"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -409,14 +409,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1523385068"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1523385068"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1524312223"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1524312223"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1523385068"></script>
+<script type="text/javascript" src="/js/search.js?1524312223"></script>
 
     
   </div>
@@ -1092,20 +1092,20 @@
 
 
 
-<p>The translation files are now hosted and managed on <a target="_blank" href="https://www.transifex.com/weasis/public/">Transifex</a> website. Get an account at <a target="_blank" href="https://www.transifex.com/signin">Transifex</a> and help translating to your language! If your language is missing, just head over to Transifex and request a new language.</p>
+<p>The translation files are now hosted and managed on <a target="_blank" href="https://www.transifex.com/weasis/public/">Transifex</a> website. Get an account at <a target="_blank" href="https://www.transifex.com/signin">Transifex</a> and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.</p>
 
 <div class="notices warning" ><p><strong>Text length</strong>: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).</p>
 </div>
 
 
-<div class="notices tip" ><p><strong>Special characters</strong>: Some characters representing values (%d, %s), new line (\n) and html tags must not be translated. For other translating recommendations, see <a target="_blank" href="https://docs.transifex.com/#translating">Transifex help</a><br>
+<div class="notices tip" ><p><strong>Special characters</strong>: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated. For other translating recommendations, see <a target="_blank" href="https://docs.transifex.com/#translating">Transifex help</a><br>
 For special words or particular contexts look at the &ldquo;Instructions&rdquo; text box (gives explanations or definitions).</p>
 </div>
 
 
 <h2 id="building-weasis-i18n">Building Weasis-i18n</h2>
 
-<p><a target="_blank" href="https://github.com/nroduit/weasis-i18n">weasis-i18n</a> is the internationalization project (i18n) of Weasis. As a separate project, it can have its own release cycle. The <a target="_blank" href="https://www.osgi.org">OSGI</a> fragments of plug-ins contain only the translation files which are merged during runtime to the matching module of the application.</p>
+<p><a target="_blank" href="https://github.com/nroduit/weasis-i18n">weasis-i18n</a> is the internationalization project (i18n) of Weasis. As a separate project, it can have its own release cycle. The <a target="_blank" href="https://www.osgi.org">OSGi</a> fragments of plug-ins contain only the translation files which are merged during runtime to the matching module of the application.</p>
 
 <div class="notices note" ><p>That means the weasis-i18n.war file can be deployed at any time, it does not need to follow the Weasis life cycle. The plug-in translation will be updated by Weasis only if the timestamp number has changed. This timestamp is set during the build phase described below.</p>
 </div>
@@ -1122,7 +1122,7 @@ The <a target="_blank" href="https://www.transifex.com/organization/weasis/dashb
 <li>JDK 8 or higher</li>
 <li>Maven 3 or higher<br>
 If your computer is behind a proxy server, <a target="_blank" href="http://maven.apache.org/guides/mini/guide-proxies.html">configure maven</a>.</li>
-<li>Git or directly download source from <a target="_blank" href="https://github.com/nroduit/weasis-i18n">gitub</a></li>
+<li>Git or directly download the source code from <a target="_blank" href="https://github.com/nroduit/weasis-i18n">GitHub</a></li>
 </ol>
 
 <h3 id="getting-the-source">Getting the Source</h3>
@@ -1147,7 +1147,7 @@ To update translation packs in weasis-portable, unzip weasis-i18n.zip and replac
 </div>
 
 
-<div class="notices note" ><p>weasis-launcher-i18n cannot not be updated dynamically as the launcher is not an OSGI module. It must be imported in the Weasis source (weasis-launcher).</p>
+<div class="notices note" ><p>weasis-launcher-i18n cannot be updated dynamically as the launcher is not an OSGi module. It must be imported in the Weasis source (weasis-launcher).</p>
 </div>
 
 
@@ -1564,20 +1564,20 @@ To update translation packs in weasis-portable, unzip weasis-i18n.zip and replac
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.min.js?1523385068"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1523385068"></script>
-    <script src="/js/jquery.sticky.js?1523385068"></script>
-    <script src="/js/featherlight.min.js?1523385068"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1523385068"></script>
-    <script src="/js/highlight.pack.js?1523385068"></script>
+    <script src="/js/clipboard.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.min.js?1524312223"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1524312223"></script>
+    <script src="/js/jquery.sticky.js?1524312223"></script>
+    <script src="/js/featherlight.min.js?1524312223"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1524312223"></script>
+    <script src="/js/highlight.pack.js?1524312223"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1523385068"></script>
-    <script src="/js/learn.js?1523385068"></script>
-    <script src="/js/hugo-learn.js?1523385068"></script>
+    <script src="/js/modernizr.custom.71422.js?1524312223"></script>
+    <script src="/js/learn.js?1524312223"></script>
+    <script src="/js/hugo-learn.js?1524312223"></script>
 
-    <link href="/mermaid/mermaid.css?1523385068" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1523385068"></script>
+    <link href="/mermaid/mermaid.css?1524312223" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1524312223"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
