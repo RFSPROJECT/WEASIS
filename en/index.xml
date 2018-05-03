@@ -66,6 +66,17 @@ Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) th
     </item>
     
     <item>
+      <title>Zoom</title>
+      <link>https://nroduit.github.io/en/tutorials/zoom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/zoom/</guid>
+      <description>Zoom tool The zoom tool can be associated with one of three mouse buttons or with the mouse scroll (top left toolbar). In the image below the zoom tool is associated with the left mouse button.
+The zoom factor can be modified from different locations:
+ by dragging the cursor over the image with the configured mouse button by scrolling the mouse wheel when configured by selecting an item in the zoom dropdown button in the toolbar from the context menu: right-click on the image &amp;gt; Zoom form the slider in the image tool panel  The zoom function always zooms in/out to the center of the screen regardless of where the cursor is.</description>
+    </item>
+    
+    <item>
       <title>Build KO and PR</title>
       <link>https://nroduit.github.io/en/tutorials/build-ko-pr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

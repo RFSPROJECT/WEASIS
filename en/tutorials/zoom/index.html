@@ -15,14 +15,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.31.1" />
-    <meta name="description" content="Redesigned user interface with JavaFX and multi-touch support">
-<meta name="keywords" content="javafx, multi-touch, touch, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, pacs viewer">
+    <meta name="description" content="How to manipulate zoom and lens">
+<meta name="keywords" content="zoom, lens, dicom viewer, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Weasis Multi-Touch :: Weasis Documentation</title>
+    <title>Zoom :: Weasis Documentation</title>
 
     
     <link href="/css/nucleus.css?1525366662" rel="stylesheet">
@@ -46,7 +46,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/tutorials/touch/">
+  <body class="" data-url="/en/tutorials/zoom/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -793,7 +793,7 @@
  
   
     
-      <li data-nav-id="/en/tutorials/zoom/" title="Zoom" class="dd-item ">
+      <li data-nav-id="/en/tutorials/zoom/" title="Zoom" class="dd-item active">
         <a href="/en/tutorials/zoom/">
         Zoom
         <i class="fa fa-check read-icon"></i>
@@ -888,7 +888,7 @@
  
   
     
-      <li data-nav-id="/en/tutorials/touch/" title="Weasis Multi-Touch" class="dd-item active">
+      <li data-nav-id="/en/tutorials/touch/" title="Weasis Multi-Touch" class="dd-item ">
         <a href="/en/tutorials/touch/">
         Weasis Multi-Touch
         <i class="fa fa-check read-icon"></i>
@@ -975,7 +975,7 @@
                   
                     
                     
-                      <option id="en" value="/en/tutorials/touch/" selected>English</option>
+                      <option id="en" value="/en/tutorials/zoom/" selected>English</option>
                     
                   
               
@@ -1038,7 +1038,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/tutorials/touch.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/tutorials/zoom.en.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1067,7 +1067,7 @@
             
           
           
-            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/tutorials/'>Tutorials</a> > Weasis Multi-Touch
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/tutorials/'>Tutorials</a> > Zoom
           
          
           
@@ -1083,7 +1083,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#center-master-thesis-of-gérôme-pasquier-center"><center>Master Thesis of Gérôme Pasquier</center></a></li>
+<li><a href="#zoom-tool">Zoom tool</a>
+<ul>
+<li><a href="#real-world-zoom">Real-world zoom</a></li>
+</ul></li>
+<li><a href="#magnifying-lens">Magnifying lens</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1098,7 +1102,7 @@
         
         <div id="body-inner">
           
-            <h1>Weasis Multi-Touch</h1>
+            <h1>Zoom</h1>
           
 
         
@@ -1106,15 +1110,69 @@
 
 
 
-<h2 id="center-master-thesis-of-gérôme-pasquier-center"><center>Master Thesis of Gérôme Pasquier</center></h2>
+<h2 id="zoom-tool">Zoom tool</h2>
 
+<p>The zoom tool can be associated with one of three mouse buttons or with the mouse scroll (top left toolbar). In the image below the zoom tool is associated with the left mouse button.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/0dGVDDlD0sQ?"
-  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+<p>The zoom factor can be modified from different locations:</p>
+
+<ul>
+<li>by dragging the cursor over the image with the configured mouse button</li>
+<li>by scrolling the mouse wheel when configured</li>
+<li>by selecting an item in the zoom dropdown button in the toolbar</li>
+<li>from the context menu: right-click on the image &gt; Zoom</li>
+<li>form the slider in the image tool panel</li>
+</ul>
+
+<div class="notices note" ><p>The zoom function always zooms in/out to the center of the screen regardless of where the cursor is.</p>
 </div>
 
-<p>Try it from <a href="../../demo">the demo server</a></p>
+
+<p><img src="/tuto/zoom/zoom.png" alt="Zoom tool" /></p>
+
+<div class="notices tip" ><p>For selecting directly the zoom action of the mouse left button, enter &ldquo;z&rdquo; as a shortcut.</p>
+</div>
+
+
+<h3 id="real-world-zoom">Real-world zoom</h3>
+
+<p>The real-world zoom allows displaying the content of the image at the same size of the real objects.</p>
+
+<p>The feature requires calibrating the screen where the image is displayed. From the main menu, open File &gt; Preferences (Alt + P) &gt; Monitors and click on &ldquo;Spatial calibration&rdquo;. Then enter a value that matches to the line length or the diagonal length of the screen.</p>
+
+<div class="notices note" ><p>Several screens can be calibrated. Each one has its own spatial calibration factor.</p>
+</div>
+
+
+<h2 id="magnifying-lens">Magnifying lens</h2>
+
+<p>The magnifying lens can be activated from the toggle button of the zoom toolbar (see the image below). It has several parameters accessible from the context menu.</p>
+
+<p>This lens can be used in many situations, for instance:</p>
+
+<ul>
+<li>to magnify a specific area</li>
+<li>to compare two images from the same series (select <code>Freeze image</code>)</li>
+<li>to display a specific area without the drawings (Unselect <code>Show Drawings</code>)</li>
+<li>to compare different values of Window/Level (select <code>Freeze parameters</code> - see image below)</li>
+</ul>
+
+<div class="notices note" ><p>Using the mouse wheel on the lens changes the zoom factor. Double-clicking on the lens adjusts the zoom factor of the lens to the one of the main image.</p>
+</div>
+
+
+<p><img src="/tuto/zoom/lens.png" alt="Lens" /></p>
+
+<p>Parameters of the context menu:</p>
+
+<ul>
+<li><em>Synchronize to parent zoom</em>: When this option is activated, the zoom factor of the lens is permanently adjusted to the zoom factor of the main image (meaningful when using freeze parameters).</li>
+<li><em>Show Drawings</em>: Displays in the lens the visible drawings.</li>
+<li><em>Magnify</em>: Allows to select a zoom magnitude.</li>
+<li><em>Image</em>: <code>Freeze parameters</code> allows to keep the current image processing (c.f. Window/level, LUT or filter) and <code>Freeze image</code> allows to keep the current image and its parameters.</li>
+</ul>
+
+<p><img src="/tuto/zoom/lens-freeze.png" alt="Lens freeze" /></p>
 
 
 <footer class=" footline" >
@@ -1412,6 +1470,23 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1490,23 +1565,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1515,9 +1573,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -1536,10 +1591,10 @@
 
 
         
-            <a class="nav nav-prev" href="/en/tutorials/locale/" title="Translation"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/en/tutorials/" title="Tutorials"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/en/stories/" title="Stories" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/en/tutorials/build-ko-pr/" title="Build KO and PR" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
