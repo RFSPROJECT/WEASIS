@@ -168,6 +168,16 @@ Text length: The translations for many languages frequently exceed the length of
     </item>
     
     <item>
+      <title>DICOM Attributes</title>
+      <link>https://nroduit.github.io/en/tutorials/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/tags/</guid>
+      <description>How to display DICOM attributes The DICOM attributes can be displayed either by:
+ selecting the &amp;ldquo;Dicom Information&amp;rdquo; layout from the layout dropdown button (A) clicking on the &amp;ldquo;Dicom Information&amp;rdquo; button in the toolbar to open a detached window (B)  Using the view in the layout (A) allows updating dynamically the DICOM attributes to the current image (e.g. scrolling into the series). The DICOM attributes won&amp;rsquo;t change when opening the detached window (B).</description>
+    </item>
+    
+    <item>
       <title>Styles and themes</title>
       <link>https://nroduit.github.io/en/tutorials/theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -183,9 +193,9 @@ Changing the default look and feel value See preferences</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/locale/</guid>
-      <description>How to change the language and regional settings Switching from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired language and the regional format.
+      <description>How to change the language and regional settings Switching from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired language and the regional format. The languages available in the list can be partially translated, check Internationalization.
 Anywhere in the user interface, date and number should be displayed with the selected regional format.
- Changing the default locale setting See preferences</description>
+ Changing the default locale settings If you need to change the default settings, please see the preferences.</description>
     </item>
     
     <item>
