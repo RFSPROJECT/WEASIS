@@ -15,14 +15,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.31.1" />
-    <meta name="description" content="Weasis: an open source DICOM viewer which is modular, multiplatform, web-based and mulitlingual. It can be easly integrated in any medical system">
-<meta name="keywords" content="dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer, clinical viewer, radiolgical viewer, linux dicom viewer, mac dicom viewer">
+    <meta name="description" content="How to print images">
+<meta name="keywords" content="print, view, dicom viewer">
 <meta name="author" content="Nicolas Roduit">
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Getting Started :: Weasis Documentation</title>
+    <title>Print :: Weasis Documentation</title>
 
     
     <link href="/css/nucleus.css?1526024826" rel="stylesheet">
@@ -46,7 +46,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/getting-started/">
+  <body class="" data-url="/en/tutorials/print/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -433,8 +433,8 @@
   
     
     <li data-nav-id="/en/getting-started/" title="Getting Started" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/en/getting-started/">
@@ -767,7 +767,7 @@
   
     
     <li data-nav-id="/en/tutorials/" title="Tutorials" class="dd-item 
-        
+        parent
         
         
         ">
@@ -869,7 +869,7 @@
  
   
     
-      <li data-nav-id="/en/tutorials/print/" title="Print" class="dd-item ">
+      <li data-nav-id="/en/tutorials/print/" title="Print" class="dd-item active">
         <a href="/en/tutorials/print/">
         Print
         <i class="fa fa-check read-icon"></i>
@@ -1013,7 +1013,7 @@
                   
                     
                     
-                      <option id="en" value="/en/getting-started/" selected>English</option>
+                      <option id="en" value="/en/tutorials/print/" selected>English</option>
                     
                   
               
@@ -1076,7 +1076,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/getting-started/_index.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/tutorials/print.en.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1101,7 +1101,13 @@
             
           
           
-            <a href='/en/'>Weasis Medical Viewer</a> > Getting Started
+            
+            
+          
+          
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/tutorials/'>Tutorials</a> > Print
+          
+         
           
          
           
@@ -1115,11 +1121,11 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#build-the-image-selection-to-print">Build the image selection to print</a></li>
+<li><a href="#select-a-print-mode">Select a print mode</a>
 <ul>
-<li><a href="#try-weasis-now">Try Weasis now</a></li>
-<li><a href="#general-topics">General Topics</a></li>
-<li><a href="#developer-documentation">Developer Documentation</a></li>
+<li><a href="#standard-printer">Standard Printer</a></li>
+<li><a href="#dicom-print">DICOM Print</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1135,7 +1141,7 @@
         
         <div id="body-inner">
           
-            <h1>Getting Started</h1>
+            <h1>Print</h1>
           
 
         
@@ -1143,47 +1149,57 @@
 
 
 
-<h3 id="try-weasis-now">Try Weasis now</h3>
+<h2 id="build-the-image-selection-to-print">Build the image selection to print</h2>
 
-<ul>
-<li><a href="../demo">Live demo</a> with different DICOM dataset.</li>
-<li>Download the latest <a  href="https://sourceforge.net/projects/dcm4che/files/Weasis" target="_blank" class="btn btn-default">weasis-portable.zip <i class="fa fa-download"></i></a><br>
-Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Environment (JRE 8 or higher) be installed on your machine to run. From recent Mac OS X releases, you need to install JDK and to <a target="_blank" href="https://www.tekrevue.com/tip/gatekeeper-macos-sierra/">disable GateKeeper</a>.
-<div class="notices tip" ><p>Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis">google group</a> (Choose Email to read this group) to stay informed about new releases and updates.</p>
+<p>The image selection to print must be prepared before calling the print function. If you need to print more than one image per page, choose a layout from the dropdown button in the toolbar (1).</p>
+
+<div class="notices note" ><p>The layout list is built dynamically according to the window size. So changing the window size ratio will provide other layouts. For instance, with a panoramic screen, you can choose a horizontal layout and then print with a landscape orientation.</p>
 </div>
-</li>
-</ul>
 
-<h3 id="general-topics">General Topics</h3>
 
-<ul>
-<li><a href="dcm4chee">Installing Weasis in DCM4CHEE</a></li>
-<li><a href="../tutorials">Tutorials</a></li>
-<li><a target="_blank" href="http://groups.google.com/group/dcm4che">New Forum</a> (Old <a target="_blank" href="http://forums.dcm4che.org/jiveforums/forum.jspa?forumID=29&start=0">Weasis Forum</a>)</li>
-<li><a href="../faq">Frequently Asked Questions (FAQs)</a></li>
-<li><a href="../basics/dicom">Dicom Conformance and IHE</a></li>
-<li><a href="../get-involved">Get Involved!</a></li>
-</ul>
+<p><img src="/tuto/print/layout.jpg?height=400" alt="Print Layout" /></p>
 
-<h3 id="developer-documentation">Developer Documentation</h3>
+<p>To fill the layout with images you can change the synchronized mode of series (2):</p>
 
 <ul>
-<li><a target="_blank" href="http://www.dcm4che.org/jira/browse/WEA">JIRA bug tracking and project management</a></li>
-<li><a href="building-weasis">Building Weasis from source</a></li>
-<li><a href="translating">Translating Weasis Plug-ins</a></li>
-<li><a href="../basics/customize/preferences">Weasis Preferences</a></li>
-<li><a href="../basics/architecture">Weasis Architecture</a></li>
-<li><a href="guidelines">Weasis Plug-in Development Guidelines</a></li>
-<li><a href="../basics/customize/build-plugins">How to build and install a plug-in</a></li>
-<li><a href="../basics/customize/integration">How to launch Weasis from any environments</a></li>
-<li><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#build-weasis-pacs-connector">Building weasis-pacs-connector</a></li>
-<li><a href="../basics/customize/rebuild-dcm4chee-web">Rebuild dcm4chee-web</a></li>
+<li>with <em>Default Tile</em> selected, all the views will be filled with the same series. Each view has a new image of the series stack (n + 1).</li>
+<li>with <em>Default Stack</em> selected, drag and drop a series into each view and select independently which image you want to display.</li>
 </ul>
+
+<h2 id="select-a-print-mode">Select a print mode</h2>
+
+<h3 id="standard-printer">Standard Printer</h3>
+
+<p>From the main menu, open File &gt; Print &gt; Print 2D viewer layout (P).</p>
+
+<p><img src="/tuto/print/standard.png" alt="standard" /></p>
+
+<p>The meaning of the standard print parameters:</p>
+
+<ul>
+<li><em>Image position:</em> the position of the image in the print area.</li>
+<li><em>Image DPI:</em> the print resolution in dot per inch (Default value is 150). Higher DPI means higher resolution.</li>
+<li><em>Print image with annotations:</em> Allows to print the annotations defined in the [Display]() panel.</li>
+<li><em>Print only the selected view:</em> When this option is checked, only the selected view is printed (view with an orange border). Otherwise, all the views of the layout are printed.</li>
+</ul>
+
+<h3 id="dicom-print">DICOM Print</h3>
+
+<p>From the main menu, open File &gt; Print &gt; DICOM Print.</p>
+
+<p>In the DICOM Print dialog, you can manage several configurations. For the options meaning, you can refer to the above parameters and <a target="_blank" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.13.3.html">the DICOM print pages</a>.</p>
+
+<p><img src="/tuto/print/dicom.png" alt="DICOM" /></p>
+
+<div class="notices note" ><p>The DICOM printer configurations can be distributed at the server side for all the clients, see <a href="../../basics/customize/preferences/#how-to-add-dicom-node-or-dicom-printers-configuration-at-the-server-side-only-from-weasis-2-5-0">preferences</a>.</p>
+</div>
+
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -1216,136 +1232,8 @@ Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Envir
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1399,6 +1287,59 @@ Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Envir
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1536,59 +1477,6 @@ Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Envir
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1603,21 +1491,8 @@ Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Envir
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -1683,6 +1558,26 @@ Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Envir
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1752,10 +1647,10 @@ Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Envir
 
 
         
-            <a class="nav nav-prev" href="/en/" title="Weasis Medical Viewer"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/en/tutorials/tags/" title="DICOM Attributes"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/en/getting-started/dcm4chee/" title="Embedding in dcm4chee" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/en/tutorials/theme/" title="Styles and themes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1784,3 +1679,4 @@ Unzip and run it on Windows, Linux or Mac. It requires that a Java Runtime Envir
     
   </body>
 </html>
+

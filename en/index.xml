@@ -178,6 +178,16 @@ Text length: The translations for many languages frequently exceed the length of
     </item>
     
     <item>
+      <title>Print</title>
+      <link>https://nroduit.github.io/en/tutorials/print/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/print/</guid>
+      <description>Build the image selection to print The image selection to print must be prepared before calling the print function. If you need to print more than one image per page, choose a layout from the dropdown button in the toolbar (1).
+The layout list is built dynamically according to the window size. So changing the window size ratio will provide other layouts. For instance, with a panoramic screen, you can choose a horizontal layout and then print with a landscape orientation.</description>
+    </item>
+    
+    <item>
       <title>Styles and themes</title>
       <link>https://nroduit.github.io/en/tutorials/theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
