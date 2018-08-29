@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Weasis Documentation</title>
+    <link>https://nroduit.github.io/en/tutorials/</link>
+    <description>Recent content in Tutorials on Weasis Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://nroduit.github.io/en/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zoom</title>
+      <link>https://nroduit.github.io/en/tutorials/zoom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/zoom/</guid>
+      <description>Zoom tool The zoom tool can be associated with one of three mouse buttons or with the mouse scroll (top left toolbar). In the image below the zoom tool is associated with the left mouse button.
+The zoom factor can be modified from different locations:
+ by dragging the cursor over the image with the configured mouse button by scrolling the mouse wheel when configured by selecting an item in the zoom dropdown button in the toolbar from the context menu: right-click on the image &amp;gt; Zoom form the slider in the image tool panel  The zoom function always zooms in/out to the center of the screen regardless of where the cursor is.</description>
+    </item>
+    
+    <item>
+      <title>Build KO and PR</title>
+      <link>https://nroduit.github.io/en/tutorials/build-ko-pr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/build-ko-pr/</guid>
+      <description>How to build and export DICOM KO and PR Key Object Selection (KO)  To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
+  Presentation State (PR or GSPS)  Open PR: Since Weasis 2.</description>
+    </item>
+    
+    <item>
+      <title>Spatial Calibration</title>
+      <link>https://nroduit.github.io/en/tutorials/calibration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/calibration/</guid>
+      <description> How to change the spatial calibration   </description>
+    </item>
+    
+    <item>
+      <title>DICOM Attributes</title>
+      <link>https://nroduit.github.io/en/tutorials/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/tags/</guid>
+      <description>How to display DICOM attributes The DICOM attributes can be displayed either by:
+ selecting the &amp;ldquo;Dicom Information&amp;rdquo; layout from the layout dropdown button (A) clicking on the &amp;ldquo;Dicom Information&amp;rdquo; button in the toolbar to open a detached window (B)  Using the view in the layout (A) allows updating dynamically the DICOM attributes to the current image (e.g. scrolling into the series). The DICOM attributes won&amp;rsquo;t change when opening the detached window (B).</description>
+    </item>
+    
+    <item>
+      <title>Print</title>
+      <link>https://nroduit.github.io/en/tutorials/print/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/print/</guid>
+      <description>Build the image selection to print The image selection to print must be prepared before calling the print function. If you need to print more than one image per page, choose a layout from the dropdown button in the toolbar (1).
+The layout list is built dynamically according to the window size. So changing the window size ratio will provide other layouts. For instance, with a panoramic screen, you can choose a horizontal layout and then print with a landscape orientation.</description>
+    </item>
+    
+    <item>
+      <title>Styles and themes</title>
+      <link>https://nroduit.github.io/en/tutorials/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/theme/</guid>
+      <description>How to apply another theme Changing from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired look and feel (click on &amp;ldquo;show&amp;rdquo; to see a partial preview)
+Changing the default look and feel value See preferences</description>
+    </item>
+    
+    <item>
+      <title>Translation</title>
+      <link>https://nroduit.github.io/en/tutorials/locale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/locale/</guid>
+      <description>How to change the language and regional settings Switching from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired language and the regional format. The languages available in the list can be partially translated, check Internationalization.
+Anywhere in the user interface, date and number should be displayed with the selected regional format.
+ Changing the default locale settings If you need to change the default settings, please see the preferences.</description>
+    </item>
+    
+    <item>
+      <title>Weasis Multi-Touch</title>
+      <link>https://nroduit.github.io/en/tutorials/touch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/touch/</guid>
+      <description>Master Thesis of Gérôme Pasquier   Try it from the demo server</description>
+    </item>
+    
+  </channel>
+</rss>

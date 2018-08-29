@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on Weasis Documentation</title>
+    <link>https://nroduit.github.io/en/getting-started/</link>
+    <description>Recent content in Getting Started on Weasis Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://nroduit.github.io/en/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Embedding in dcm4chee</title>
+      <link>https://nroduit.github.io/en/getting-started/dcm4chee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
+      <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface.
+Weasis is launched from the dcm4chee administrative web interface, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.
+   Weasis in dcm4chee-arc-light
+      Weasis in dcm4chee-web3
+      Weasis in dcm4chee-web</description>
+    </item>
+    
+    <item>
+      <title>Building Weasis</title>
+      <link>https://nroduit.github.io/en/getting-started/building-weasis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/getting-started/building-weasis/</guid>
+      <description>These instructions describe how to build Weasis directly from the Git repository on any platform. For building Weasis from an IDE, see Weasis plug-in development guidelines.
+Prerequisites
+ JDK 8 or higher Maven 3 or higher
+If your computer is behind a proxy server, configure maven. Git or directly download source from github  Getting the Source To clone the repository, first install GIT and either clone using a graphical GIT client or directly from the command line using the command:</description>
+    </item>
+    
+    <item>
+      <title>Guidelines</title>
+      <link>https://nroduit.github.io/en/getting-started/guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/getting-started/guidelines/</guid>
+      <description>Weasis Plug-in Development This page is intended for developers who want to contribute to Weasis and it is a recommendation for developers who want to create their own plug-ins, see also How to build and install a plug-in.
+We highly recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless, for having a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in Debug or Run from Eclipse.</description>
+    </item>
+    
+    <item>
+      <title>Internationalization</title>
+      <link>https://nroduit.github.io/en/getting-started/translating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/getting-started/translating/</guid>
+      <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
+Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
+ Special characters: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated.</description>
+    </item>
+    
+  </channel>
+</rss>

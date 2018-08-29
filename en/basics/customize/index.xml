@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customize on Weasis Documentation</title>
+    <link>https://nroduit.github.io/en/basics/customize/</link>
+    <description>Recent content in Customize on Weasis Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://nroduit.github.io/en/basics/customize/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integration</title>
+      <link>https://nroduit.github.io/en/basics/customize/integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/basics/customize/integration/</guid>
+      <description>How to launch Weasis from any environments There are two Weasis distributions: the WEB distribution (weasis.war) and the portable distribution (weasis-portable.zip). Here we are presenting how to connect the WEB distribution with any web application. This documentation is adapted for Weasis 2.5 and superior.
+The easiest way to launch Weasis from a web context is to use weasis-pacs-connector.
+For connecting to dcm4chee web interface, follow the instructions in Installing Weasis in DCM4CHEE.</description>
+    </item>
+    
+    <item>
+      <title>Preferences</title>
+      <link>https://nroduit.github.io/en/basics/customize/preferences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/basics/customize/preferences/</guid>
+      <description>The WEB distribution (weasis.war) allows to deliver preferences from the server side to the client side. Some preferences on the server side are used by Weasis only during the first launch, because they can be changed lately in the Weasis user interface. The other preferences at server side are used by Weasis at every launch.
+Local preferences can be modified:
+ in the Weasis user interface: File &amp;gt; Preferences in files stored in ${user.</description>
+    </item>
+    
+    <item>
+      <title>Build Plug-ins</title>
+      <link>https://nroduit.github.io/en/basics/customize/build-plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/basics/customize/build-plugins/</guid>
+      <description>How to build and install a plug-in This page describes how to build new Weasis plug-ins and how they can be incorporated into the distributions, see also this page for the IDE configuration.
+List of plug-ins types  Media viewer or editor (main central panel that implements ViewerPlugin or ImageViewerPlugin and the factory implements SeriesViewerFactory) Toolbar associated with a viewer (implements Toolbar) Tool associated with a viewer (right panel that implements DockableTool) Data Explorer (data model implements DataExplorerModel and data view implements DataExplorerView, and the factory implements DataExplorerViewFactory) Import data into an explorer (ex.</description>
+    </item>
+    
+    <item>
+      <title>Rebuild dcm4chee-web</title>
+      <link>https://nroduit.github.io/en/basics/customize/rebuild-dcm4chee-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/basics/customize/rebuild-dcm4chee-web/</guid>
+      <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems  JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
+    </item>
+    
+  </channel>
+</rss>
