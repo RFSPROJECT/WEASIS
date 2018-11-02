@@ -234,9 +234,9 @@ EPL is more business-friendly about some patent retaliation and reverse engineer
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/get-involved/</guid>
-      <description>Report Bugs and Enhancements First, search the JIRA system, the forum and/or this website (like FAQs or Getting Started) to see if your problem has not been reported yet.
-Only then, fill a bug on JIRA with the most details:
- For categorizing the issue, select the appropriate type:  Bug: a bug, anything that does not work as expected Improvement: an enhancement over an existing feature New Feature: a new feature Task: everything else, something that needs to be done  Use the short summary field to describe the main goal of your issue.</description>
+      <description>Report Bugs and Enhancements First, look at the GitHub issues system, the forum and/or this website (like FAQs or Getting Started) to see if your problem has not been reported yet.
+Only then, fill a bug on GitHub with the most details from a template.
+Become a Committer  Become a committer on an existing project or on one of the incubating projects, for Weasis use pull requests.  Share Your Knowledge  Do you or your company have a success story about Weasis?</description>
     </item>
     
     <item>
