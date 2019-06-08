@@ -22,6 +22,19 @@ The zoom factor can be modified from different locations:
     </item>
     
     <item>
+      <title>Histogram</title>
+      <link>https://nroduit.github.io/en/tutorials/histo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/histo/</guid>
+      <description>Displaying Histogram Displaying the histogram allows you to view the distribution of the modality values.
+Displaying the histogram allow to better understand the effect on the pixel distribution wen changing all the LUT parameters from the Image Tool right panel.
+ To open the histogram, select the &amp;ldquo;Histogram&amp;rdquo; layout from the Layouts dropdown button (see the image below).
+General histogram parameters:
+ Channel: With gray images only the Luminance channel is available.</description>
+    </item>
+    
+    <item>
       <title>Build KO and PR</title>
       <link>https://nroduit.github.io/en/tutorials/build-ko-pr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
