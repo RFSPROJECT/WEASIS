@@ -24,6 +24,17 @@ Weasis is launched from the dcm4chee administrative web interface, as shown in t
     </item>
     
     <item>
+      <title>Weasis Web Protocol</title>
+      <link>https://nroduit.github.io/en/getting-started/weasis-protocol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/getting-started/weasis-protocol/</guid>
+      <description>The web protocol allows to launch Weasis in a web context from a specific URI scheme: weasis://parameters
+Requires Weasis 3.5 (or superior) installed on the system with a native installer.
+ How to use the weasis protocol  From a web page, just make a link starting with weasis:// Some web frameworks such as the wiki or the URL field of some browsers only support standard protocols (http, ftp&amp;hellip;). To solve this problem, it is necessary to use a URL redirection starting with http like the one proposed in weasis-pacs-connector: http://&amp;lt;your-host&amp;gt;:8080/weasis-pacs-connector/weasis?</description>
+    </item>
+    
+    <item>
       <title>Building Weasis</title>
       <link>https://nroduit.github.io/en/getting-started/building-weasis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
