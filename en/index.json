@@ -60,7 +60,7 @@
 	"title": "Tutorials",
 	"tags": [],
 	"description": "",
-	"content": "  Zoom  How to manipulate zoom and lens\n   Histogram  Show histogram of real values and output LUT\n  Integration  How connecting Weasis to a PACS, RIS, EMR or any web interface\n   Preferences  Manage the Weasis preferences\n   Build Plug-ins  How to build new Weasis plug-ins and how they can be incorporated to the distributions\n   Rebuild dcm4chee-web  Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites Subversion (SVN), one of the following client: Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems JDK 6 or higher Ant 1.6 or higher Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:\n    Build KO and PR  How to build and export DICOM Key Object Selection and Presentation State (GSPS)\n   Spatial Calibration  How to change the spatial calibration of an image or a series\n   DICOM Attributes  How to display and compare DICOM attributes\n   Print  How to print images\n   Styles and themes  How to apply another style and theme\n   Translation  How to change the language and regional settings\n   Weasis Multi-Touch  Redesigned user interface with JavaFX and multi-touch support\n   "
+	"content": "  Zoom  How to manipulate zoom and lens\n   Histogram  Show histogram of real values and output LUT\n   Build KO and PR  How to build and export DICOM Key Object Selection and Presentation State (GSPS)\n   Spatial Calibration  How to change the spatial calibration of an image or a series\n   DICOM Attributes  How to display and compare DICOM attributes\n   Print  How to print images\n   Styles and themes  How to apply another style and theme\n   Translation  How to change the language and regional settings\n   Weasis Multi-Touch  Redesigned user interface with JavaFX and multi-touch support\n   "
 },
 {
 	"uri": "https://nroduit.github.io/en/tutorials/zoom/",
@@ -102,7 +102,7 @@
 	"title": "Customize",
 	"tags": [],
 	"description": "",
-	"content": "  Integration     Preferences     Build Plug-ins     Rebuild dcm4chee-web     "
+	"content": "  Integration     Preferences     Build Plug-ins    Getting Started    Embedding in dcm4chee   Weasis Web Protocol   Building Weasis   Guidelines   Internationalization    Basics    Weasis Architecture   Shortcuts   Customize   Weasis Commands   Dicom Conformance    Tutorials    Zoom   Histogram   Build KO and PR   Spatial Calibration   DICOM Attributes   Print   Styles and themes   Translation   Weasis Multi-Touch    Stories      Rebuild dcm4chee-web     "
 },
 {
 	"uri": "https://nroduit.github.io/en/getting-started/guidelines/",
