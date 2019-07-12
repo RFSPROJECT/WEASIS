@@ -13,18 +13,18 @@
     <title>Embedding in dcm4chee :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1562926362" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1562926362" rel="stylesheet">
-    <link href="/css/hybrid.css?1562926362" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1562926362" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1562926362" rel="stylesheet">
-    <link href="/css/auto-complete.css?1562926362" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1562926362" rel="stylesheet">
-    <link href="/css/theme.css?1562926362" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1562926362" rel="stylesheet">
+    <link href="/css/nucleus.css?1562972002" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1562972002" rel="stylesheet">
+    <link href="/css/hybrid.css?1562972002" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1562972002" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1562972002" rel="stylesheet">
+    <link href="/css/auto-complete.css?1562972002" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1562972002" rel="stylesheet">
+    <link href="/css/theme.css?1562972002" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1562972002" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1562926362"></script>
+    <script src="/js/jquery-3.3.1.min.js?1562972002"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1562926362"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1562926362"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1562972002"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1562972002"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1562926362"></script>
+<script type="text/javascript" src="/js/search.js?1562972002"></script>
 
     
   </div>
@@ -1355,13 +1355,14 @@
 <ul>
 <li><p>Go to the <a target="_blank" href="http://localhost:8080/dcm4chee-arc/ui2/#/device/edit/dcm4chee-arc/dcmArchiveDevice/properties.dcmArchiveDevice">configuration</a>
 or from Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Archive Device 
-And fill up the following properties: </p>
+And fill up the following properties (add <code>&amp;cdb</code> if weasis.war has not been deployed) : </p>
 
 <ul>
 <li>Invoke Image Display Patient URL: <code>../../weasis-pacs-connector/weasis?&amp;patientID={}&amp;target=_self&amp;access_token={}</code></li>
 <li>Invoke Image Display Study URL: <code>../../weasis-pacs-connector/weasis?&amp;studyUID={}&amp;target=_self&amp;access_token={}</code>
 <div class="notices note" ><p><code>&amp;access_token={}</code> is necessary in secure mode (secured RESTful services) from dcm4chee-arc-light 5.15.1<br>
 <code>&amp;target=_self</code> avoids to open a new empty window in the web browser<br>
+<code>&amp;cdb</code> <a href="https://nroduit.github.io/en/getting-started/weasis-protocol/#modify-the-launch-parameters">cdb parameter</a> to override the URL of the Weasis web context to null (when you want only the native local version or when weasis.war has not be deployed)<br>
 See also <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Invoke-Image-Display">Invoke Image Display in dcm4chee</a></p>
 </div>
 
@@ -1994,20 +1995,20 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1562926362"></script>
-    <script src="/js/perfect-scrollbar.min.js?1562926362"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1562926362"></script>
-    <script src="/js/jquery.sticky.js?1562926362"></script>
-    <script src="/js/featherlight.min.js?1562926362"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1562926362"></script>
-    <script src="/js/highlight.pack.js?1562926362"></script>
+    <script src="/js/clipboard.min.js?1562972003"></script>
+    <script src="/js/perfect-scrollbar.min.js?1562972003"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1562972003"></script>
+    <script src="/js/jquery.sticky.js?1562972003"></script>
+    <script src="/js/featherlight.min.js?1562972003"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1562972003"></script>
+    <script src="/js/highlight.pack.js?1562972003"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1562926362"></script>
-    <script src="/js/learn.js?1562926362"></script>
-    <script src="/js/hugo-learn.js?1562926362"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1562972003"></script>
+    <script src="/js/learn.js?1562972003"></script>
+    <script src="/js/hugo-learn.js?1562972003"></script>
 
-    <link href="/mermaid/mermaid.css?1562926362" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1562926362"></script>
+    <link href="/mermaid/mermaid.css?1562972003" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1562972003"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
