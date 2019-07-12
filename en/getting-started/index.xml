@@ -16,11 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
-      <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface.
-Weasis is launched from the dcm4chee administrative web interface, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.
-   Weasis in dcm4chee-arc-light
-      Weasis in dcm4chee-web3
-      Weasis in dcm4chee-web</description>
+      <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
+Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis is launched with Java Webstart is still available here.
+ For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with Docker is straightforward).</description>
     </item>
     
     <item>
@@ -31,7 +29,7 @@ Weasis is launched from the dcm4chee administrative web interface, as shown in t
       <guid>https://nroduit.github.io/en/getting-started/weasis-protocol/</guid>
       <description>The web protocol allows to launch Weasis in a web context from a specific URI scheme: weasis://parameters
 Requires Weasis 3.5 (or superior) installed on the system with a native installer.
- How to use the weasis protocol  From a web page, just make a link starting with weasis:// Some web frameworks such as the wiki or the URL field of some browsers only support standard protocols (http, ftp&amp;hellip;). To solve this problem, it is necessary to use a URL redirection starting with http like the one proposed in weasis-pacs-connector: http://&amp;lt;your-host&amp;gt;:8080/weasis-pacs-connector/weasis?</description>
+ How to use the weasis protocol  From a web page, just make a link starting with weasis:// (see below How to build an URI) Some web frameworks such as the wiki or the URL field of some browsers only support the standard protocols (http, ftp&amp;hellip;).</description>
     </item>
     
     <item>
@@ -42,7 +40,7 @@ Requires Weasis 3.5 (or superior) installed on the system with a native installe
       <guid>https://nroduit.github.io/en/getting-started/building-weasis/</guid>
       <description>These instructions describe how to build Weasis directly from the Git repository on any platform. For building Weasis from an IDE, see Weasis plug-in development guidelines.
 Prerequisites
- JDK 8 or higher Maven 3 or higher
+ JDK 11 or higher Maven 3.5 or higher
 If your computer is behind a proxy server, configure maven. Git or directly download source from github  Getting the Source To clone the repository, first install GIT and either clone using a graphical GIT client or directly from the command line using the command:</description>
     </item>
     
@@ -53,7 +51,7 @@ If your computer is behind a proxy server, configure maven. Git or directly down
       
       <guid>https://nroduit.github.io/en/getting-started/guidelines/</guid>
       <description>Weasis Plug-in Development This page is intended for developers who want to contribute to Weasis and it is a recommendation for developers who want to create their own plug-ins, see also How to build and install a plug-in.
-We highly recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless, for having a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in Debug or Run from Eclipse.</description>
+We recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless, for having a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in Debug or Run from Eclipse.</description>
     </item>
     
     <item>

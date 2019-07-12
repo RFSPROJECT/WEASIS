@@ -15,11 +15,19 @@
   </url>
   
   <url>
+    <loc>https://nroduit.github.io/en/old/dcm4chee/</loc>
+  </url>
+  
+  <url>
     <loc>https://nroduit.github.io/en/basics/customize/integration/</loc>
   </url>
   
   <url>
     <loc>https://nroduit.github.io/en/basics/architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nroduit.github.io/en/old/integration/</loc>
   </url>
   
   <url>
@@ -43,14 +51,6 @@
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/tutorials/histo/</loc>
-  </url>
-  
-  <url>
-    <loc>https://nroduit.github.io/en/tutorials/build-ko-pr/</loc>
-  </url>
-  
-  <url>
     <loc>https://nroduit.github.io/en/basics/customize/build-plugins/</loc>
   </url>
   
@@ -67,10 +67,6 @@
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/tutorials/calibration/</loc>
-  </url>
-  
-  <url>
     <loc>https://nroduit.github.io/en/stories/</loc>
   </url>
   
@@ -83,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/basics/customize/rebuild-dcm4chee-web/</loc>
+    <loc>https://nroduit.github.io/en/old/rebuild-dcm4chee-web/</loc>
   </url>
   
   <url>
@@ -95,11 +91,27 @@
   </url>
   
   <url>
+    <loc>https://nroduit.github.io/en/tutorials/histo/</loc>
+  </url>
+  
+  <url>
     <loc>https://nroduit.github.io/en/tutorials/print/</loc>
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/tutorials/theme/</loc>
+    <loc>https://nroduit.github.io/en/tutorials/build-ko-pr/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nroduit.github.io/en/tutorials/proxy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nroduit.github.io/en/tutorials/calibration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nroduit.github.io/en/old/</loc>
   </url>
   
   <url>
@@ -107,7 +119,11 @@
   </url>
   
   <url>
-    <loc>https://nroduit.github.io/en/tutorials/touch/</loc>
+    <loc>https://nroduit.github.io/en/tutorials/theme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nroduit.github.io/en/stories/touch/</loc>
   </url>
   
   <url>

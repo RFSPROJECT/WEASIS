@@ -22,6 +22,16 @@ The zoom factor can be modified from different locations:
     </item>
     
     <item>
+      <title>DICOM Attributes</title>
+      <link>https://nroduit.github.io/en/tutorials/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/tags/</guid>
+      <description>How to display DICOM attributes The DICOM attributes can be displayed either by:
+ selecting the &amp;ldquo;Dicom Information&amp;rdquo; layout from the layout dropdown button (A) clicking on the &amp;ldquo;Dicom Information&amp;rdquo; button in the toolbar to open a detached window (B)  Using the view in the layout (A) allows updating dynamically the DICOM attributes to the current image (e.g. scrolling into the series). The DICOM attributes won&amp;rsquo;t change when opening the detached window (B).</description>
+    </item>
+    
+    <item>
       <title>Histogram</title>
       <link>https://nroduit.github.io/en/tutorials/histo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -35,35 +45,6 @@ General histogram parameters:
     </item>
     
     <item>
-      <title>Build KO and PR</title>
-      <link>https://nroduit.github.io/en/tutorials/build-ko-pr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nroduit.github.io/en/tutorials/build-ko-pr/</guid>
-      <description>How to build and export DICOM KO and PR Key Object Selection (KO)  To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
-  Presentation State (PR or GSPS)  Open PR: Since Weasis 2.</description>
-    </item>
-    
-    <item>
-      <title>Spatial Calibration</title>
-      <link>https://nroduit.github.io/en/tutorials/calibration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nroduit.github.io/en/tutorials/calibration/</guid>
-      <description> How to change the spatial calibration   </description>
-    </item>
-    
-    <item>
-      <title>DICOM Attributes</title>
-      <link>https://nroduit.github.io/en/tutorials/tags/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nroduit.github.io/en/tutorials/tags/</guid>
-      <description>How to display DICOM attributes The DICOM attributes can be displayed either by:
- selecting the &amp;ldquo;Dicom Information&amp;rdquo; layout from the layout dropdown button (A) clicking on the &amp;ldquo;Dicom Information&amp;rdquo; button in the toolbar to open a detached window (B)  Using the view in the layout (A) allows updating dynamically the DICOM attributes to the current image (e.g. scrolling into the series). The DICOM attributes won&amp;rsquo;t change when opening the detached window (B).</description>
-    </item>
-    
-    <item>
       <title>Print</title>
       <link>https://nroduit.github.io/en/tutorials/print/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -74,13 +55,33 @@ The layout list is built dynamically according to the window size. So changing t
     </item>
     
     <item>
-      <title>Styles and themes</title>
-      <link>https://nroduit.github.io/en/tutorials/theme/</link>
+      <title>Build KO and PR</title>
+      <link>https://nroduit.github.io/en/tutorials/build-ko-pr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nroduit.github.io/en/tutorials/theme/</guid>
-      <description>How to apply another theme Changing from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired look and feel (click on &amp;ldquo;show&amp;rdquo; to see a partial preview)
-Changing the default look and feel value See preferences</description>
+      <guid>https://nroduit.github.io/en/tutorials/build-ko-pr/</guid>
+      <description>How to build and export DICOM KO and PR Key Object Selection (KO)  To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
+  Presentation State (PR or GSPS)  Open PR: Since Weasis 2.</description>
+    </item>
+    
+    <item>
+      <title>Proxy server</title>
+      <link>https://nroduit.github.io/en/tutorials/proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/proxy/</guid>
+      <description>How to configure a proxy server Manual configuration from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select Proxy Server.
+The default configuration is Direct connection (no proxy) and by clicking on Manual proxy configuration you can define a custom proxy server (in the image below, a local proxy like Squid).
+To fill in the fields you must refer to the Java documentation.</description>
+    </item>
+    
+    <item>
+      <title>Spatial Calibration</title>
+      <link>https://nroduit.github.io/en/tutorials/calibration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/calibration/</guid>
+      <description> How to change the spatial calibration   </description>
     </item>
     
     <item>
@@ -95,12 +96,13 @@ Anywhere in the user interface, date and number should be displayed with the sel
     </item>
     
     <item>
-      <title>Weasis Multi-Touch</title>
-      <link>https://nroduit.github.io/en/tutorials/touch/</link>
+      <title>Styles and themes</title>
+      <link>https://nroduit.github.io/en/tutorials/theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nroduit.github.io/en/tutorials/touch/</guid>
-      <description>Master Thesis of Gérôme Pasquier   Try it from the demo server</description>
+      <guid>https://nroduit.github.io/en/tutorials/theme/</guid>
+      <description>How to apply another theme Changing from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired look and feel (click on &amp;ldquo;show&amp;rdquo; to see a partial preview)
+Changing the default look and feel value See preferences</description>
     </item>
     
   </channel>

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.52" />
     <meta name="description" content="Weasis: an open source DICOM viewer which is modular, multiplatform, web-based and mulitlingual. It can be easly integrated in any medical system">
-
+<meta name="keywords" content="dcm4chee web, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: Weasis Documentation</title>
+    <title>Rebuild dcm4chee-web :: Weasis Documentation</title>
 
     
     <link href="/css/nucleus.css?1562926363" rel="stylesheet">
@@ -44,7 +44,7 @@
 </script>
 
   </head>
-  <body class="" data-url="/en/categories/">
+  <body class="" data-url="/en/old/rebuild-dcm4chee-web/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -1023,7 +1023,7 @@
   
     
     <li data-nav-id="/en/old/" title="Old Documentation" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1087,7 +1087,7 @@
  
   
     
-      <li data-nav-id="/en/old/rebuild-dcm4chee-web/" title="Rebuild dcm4chee-web" class="dd-item ">
+      <li data-nav-id="/en/old/rebuild-dcm4chee-web/" title="Rebuild dcm4chee-web" class="dd-item active">
         <a href="/en/old/rebuild-dcm4chee-web/">
         Rebuild dcm4chee-web
         <i class="fas fa-check read-icon"></i>
@@ -1150,22 +1150,10 @@
                   
                     
                     
-                      <option id="en" value="https://nroduit.github.io/en/categories/" selected>English</option>
+                      <option id="en" value="https://nroduit.github.io/en/old/rebuild-dcm4chee-web/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="fr" value="https://nroduit.github.io/fr/categories/">Français</option>
-                    
                   
               
           
@@ -1222,6 +1210,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/old/rebuild-dcm4chee-web.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -1238,7 +1237,19 @@
                     
           
           
-            Categories
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/old/'>Old Documentation</a> > Rebuild dcm4chee-web
+          
+         
+          
+         
           
         
                  
@@ -1247,7 +1258,23 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#build-dcm4chee-web-2-15-0-2-16-2-or-2-17-0">Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0</a>
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#getting-the-source">Getting the Source</a></li>
+<li><a href="#building-dcm4chee-web-war">Building dcm4chee-web.war</a></li>
+</ul></li>
+<li><a href="#rebuild-dcm4chee-web-from-any-version-draft">Rebuild dcm4chee-web from any version (Draft)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -1263,7 +1290,7 @@
           
             <h1>
               
-              Categories
+              Rebuild dcm4chee-web
             </h1>
           
 
@@ -1273,15 +1300,122 @@
 
 
 
+<h3 id="build-dcm4chee-web-2-15-0-2-16-2-or-2-17-0">Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0</h3>
+
+<h4 id="prerequisites">Prerequisites</h4>
+
+<ol>
+<li>Subversion (SVN), one of the following client:
 
 <ul>
-	
-</ul>
+<li>Subversion - The core system (server, client, libs)</li>
+<li>Subversive - SVN Team Client (Eclipse plugin)</li>
+<li>TortoiseSVN - Handy SVN client for Windows systems</li>
+</ul></li>
+<li>JDK 6 or higher</li>
+<li>Ant 1.6 or higher</li>
+</ol>
+
+<h4 id="getting-the-source">Getting the Source</h4>
+
+<p>To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ svn co https://svn.code.sf.net/p/dcm4che/svn/weasis/weasis_dcm4chee/trunk/2.17.0 weasis-dcm4chee-2.17.0</code></pre></div>
+
+<p>This command will copy the current development code (the &ldquo;trunk&rdquo;) into a local directory named weasis-dcm4chee-2.17.0.</p>
+
+<h4 id="building-dcm4chee-web-war">Building dcm4chee-web.war</h4>
+
+<ol>
+<li>Go in the weasis-dcm4chee directory</li>
+<li>Compile and make the dcm4chee-web.war (in weasis-dcm4chee/dist folder)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ant dist</code></pre></div></li>
+
+<li><p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+
+<blockquote>
+<p>folder.*=edit,move,delete,<span style="color:red">view</span>,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+
+<p>&hellip;</p>
+
+<p>folder=WebUser(send,<span style="color:red">view</span>);DatacareUser(edit,move,delete,export_xds,<span style="color:red">view</span>);WebAdmin(*)</p>
+</blockquote></li>
+
+<li><p>Place the dcm4chee-web.war and the weasis.war to the deploy folder of dcm4chee</p></li>
+</ol>
+
+<hr />
+
+<h3 id="rebuild-dcm4chee-web-from-any-version-draft">Rebuild dcm4chee-web from any version (Draft)</h3>
+
+<ol>
+<li><p>Make a project to rebuild dcm4chee-web</p>
+
+<ul>
+<li>Download a dcm4chee package (any db package, ex. dcm4chee-2.14.7-mysql.zip)</li>
+<li>Create new Java project (see example of dcm4chee-web 2.17.0, Eclipse project)</li>
+<li>Extract dcm4chee-web.war</li>
+<li>Link required binaries (commons-codec.jar,dcm4che.jar,dcm4chee-ejb-client.jar,jboss-j2ee.jar,servlet-api.jar,slf4j-api-1.6.1.jar) to the project from default/lib/ or from jboss 4.2.3 (if not installed in dcm4chee)</li>
+<li>Link required binaries (maverick.jar and dcm4chee-web.jar) from ddcm4chee-web/WEB-INF/lib/</li>
+<li>Add viewer.gif in dcm4chee-web/images</li>
+<li>Add launcher.properties in dcm4chee-web/viewer</li>
+<li>Add java sources in src folder</li>
+<li>Move the content of the WEB-INF/classes in etc/message</li>
+<li>Copy build.xml and modify it if necessary</li>
+</ul></li>
+
+<li><p>Replace in maverick.xml:</p>
+
+<p><code>&lt;controller class=&quot;org.dcm4chex.archive.web.maverick.FolderSubmitCtrl&quot; /&gt;</code> by <code>&lt;controller class=&quot;org.dcm4chex.archive.web.maverick.FolderSubmitCtrl2&quot; /&gt;</code></p></li>
+
+<li><p>Add text for Weasis button</p>
+
+<ul>
+<li>in dcm4chee-web/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;View selected Entities in Weasis&quot;&gt;</code></li>
+<li>in dcm4chee-web/de/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;Ausgewählte Entitäten in Weasis sehen&quot;&gt;</code></li>
+<li>in dcm4chee-web/fr/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;Visualiser la sélection dans Weasis&quot;&gt;</code></li>
+<li>in dcm4chee-web/jp/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;View selected Entities in Weasis&quot;&gt;</code></li>
+</ul></li>
+
+<li><p>Modify dcm4chee-web/folder-tpl.xsl</p>
+
+<ul>
+<li>Add after <xsl:param name="folder.delete" select="'false'" />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;xsl:param</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;folder.view&#34;</span> <span style="color:#a6e22e">select=</span><span style="color:#e6db74">&#34;&#39;false&#39;&#34;</span> <span style="color:#f92672">/&gt;</span></code></pre></div></li>
+<li>Add after <code>&lt;xsl:if test=&quot;$folder.delete='true'&quot;&gt; … &lt;/xsl:if&gt;</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;xsl:if</span> <span style="color:#a6e22e">test=</span><span style="color:#e6db74">&#34;$folder.view=&#39;true&#39;&#34;</span><span style="color:#f92672">&gt;</span>
+   <span style="color:#f92672">&lt;td</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;40&#34;</span><span style="color:#f92672">&gt;</span>
+       <span style="color:#f92672">&lt;input</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;image&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;View&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;view&#34;</span> <span style="color:#a6e22e">src=</span><span style="color:#e6db74">&#34;images/view.gif&#34;</span>
+           <span style="color:#a6e22e">alt=</span><span style="color:#e6db74">&#34;view&#34;</span> <span style="color:#a6e22e">border=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">title=</span><span style="color:#e6db74">&#34;&amp;ViewSelectedEntities;&#34;</span>
+           <span style="color:#a6e22e">onclick=</span><span style="color:#e6db74">&#34;return confirm(&#39;&amp;ViewSelectedEntities;?&#39;)&#34;</span><span style="color:#f92672">&gt;</span>
+           <span style="color:#f92672">&lt;xsl:if</span> <span style="color:#a6e22e">test=</span><span style="color:#e6db74">&#34;total &lt;= 0&#34;</span><span style="color:#f92672">&gt;</span>
+               <span style="color:#f92672">&lt;xsl:attribute</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;disabled&#34;</span><span style="color:#f92672">&gt;</span>disabled <span style="color:#f92672">&lt;/xsl:attribute&gt;</span>
+           <span style="color:#f92672">&lt;/xsl:if&gt;</span>
+       <span style="color:#f92672">&lt;/input&gt;</span>
+   <span style="color:#f92672">&lt;/td&gt;</span>
+<span style="color:#f92672">&lt;/xsl:if&gt;</span></code></pre></div></li>
+</ul></li>
+
+<li><p>Rebuild WAR with &ldquo;ant dist&rdquo; and get dcm4chee-web.war in dist folder</p></li>
+
+<li><p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+
+<blockquote>
+<p>folder.*=edit,move,delete,<span style="color:red">view</span>,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+
+<p>&hellip;</p>
+
+<p>folder=WebUser(send,<span style="color:red">view</span>);DatacareUser(edit,move,delete,export_xds,<span style="color:red">view</span>);WebAdmin(*)</p>
+</blockquote></li>
+
+<li><p>Place the dcm4chee-web.war and the weasis.war to the deploy folder of dcm4chee</p></li>
+</ol>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -1751,6 +1885,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1763,6 +1898,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1795,6 +1933,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1819,8 +1958,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/en/old/integration/" title="Integration (deprecated)"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/en/getting-started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/en/old/dcm4chee/" title="Embedding in dcm4chee (deprecated)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1851,3 +1992,4 @@
 
   </body>
 </html>
+
