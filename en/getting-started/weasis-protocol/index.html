@@ -13,18 +13,18 @@
     <title>Weasis Web Protocol :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1563605370" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1563605370" rel="stylesheet">
-    <link href="/css/hybrid.css?1563605370" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1563605370" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1563605370" rel="stylesheet">
-    <link href="/css/auto-complete.css?1563605370" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1563605370" rel="stylesheet">
-    <link href="/css/theme.css?1563605370" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1563605370" rel="stylesheet">
+    <link href="/css/nucleus.css?1565468323" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1565468323" rel="stylesheet">
+    <link href="/css/hybrid.css?1565468323" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1565468323" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1565468323" rel="stylesheet">
+    <link href="/css/auto-complete.css?1565468323" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1565468323" rel="stylesheet">
+    <link href="/css/theme.css?1565468323" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1565468323" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1563605370"></script>
+    <script src="/js/jquery-3.3.1.min.js?1565468323"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1563605370"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1563605370"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1565468323"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1565468323"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1563605370"></script>
+<script type="text/javascript" src="/js/search.js?1565468323"></script>
 
     
   </div>
@@ -1323,7 +1323,7 @@ $ xdg-open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamp
 $ open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamples%2FLumbar%2Fmf.xml</code></pre></div></li>
 </ul>
 
-<div class="notices tip" ><p>When first used in a browser, a popup appears to confirm the opening of the weasis protocol. On Windows, it is possible to make sure that this message never appears:<br>- With IE/Edge set the WarnOnOnOpen value to 0 in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ProtocolExecute\weasis.<br>- With Chrome add an entry (key=1  value=weasis://*) in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\URLWhitelist, see how to manage <a target="_blank" href="https://www.chromium.org/administrators/policy-list-3#URLWhitelist">URLWhitelist</a>.</p>
+<div class="notices tip" ><p>When first used in a browser, a popup appears to confirm the opening of the weasis protocol. On Windows, it is possible to make sure that this message never appears by adding a browser policy which allows the URI weasis://*<br>- With IE/Edge the policy is applied by the native installer.<br>- With Chrome the policy is applied by the native installer (Windows and Linux), see how to manage <a target="_blank" href="https://support.google.com/chrome/a/answer/7532419?hl=en">URLWhitelist</a> (d).</p>
 </div>
 
 
@@ -1381,8 +1381,8 @@ $ open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamples%
 <p>Here are some examples that modify the launcher properties without using <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis">weasis-pacs-connector</a>:</p>
 
 <ul>
-<li>Configuration for launching Weasis Dicomizer <a  href="weasis://%24weasis%3Aconfig%20pro%3D%22felix.extended.config.properties%20file%3Aconf%2Fext-dicomizer.properties%22%20pro%3D%22weasis.profile%20dicomizer%22%20pro%3D%22gosh.port%2017181%22" class="btn btn-default">Launch</a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$weasis:config pro=&#34;felix.extended.config.properties file:conf/ext-dicomizer.properties&#34; pro=&#34;weasis.profile dicomizer&#34; pro=&#34;gosh.port 17181&#34;</code></pre></div></li>
+<li>Configuration for launching Weasis Dicomizer <a  href="weasis://%24weasis%3Aconfig%20pro%3D%22felix.extended.config.properties%20file%3Aconf%2Fext-dicomizer.properties%22%20pro%3D%22gosh.port%2017181%22" class="btn btn-default">Launch</a>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$weasis:config pro=&#34;felix.extended.config.properties file:conf/ext-dicomizer.properties&#34; pro=&#34;gosh.port 17181&#34;</code></pre></div></li>
 <li>Change the user, by default is the one of the current system session. The local preferences are associated to a user. <a  href="weasis://%24weasis%3Aconfig%20pro%3D%22weasis.user%20user2%22" class="btn btn-default">Launch</a>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$weasis:config pro=&#34;weasis.user user2&#34;</code></pre></div></li>
 </ul>
@@ -1947,20 +1947,20 @@ $ open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamples%
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1563605370"></script>
-    <script src="/js/perfect-scrollbar.min.js?1563605370"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1563605370"></script>
-    <script src="/js/jquery.sticky.js?1563605370"></script>
-    <script src="/js/featherlight.min.js?1563605370"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1563605370"></script>
-    <script src="/js/highlight.pack.js?1563605370"></script>
+    <script src="/js/clipboard.min.js?1565468323"></script>
+    <script src="/js/perfect-scrollbar.min.js?1565468323"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1565468323"></script>
+    <script src="/js/jquery.sticky.js?1565468323"></script>
+    <script src="/js/featherlight.min.js?1565468323"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1565468323"></script>
+    <script src="/js/highlight.pack.js?1565468323"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1563605370"></script>
-    <script src="/js/learn.js?1563605370"></script>
-    <script src="/js/hugo-learn.js?1563605370"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1565468323"></script>
+    <script src="/js/learn.js?1565468323"></script>
+    <script src="/js/hugo-learn.js?1565468323"></script>
 
-    <link href="/mermaid/mermaid.css?1563605370" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1563605370"></script>
+    <link href="/mermaid/mermaid.css?1565468323" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1565468323"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
