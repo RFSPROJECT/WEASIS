@@ -17,8 +17,8 @@
       
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
-Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis is launched with Java Webstart is still available here.
- For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with Docker is straightforward).</description>
+Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis is launched with Java Webstart is still available here. 
+For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with Docker is straightforward).</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Weasis is launched from the dcm4chee administrative web interface with the weasi
       <guid>https://nroduit.github.io/en/old/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface.
 Weasis is launched from the dcm4chee administrative web interface with Java Webstart, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.
-Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
+Use the [weasis protocol](../../getting-started/weasis-protocol) instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ The following schemas show the main different plug-in types (bundle in OSGi lang
       
       <guid>https://nroduit.github.io/en/old/integration/</guid>
       <description>How to launch Weasis from any environments There are two Weasis distributions: the WEB distribution (weasis.war) and the portable distribution (weasis-portable.zip). Here we are presenting how to connect the WEB distribution with any web application. This documentation is adapted for Weasis 2.5 and superior working with Java Webstart. The easiest way to launch Weasis from a web context is to use weasis-pacs-connector.
-Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
+Use the [weasis protocol](../../getting-started/weasis-protocol) instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
     </item>
     
     <item>
@@ -69,8 +69,7 @@ Use the weasis protocol instead of Java Web Start because it has been removed fr
       
       <guid>https://nroduit.github.io/en/getting-started/weasis-protocol/</guid>
       <description>The web protocol allows to launch Weasis in a web context from a specific URI scheme: weasis://parameters
-Requires Weasis 3.5 (or superior) installed on the system with a native installer.
- How to use the weasis protocol  From a web page, just make a link starting with weasis:// (see below How to build an URI) Some web frameworks such as the wiki or the URL field of some browsers only support the standard protocols (http, ftp&amp;hellip;).</description>
+Requires Weasis 3.5 (or superior) installed on the system with a [native installer](../).  How to use the weasis protocol  From a web page, just make a link starting with weasis:// (see below How to build an URI) Some web frameworks such as the wiki or the URL field of some browsers only support the standard protocols (http, ftp&amp;hellip;).</description>
     </item>
     
     <item>
@@ -144,8 +143,7 @@ We recommend the use of Eclipse IDE, because all the following instructions are 
       
       <guid>https://nroduit.github.io/en/basics/commands/</guid>
       <description>The commands listed below can be applied at start-up or in a telnet session. All the commands starting with &amp;ldquo;dcmview2d:&amp;rdquo; allow to drive Weasis and are not adapted to be used at start-up.
-This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSIX.
- To obtain the list of commands, after starting Weasis, open a local telnet session of the OSGI Console and type lb for getting the list of bundles and their state or type help for getting all the available commands:</description>
+This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSIX.  To obtain the list of commands, after starting Weasis, open a local telnet session of the OSGI Console and type lb for getting the list of bundles and their state or type help for getting all the available commands:</description>
     </item>
     
     <item>
@@ -173,8 +171,7 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       
       <guid>https://nroduit.github.io/en/getting-started/translating/</guid>
       <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
-Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
- Special characters: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated.</description>
+**Text length**: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).  **Special characters**: Some characters representing values (%d, %s), newline (\\n) and HTML tags must not be translated.</description>
     </item>
     
     <item>
@@ -184,7 +181,7 @@ Text length: The translations for many languages frequently exceed the length of
       
       <guid>https://nroduit.github.io/en/tutorials/tags/</guid>
       <description>How to display DICOM attributes The DICOM attributes can be displayed either by:
- selecting the &amp;ldquo;Dicom Information&amp;rdquo; layout from the layout dropdown button (A) clicking on the &amp;ldquo;Dicom Information&amp;rdquo; button in the toolbar to open a detached window (B)  Using the view in the layout (A) allows updating dynamically the DICOM attributes to the current image (e.g. scrolling into the series). The DICOM attributes won&amp;rsquo;t change when opening the detached window (B).</description>
+ selecting the &amp;ldquo;Dicom Information&amp;rdquo; layout from the layout dropdown button (A) clicking on the &amp;ldquo;Dicom Information&amp;rdquo; button in the toolbar to open a detached window (B)  Using the view in the layout (A) allows updating dynamically the DICOM attributes to the current image (e.g. scrolling into the series). The DICOM attributes won&#39;t change when opening the detached window (B).</description>
     </item>
     
     <item>
@@ -194,8 +191,7 @@ Text length: The translations for many languages frequently exceed the length of
       
       <guid>https://nroduit.github.io/en/tutorials/histo/</guid>
       <description>Displaying Histogram Displaying the histogram allows you to view the distribution of the modality values.
-Displaying the histogram allow to better understand the effect on the pixel distribution wen changing all the LUT parameters from the Image Tool right panel.
- To open the histogram, select the &amp;ldquo;Histogram&amp;rdquo; layout from the Layouts dropdown button (see the image below).
+Displaying the histogram allow to better understand the effect on the pixel distribution wen changing all the LUT parameters from the Image Tool right panel.  To open the histogram, select the &amp;ldquo;Histogram&amp;rdquo; layout from the Layouts dropdown button (see the image below).
 General histogram parameters:
  Channel: With gray images only the Luminance channel is available.</description>
     </item>
@@ -247,8 +243,7 @@ To fill in the fields you must refer to the Java documentation.</description>
       
       <guid>https://nroduit.github.io/en/tutorials/locale/</guid>
       <description>How to change the language and regional settings Switching from the user interface From the main menu, open File &amp;gt; Preferences (Alt + P) and select the desired language and the regional format. The languages available in the list can be partially translated, check Internationalization.
-Anywhere in the user interface, date and number should be displayed with the selected regional format.
- Changing the default locale settings If you need to change the default settings, please see the preferences.</description>
+Anywhere in the user interface, date and number should be displayed with the selected regional format.  Changing the default locale settings If you need to change the default settings, please see the preferences.</description>
     </item>
     
     <item>
@@ -277,7 +272,9 @@ Changing the default look and feel value See preferences</description>
       
       <guid>https://nroduit.github.io/en/faq/</guid>
       <description>Frequently Asked Questions 
-  Why is the Weasis license Eclipse Public License?    The Eclipse Public License is an OSI approved license and a commercially friendly copyleft license.
+ 
+ Why is the Weasis license Eclipse Public License? &amp;lt;/span&amp;gt;  
+&amp;lt;div class=&amp;quot;expand-content&amp;quot; style=&amp;quot;display: none;&amp;quot;&amp;gt; &amp;lt;blockquote&amp;gt;  The Eclipse Public License is an OSI approved license and a commercially friendly copyleft license.
 EPL is more business-friendly about some patent retaliation and reverse engineering clauses than LGPL. With EPL, derivative work (weasis plugin) can be distributed in any license type: open source, freeware, commercial&amp;hellip; However, if you distribute Weasis with some modifications (changing existing source code of the open source Weasis plug-ins), even if it is a free distribution, you are obligated to make your modifications available to others.</description>
     </item>
     
@@ -299,8 +296,7 @@ Become a Committer  Become a committer on an existing project or on one of the i
       
       <guid>https://nroduit.github.io/en/demo/</guid>
       <description>Demo with multiple DICOM Samples This page shows a list of DICOM samples for testing viewer capabilities.
-Naming convention
- Patient name starting with &amp;ldquo;TEST^&amp;rdquo; and then the general test purpose. &amp;ldquo;TEST-i18n-&amp;rdquo; prefix is for internationalization test. In study description: general test description In series description: test description   The demo server is on a free cloud system, so sometimes it requires to launch two times the viewer because the server has to wake up (is turned &amp;ldquo;idle&amp;rdquo; after a period of inactivity).</description>
+**Naming convention** - Patient name starting with &#34;TEST^&#34; and then the general test purpose. &#34;TEST-i18n-&#34; prefix is for internationalization test. - In study description: general test description - In series description: test description  The demo server is on a free cloud system, so sometimes it requires to launch two times the viewer because the server has to wake up (is turned &#34;</description>
     </item>
     
   </channel>

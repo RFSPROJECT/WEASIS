@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.52" />
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="description" content="Weasis: an open source DICOM viewer which is modular, multiplatform, web-based and mulitlingual. It can be easly integrated in any medical system">
 <meta name="keywords" content="dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer, clinical viewer, radiolgical viewer, linux dicom viewer, mac dicom viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,18 +13,18 @@
     <title>Getting Started :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1568766353" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1568766353" rel="stylesheet">
-    <link href="/css/hybrid.css?1568766353" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1568766353" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1568766353" rel="stylesheet">
-    <link href="/css/auto-complete.css?1568766353" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1568766353" rel="stylesheet">
-    <link href="/css/theme.css?1568766353" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1568766353" rel="stylesheet">
+    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
+    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
+    <link href="/css/theme.css?1572634064" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1568766353"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1568766353"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1568766353"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1568766353"></script>
+<script type="text/javascript" src="/js/search.js?1572634064"></script>
 
     
   </div>
@@ -1261,6 +1261,7 @@
 <li><a href="#try-weasis-now">Try Weasis now</a></li>
 <li><a href="#general-topics">General Topics</a></li>
 <li><a href="#developer-documentation">Developer Documentation</a></li>
+<li><a href="#weasis-distributions">Weasis distributions</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1293,7 +1294,7 @@
 
 <h3 id="try-weasis-now">Try Weasis now</h3>
 
-<p>These native installers below replace the weasis-portable.zip package (still available <a target="_blank" href="https://sourceforge.net/projects/dcm4che/files/Weasis/">here</a>) and no longer requires <a target="_blank" href="https://www.java.com/en/download/">Java</a> to be installed on the system. It also serves as a basis for launching Weasis from a web context using the <a href="weasis-protocol">weasis protocol</a>.</p>
+<p>These native installers below replace the weasis-portable.zip package (still available <a target="_blank" href="https://sourceforge.net/projects/dcm4che/files/Weasis/">here</a>) and no longer requires <a target="_blank" href="https://www.java.com/en/download/">Java</a> to be installed on the system. It also serves as a basis for launching Weasis from a web context using the <a href="weasis-protocol">weasis protocol</a>. See below the differences between the <a href="#weasis-distributions">weasis distributions</a>.</p>
 
 
 
@@ -1313,7 +1314,7 @@
     <tr bgcolor="#FBFDFD">
       <td align="center"><i class='fab fa-linux' style='font-size:34px'></td>
       <td align="left">Linux (x64) .rpm (&gt;= GLIBC_2.14)</td>
-      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.3/weasis-3.5.3-1.x86_64.rpm" target="_blank" class="btn btn-default">weasis-3.5.3-1.x86_64.rpm <i class="fa fa-download"></i></a></td>
+      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.4/weasis-3.5.4-1.x86_64.rpm" target="_blank" class="btn btn-default">weasis-3.5.4-1.x86_64.rpm <i class="fa fa-download"></i></a></td>
     </tr>
     
     
@@ -1323,7 +1324,7 @@
     <tr bgcolor="#FBFDFD">
       <td align="center"><i class='fab fa-microsoft' style='font-size:34px'></td>
       <td align="left">Windows 64-bit 7, 8, 10</td>
-      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.3/Weasis-3.5.3-x86-64.msi" target="_blank" class="btn btn-default">Weasis-3.5.3-x86-64.msi <i class="fa fa-download"></i></a></td>
+      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.4/Weasis-3.5.4-x86-64.msi" target="_blank" class="btn btn-default">Weasis-3.5.4-x86-64.msi <i class="fa fa-download"></i></a></td>
     </tr>
     
     
@@ -1333,7 +1334,7 @@
     <tr bgcolor="#FBFDFD">
       <td align="center"><i class='fab fa-microsoft' style='font-size:34px'></td>
       <td align="left">Windows 32-bit 7, 8, 10</td>
-      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.3/Weasis-3.5.3-x86.msi" target="_blank" class="btn btn-default">Weasis-3.5.3-x86.msi <i class="fa fa-download"></i></a></td>
+      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.4/Weasis-3.5.4-x86.msi" target="_blank" class="btn btn-default">Weasis-3.5.4-x86.msi <i class="fa fa-download"></i></a></td>
     </tr>
     
     
@@ -1343,7 +1344,7 @@
     <tr bgcolor="#FBFDFD">
       <td align="center"><i class='fab fa-apple' style='font-size:34px'></td>
       <td align="left">Mac OS X (&gt;= 10.9)</td>
-      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.3/Weasis-3.5.3.pkg" target="_blank" class="btn btn-default">Weasis-3.5.3.pkg <i class="fa fa-download"></i></a></td>
+      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.4/Weasis-3.5.4.pkg" target="_blank" class="btn btn-default">Weasis-3.5.4.pkg <i class="fa fa-download"></i></a></td>
     </tr>
     
     
@@ -1353,7 +1354,7 @@
     <tr bgcolor="#FBFDFD">
       <td align="center"><i class='fab fa-linux' style='font-size:34px'></td>
       <td align="left">Linux (x64) .deb (&gt;= GLIBC_2.14)</td>
-      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.3/weasis_3.5.3_amd64.deb" target="_blank" class="btn btn-default">weasis_3.5.3_amd64.deb <i class="fa fa-download"></i></a></td>
+      <td align="left"><a  href="https://github.com/nroduit/Weasis/releases/download/v3.5.4/weasis_3.5.4-1_amd64.deb" target="_blank" class="btn btn-default">weasis_3.5.4-1_amd64.deb <i class="fa fa-download"></i></a></td>
     </tr>
     
 
@@ -1398,13 +1399,13 @@
 
 <p>The easiest way to launch Weasis from a web context is to use <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector">weasis-pacs-connector</a>.</p>
 
-<div class="notices note" ><p>To manage Weasis version at the server side, it is possible to install the <a href="https://github.com/nroduit/weasis-pacs-connector#installation">Weasis web package</a> which will upgrade the native installation at the client side (it works for minor releases by updating all the plug-ins except the launcher).</p>
+<div class="notices note" >
+To manage Weasis version at the server side, it is possible to install the [Weasis web package](https://github.com/nroduit/weasis-pacs-connector#installation) which will upgrade the native installation at the client side (it works for minor releases by updating all the plug-ins except the launcher).
 </div>
 
-
-<div class="notices tip" ><p>Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis">google group</a> (Choose Email to read this group) to stay informed about new releases and updates.</p>
+<div class="notices tip" >
+Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis">google group</a> (Choose Email to read this group) to stay informed about new releases and updates.
 </div>
-
 
 <h3 id="general-topics">General Topics</h3>
 
@@ -1432,6 +1433,175 @@
 <li><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#build-weasis-pacs-connector">Building weasis-pacs-connector</a></li>
 <li><a target="_blank" href="https://github.com/nroduit/Weasis/issues">Issues on Github</a></li>
 </ul>
+
+<h3 id="weasis-distributions">Weasis distributions</h3>
+
+<table>
+<thead>
+<tr>
+<th>Description of integrations</th>
+<th>Weasis native installer</th>
+<th>Weasis portable</th>
+<th>Weasis web with Java Webstart</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Does not require a Java installation</td>
+<td>Yes</td>
+<td>No but a JRE related to the system can be paced in the package (e.g. jre/windows)</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Does not require admin permissions to install</td>
+<td>No</td>
+<td>Yes (except on recent Mac OS X versions)</td>
+<td>No (requires Java installation)</td>
+</tr>
+
+<tr>
+<td>Supported Java 11 or superior</td>
+<td>Yes</td>
+<td>Yes but only from Weasis 3.5</td>
+<td>No (JWS has been removed in Java 11)</td>
+</tr>
+
+<tr>
+<td>Start from web page</td>
+<td>Yes</td>
+<td>N/A</td>
+<td>Yes but directly only with JNLP protocol, otherwise required to download and execute jnlp file</td>
+</tr>
+
+<tr>
+<td>Start from any software</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes but only with JNLP protocol</td>
+</tr>
+
+<tr>
+<td>Start from command line</td>
+<td>Yes (use weasis protocol without additionnal information)</td>
+<td>Yes (required to know the script location)</td>
+<td>Yes with javaws (required a third-party software to build dynamically the JNLP file)</td>
+</tr>
+
+<tr>
+<td>Single instance mechanism</td>
+<td>Yes (smart rules based on profile)</td>
+<td>Partially (only on Windows without smart rules)</td>
+<td>Yes but contains several issues</td>
+</tr>
+
+<tr>
+<td>Supports HiDPI monitors</td>
+<td>Yes</td>
+<td>Yes but only when running Java 13 or superior</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Shortcut to launch from the OS</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Running on recent Mac OS X</td>
+<td>Yes (supports sandboxing)</td>
+<td>No</td>
+<td>Yes but it requires to have Java 8 as default Java version</td>
+</tr>
+
+<tr>
+<td>Menu integration on Mac OS X</td>
+<td>Yes</td>
+<td>Yes from Weasis 3.5 but only when running Java 9 or superior</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>OS integration for all the machine users</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>DICOM files association at system level with Weasis</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Register weasis protocol at system level</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>Loading studies with DICOMWeb RESTful archive from a web context</td>
+<td>Yes (can be done directly without weasis-pacs-connector)</td>
+<td>N/A</td>
+<td>No (not implement in weasis-pacs-connector)</td>
+</tr>
+
+<tr>
+<td>Launch by weasis-pacs-connector</td>
+<td>Yes (required weasis-pacs-connector 7.1.1)</td>
+<td>N/A</td>
+<td>Yes but weasis-pacs-connector 7.1.1 must be called by the deprecated service <a href="http://hostname/weasis-pacs-connector/viewer">http://hostname/weasis-pacs-connector/viewer</a></td>
+</tr>
+
+<tr>
+<td>Integration with dcm4chee-2.x web portal</td>
+<td>Yes (required weasis-pacs-connector 6.1.5)</td>
+<td>N/A</td>
+<td>Yes (required weasis-pacs-connector 6.x)</td>
+</tr>
+
+<tr>
+<td>Integration with dcm4chee-arc-light web portal</td>
+<td>Yes</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Weasis automatic remote update</td>
+<td>Yes (except Java and the launcher)</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Handle preferences at server-side</td>
+<td>Yes</td>
+<td>N/A</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>API to manage user remote preferences</td>
+<td>Yes</td>
+<td>N/A</td>
+<td>Yes from Weasis 3.5</td>
+</tr>
+
+<tr>
+<td>API to manage launcher configuration</td>
+<td>Yes</td>
+<td>N/A</td>
+<td>Yes from Weasis 3.5 (not implement in weasis-pacs-connector and not fully compliant)</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1592,27 +1762,10 @@
 
                     
                     
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -1678,6 +1831,37 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1706,6 +1890,256 @@
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
             
         
@@ -1991,20 +2425,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1568766354"></script>
-    <script src="/js/perfect-scrollbar.min.js?1568766354"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1568766354"></script>
-    <script src="/js/jquery.sticky.js?1568766354"></script>
-    <script src="/js/featherlight.min.js?1568766354"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1568766354"></script>
-    <script src="/js/highlight.pack.js?1568766354"></script>
+    <script src="/js/clipboard.min.js?1572634064"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
+    <script src="/js/jquery.sticky.js?1572634064"></script>
+    <script src="/js/featherlight.min.js?1572634064"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
+    <script src="/js/highlight.pack.js?1572634064"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1568766354"></script>
-    <script src="/js/learn.js?1568766354"></script>
-    <script src="/js/hugo-learn.js?1568766354"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
+    <script src="/js/learn.js?1572634064"></script>
+    <script src="/js/hugo-learn.js?1572634064"></script>
 
-    <link href="/mermaid/mermaid.css?1568766354" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1568766354"></script>
+    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572634064"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

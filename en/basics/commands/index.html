@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.52" />
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="description" content="List of commands at start-up and for driving Weasis">
 <meta name="keywords" content="commands, weasis commands, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,18 +13,18 @@
     <title>Weasis Commands :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1568766354" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1568766354" rel="stylesheet">
-    <link href="/css/hybrid.css?1568766354" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1568766354" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1568766354" rel="stylesheet">
-    <link href="/css/auto-complete.css?1568766354" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1568766354" rel="stylesheet">
-    <link href="/css/theme.css?1568766354" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1568766354" rel="stylesheet">
+    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
+    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
+    <link href="/css/theme.css?1572634064" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1568766354"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1568766354"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1568766354"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1568766354"></script>
+<script type="text/javascript" src="/js/search.js?1572634064"></script>
 
     
   </div>
@@ -1315,9 +1315,9 @@
 
 <p>The commands listed below can be applied at start-up or in a telnet session. All the commands starting with &ldquo;dcmview2d:&rdquo; allow to drive Weasis and are not adapted to be used at start-up.</p>
 
-<div class="notices info" ><p>This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from <a target="_blank" href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">POSIX</a>.</p>
+<div class="notices info" >
+This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from <a target="_blank" href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">POSIX</a>.
 </div>
-
 
 <p>To obtain the list of commands, after starting Weasis, open a local telnet session of the OSGI Console and type <code>lb</code> for getting the list of bundles and their state or type <code>help</code> for getting all the available commands:</p>
 
@@ -1335,9 +1335,9 @@ Welcome to Apache Felix Gogo
 
 g! </code></pre></div>
 
-<div class="notices tip" ><p><strong>Modifying the default port number</strong>: This value can be changed in the <a target="_blank" href="https://github.com/nroduit/">configuration of the launcher</a> (by overriding the property or with a new jnlp template)</p>
+<div class="notices tip" >
+**Modifying the default port number**: This value can be changed in the <a target="_blank" href="https://github.com/nroduit/">configuration of the launcher</a> (by overriding the property or with a new jnlp template)
 </div>
-
 
 <h3 id="list-of-weasis-commands">List of Weasis commands</h3>
 
@@ -1488,15 +1488,15 @@ arg is an XML text in UTF8 or an url with the option &#39;--url&#39;
 
 <p>This command can be used only at launch, see <a href="../../getting-started/weasis-protocol/#modify-the-launch-parameters">Modify the launch parameters</a></p>
 
-<div class="notices note" ><p>For identifying the commands at start-up, the symbol &ldquo;$&rdquo; must be added before the command (not required in the OSGI console). See examples below.</p>
+<div class="notices note" >
+For identifying the commands at start-up, the symbol "$" must be added before the command (not required in the OSGI console). See examples below.
 </div>
-
 
 <h3 id="weasis-portable-distribution">Weasis Portable distribution</h3>
 
-<div class="notices note" ><p>The native installer will progressively replace the portable and the web distribution with the <a href="../../getting-started/weasis-protocol">weasis protocol</a>.</p>
+<div class="notices note" >
+The native installer will progressively replace the portable and the web distribution with the [weasis protocol](../../getting-started/weasis-protocol).
 </div>
-
 
 <p>There are two ways to open local images with the portable distribution.</p>
 
@@ -1504,9 +1504,9 @@ arg is an XML text in UTF8 or an url with the option &#39;--url&#39;
 <li><p>Load images automatically from a configured directory</p>
 
 <p>Set images into a “dicom” or “images” directory at the same level of the binary launcher (c.f. weasis-win32.exe). The default directories can be changed in weasis/conf/config.properties, see the properties starting by &ldquo;weasis.portable.&rdquo; in <a href="../customize/preferences">Weasis Weasis Preferences</a>.
-<div class="notices tip" ><p>Launch Weasis by double clicking on the executable file or in command-line (c.f. on Linux: ./weasis-linux.sh &lsquo;$dicom:get &ndash;portable&rsquo;)</p>
-</div>
-</p></li>
+<div class="notices tip" >
+Launch Weasis by double clicking on the executable file or in command-line (c.f. on Linux: ./weasis-linux.sh &lsquo;$dicom:get &ndash;portable&rsquo;)
+</div></p></li>
 
 <li><p>Launch arguments</p>
 
@@ -1529,13 +1529,13 @@ viewer-win32.exe $dicom:get -l <span style="color:#e6db74">&#34;E:/DICOM/Overlay
 </ul></li>
 </ol>
 
-<div class="notices warning" ><p><strong>Special characters</strong>:
-The command interpreter has changed from weasis 2.6.0. Command containing special characters like &lsquo;&amp;&rsquo; must be within quotes or double quotes. Example: 
-dicom:get -w <strong>&ldquo;url&rdquo;</strong>
+<div class="notices warning" >
+**Special characters**:
+The command interpreter has changed from weasis 2.6.0. Command containing special characters like '&' must be within quotes or double quotes. Example: 
+dicom:get -w **"url"**
 <br><br>
-It also depends on the command line system. For instance in the Eclipse launcher parameters, ‘&amp;’ within URLs needs to be escaped with a backslash.</p>
+It also depends on the command line system. For instance in the Eclipse launcher parameters, ‘&’ within URLs needs to be escaped with a backslash.
 </div>
-
 
 
 <footer class=" footline" >
@@ -1697,27 +1697,10 @@ It also depends on the command line system. For instance in the Eclipse launcher
 
                     
                     
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -1783,11 +1766,41 @@ It also depends on the command line system. For instance in the Eclipse launcher
             
         
                     
+            
+        
+                    
                         
             
             
                 
                     
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1805,6 +1818,124 @@ It also depends on the command line system. For instance in the Eclipse launcher
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1815,6 +1946,139 @@ It also depends on the command line system. For instance in the Eclipse launcher
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
             
         
@@ -2090,7 +2354,7 @@ It also depends on the command line system. For instance in the Eclipse launcher
 			<a class="nav nav-prev" href="/en/basics/customize/build-plugins/" title="Build Plug-ins"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/basics/dicom/" title="Dicom Conformance" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/basics/customize/" title="Customize" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2100,20 +2364,20 @@ It also depends on the command line system. For instance in the Eclipse launcher
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1568766354"></script>
-    <script src="/js/perfect-scrollbar.min.js?1568766354"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1568766354"></script>
-    <script src="/js/jquery.sticky.js?1568766354"></script>
-    <script src="/js/featherlight.min.js?1568766354"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1568766354"></script>
-    <script src="/js/highlight.pack.js?1568766354"></script>
+    <script src="/js/clipboard.min.js?1572634064"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
+    <script src="/js/jquery.sticky.js?1572634064"></script>
+    <script src="/js/featherlight.min.js?1572634064"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
+    <script src="/js/highlight.pack.js?1572634064"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1568766354"></script>
-    <script src="/js/learn.js?1568766354"></script>
-    <script src="/js/hugo-learn.js?1568766354"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
+    <script src="/js/learn.js?1572634064"></script>
+    <script src="/js/hugo-learn.js?1572634064"></script>
 
-    <link href="/mermaid/mermaid.css?1568766354" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1568766354"></script>
+    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572634064"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
