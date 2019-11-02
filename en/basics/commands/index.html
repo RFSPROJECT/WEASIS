@@ -13,20 +13,20 @@
     <title>Weasis Commands :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
-    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
-    <link href="/css/theme.css?1572634064" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
+    <link href="/css/nucleus.css?1572711922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572711922" rel="stylesheet">
+    <link href="/css/hybrid.css?1572711922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572711922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572711922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572711922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572711922" rel="stylesheet">
+    <link href="/css/theme.css?1572711922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572711922" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572711922"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572711922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572711922"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572634064"></script>
+<script type="text/javascript" src="/js/search.js?1572711922"></script>
 
     
   </div>
@@ -1276,6 +1276,7 @@
 <li><a href="#dcmview2d-zoom">dcmview2d:zoom</a></li>
 <li><a href="#dicom-get">dicom:get</a></li>
 <li><a href="#dicom-close">dicom:close</a></li>
+<li><a href="#dicom-rs">dicom:rs</a></li>
 <li><a href="#image-get">image:get</a></li>
 <li><a href="#image-close">image close</a></li>
 <li><a href="#weasis-info">weasis:info</a></li>
@@ -1315,9 +1316,10 @@
 
 <p>The commands listed below can be applied at start-up or in a telnet session. All the commands starting with &ldquo;dcmview2d:&rdquo; allow to drive Weasis and are not adapted to be used at start-up.</p>
 
-<div class="notices info" >
-This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from <a target="_blank" href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">POSIX</a>.
+
+<div class="notices info" ><p>This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from <a target="_blank" href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">POSIX</a>.</p>
 </div>
+
 
 <p>To obtain the list of commands, after starting Weasis, open a local telnet session of the OSGI Console and type <code>lb</code> for getting the list of bundles and their state or type <code>help</code> for getting all the available commands:</p>
 
@@ -1335,9 +1337,10 @@ Welcome to Apache Felix Gogo
 
 g! </code></pre></div>
 
-<div class="notices tip" >
-**Modifying the default port number**: This value can be changed in the <a target="_blank" href="https://github.com/nroduit/">configuration of the launcher</a> (by overriding the property or with a new jnlp template)
+
+<div class="notices tip" ><p><strong>Modifying the default port number</strong>: This value can be changed in the <a target="_blank" href="https://github.com/nroduit/">configuration of the launcher</a> (by overriding the property or with a new jnlp template)</p>
 </div>
+
 
 <h3 id="list-of-weasis-commands">List of Weasis commands</h3>
 
@@ -1416,13 +1419,14 @@ Usage: dcmview2d:zoom (set VALUE | increase NUMBER | decrease NUMBER)
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">g! dicom:get
 Load DICOM files remotely or locally
-Usage: dicom:get ([-l PATH]... [-r URI]... [-p] [-i DATA]... [-w URI]...)
+Usage: dicom:get ([-l PATH]... [-w URI]... [-r URI]... [-p] [-i DATA]... [-z URI]...)
 PATH is either a directory(recursive) or a file
   -l --local=PATH   open DICOMs from local disk
   -r --remote=URI   open DICOMs from an URI
+  -w --wado=URI     open DICOMs from an XML manifest
+  -z --zip=URI      open DICOM ZIP from an URI
   -p --portable     open DICOMs from configured directories at the same level of the executable
   -i --iwado=DATA   open DICOMs from an XML manifest (GZIP-Base64)
-  -w --wado=URI     open DICOMs from an XML manifest
   -? --help         show help</code></pre></div>
 
 <h4 id="dicom-close">dicom:close</h4>
@@ -1434,6 +1438,22 @@ Usage: dicom:close  (-a | ([-y UID]... [-s UID]...))
   -y --study=UID     close a study, UID is Study Instance UID
   -s --series=UID    close a series, UID is Series Instance UID
   -? --help          show help</code></pre></div>
+
+<h4 id="dicom-rs">dicom:rs</h4>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">g! dicom:rs
+Load DICOM files from DICOMWeb API (QIDO/WADO-RS)
+Usage: dicom:rs -u URL -r QUERYPARAMS... [-H HEADER]... [--query-header HEADER]... [--retrieve-header HEADER]... [--query-ext EXT] [--retrieve-ext EXT] [--accept-ext EXT]
+  -u --url=URL               URL of the DICOMWeb service
+  -r --request=QUERYPARAMS   Query params of the URL, see weasis-pacs-connector
+  -H --header=HEADER         Pass custom header(s) to all the requests
+  --query-header=HEADER      Pass custom header(s) to the query requests (QIDO)
+  --retrieve-header=HEADER   Pass custom header(s) to the retrieve requests (WADO)
+  --query-ext=EXT            Additionnal parameters for Query URL (QIDO)
+  --retrieve-ext=EXT         Additionnal parameters for Retrieve URL (WADO)
+  --accept-ext=EXT           Additionnal parameters for DICOM multipart/related Accept header of the retrieve URL (WADO). Default value is: transfer-syntax=*
+  --show-whole-study         when downloading a series, show all the other series (ready for download) from the same study
+  -? --help                  show help</code></pre></div>
 
 <h4 id="image-get">image:get</h4>
 
@@ -1488,15 +1508,17 @@ arg is an XML text in UTF8 or an url with the option &#39;--url&#39;
 
 <p>This command can be used only at launch, see <a href="../../getting-started/weasis-protocol/#modify-the-launch-parameters">Modify the launch parameters</a></p>
 
-<div class="notices note" >
-For identifying the commands at start-up, the symbol "$" must be added before the command (not required in the OSGI console). See examples below.
+
+<div class="notices note" ><p>For identifying the commands at start-up, the symbol &ldquo;$&rdquo; must be added before the command (not required in the OSGI console). See examples below.</p>
 </div>
+
 
 <h3 id="weasis-portable-distribution">Weasis Portable distribution</h3>
 
-<div class="notices note" >
-The native installer will progressively replace the portable and the web distribution with the [weasis protocol](../../getting-started/weasis-protocol).
+
+<div class="notices note" ><p>The native installer will progressively replace the portable and the web distribution with the <a href="../../getting-started/weasis-protocol">weasis protocol</a>.</p>
 </div>
+
 
 <p>There are two ways to open local images with the portable distribution.</p>
 
@@ -1504,9 +1526,10 @@ The native installer will progressively replace the portable and the web distrib
 <li><p>Load images automatically from a configured directory</p>
 
 <p>Set images into a “dicom” or “images” directory at the same level of the binary launcher (c.f. weasis-win32.exe). The default directories can be changed in weasis/conf/config.properties, see the properties starting by &ldquo;weasis.portable.&rdquo; in <a href="../customize/preferences">Weasis Weasis Preferences</a>.
-<div class="notices tip" >
-Launch Weasis by double clicking on the executable file or in command-line (c.f. on Linux: ./weasis-linux.sh &lsquo;$dicom:get &ndash;portable&rsquo;)
-</div></p></li>
+
+<div class="notices tip" ><p>Launch Weasis by double clicking on the executable file or in command-line (c.f. on Linux: ./weasis-linux.sh &lsquo;$dicom:get &ndash;portable&rsquo;)</p>
+</div>
+</p></li>
 
 <li><p>Launch arguments</p>
 
@@ -1529,13 +1552,14 @@ viewer-win32.exe $dicom:get -l <span style="color:#e6db74">&#34;E:/DICOM/Overlay
 </ul></li>
 </ol>
 
-<div class="notices warning" >
-**Special characters**:
-The command interpreter has changed from weasis 2.6.0. Command containing special characters like '&' must be within quotes or double quotes. Example: 
-dicom:get -w **"url"**
+
+<div class="notices warning" ><p><strong>Special characters</strong>:
+The command interpreter has changed from weasis 2.6.0. Command containing special characters like &lsquo;&amp;&rsquo; must be within quotes or double quotes. Example: 
+dicom:get -w <strong>&ldquo;url&rdquo;</strong>
 <br><br>
-It also depends on the command line system. For instance in the Eclipse launcher parameters, ‘&’ within URLs needs to be escaped with a backslash.
+It also depends on the command line system. For instance in the Eclipse launcher parameters, ‘&amp;’ within URLs needs to be escaped with a backslash.</p>
 </div>
+
 
 
 <footer class=" footline" >
@@ -2364,20 +2388,19 @@ It also depends on the command line system. For instance in the Eclipse launcher
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
-    <script src="/js/jquery.sticky.js?1572634064"></script>
-    <script src="/js/featherlight.min.js?1572634064"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
-    <script src="/js/highlight.pack.js?1572634064"></script>
+    <script src="/js/clipboard.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572711923"></script>
+    <script src="/js/jquery.sticky.js?1572711923"></script>
+    <script src="/js/featherlight.min.js?1572711923"></script>
+    <script src="/js/highlight.pack.js?1572711923"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
-    <script src="/js/learn.js?1572634064"></script>
-    <script src="/js/hugo-learn.js?1572634064"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572711923"></script>
+    <script src="/js/learn.js?1572711923"></script>
+    <script src="/js/hugo-learn.js?1572711923"></script>
 
-    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572634064"></script>
+    <link href="/mermaid/mermaid.css?1572711923" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572711923"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

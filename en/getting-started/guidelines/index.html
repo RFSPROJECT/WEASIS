@@ -13,20 +13,20 @@
     <title>Guidelines :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
-    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
-    <link href="/css/theme.css?1572634064" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
+    <link href="/css/nucleus.css?1572711922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572711922" rel="stylesheet">
+    <link href="/css/hybrid.css?1572711922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572711922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572711922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572711922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572711922" rel="stylesheet">
+    <link href="/css/theme.css?1572711922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572711922" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572711922"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572711922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572711922"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572634064"></script>
+<script type="text/javascript" src="/js/search.js?1572711922"></script>
 
     
   </div>
@@ -1315,15 +1315,13 @@
 
 <ul>
 <li>You can edit the VM options of the <a target="_blank" href="http://wiki.eclipse.org/Eclipse.ini">eclipse.ini</a> file in your eclipse folder. For instance, the maximum memory for the JVM or the JVM location can be specified.</li>
+<li>Start Eclipse and select the path of the Weasis workspace
 
-<li><p>Start Eclipse and select the path of the Weasis workspace
-<div class="notices note" >
-It is recommended to create a new Workspace for keeping a specific Weasis configuration.
-</div></p></li>
-
-<li><p>Go to <em>Window &gt; Preferences &gt; Java &gt; Installed JREs &gt; Execution Environments</em> and select the installed JDK</p></li>
-
-<li><p>In <em>Window &gt; Preferences &gt; General &gt; Workspace</em></p>
+<div class="notices note" ><p>It is recommended to create a new Workspace for keeping a specific Weasis configuration.</p>
+</div>
+</li>
+<li>Go to <em>Window &gt; Preferences &gt; Java &gt; Installed JREs &gt; Execution Environments</em> and select the installed JDK</li>
+<li>In <em>Window &gt; Preferences &gt; General &gt; Workspace</em>
 
 <ul>
 <li>Select UTF-8 for <em>Text file encoding</em></li>
@@ -1384,9 +1382,10 @@ It is recommended to create a new Workspace for keeping a specific Weasis config
 <li>From Eclipse menu, open <em>File &gt; Import&hellip;</em></li>
 <li>In the <em>New</em> dialog, select <em>Maven &gt; Existing Maven Projects</em>, click <em>Next</em> and select the &ldquo;Weasis&rdquo; or &ldquo;weasis-dev&rdquo; directory.</li>
 <li>As it is generally not necessary to get all the Maven projects visible into Eclipse, <em>Deselect</em> <em>All</em> and select only the plugins you are interested in (at least weasis-launcher and weasis-framework).
-<div class="notices tip" >
-See <a target="_blank" href="http://wiki.eclipse.org/EGit/User_Guide">Egit documentation</a>
-</div></li>
+
+<div class="notices tip" ><p>See <a target="_blank" href="http://wiki.eclipse.org/EGit/User_Guide">Egit documentation</a></p>
+</div>
+</li>
 </ul></li>
 </ul>
 
@@ -1405,29 +1404,26 @@ See <a target="_blank" href="http://wiki.eclipse.org/EGit/User_Guide">Egit docum
 <li>Select the <em>weasis-framework</em> project</li>
 <li>Right click, <em>Run as &gt; Run Configurations&hellip;</em>
 <img src="/images/conf/mvn-run-cfg.png" alt="Maven configuration" />
-<div class="notices warning" >
-Getting errors on the projects. Try the following instructions:</li>
-</ul></li>
-</ul></li>
 
-<li><p>Right-click on the project and <em>Maven &gt; Update Project Configuration</em></p></li>
-
-<li><p>Right-click on the project and select <em>Refresh</em></p></li>
-
-<li><p><em>Project &gt; Update All Maven Dependencies</em></p></li>
-
-<li><p><em>Project &gt; Clean all projects</em></p></li>
-
-<li><p>Right-click <em>Close Project</em> and then <em>Open Project</em>
-</div></p></li>
-</ul>
-
-<div class="notices note" >
-If you have Maven installed on your system or TM terminal Eclipse plugin, it is sometimes easier to type the maven commands directly in a console.
-</div>
+<div class="notices warning" ><p>Getting errors on the projects. Try the following instructions:</p>
 
 <ul>
-<li>Building Weasis Distributions
+<li>Right-click on the project and <em>Maven &gt; Update Project Configuration</em></li>
+<li>Right-click on the project and select <em>Refresh</em></li>
+<li><em>Project &gt; Update All Maven Dependencies</em></li>
+<li><em>Project &gt; Clean all projects</em></li>
+<li>Right-click <em>Close Project</em> and then <em>Open Project</em></li>
+</ul>
+</div>
+
+
+<div class="notices note" ><p>If you have Maven installed on your system or TM terminal Eclipse plugin, it is sometimes easier to type the maven commands directly in a console.</p>
+</div>
+</li>
+</ul></li>
+</ul></li>
+
+<li><p>Building Weasis Distributions</p>
 
 <ul>
 <li>Requires to have installed all the plug-ins as described just the item above</li>
@@ -1441,9 +1437,10 @@ If you have Maven installed on your system or TM terminal Eclipse plugin, it is 
 </ul></li>
 <li>Select the <em>weasis-distributions</em> project</li>
 <li>Right click, <em>Run as &gt; Maven Install</em>
-<div class="notices note" >
-The distribution files are located in the <em>target/dist</em> folder of the project.<br> See <a href="../building-weasis">Building Weasis from source</a> for more advanced options.
-</div></li>
+
+<div class="notices note" ><p>The distribution files are located in the <em>target/dist</em> folder of the project.<br> See <a href="../building-weasis">Building Weasis from source</a> for more advanced options.</p>
+</div>
+</li>
 </ul></li>
 </ul>
 
@@ -1465,30 +1462,32 @@ The distribution files are located in the <em>target/dist</em> folder of the pro
 <ul>
 <li>Program arguments, examples for loading DICOM locally:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:get -l &#34;D:\\images\\dicom&#34;</code></pre></div>
-<div class="notices note" >
-For more commands at startup see <a href="../../basics/commands">Weasis commands</a>.
-</div></li>
-</ul></li>
-</ul>
 
-<div class="notices warning" >
-In Eclipse launcher parameters, '&' within URLs needs to be escaped with a backslash.
+<div class="notices note" ><p>For more commands at startup see <a href="../../basics/commands">Weasis commands</a>.</p>
 </div>
 
-<pre><code>- VM arguments, minimal configuration:
-</code></pre>
 
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">-Xms64m -Xmx768m -Dgosh.args=&#34;-sc telnetd -p 17179 start&#34;</code></pre></div>
-    - Other VM arguments, exemples with specific configuration files:
-        - For Launching Weasis Dicomizer:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">-Dfelix.extended.config.properties=file:target/conf/ext-dicomizer.properties</code></pre></div>
-        - Configuration from an URL:
+<div class="notices warning" ><p>In Eclipse launcher parameters, &lsquo;&amp;&rsquo; within URLs needs to be escaped with a backslash.</p>
+</div>
+</li>
+<li>VM arguments, minimal configuration:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">-Xms64m -Xmx768m -Dgosh.args=&#34;-sc telnetd -p 17179 start&#34;</code></pre></div></li>
+<li>Other VM arguments, exemples with specific configuration files:
+
+<ul>
+<li>For Launching Weasis Dicomizer:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">-Dfelix.extended.config.properties=file:target/conf/ext-dicomizer.properties</code></pre></div></li>
+<li>Configuration from an URL:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">-Dfelix.extended.config.properties=file:http://mysite.com/weasis/conf/ext-config.properties</code></pre></div>
-<div class="notices note" >
-Meaning of the properties (see also <a href="../../basics/customize/preferences">Preferences</a>):<br>
+
+<div class="notices note" ><p>Meaning of the properties (see also <a href="../../basics/customize/preferences">Preferences</a>):<br>
 <strong>felix.config.properties</strong> defines the location of config.properties (the OSGI configuration and the list of plug-ins to install/start)<br>
-<strong>felix.extended.config.properties</strong> defines the location of ext-config.properties (extends/overrides config.properties)
-</div></p>
+<strong>felix.extended.config.properties</strong> defines the location of ext-config.properties (extends/overrides config.properties)</p>
+</div>
+</li>
+</ul></li>
+</ul></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -2314,20 +2313,19 @@ Meaning of the properties (see also <a href="../../basics/customize/preferences"
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
-    <script src="/js/jquery.sticky.js?1572634064"></script>
-    <script src="/js/featherlight.min.js?1572634064"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
-    <script src="/js/highlight.pack.js?1572634064"></script>
+    <script src="/js/clipboard.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572711923"></script>
+    <script src="/js/jquery.sticky.js?1572711923"></script>
+    <script src="/js/featherlight.min.js?1572711923"></script>
+    <script src="/js/highlight.pack.js?1572711923"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
-    <script src="/js/learn.js?1572634064"></script>
-    <script src="/js/hugo-learn.js?1572634064"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572711923"></script>
+    <script src="/js/learn.js?1572711923"></script>
+    <script src="/js/hugo-learn.js?1572711923"></script>
 
-    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572634064"></script>
+    <link href="/mermaid/mermaid.css?1572711923" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572711923"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -13,20 +13,20 @@
     <title>Internationalization :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
-    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
-    <link href="/css/theme.css?1572634064" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
+    <link href="/css/nucleus.css?1572711922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572711922" rel="stylesheet">
+    <link href="/css/hybrid.css?1572711922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572711922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572711922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572711922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572711922" rel="stylesheet">
+    <link href="/css/theme.css?1572711922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572711922" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572711922"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572711922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572711922"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572634064"></script>
+<script type="text/javascript" src="/js/search.js?1572711922"></script>
 
     
   </div>
@@ -1298,27 +1298,31 @@
 
 <p>The translation files are now hosted and managed on <a target="_blank" href="https://www.transifex.com/weasis/public/">Transifex</a> website. Get an account at <a target="_blank" href="https://www.transifex.com/signin">Transifex</a> and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.</p>
 
-<div class="notices warning" >
-**Text length**: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
+
+<div class="notices warning" ><p><strong>Text length</strong>: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).</p>
 </div>
 
-<div class="notices tip" >
-**Special characters**: Some characters representing values (%d, %s), newline (\\n) and HTML tags must not be translated. For other translating recommendations, see <a target="_blank" href="https://docs.transifex.com/#translating">Transifex help</a><br>
-For special words or particular contexts look at the "Instructions" text box (gives explanations or definitions).
+
+
+<div class="notices tip" ><p><strong>Special characters</strong>: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated. For other translating recommendations, see <a target="_blank" href="https://docs.transifex.com/#translating">Transifex help</a><br>
+For special words or particular contexts look at the &ldquo;Instructions&rdquo; text box (gives explanations or definitions).</p>
 </div>
+
 
 <h2 id="building-weasis-i18n">Building Weasis-i18n</h2>
 
 <p><a target="_blank" href="https://github.com/nroduit/weasis-i18n">weasis-i18n</a> is the internationalization project (i18n) of Weasis. As a separate project, it can have its own release cycle. The <a target="_blank" href="https://www.osgi.org">OSGi</a> fragments of plug-ins contain only the translation files which are merged during runtime to the matching module of the application.</p>
 
-<div class="notices note" >
-That means the weasis-i18n.war file can be deployed at any time, it does not need to follow the Weasis life cycle. The plug-in translation will be updated by Weasis only if the timestamp number has changed. This timestamp is set during the build phase described below.
+
+<div class="notices note" ><p>That means the weasis-i18n.war file can be deployed at any time, it does not need to follow the Weasis life cycle. The plug-in translation will be updated by Weasis only if the timestamp number has changed. This timestamp is set during the build phase described below.</p>
 </div>
 
-<div class="notices info" >
-**Additional projects to obtain a full translation of Weasis:**<br>
-The <a target="_blank" href="https://www.transifex.com/organization/weasis/dashboard/java-swing-dialogs">java-swing-dialogs</a> translations must be updated manually in the weasis-launcher module and <a target="_blank" href="https://www.transifex.com/weasis/docking-frames">docking-frames</a> translations must be packaged with the library.
+
+
+<div class="notices info" ><p><strong>Additional projects to obtain a full translation of Weasis:</strong><br>
+The <a target="_blank" href="https://www.transifex.com/organization/weasis/dashboard/java-swing-dialogs">java-swing-dialogs</a> translations must be updated manually in the weasis-launcher module and <a target="_blank" href="https://www.transifex.com/weasis/docking-frames">docking-frames</a> translations must be packaged with the library.</p>
 </div>
+
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -1346,14 +1350,16 @@ If your computer is behind a proxy server, <a target="_blank" href="http://maven
 <p>Command if you are behind a proxy server:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean install -DproxySet<span style="color:#f92672">=</span>true -DproxyHost<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;host&#34;</span> -DproxyPort<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;port&#34;</span>; -Dtransifex.credential<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username:password&#34;</span></code></pre></div></p>
 
-<div class="notices info" >
-The distribution files are located in the *weasis-i18n-dist/target/dist* folder. weasis-i18n.war must be placed in the same base context as weasis.war (if in other web context, the value of the property *weasis.i18n* in JNLP file must be adapted).<br><br>
-To update translation packs in weasis-portable, unzip weasis-i18n.zip and replace files in weasis-portable/weasis/bundle-i18n/.
+
+<div class="notices info" ><p>The distribution files are located in the <em>weasis-i18n-dist/target/dist</em> folder. weasis-i18n.war must be placed in the same base context as weasis.war (if in other web context, the value of the property <em>weasis.i18n</em> in JNLP file must be adapted).<br><br>
+To update translation packs in weasis-portable, unzip weasis-i18n.zip and replace files in weasis-portable/weasis/bundle-i18n/.</p>
 </div>
 
-<div class="notices note" >
-weasis-launcher-i18n cannot be updated dynamically as the launcher is not an OSGi module. It must be imported in the Weasis source (weasis-launcher).
+
+
+<div class="notices note" ><p>weasis-launcher-i18n cannot be updated dynamically as the launcher is not an OSGi module. It must be imported in the Weasis source (weasis-launcher).</p>
 </div>
+
 
 
 <footer class=" footline" >
@@ -2179,20 +2185,19 @@ weasis-launcher-i18n cannot be updated dynamically as the launcher is not an OSG
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
-    <script src="/js/jquery.sticky.js?1572634064"></script>
-    <script src="/js/featherlight.min.js?1572634064"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
-    <script src="/js/highlight.pack.js?1572634064"></script>
+    <script src="/js/clipboard.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572711923"></script>
+    <script src="/js/jquery.sticky.js?1572711923"></script>
+    <script src="/js/featherlight.min.js?1572711923"></script>
+    <script src="/js/highlight.pack.js?1572711923"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
-    <script src="/js/learn.js?1572634064"></script>
-    <script src="/js/hugo-learn.js?1572634064"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572711923"></script>
+    <script src="/js/learn.js?1572711923"></script>
+    <script src="/js/hugo-learn.js?1572711923"></script>
 
-    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572634064"></script>
+    <link href="/mermaid/mermaid.css?1572711923" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572711923"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

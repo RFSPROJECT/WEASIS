@@ -37,7 +37,8 @@ Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) th
       
       <guid>https://nroduit.github.io/en/basics/commands/</guid>
       <description>The commands listed below can be applied at start-up or in a telnet session. All the commands starting with &amp;ldquo;dcmview2d:&amp;rdquo; allow to drive Weasis and are not adapted to be used at start-up.
-This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSIX.  To obtain the list of commands, after starting Weasis, open a local telnet session of the OSGI Console and type lb for getting the list of bundles and their state or type help for getting all the available commands:</description>
+This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSIX.
+ To obtain the list of commands, after starting Weasis, open a local telnet session of the OSGI Console and type lb for getting the list of bundles and their state or type help for getting all the available commands:</description>
     </item>
     
     <item>

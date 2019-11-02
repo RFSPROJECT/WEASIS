@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/basics/customize/integration/</guid>
-      <description>How to launch Weasis from any environments Here we present how to launch Weasis with associated images from any context either using weasis-pacs-connector or by building its own connector. The launch of the application is based on the weasis protocol available since version 3.5. However, it is still possible to use weasis 3.5 with Java Webstart (but only with Java 8 to 10), see the old documentation.
-The easiest way to launch Weasis from a web context is to use weasis-pacs-connector.</description>
+      <description>How to launch Weasis from any environments Here we present how to launch Weasis with associated images from any context either using weasis-pacs-connector or by building your own connector. The launch of the application is based on the weasis protocol available since version 3.5. However, it is still possible to use weasis 3.5 with Java Webstart (but only with Java 8 to 10), see the old documentation.
+Using weasis-pacs-connector allows a high degree of integration and facilitates connection to a PACS.</description>
     </item>
     
     <item>

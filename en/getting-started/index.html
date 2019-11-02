@@ -13,20 +13,20 @@
     <title>Getting Started :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
-    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
-    <link href="/css/theme.css?1572634064" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
+    <link href="/css/nucleus.css?1572711922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572711922" rel="stylesheet">
+    <link href="/css/hybrid.css?1572711922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572711922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572711922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572711922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572711922" rel="stylesheet">
+    <link href="/css/theme.css?1572711922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572711922" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572711922"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572711922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572711922"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572634064"></script>
+<script type="text/javascript" src="/js/search.js?1572711922"></script>
 
     
   </div>
@@ -1397,15 +1397,17 @@
 </table>
 
 
-<p>The easiest way to launch Weasis from a web context is to use <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector">weasis-pacs-connector</a>.</p>
+<p>The different possibilities for integrating Weasis with other systems are described <a href="../basics/customize/integration">here</a>.</p>
 
-<div class="notices note" >
-To manage Weasis version at the server side, it is possible to install the [Weasis web package](https://github.com/nroduit/weasis-pacs-connector#installation) which will upgrade the native installation at the client side (it works for minor releases by updating all the plug-ins except the launcher).
+
+<div class="notices note" ><p>To manage Weasis version at the server side, it is possible to install the <a href="https://github.com/nroduit/weasis-pacs-connector#installation">Weasis web package</a> which will upgrade the native installation at the client side (it works for minor releases by updating all the plug-ins except the launcher).</p>
 </div>
 
-<div class="notices tip" >
-Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis">google group</a> (Choose Email to read this group) to stay informed about new releases and updates.
+
+
+<div class="notices tip" ><p>Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis">google group</a> (Choose Email to read this group) to stay informed about new releases and updates.</p>
 </div>
+
 
 <h3 id="general-topics">General Topics</h3>
 
@@ -1436,10 +1438,18 @@ Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis"
 
 <h3 id="weasis-distributions">Weasis distributions</h3>
 
+<p>The table below shows the differences between the distributions (the answer yes is the best):</p>
+
+<ul>
+<li><strong>Weasis native installer</strong>: Windows MSI, macOS PKG, and Linux RPM and DEB. Can be used as a standalone application or connected to the web distribution (allows you to launch the defined version remotely)</li>
+<li><strong>Weasis portable</strong>: weasis-portable.zip. Can be used in removable devices.</li>
+<li><strong>Weasis web with Java Webstart</strong>: weasis.war and using Java Webstart as launcher (JNLP). Java Webstart has been removed from Java 11.</li>
+</ul>
+
 <table>
 <thead>
 <tr>
-<th>Description of integrations</th>
+<th>Description of features</th>
 <th>Weasis native installer</th>
 <th>Weasis portable</th>
 <th>Weasis web with Java Webstart</th>
@@ -1450,7 +1460,7 @@ Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis"
 <tr>
 <td>Does not require a Java installation</td>
 <td>Yes</td>
-<td>No but a JRE related to the system can be paced in the package (e.g. jre/windows)</td>
+<td>No but a JRE related to the system can be placed in the package (e.g. jre/windows)</td>
 <td>No</td>
 </tr>
 
@@ -1465,7 +1475,7 @@ Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis"
 <td>Supported Java 11 or superior</td>
 <td>Yes</td>
 <td>Yes but only from Weasis 3.5</td>
-<td>No (JWS has been removed in Java 11)</td>
+<td>No (JWS has been removed from Java 11)</td>
 </tr>
 
 <tr>
@@ -1484,9 +1494,9 @@ Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis"
 
 <tr>
 <td>Start from command line</td>
-<td>Yes (use weasis protocol without additionnal information)</td>
+<td>Yes (use weasis protocol without additional information)</td>
 <td>Yes (required to know the script location)</td>
-<td>Yes with javaws (required a third-party software to build dynamically the JNLP file)</td>
+<td>Yes with javaws (required a third-party software to build the JNLP file dynamically)</td>
 </tr>
 
 <tr>
@@ -1532,14 +1542,14 @@ Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis"
 </tr>
 
 <tr>
-<td>DICOM files association at system level with Weasis</td>
+<td>DICOM files association at the system level with Weasis</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
 </tr>
 
 <tr>
-<td>Register weasis protocol at system level</td>
+<td>Register weasis protocol at the system level</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -2425,20 +2435,19 @@ Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/weasis"
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
-    <script src="/js/jquery.sticky.js?1572634064"></script>
-    <script src="/js/featherlight.min.js?1572634064"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
-    <script src="/js/highlight.pack.js?1572634064"></script>
+    <script src="/js/clipboard.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572711923"></script>
+    <script src="/js/jquery.sticky.js?1572711923"></script>
+    <script src="/js/featherlight.min.js?1572711923"></script>
+    <script src="/js/highlight.pack.js?1572711923"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
-    <script src="/js/learn.js?1572634064"></script>
-    <script src="/js/hugo-learn.js?1572634064"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572711923"></script>
+    <script src="/js/learn.js?1572711923"></script>
+    <script src="/js/hugo-learn.js?1572711923"></script>
 
-    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572634064"></script>
+    <link href="/mermaid/mermaid.css?1572711923" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572711923"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

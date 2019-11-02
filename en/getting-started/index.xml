@@ -17,8 +17,8 @@
       
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
-Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis is launched with Java Webstart is still available here. 
-For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with Docker is straightforward).</description>
+Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis is launched with Java Webstart is still available here.
+ For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with Docker is straightforward).</description>
     </item>
     
     <item>
@@ -28,7 +28,8 @@ For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with
       
       <guid>https://nroduit.github.io/en/getting-started/weasis-protocol/</guid>
       <description>The web protocol allows to launch Weasis in a web context from a specific URI scheme: weasis://parameters
-Requires Weasis 3.5 (or superior) installed on the system with a [native installer](../).  How to use the weasis protocol  From a web page, just make a link starting with weasis:// (see below How to build an URI) Some web frameworks such as the wiki or the URL field of some browsers only support the standard protocols (http, ftp&amp;hellip;).</description>
+Requires Weasis 3.5 (or superior) installed on the system with a native installer.
+ How to use the weasis protocol  From a web page, just make a link starting with weasis:// (see below How to build an URI) Some web frameworks such as the wiki or the URL field of some browsers only support the standard protocols (http, ftp&amp;hellip;).</description>
     </item>
     
     <item>
@@ -60,7 +61,8 @@ We recommend the use of Eclipse IDE, because all the following instructions are 
       
       <guid>https://nroduit.github.io/en/getting-started/translating/</guid>
       <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
-**Text length**: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).  **Special characters**: Some characters representing values (%d, %s), newline (\\n) and HTML tags must not be translated.</description>
+Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
+ Special characters: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated.</description>
     </item>
     
   </channel>

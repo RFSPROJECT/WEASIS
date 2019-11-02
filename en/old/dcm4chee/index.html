@@ -13,20 +13,20 @@
     <title>Embedding in dcm4chee (deprecated) :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
-    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
-    <link href="/css/theme.css?1572634064" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
+    <link href="/css/nucleus.css?1572711922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572711922" rel="stylesheet">
+    <link href="/css/hybrid.css?1572711922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572711922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572711922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572711922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572711922" rel="stylesheet">
+    <link href="/css/theme.css?1572711922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572711922" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572711922"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572711922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572711922"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572634064"></script>
+<script type="text/javascript" src="/js/search.js?1572711922"></script>
 
     
   </div>
@@ -1301,10 +1301,11 @@
 
 <p>Weasis is launched from the dcm4chee administrative web interface with Java Webstart, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.</p>
 
-<div class="notices warning" >
-Use the [weasis protocol](../../getting-started/weasis-protocol) instead of Java Web Start because it has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
-Prefer [this page instead](../../getting-started/dcm4chee).
+
+<div class="notices warning" ><p>Use the <a href="../../getting-started/weasis-protocol">weasis protocol</a> instead of Java Web Start because it has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
+Prefer <a href="../../getting-started/dcm4chee">this page instead</a>.</p>
 </div>
+
 
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
@@ -1414,9 +1415,10 @@ Prefer [this page instead](../../getting-started/dcm4chee).
 <li><a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki">Install dcm4chee</a>, if not already done.</li>
 
 <li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download these Weasis files.
-<div class="notices warning" >
-<strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.
-</div></p>
+
+<div class="notices warning" ><p><strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.</p>
+</div>
+</p>
 
 <ul>
 <li>From the folder with the latest version number:
@@ -1446,9 +1448,10 @@ Prefer [this page instead](../../getting-started/dcm4chee).
 <li>Edit the configuration as needed. For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed. If so, edit <code>weasis-pacs-connector.properties</code> or <code>dicom-dcm4chee-arc.properties</code> (Change pacs.host, pacs.port, and pacs.aet).</li>
 
 <li><p>Copy <code>weasis-pacs-connector.properties</code> and <code>dicom-dcm4chee-arc.properties</code> into wildfly/standalone/configuration. With the docker installation use the docker copy command: docker cp &hellip;
-<div class="notices tip" >
-Instead of copying the files into wildfly/standalone/configuration, JBoss Command Line Interface Console can be used to override files in the war. Add the two configuration files with the deployment-overlay command:<br>
-</div></p>
+
+<div class="notices tip" ><p>Instead of copying the files into wildfly/standalone/configuration, JBoss Command Line Interface Console can be used to override files in the war. Add the two configuration files with the deployment-overlay command:<br></p>
+</div>
+</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">deployment-overlay add --name=dcm4chee-arc --deployments=weasis-pacs-connector.war --content=WEB-INF/classes/weasis-connector-default.properties=/tmp/weasis-pacs-connector.properties,WEB-INF/classes/dicom-dcm4chee-arc.properties=/tmp/dicom-dcm4chee-arc.properties --redeploy-affected</code></pre></div></li>
 
 <li><p>For applying the new configuration, from the management console &ldquo;Disable&rdquo; weasis-pacs-connector.war and then &ldquo;Enable&rdquo;</p></li>
@@ -1466,25 +1469,27 @@ And fill up the following properties: </p>
 <ul>
 <li>Invoke Image Display Patient URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=PATIENT&amp;patientID={}</code></li>
 <li>Invoke Image Display Study URL: <code>../../weasis-pacs-connector/IHEInvokeImageDisplay?requestType=STUDY&amp;studyUID={}</code>
-<div class="notices tip" >
-<strong>Absolute path</strong>: The values above starting by &ldquo;../&rdquo; are the default relative path when weasis-pacs-connector is installed in the same JBoss as dcm4chee. Otherwise replace the relative URL by an absolute value, ex: <code>http://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code>
-</div></li>
-</ul></li>
-</ul></li>
-</ol>
 
-<div class="notices note" >
-<a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/tree/6.x/#new-way-to-launch-jnlp">The new way of launching Java Westart</a> file (jnlp) will also require an absolute URL as the scheme of the URL is different:<br>
-`jnlp://<your-host>:8080/weasis-pacs-connector/...`<br> `jnlps://<your-host>:8443/weasis-pacs-connector/...` (TLS connection)<br> Replace "\<your-host\>" with your server hostname
+<div class="notices tip" ><p><strong>Absolute path</strong>: The values above starting by &ldquo;../&rdquo; are the default relative path when weasis-pacs-connector is installed in the same JBoss as dcm4chee. Otherwise replace the relative URL by an absolute value, ex: <code>http://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code></p>
 </div>
 
-<pre><code>- Refresh the web page and the view button should appear as in the screenshot above
 
-- An alternative way to configure the activation is with an LDAP manager (like Apache Directory Studio)
+<div class="notices note" ><p><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/tree/6.x/#new-way-to-launch-jnlp">The new way of launching Java Westart</a> file (jnlp) will also require an absolute URL as the scheme of the URL is different:<br>
+<code>jnlp://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code><br> <code>jnlps://&lt;your-host&gt;:8443/weasis-pacs-connector/...</code> (TLS connection)<br> Replace &ldquo;&lt;your-host&gt;&rdquo; with your server hostname</p>
+</div>
+</li>
+</ul></li>
 
-    1.  Connect to LDAP, see &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/dcm4che/dcm4chee-arc-light/wiki/Installation#import-default-configuration-into-ldap-server&quot;&gt;dcm4chee configuration&lt;/a&gt;
-    2.  Import &lt;a target=&quot;_blank&quot; href=&quot;/attachments/weasis.ldif&quot; download&gt;weasis.ldif&lt;/a&gt;
-</code></pre>
+<li><p>Refresh the web page and the view button should appear as in the screenshot above</p></li>
+
+<li><p>An alternative way to configure the activation is with an LDAP manager (like Apache Directory Studio)</p>
+
+<ol>
+<li>Connect to LDAP, see <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Installation#import-default-configuration-into-ldap-server">dcm4chee configuration</a></li>
+<li>Import <a target="_blank" href="/attachments/weasis.ldif" download>weasis.ldif</a></li>
+</ol></li>
+</ul></li>
+</ol>
 
 <hr />
 
@@ -1500,9 +1505,10 @@ And fill up the following properties: </p>
 </ul></li>
 
 <li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download these Weasis files.
-<div class="notices warning" >
-<strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.
-</div></p>
+
+<div class="notices warning" ><p><strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.</p>
+</div>
+</p>
 
 <ul>
 <li>From the folder with the latest version number:
@@ -1539,9 +1545,10 @@ From weasis-pacs-connector 5.0 WebviewerBaseUrl can have different values:</p>
 <ul>
 <li>weasis:jnlp://&lt;your-host&gt;:8080/weasis-pacs-connector/viewer</li>
 <li>weasis:jnlps://&lt;your-host&gt;:8443/weasis-pacs-connector/viewer
-<div class="notices warning" >
-Replace &ldquo;&lt;your-host&gt;&rdquo; with your server hostname
-</div></li>
+
+<div class="notices warning" ><p>Replace &ldquo;&lt;your-host&gt;&rdquo; with your server hostname</p>
+</div>
+</li>
 </ul>
 
 <p>From dcm4chee 2.18.3, it possible to reuse the default host name of dcm4chee:</p>
@@ -1592,9 +1599,10 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
 <li>The last Weasis version: weasis.war</li>
 <li>The Weasis internationalization (translation): weasis-i18n.war (optional)</li>
 <li>The modified <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/dcm4chee-web/">dcm4chee web interface</a> dcm4chee-web/<em>version</em>/dcm4chee-web.war)
-<div class="notices info" >
-<strong>dcm4chee version</strong>:   dcm4chee-web.war has been built only for some dcm4chee versions. For other versions see <a href="../rebuild-dcm4chee-web">rebuild dcm4chee-web</a> from any version.
-</div></li>
+
+<div class="notices info" ><p><strong>dcm4chee version</strong>:   dcm4chee-web.war has been built only for some dcm4chee versions. For other versions see <a href="../rebuild-dcm4chee-web">rebuild dcm4chee-web</a> from any version.</p>
+</div>
+</li>
 </ul></li>
 
 <li><p>Place these three files into the deploy folder (server/default/deploy/) of dcm4chee.</p></li>
@@ -1626,10 +1634,11 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
 <li>Select the MakeIsoImage item and set to <code>4</code> the value of isoLevel</li>
 </ul></li>
 <li>Click on the <em>Apply Changes</em> button
-<div class="notices tip" >
-<strong>Embedding a Java Runtime for Windows</strong>: The executable (viewer-win32.exe) allows to embed a JRE in the relative directory &ldquo;jre/windows&rdquo; (e.g. weasis-portable/jre/windows/bin/java.exe). To support 32 and 64-bit architecture, copy 32-bit Java Runtime from its installed directory.<br>
-<br>Note: the embedded Java Runtime is used only when no runtime is available on the system. When Java is run from CD, it could be a little slow.
-</div></li>
+
+<div class="notices tip" ><p><strong>Embedding a Java Runtime for Windows</strong>: The executable (viewer-win32.exe) allows to embed a JRE in the relative directory &ldquo;jre/windows&rdquo; (e.g. weasis-portable/jre/windows/bin/java.exe). To support 32 and 64-bit architecture, copy 32-bit Java Runtime from its installed directory.<br>
+<br>Note: the embedded Java Runtime is used only when no runtime is available on the system. When Java is run from CD, it could be a little slow.</p>
+</div>
+</li>
 </ol>
 
 
@@ -2456,20 +2465,19 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
-    <script src="/js/jquery.sticky.js?1572634064"></script>
-    <script src="/js/featherlight.min.js?1572634064"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
-    <script src="/js/highlight.pack.js?1572634064"></script>
+    <script src="/js/clipboard.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572711923"></script>
+    <script src="/js/jquery.sticky.js?1572711923"></script>
+    <script src="/js/featherlight.min.js?1572711923"></script>
+    <script src="/js/highlight.pack.js?1572711923"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
-    <script src="/js/learn.js?1572634064"></script>
-    <script src="/js/hugo-learn.js?1572634064"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572711923"></script>
+    <script src="/js/learn.js?1572711923"></script>
+    <script src="/js/hugo-learn.js?1572711923"></script>
 
-    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572634064"></script>
+    <link href="/mermaid/mermaid.css?1572711923" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572711923"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -13,20 +13,20 @@
     <title>Building Weasis :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
-    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
-    <link href="/css/theme.css?1572634064" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
+    <link href="/css/nucleus.css?1572711922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572711922" rel="stylesheet">
+    <link href="/css/hybrid.css?1572711922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572711922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572711922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572711922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572711922" rel="stylesheet">
+    <link href="/css/theme.css?1572711922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572711922" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572711922"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572711922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572711922"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572634064"></script>
+<script type="text/javascript" src="/js/search.js?1572711922"></script>
 
     
   </div>
@@ -1313,9 +1313,10 @@ If your computer is behind a proxy server, <a target="_blank" href="http://maven
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone https://github.com/nroduit/Weasis.git</code></pre></div>
 
-<div class="notices warning" >
-The trunk is not a stable version and snapshot version is not retained in the cache for the web distribution (it means the files will be downloaded every time)
+
+<div class="notices warning" ><p>The trunk is not a stable version and snapshot version is not retained in the cache for the web distribution (it means the files will be downloaded every time)</p>
 </div>
+
 
 <p>Check out a tag version to build a stable version, see the <a target="_blank" href="https://github.com/nroduit/Weasis/tags">tag list</a>.</p>
 
@@ -1330,27 +1331,28 @@ The trunk is not a stable version and snapshot version is not retained in the ca
 
 <h3 id="building-weasis-distributions">Building Weasis Distributions</h3>
 
-<div class="notices note" >
-The native installer will progressively replace the portable and the web distribution. It uses the [weasis protocol](../../getting-started/weasis-protocol) (which not requires jar signing) instead of Java Web Start which has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
-The documentation for building the native installer is not yet available.
+
+<div class="notices note" ><p>The native installer will progressively replace the portable and the web distribution. It uses the <a href="../../getting-started/weasis-protocol">weasis protocol</a> (which not requires jar signing) instead of Java Web Start which has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
+The documentation for building the native installer is not yet available.</p>
 </div>
+
 
 <ul>
 <li>Requires installing all the plug-ins in the local Maven repository as described in the item above.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd weasis-distributions
 $ mvn clean package -Dportable<span style="color:#f92672">=</span>true -P pack200</code></pre></div>
-<div class="notices tip" >
-<strong>-P pack200</strong>: From 1.1.2 it is possible to use the compression pack200 that reduces jar size considerably.<br>
-<strong>-Dportable=true</strong>: Option for building the portable distribution (multi-platform standalone launchers)
-</div></li>
-</ul>
 
-<div class="notices warning" >
-For the WEB distribution using Java Webstart, it is required to sign jar files with your **own certificate** (by replacing values in the command below with your **own values**). A trust-worthy certificate from a certificate authority is  <a target="_blank" href="https://blogs.oracle.com/java-platform-group/entry/code_signing_understanding_who_and">required</a> to run Java Web Start applications. A self-signed certificate generate by keytool will always display a security warning message.
+<div class="notices tip" ><p><strong>-P pack200</strong>: From 1.1.2 it is possible to use the compression pack200 that reduces jar size considerably.<br>
+<strong>-Dportable=true</strong>: Option for building the portable distribution (multi-platform standalone launchers)</p>
 </div>
 
-<p>The parameters must be placed in the maven user setting or has to be the options in the Maven command:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean package -Djarsigner.alias<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_alias&#34;</span> -Djarsigner.storepass<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_pwd&#34;</span> -Djarsigner.keystore<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_path/keystore&#34;</span> -Dportable<span style="color:#f92672">=</span>true -P pack200</code></pre></div></p>
+
+<div class="notices warning" ><p>For the WEB distribution using Java Webstart, it is required to sign jar files with your <strong>own certificate</strong> (by replacing values in the command below with your <strong>own values</strong>). A trust-worthy certificate from a certificate authority is  <a target="_blank" href="https://blogs.oracle.com/java-platform-group/entry/code_signing_understanding_who_and">required</a> to run Java Web Start applications. A self-signed certificate generate by keytool will always display a security warning message.</p>
+</div>
+
+The parameters must be placed in the maven user setting or has to be the options in the Maven command:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean package -Djarsigner.alias<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_alias&#34;</span> -Djarsigner.storepass<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_pwd&#34;</span> -Djarsigner.keystore<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_path/keystore&#34;</span> -Dportable<span style="color:#f92672">=</span>true -P pack200</code></pre></div></li>
+</ul>
 
 <!-- -->
 
@@ -1361,9 +1363,10 @@ For the WEB distribution using Java Webstart, it is required to sign jar files w
 <li>By default, the executable on Windows runs only a single instance (from Weasis 2.0). To disable single instance in the portable version, set windowsName property empty.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean package -Dportable<span style="color:#f92672">=</span>true -DwindowsName<span style="color:#f92672">=</span></code></pre></div></li>
 <li>On 64-bit system, it requires installing the 32-bit compatibility libraries to build the windows executable. On Linux, you need to install <strong>ia32-libs</strong> package.
-<div class="notices warning" >
-Do not place the sources in a path that contains directories with blanks or national characters, the compilation of the win32 executable can fail.
-</div></li>
+
+<div class="notices warning" ><p>Do not place the sources in a path that contains directories with blanks or national characters, the compilation of the win32 executable can fail.</p>
+</div>
+</li>
 </ul></li>
 
 <li><p>The distribution files are located in:</p>
@@ -2198,20 +2201,19 @@ Do not place the sources in a path that contains directories with blanks or nati
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
-    <script src="/js/jquery.sticky.js?1572634064"></script>
-    <script src="/js/featherlight.min.js?1572634064"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
-    <script src="/js/highlight.pack.js?1572634064"></script>
+    <script src="/js/clipboard.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572711923"></script>
+    <script src="/js/jquery.sticky.js?1572711923"></script>
+    <script src="/js/featherlight.min.js?1572711923"></script>
+    <script src="/js/highlight.pack.js?1572711923"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
-    <script src="/js/learn.js?1572634064"></script>
-    <script src="/js/hugo-learn.js?1572634064"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572711923"></script>
+    <script src="/js/learn.js?1572711923"></script>
+    <script src="/js/hugo-learn.js?1572711923"></script>
 
-    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572634064"></script>
+    <link href="/mermaid/mermaid.css?1572711923" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572711923"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

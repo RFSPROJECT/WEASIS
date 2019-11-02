@@ -13,20 +13,20 @@
     <title>Integration (deprecated) :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572634064" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572634064" rel="stylesheet">
-    <link href="/css/hybrid.css?1572634064" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572634064" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572634064" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572634064" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572634064" rel="stylesheet">
-    <link href="/css/theme.css?1572634064" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572634064" rel="stylesheet">
+    <link href="/css/nucleus.css?1572711922" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572711922" rel="stylesheet">
+    <link href="/css/hybrid.css?1572711922" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572711922" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572711922" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572711922" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572711922" rel="stylesheet">
+    <link href="/css/theme.css?1572711922" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572711922" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572634064"></script>
+    <script src="/js/jquery-3.3.1.min.js?1572711922"></script>
 
-    <style type="text/css">
+    <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572634064"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572634064"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1572711922"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572711922"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572634064"></script>
+<script type="text/javascript" src="/js/search.js?1572711922"></script>
 
     
   </div>
@@ -1302,24 +1302,26 @@
 
 <p>There are two Weasis distributions: the WEB distribution (weasis.war) and the portable distribution (weasis-portable.zip). Here we are presenting how to connect the WEB distribution with any web application. This documentation is adapted for Weasis 2.5 and superior working with Java Webstart. The easiest way to launch Weasis from a web context is to use <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector">weasis-pacs-connector</a>.</p>
 
-<div class="notices warning" >
-Use the [weasis protocol](../../getting-started/weasis-protocol) instead of Java Web Start because it has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
-Prefer [this page instead](../../basics/customize/integration).
+
+<div class="notices warning" ><p>Use the <a href="../../getting-started/weasis-protocol">weasis protocol</a> instead of Java Web Start because it has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
+Prefer <a href="../../basics/customize/integration">this page instead</a>.</p>
 </div>
 
-<div class="notices info" >
-For connecting to dcm4chee web interface, follow the instructions in [Installing Weasis in DCM4CHEE](../dcm4chee).
+
+
+<div class="notices info" ><p>For connecting to dcm4chee web interface, follow the instructions in <a href="../dcm4chee">Installing Weasis in DCM4CHEE</a>.</p>
 </div>
+
 
 <h2 id="use-weasis-pacs-connector">Use weasis-pacs-connector</h2>
 
 <p>Standard workflow when connecting Weasis to a PACS, RIS, EMR or any web interface:
 <img src="/images/connector-wk-std.png?classes=border" alt="standard usage workflow" title="Standard workflow" />
-<div class="notices note" >
-The schema above shows that the queries to the PACS are made at the same time the viewer starting.
-</div></p>
 
-<p>Workflow where the manifest is embedded in the jnlp file (synchrone processes):
+<div class="notices note" ><p>The schema above shows that the queries to the PACS are made at the same time the viewer starting.</p>
+</div>
+
+Workflow where the manifest is embedded in the jnlp file (synchrone processes):
 <img src="/images/connector-wk-emb.png?classes=border" alt="embedding the XML manifest" title="Embedding the xml manifest" /></p>
 
 <h2 id="build-your-connector">Build your connector</h2>
@@ -1400,13 +1402,15 @@ The schema above shows that the queries to the PACS are made at the same time th
     <span style="color:#f92672">&lt;argument&gt;</span>$dicom:get -r &#34;http://server/images/img1.dcm http://server/images/img2.dcm&#34;<span style="color:#f92672">&lt;/argument&gt;</span>
   <span style="color:#f92672">&lt;/application-desc&gt;</span>
   <span style="color:#f92672">&lt;/jnlp&gt;</span></code></pre></div>
-<div class="notices note" >
-Replace <code>http://localhost:8080/weasis</code> with your server location and <code>&lt;argument&gt;...&lt;/argument&gt;</code> with your data to load. Adapt other parameters if necessary.
-</div></p>
 
-<div class="notices tip" >
-<a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector">weasis-pacs-connector</a> services are based on jnlp templates and they allow either to build a manifest from a PACS via DICOM C-Find or to upload the manifest by http POST.
+<div class="notices note" ><p>Replace <code>http://localhost:8080/weasis</code> with your server location and <code>&lt;argument&gt;...&lt;/argument&gt;</code> with your data to load. Adapt other parameters if necessary.</p>
 </div>
+</p>
+
+
+<div class="notices tip" ><p><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector">weasis-pacs-connector</a> services are based on jnlp templates and they allow either to build a manifest from a PACS via DICOM C-Find or to upload the manifest by http POST.</p>
+</div>
+
 
 <h3 id="build-an-xml-manifest">Build an XML manifest</h3>
 
@@ -1435,19 +1439,21 @@ Replace <code>http://localhost:8080/weasis</code> with your server location and 
         <span style="color:#f92672">&lt;/Patient&gt;</span>
     <span style="color:#f92672">&lt;/arcQuery&gt;</span>
 <span style="color:#f92672">&lt;/manifest&gt;</span></code></pre></div>
-<div class="notices note" >
-Important Parameters (except mandatory parameters):</p>
+
+<div class="notices note" ><p>Important Parameters (except mandatory parameters):</p>
 
 <ul>
 <li><code>PatientBirthDate</code> helps to identify a patient.</li>
 <li><code>StudyDate,</code> <code>StudyTime</code>, <code>Modality</code>, <code>SeriesNumber</code> and <code>InstanceNumber</code> help to sort data before downloading images.</li>
-<li><code>SeriesDescription</code> and <code>StudyDescription</code> allow to immediately display the descriptions before downloading the images.
-</div></li>
+<li><code>SeriesDescription</code> and <code>StudyDescription</code> allow to immediately display the descriptions before downloading the images.</li>
 </ul>
-
-<div class="notices tip" >
-From Weasis 2.5 it is possible to have multiple archives (allows to have several arcQuery tags) and the <a target="_blank" href="https://github.com/nroduit/Weasis/blob/master/weasis-dicom/weasis-dicom-explorer/src/main/resources/config/presentations.xsd">presentations</a> tag which contains the image annotations.
 </div>
+</p>
+
+
+<div class="notices tip" ><p>From Weasis 2.5 it is possible to have multiple archives (allows to have several arcQuery tags) and the <a target="_blank" href="https://github.com/nroduit/Weasis/blob/master/weasis-dicom/weasis-dicom-explorer/src/main/resources/config/presentations.xsd">presentations</a> tag which contains the image annotations.</p>
+</div>
+
 
 <h3 id="build-an-xml-manifest-no-wado-server">Build an XML manifest (no WADO server)</h3>
 
@@ -1466,15 +1472,16 @@ From Weasis 2.5 it is possible to have multiple archives (allows to have several
     <span style="color:#f92672">&lt;/Patient&gt;</span>
   <span style="color:#f92672">&lt;/arcQuery&gt;</span>
 <span style="color:#f92672">&lt;/manifest&gt;</span></code></pre></div>
-<div class="notices note" >
-Important Parameters:</p>
+
+<div class="notices note" ><p>Important Parameters:</p>
 
 <ul>
 <li><code>DirectDownloadFile</code> defines the URL of the DICOM file to download (the final URL is the combination of wadoURL + DirectDownloadFile)</li>
 <li><code>DirectDownloadThumbnail</code> defines the URL of the JPEG file representing the series (the final URL is the combination of wadoURL + DirectDownloadThumbnail)</li>
-<li>The same ones as above.
-</div></li>
+<li>The same ones as above.</li>
 </ul>
+</div>
+</p>
 
 
 <footer class=" footline" >
@@ -2303,20 +2310,19 @@ Important Parameters:</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572634064"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572634064"></script>
-    <script src="/js/jquery.sticky.js?1572634064"></script>
-    <script src="/js/featherlight.min.js?1572634064"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572634064"></script>
-    <script src="/js/highlight.pack.js?1572634064"></script>
+    <script src="/js/clipboard.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572711923"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572711923"></script>
+    <script src="/js/jquery.sticky.js?1572711923"></script>
+    <script src="/js/featherlight.min.js?1572711923"></script>
+    <script src="/js/highlight.pack.js?1572711923"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572634064"></script>
-    <script src="/js/learn.js?1572634064"></script>
-    <script src="/js/hugo-learn.js?1572634064"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572711923"></script>
+    <script src="/js/learn.js?1572711923"></script>
+    <script src="/js/hugo-learn.js?1572711923"></script>
 
-    <link href="/mermaid/mermaid.css?1572634064" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572634064"></script>
+    <link href="/mermaid/mermaid.css?1572711923" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572711923"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
