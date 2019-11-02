@@ -18,7 +18,7 @@
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
 Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis is launched with Java Webstart is still available here.
- For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with Docker is straightforward).</description>
+ For dcm4chee-arc-light An alternative configuration without weasis-pacs-connector and with dcm4chee DICOMWeb services is possible (No need to consider the following points), it requires only the installation of Weasis 3.</description>
     </item>
     
     <item>

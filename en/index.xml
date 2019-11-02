@@ -18,7 +18,7 @@
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
 Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis is launched with Java Webstart is still available here.
- For dcm4chee-arc-light  Install dcm4chee, if not already done (Installation with Docker is straightforward).</description>
+ For dcm4chee-arc-light An alternative configuration without weasis-pacs-connector and with dcm4chee DICOMWeb services is possible (No need to consider the following points), it requires only the installation of Weasis 3.</description>
     </item>
     
     <item>
@@ -276,11 +276,8 @@ Changing the default look and feel value See preferences</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/faq/</guid>
-      <description>Frequently Asked Questions 
- 
- Why is the Weasis license Eclipse Public License? &amp;lt;/span&amp;gt;  
-&amp;lt;div class=&amp;quot;expand-content&amp;quot; style=&amp;quot;display: none;&amp;quot;&amp;gt; &amp;lt;blockquote&amp;gt;  The Eclipse Public License is an OSI approved license and a commercially friendly copyleft license.
-EPL is more business-friendly about some patent retaliation and reverse engineering clauses than LGPL. With EPL, derivative work (weasis plugin) can be distributed in any license type: open source, freeware, commercial&amp;hellip; However, if you distribute Weasis with some modifications (changing existing source code of the open source Weasis plug-ins), even if it is a free distribution, you are obligated to make your modifications available to others.</description>
+      <description>Frequently Asked Questions  Why is the Weasis license Eclipse Public License? Can Weasis be incorporated in DICOM CDs or other removable media? How to enable Weasis logging? Is it possible to download DICOM files without having a WADO server?  Why is the Weasis license Eclipse Public License? The Eclipse Public License is an OSI approved license and a commercially friendly copyleft license.
+EPL is more business-friendly about some patent retaliation and reverse engineering clauses than LGPL.</description>
     </item>
     
     <item>
