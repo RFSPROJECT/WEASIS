@@ -13,18 +13,18 @@
     <title>Weasis Web Protocol :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1572857526" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572857526" rel="stylesheet">
-    <link href="/css/hybrid.css?1572857526" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572857526" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572857526" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572857526" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572857526" rel="stylesheet">
-    <link href="/css/theme.css?1572857526" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572857526" rel="stylesheet">
+    <link href="/css/nucleus.css?1574017113" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1574017113" rel="stylesheet">
+    <link href="/css/hybrid.css?1574017113" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1574017113" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1574017113" rel="stylesheet">
+    <link href="/css/auto-complete.css?1574017113" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1574017113" rel="stylesheet">
+    <link href="/css/theme.css?1574017113" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1574017113" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572857526"></script>
+    <script src="/js/jquery-3.3.1.min.js?1574017113"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572857526"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572857526"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1574017113"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1574017113"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572857526"></script>
+<script type="text/javascript" src="/js/search.js?1574017113"></script>
 
     
   </div>
@@ -1361,8 +1361,8 @@ $ open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamples%
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:get -w https://nroduit.github.io/samples/Lumbar/mf.xml</code></pre></div></li>
 <li>Use <a href="../../basics/commands/#dicom-rs">$dicom:rs</a> to load DICOM files with DICOMWeb RESTful services (see <a href="../../basics/customize/integration/#download-directly-with-dicomweb-restful-services">other examples</a>) <a  href="weasis://%24dicom%3Ars%20--url%20%22https%3A%2F%2Fdemo.orthanc-server.com%2Fdicom-web%22%20-r%20%22patientID%3D5Yp0E%22%20--accept-ext%3D%22%3B%22" class="btn btn-default">Launch</a>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:rs --url &#34;https://demo.orthanc-server.com/dicom-web&#34; -r &#34;patientID=5Yp0E&#34;</code></pre></div></li>
-<li>Use <a href="../../basics/commands/#dicom-get">$dicom:get</a> to get dynamically the XML manifest containing direct links (without WADO server) <a  href="weasis://%24dicom%3Aget%20-w%20%22http%3A%2F%2Fweasis-launcher-weasis.1d35.starter-us-east-1.openshiftapps.com%2Fweasis-pacs-connector%2Fmanifest%3FstudyUID%3D1.2.840.113619.2.98.3467.1098086125.0.69%22" class="btn btn-default">Launch</a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:get -w &#34;http://weasis-launcher-weasis.1d35.starter-us-east-1.openshiftapps.com/weasis-pacs-connector/manifest?studyUID=1.2.840.113619.2.98.3467.1098086125.0.69&#34;</code></pre></div></li>
+<li>Use <a href="../../basics/commands/#dicom-get">$dicom:get</a> to get dynamically the XML manifest containing direct links (without WADO server) <a  href="weasis://%24dicom%3Aget%20-w%20%22http%3A%2F%2Fweasis-launcher-weasis.apps.us-east-2.starter.openshift-online.com%2Fweasis-pacs-connector%2Fmanifest%3FstudyUID%3D1.2.840.113619.2.98.3467.1098086125.0.69%22" class="btn btn-default">Launch</a>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:get -w &#34;http://weasis-launcher-weasis.apps.us-east-2.starter.openshift-online.com/weasis-pacs-connector/manifest?studyUID=1.2.840.113619.2.98.3467.1098086125.0.69&#34;</code></pre></div></li>
 <li>Use <a href="../../basics/commands/#dicom-get">$dicom:get</a> to load an image from URL and <a href="../../basics/commands/#dicom-close">remove all</a> the previous images if Weasis is already open <a  href="weasis://%24dicom%3Aclose%20--all%20%24dicom%3Aget%20-r%20https%3A%2F%2Fnroduit.github.io%2Fsamples%2Fus-palette.dcm" class="btn btn-default">Launch</a>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:close --all $dicom:get -r https://nroduit.github.io/samples/us-palette.dcm</code></pre></div></li>
 <li>Use <a href="../../basics/commands/#dicom-get">$dicom:get</a> to load multiple local folders and a remote image <a  href="weasis://%24dicom%3Aget%20-l%20%22D%3A%2FDICOM%2FOverlay%22%20-l%20%22D%3A%2FDICOM%2FShutter%22%20-r%20https%3A%2F%2Fnroduit.github.io%2Fsamples%2Fus-palette.dcm" class="btn btn-default">Launch</a>
@@ -2217,19 +2217,19 @@ $ open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamples%
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572857526"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572857526"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572857526"></script>
-    <script src="/js/jquery.sticky.js?1572857526"></script>
-    <script src="/js/featherlight.min.js?1572857526"></script>
-    <script src="/js/highlight.pack.js?1572857526"></script>
+    <script src="/js/clipboard.min.js?1574017113"></script>
+    <script src="/js/perfect-scrollbar.min.js?1574017113"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1574017113"></script>
+    <script src="/js/jquery.sticky.js?1574017113"></script>
+    <script src="/js/featherlight.min.js?1574017113"></script>
+    <script src="/js/highlight.pack.js?1574017113"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572857526"></script>
-    <script src="/js/learn.js?1572857526"></script>
-    <script src="/js/hugo-learn.js?1572857526"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1574017113"></script>
+    <script src="/js/learn.js?1574017113"></script>
+    <script src="/js/hugo-learn.js?1574017113"></script>
 
-    <link href="/mermaid/mermaid.css?1572857526" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572857526"></script>
+    <link href="/mermaid/mermaid.css?1574017113" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1574017113"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
