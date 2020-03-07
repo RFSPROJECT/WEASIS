@@ -13,18 +13,18 @@
     <title>Weasis Web Protocol :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1574017113" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1574017113" rel="stylesheet">
-    <link href="/css/hybrid.css?1574017113" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1574017113" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1574017113" rel="stylesheet">
-    <link href="/css/auto-complete.css?1574017113" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1574017113" rel="stylesheet">
-    <link href="/css/theme.css?1574017113" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1574017113" rel="stylesheet">
+    <link href="/css/nucleus.css?1583608289" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1583608289" rel="stylesheet">
+    <link href="/css/hybrid.css?1583608289" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1583608289" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1583608289" rel="stylesheet">
+    <link href="/css/auto-complete.css?1583608289" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1583608289" rel="stylesheet">
+    <link href="/css/theme.css?1583608289" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1583608289" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1574017113"></script>
+    <script src="/js/jquery-3.3.1.min.js?1583608289"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1574017113"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1574017113"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1583608289"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1583608289"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1574017113"></script>
+<script type="text/javascript" src="/js/search.js?1583608289"></script>
 
     
   </div>
@@ -1376,12 +1376,12 @@ $ open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamples%
 <p>The command for modifying the configuration at launch is <code>$weasis:config</code> which can have different arguments:</p>
 
 <ul>
-<li><code>cdb</code> is the Weasis web context (The URL of weasis.war). If the value is null, the weasis version installed from the <a href="../">native installer</a> is used. In the weasis-pacs-connector <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/blob/master/etc/dcm4chee-arc/weasis-pacs-connector.properties">configuration</a>, the default value is defined by <code>weasis.base.url</code>.</li>
-<li><code>cdb-ext</code> is the extension web context of Weasis (The URL of weasis-ext.war containing additionnal plugins). In the weasis-pacs-connector <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/blob/master/etc/dcm4chee-arc/weasis-pacs-connector.properties">configuration</a>, the default value is defined by <code>weasis.ext.url</code>.</li>
-<li><code>arg</code> is an argument for the launcher. The value must start by $, like arg=&ldquo;$dicom:close &ndash;all&rdquo; (Note: the value can also be directly in the base URI, outside $weasis:config). Single-valued argument but can be specified multiple times.</li>
-<li><code>pro</code> is a property for the launcher containing a key and a value separate by a space. Single-valued property but can be specified multiple times.</li>
-<li><code>auth</code> is the web authorization parameter</li>
-<li><code>wcfg</code> is the URL the remote Weasis configuration service.</li>
+<li><strong>cdb</strong> is the Weasis web context (The URL of weasis.war). If the value is null, the weasis version installed from the <a href="../">native installer</a> is used. In the weasis-pacs-connector <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/blob/master/src/main/resources/weasis-pacs-connector.properties">configuration</a>, the default value is defined by <code>weasis.base.url</code>.</li>
+<li><strong>cdb-ext</strong> is the extension web context of Weasis (The URL of weasis-ext.war containing additionnal plugins). In the weasis-pacs-connector <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/blob/master/src/main/resources/weasis-pacs-connector.properties">configuration</a>, the default value is defined by <code>weasis.ext.url</code>.</li>
+<li><strong>arg</strong> is an argument for the launcher. The value must start by $, like arg=&ldquo;$dicom:close &ndash;all&rdquo; (Note: the value can also be directly in the base URI, outside $weasis:config). Single-valued argument but can be specified multiple times.</li>
+<li><strong>pro</strong> is a property for the launcher containing a key and a value separate by a space. Single-valued property but can be specified multiple times.</li>
+<li><strong>auth</strong> is the web authorization parameter</li>
+<li><strong>wcfg</strong> is the URL the remote Weasis configuration service.</li>
 </ul>
 
 <p>Here are some examples that modify the launcher properties without using <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis">weasis-pacs-connector</a>:</p>
@@ -2217,19 +2217,19 @@ $ open weasis://%24dicom%3Aget%20-w%20https%3A%2F%2Fnroduit.github.io%2Fsamples%
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1574017113"></script>
-    <script src="/js/perfect-scrollbar.min.js?1574017113"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1574017113"></script>
-    <script src="/js/jquery.sticky.js?1574017113"></script>
-    <script src="/js/featherlight.min.js?1574017113"></script>
-    <script src="/js/highlight.pack.js?1574017113"></script>
+    <script src="/js/clipboard.min.js?1583608289"></script>
+    <script src="/js/perfect-scrollbar.min.js?1583608289"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1583608289"></script>
+    <script src="/js/jquery.sticky.js?1583608289"></script>
+    <script src="/js/featherlight.min.js?1583608289"></script>
+    <script src="/js/highlight.pack.js?1583608289"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1574017113"></script>
-    <script src="/js/learn.js?1574017113"></script>
-    <script src="/js/hugo-learn.js?1574017113"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1583608289"></script>
+    <script src="/js/learn.js?1583608289"></script>
+    <script src="/js/hugo-learn.js?1583608289"></script>
 
-    <link href="/mermaid/mermaid.css?1574017113" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1574017113"></script>
+    <link href="/mermaid/mermaid.css?1583608289" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1583608289"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

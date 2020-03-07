@@ -13,18 +13,18 @@
     <title>Building Weasis :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1574017113" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1574017113" rel="stylesheet">
-    <link href="/css/hybrid.css?1574017113" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1574017113" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1574017113" rel="stylesheet">
-    <link href="/css/auto-complete.css?1574017113" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1574017113" rel="stylesheet">
-    <link href="/css/theme.css?1574017113" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1574017113" rel="stylesheet">
+    <link href="/css/nucleus.css?1583608289" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1583608289" rel="stylesheet">
+    <link href="/css/hybrid.css?1583608289" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1583608289" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1583608289" rel="stylesheet">
+    <link href="/css/auto-complete.css?1583608289" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1583608289" rel="stylesheet">
+    <link href="/css/theme.css?1583608289" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1583608289" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1574017113"></script>
+    <script src="/js/jquery-3.3.1.min.js?1583608289"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1574017113"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1574017113"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1583608289"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1583608289"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1574017113"></script>
+<script type="text/javascript" src="/js/search.js?1583608289"></script>
 
     
   </div>
@@ -1340,9 +1340,9 @@ The documentation for building the native installer is not yet available.</p>
 <ul>
 <li>Requires installing all the plug-ins in the local Maven repository as described in the item above.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd weasis-distributions
-$ mvn clean package -Dportable<span style="color:#f92672">=</span>true -P pack200</code></pre></div>
+$ mvn clean package -Dportable<span style="color:#f92672">=</span>true -P compressXZ</code></pre></div>
 
-<div class="notices tip" ><p><strong>-P pack200</strong>: From 1.1.2 it is possible to use the compression pack200 that reduces jar size considerably.<br>
+<div class="notices tip" ><p><strong>-P compressXZ</strong>: Option for compressing the packages in <a target="_blank" href="https://en.wikipedia.org/wiki/XZ_Utils">xz</a>, only from Weasis 3.6.0. The compression pack200 is not supported anymore (removed from Java 14), before 3.6.0 the profile was <strong>-P pack200</strong>.<br>
 <strong>-Dportable=true</strong>: Option for building the portable distribution (multi-platform standalone launchers)</p>
 </div>
 
@@ -1351,7 +1351,7 @@ $ mvn clean package -Dportable<span style="color:#f92672">=</span>true -P pack20
 </div>
 
 The parameters must be placed in the maven user setting or has to be the options in the Maven command:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean package -Djarsigner.alias<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_alias&#34;</span> -Djarsigner.storepass<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_pwd&#34;</span> -Djarsigner.keystore<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_path/keystore&#34;</span> -Dportable<span style="color:#f92672">=</span>true -P pack200</code></pre></div></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean package -Djarsigner.alias<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_alias&#34;</span> -Djarsigner.storepass<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_pwd&#34;</span> -Djarsigner.keystore<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_path/keystore&#34;</span> -Dportable<span style="color:#f92672">=</span>true -P compressXZ</code></pre></div></li>
 </ul>
 
 <!-- -->
@@ -2201,19 +2201,19 @@ The parameters must be placed in the maven user setting or has to be the options
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1574017113"></script>
-    <script src="/js/perfect-scrollbar.min.js?1574017113"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1574017113"></script>
-    <script src="/js/jquery.sticky.js?1574017113"></script>
-    <script src="/js/featherlight.min.js?1574017113"></script>
-    <script src="/js/highlight.pack.js?1574017113"></script>
+    <script src="/js/clipboard.min.js?1583608289"></script>
+    <script src="/js/perfect-scrollbar.min.js?1583608289"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1583608289"></script>
+    <script src="/js/jquery.sticky.js?1583608289"></script>
+    <script src="/js/featherlight.min.js?1583608289"></script>
+    <script src="/js/highlight.pack.js?1583608289"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1574017113"></script>
-    <script src="/js/learn.js?1574017113"></script>
-    <script src="/js/hugo-learn.js?1574017113"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1583608289"></script>
+    <script src="/js/learn.js?1583608289"></script>
+    <script src="/js/hugo-learn.js?1583608289"></script>
 
-    <link href="/mermaid/mermaid.css?1574017113" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1574017113"></script>
+    <link href="/mermaid/mermaid.css?1583608289" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1583608289"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
