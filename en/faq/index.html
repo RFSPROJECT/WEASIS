@@ -13,18 +13,18 @@
     <title>FAQs :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1583608289" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1583608289" rel="stylesheet">
-    <link href="/css/hybrid.css?1583608289" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1583608289" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1583608289" rel="stylesheet">
-    <link href="/css/auto-complete.css?1583608289" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1583608289" rel="stylesheet">
-    <link href="/css/theme.css?1583608289" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1583608289" rel="stylesheet">
+    <link href="/css/nucleus.css?1583998797" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1583998797" rel="stylesheet">
+    <link href="/css/hybrid.css?1583998797" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1583998797" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1583998797" rel="stylesheet">
+    <link href="/css/auto-complete.css?1583998797" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1583998797" rel="stylesheet">
+    <link href="/css/theme.css?1583998797" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1583998797" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1583608289"></script>
+    <script src="/js/jquery-3.3.1.min.js?1583998797"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1583608289"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1583608289"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1583998797"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1583998797"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1583608289"></script>
+<script type="text/javascript" src="/js/search.js?1583998797"></script>
 
     
   </div>
@@ -1304,10 +1304,15 @@
 
 <h3 id="how-to-enable-weasis-logging">How to enable Weasis logging?</h3>
 
-<p>Logs are available either in Weasis log files (in ${user.home}/.weasis/log) or in the Java console (only with Java Webstart).</p>
+<ul>
+<li><p>From Weasis 3.5, a boot log file is always written in ${user.home}/.weasis/log/boot-x.log to trace the launching configuration. A default.log file in the same folder can trace all the Weasis activities; it must be activated:</p>
 
-<ol>
-<li><p>By displaying the Java console (not compatible with the Weasis native installer):</p>
+<ul>
+<li>From <em>File &gt; Preferences &gt; General</em> enable <em>Rolling log</em>, select a log level and a stacktrace limit (DEBUG and empty (unlimited stacktrace lines) are recommended for investigating problems).</li>
+<li>The default logging configuration comes from config.properties or ext-config.properties, see <a href="../basics/customize/preferences">Weasis Preferences</a>.</li>
+</ul></li>
+
+<li><p>By displaying the Java console (only when launching with Java Webstart, not compatible with <a href="../getting-started/weasis-protocol">weasis protocol</a>):</p>
 
 <ul>
 <li><a target="_blank" href="http://www.java.com/en/download/help/javaconsole.xml">Windows</a></li>
@@ -1320,14 +1325,7 @@
 <li>Under the Java console section, select the Show console radio button.</li>
 </ol></li>
 </ul></li>
-
-<li><p>By writing to log files:</p>
-
-<ul>
-<li>Logging can be activated in Weasis from <em>File &gt; Preferences &gt; General</em></li>
-<li>The default logging configuration comes from config.properties or ext-config.properties, see <a href="../basics/customize/preferences">Weasis Preferences</a>.</li>
-</ul></li>
-</ol>
+</ul>
 
 <h3 id="is-it-possible-to-download-dicom-files-without-having-a-wado-server">Is it possible to download DICOM files without having a WADO server?</h3>
 
@@ -2158,19 +2156,19 @@ Note: This option must be used only for a very limited number of files.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1583608289"></script>
-    <script src="/js/perfect-scrollbar.min.js?1583608289"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1583608289"></script>
-    <script src="/js/jquery.sticky.js?1583608289"></script>
-    <script src="/js/featherlight.min.js?1583608289"></script>
-    <script src="/js/highlight.pack.js?1583608289"></script>
+    <script src="/js/clipboard.min.js?1583998797"></script>
+    <script src="/js/perfect-scrollbar.min.js?1583998797"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1583998797"></script>
+    <script src="/js/jquery.sticky.js?1583998797"></script>
+    <script src="/js/featherlight.min.js?1583998797"></script>
+    <script src="/js/highlight.pack.js?1583998797"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1583608289"></script>
-    <script src="/js/learn.js?1583608289"></script>
-    <script src="/js/hugo-learn.js?1583608289"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1583998797"></script>
+    <script src="/js/learn.js?1583998797"></script>
+    <script src="/js/hugo-learn.js?1583998797"></script>
 
-    <link href="/mermaid/mermaid.css?1583608289" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1583608289"></script>
+    <link href="/mermaid/mermaid.css?1583998797" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1583998797"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
