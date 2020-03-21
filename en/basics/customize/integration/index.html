@@ -13,18 +13,18 @@
     <title>Integration :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1583998797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1583998797" rel="stylesheet">
-    <link href="/css/hybrid.css?1583998797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1583998797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1583998797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1583998797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1583998797" rel="stylesheet">
-    <link href="/css/theme.css?1583998797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1583998797" rel="stylesheet">
+    <link href="/css/nucleus.css?1584808539" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1584808539" rel="stylesheet">
+    <link href="/css/hybrid.css?1584808539" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1584808539" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1584808539" rel="stylesheet">
+    <link href="/css/auto-complete.css?1584808539" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1584808539" rel="stylesheet">
+    <link href="/css/theme.css?1584808539" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1584808539" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1583998797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1584808539"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1583998797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1583998797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1584808539"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1584808539"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1583998797"></script>
+<script type="text/javascript" src="/js/search.js?1584808539"></script>
 
     
   </div>
@@ -1435,29 +1435,29 @@
 
 <h4 id="dcm4chee-arc-light">dcm4chee-arc-light</h4>
 
-<p>To activate Weasis in dcm4chee-arc-light user interface (see the <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Weasis-Viewer-Integration">matrix of the required versions</a>, you need need to changes two attributes in the configuration. For this purpose, add the following properties from the left menu Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Edit extension &gt; Child Objects &gt; Web Applications &gt; DCM4CHEE</p>
+<p>This configuration requires at least dcm4chee-arc-light 5.19.1 and Weasis 3.5.4. To activate Weasis in dcm4chee-arc-light user interface, you need to add the two following properties by either editing docker-compose.env (required dcm4chee-arc-light 5.22.0 or superior) or in the web portal from the left menu <em>Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Edit extension &gt; Child Objects &gt; Web Applications &gt; DCM4CHEE</em></p>
 
 <ul>
-<li>dcm4chee-arc unsecure (http):
+<li>dcm4chee-arc unsecure (HTTP):
 
 <ul>
 <li><code>IID_PATIENT_URL=weasis://$dicom:rs --url &quot;http://&lt;your-host&gt;:8080/dcm4chee-arc/aets/DCM4CHEE/rs&quot; -r &quot;&amp;patientID={}&quot;  --query-ext &quot;&amp;includedefaults=false&quot;</code></li>
 <li><code>IID_STUDY_URL=weasis://$dicom:rs --url &quot;http://&lt;your-host&gt;:8080/dcm4chee-arc/aets/DCM4CHEE/rs&quot; -r &quot;&amp;studyUID={}&quot;  --query-ext &quot;&amp;includedefaults=false&quot;</code></li>
 </ul></li>
-<li>dcm4chee-arc secure (with https required a real valid certificate otherwise the certificate must be imported into the Weasis Java keystore):
+<li>dcm4chee-arc secure (HTTPS):
 
 <ul>
-<li><code>IID_PATIENT_URL=weasis://$dicom:rs --url &quot;http://&lt;your-host&gt;:8080/dcm4chee-arc/aets/DCM4CHEE/rs&quot; -r &quot;&amp;patientID={}&quot;  --query-ext &quot;&amp;includedefaults=false&quot; -H &quot;Authorization: &amp;access_token={}&quot;</code></li>
-<li><code>IID_STUDY_URL=weasis://$dicom:rs --url &quot;http://&lt;your-host&gt;:8080/dcm4chee-arc/aets/DCM4CHEE/rs&quot; -r &quot;&amp;studyUID={}&quot;  --query-ext &quot;&amp;includedefaults=false&quot; -H &quot;Authorization: &amp;access_token={}&quot;</code></li>
+<li><code>IID_PATIENT_URL=weasis://$dicom:rs --url &quot;https://&lt;your-host&gt;:8443/dcm4chee-arc/aets/DCM4CHEE/rs&quot; -r &quot;&amp;patientID={}&quot;  --query-ext &quot;&amp;includedefaults=false&quot; -H &quot;Authorization: &amp;access_token={}&quot;</code></li>
+<li><code>IID_STUDY_URL=weasis://$dicom:rs --url &quot;https://&lt;your-host&gt;:8443/dcm4chee-arc/aets/DCM4CHEE/rs&quot; -r &quot;&amp;studyUID={}&quot;  --query-ext &quot;&amp;includedefaults=false&quot; -H &quot;Authorization: &amp;access_token={}&quot;</code></li>
 </ul></li>
 </ul>
 
-<p>Refresh the page for having the viewer button.</p>
 
-
-<div class="notices warning" ><p><code>&lt;your-host&gt;</code> must be replaced by the hostname of your dcm4chee installation.</p>
+<div class="notices warning" ><p><code>&lt;your-host&gt;</code> must be replaced by the hostname of your dcm4che installation. Configuration of HTTPS required a real valid certificate; otherwise, the certificate must be imported into the Weasis Java keystore. For testing purposes in secure mode, you can use the HTTP URL if it is mapped in the OIDC client of keycloack.</p>
 </div>
 
+
+<p>Finally, refresh the page for having the viewer button.</p>
 
 <h4 id="orthanc-web-server">Orthanc WEB Server</h4>
 
@@ -2349,19 +2349,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1583998797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1583998797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1583998797"></script>
-    <script src="/js/jquery.sticky.js?1583998797"></script>
-    <script src="/js/featherlight.min.js?1583998797"></script>
-    <script src="/js/highlight.pack.js?1583998797"></script>
+    <script src="/js/clipboard.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1584808539"></script>
+    <script src="/js/jquery.sticky.js?1584808539"></script>
+    <script src="/js/featherlight.min.js?1584808539"></script>
+    <script src="/js/highlight.pack.js?1584808539"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1583998797"></script>
-    <script src="/js/learn.js?1583998797"></script>
-    <script src="/js/hugo-learn.js?1583998797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1584808539"></script>
+    <script src="/js/learn.js?1584808539"></script>
+    <script src="/js/hugo-learn.js?1584808539"></script>
 
-    <link href="/mermaid/mermaid.css?1583998797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1583998797"></script>
+    <link href="/mermaid/mermaid.css?1584808539" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1584808539"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

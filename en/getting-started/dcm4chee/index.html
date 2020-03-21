@@ -13,18 +13,18 @@
     <title>Embedding in dcm4chee :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1583998797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1583998797" rel="stylesheet">
-    <link href="/css/hybrid.css?1583998797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1583998797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1583998797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1583998797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1583998797" rel="stylesheet">
-    <link href="/css/theme.css?1583998797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1583998797" rel="stylesheet">
+    <link href="/css/nucleus.css?1584808539" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1584808539" rel="stylesheet">
+    <link href="/css/hybrid.css?1584808539" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1584808539" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1584808539" rel="stylesheet">
+    <link href="/css/auto-complete.css?1584808539" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1584808539" rel="stylesheet">
+    <link href="/css/theme.css?1584808539" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1584808539" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1583998797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1584808539"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1583998797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1583998797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1584808539"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1584808539"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1583998797"></script>
+<script type="text/javascript" src="/js/search.js?1584808539"></script>
 
     
   </div>
@@ -1299,7 +1299,7 @@
 
 <p>Weasis is launched from the dcm4chee administrative web interface with the <a href="../weasis-protocol">weasis protocol</a>, as shown in the pictures below.
 
-<div class="notices note" ><p>The documentation where Weasis is launched with Java Webstart is still available <a href="../../old/dcm4chee">here</a>.</p>
+<div class="notices note" ><p>The documentation where Weasis was launched with Java Webstart is still available <a href="../../old/dcm4chee">here</a>.</p>
 </div>
 </p>
 
@@ -1307,10 +1307,7 @@
 
 <p><img src="/gallery-dcm4chee/1Weasis in dcm4chee-arc-light.png?classes=border" alt="dcm4chee-arc-light" title="dcm4chee-arc-light" /></p>
 
-
-<div class="notices tip" ><p>An <a href="../../basics/customize/integration/#download-directly-with-dicomweb-restful-services">alternative configuration</a> without weasis-pacs-connector and with dcm4chee DICOMWeb services is possible (No need to consider the following points), it requires only the installation of Weasis 3.5.4 or superior.</p>
-</div>
-
+<p>For a simpler and faster installation without server components, please follow these <a href="../../basics/customize/integration/#download-directly-with-dicomweb-restful-services">instructions</a>; no need to consider the following points on this page. Otherwise if you need more advanced configurations then follow these steps:</p>
 
 <ol>
 <li><p><a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki">Install dcm4chee</a>, if not already done (Installation with Docker is straightforward).</p></li>
@@ -1364,17 +1361,11 @@ With the docker installation use the docker copy command ($ docker cp &hellip;)
 <li>For applying the new configuration, from the management console &ldquo;Disable&rdquo; weasis-pacs-connector.war and then &ldquo;Enable&rdquo;</li>
 </ul></li>
 
-<li><p>To activate Weasis in dcm4chee-arc-light user interface (see the <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Weasis-Viewer-Integration">matrix of the required versions</a>, you need need to changes two attributes in the configuration</p>
-
-<ul>
-<li><p>Add the following properties from the left menu Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Edit extension &gt; Child Objects &gt; Web Applications &gt; DCM4CHEE 
-(add <code>&amp;cdb</code> to the URL if weasis.war has not been deployed on the server-side): </p>
+<li><p>To activate Weasis in dcm4chee-arc-light (from 5.19.1) user interface (see the <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Weasis-Viewer-Integration">matrix of the required versions</a>, you need need to add the two following attributes in docker-compose.env (from 5.22.0) or from the left menu Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Edit extension &gt; Child Objects &gt; Web Applications &gt; DCM4CHEE (add <code>&amp;cdb</code> to the URL if weasis.war has not been deployed on the server-side): </p>
 
 <ul>
 <li><code>IID_PATIENT_URL=../../weasis-pacs-connector/weasis?&amp;patientID={}&amp;target=_self&amp;access_token={}</code></li>
-<li><code>IID_STUDY_URL=../../weasis-pacs-connector/weasis?&amp;studyUID={}&amp;target=_self&amp;access_token={}</code>
-<br /></li>
-</ul></li>
+<li><code>IID_STUDY_URL=../../weasis-pacs-connector/weasis?&amp;studyUID={}&amp;target=_self&amp;access_token={}</code></li>
 </ul></li>
 </ol>
 
@@ -2277,19 +2268,19 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1583998797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1583998797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1583998797"></script>
-    <script src="/js/jquery.sticky.js?1583998797"></script>
-    <script src="/js/featherlight.min.js?1583998797"></script>
-    <script src="/js/highlight.pack.js?1583998797"></script>
+    <script src="/js/clipboard.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1584808539"></script>
+    <script src="/js/jquery.sticky.js?1584808539"></script>
+    <script src="/js/featherlight.min.js?1584808539"></script>
+    <script src="/js/highlight.pack.js?1584808539"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1583998797"></script>
-    <script src="/js/learn.js?1583998797"></script>
-    <script src="/js/hugo-learn.js?1583998797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1584808539"></script>
+    <script src="/js/learn.js?1584808539"></script>
+    <script src="/js/hugo-learn.js?1584808539"></script>
 
-    <link href="/mermaid/mermaid.css?1583998797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1583998797"></script>
+    <link href="/mermaid/mermaid.css?1584808539" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1584808539"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
