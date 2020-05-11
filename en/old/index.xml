@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Old Documentation on Weasis Documentation</title>
@@ -18,7 +18,7 @@
       <guid>https://nroduit.github.io/en/old/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface.
 Weasis is launched from the dcm4chee administrative web interface with Java Webstart, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.
-Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
+Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 releaseand because the end of public Oracle Java 8 updates from April 2019.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ Use the weasis protocol instead of Java Web Start because it has been removed fr
       
       <guid>https://nroduit.github.io/en/old/integration/</guid>
       <description>How to launch Weasis from any environments There are two Weasis distributions: the WEB distribution (weasis.war) and the portable distribution (weasis-portable.zip). Here we are presenting how to connect the WEB distribution with any web application. This documentation is adapted for Weasis 2.5 and superior working with Java Webstart. The easiest way to launch Weasis from a web context is to use weasis-pacs-connector.
-Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
+Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 releaseand because the end of public Oracle Java 8 updates from April 2019.</description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@ Use the weasis protocol instead of Java Web Start because it has been removed fr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/old/rebuild-dcm4chee-web/</guid>
-      <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems  JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
+      <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems   JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
     </item>
     
   </channel>

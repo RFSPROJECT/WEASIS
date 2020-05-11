@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Customize on Weasis Documentation</title>
@@ -17,7 +17,7 @@
       
       <guid>https://nroduit.github.io/en/basics/customize/integration/</guid>
       <description>How to launch Weasis from any environments Here we present how to launch Weasis with associated images from any context either using weasis-pacs-connector or by building your own connector. The launch of the application is based on the weasis protocol available since version 3.5. However, it is still possible to use weasis 3.5 with Java Webstart (but only with Java 8 to 10), see the old documentation.
-Using weasis-pacs-connector allows a high degree of integration and facilitates connection to a PACS.</description>
+Using weasis-pacs-connectorallows a high degree of integration and facilitates connection to a PACS.</description>
     </item>
     
     <item>

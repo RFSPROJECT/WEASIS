@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="How to build and export DICOM Key Object Selection and Presentation State (GSPS)">
 <meta name="keywords" content="Key Object Selection, Presentation State, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,18 +13,18 @@
     <title>Build KO and PR :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1584808539" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1584808539" rel="stylesheet">
-    <link href="/css/hybrid.css?1584808539" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1584808539" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1584808539" rel="stylesheet">
-    <link href="/css/auto-complete.css?1584808539" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1584808539" rel="stylesheet">
-    <link href="/css/theme.css?1584808539" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1584808539" rel="stylesheet">
+    <link href="/css/nucleus.css?1589230939" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1589230939" rel="stylesheet">
+    <link href="/css/hybrid.css?1589230939" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1589230939" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1589230939" rel="stylesheet">
+    <link href="/css/auto-complete.css?1589230939" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1589230939" rel="stylesheet">
+    <link href="/css/theme.css?1589230939" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1589230939" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1584808539"></script>
+    <script src="/js/jquery-3.3.1.min.js?1589230939"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1584808539"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1584808539"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1589230939"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1589230939"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1584808539"></script>
+<script type="text/javascript" src="/js/search.js?1589230939"></script>
 
     
   </div>
@@ -1259,17 +1259,15 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#center-how-to-build-and-export-dicom-ko-and-pr-center"><center>How to build and export DICOM KO and PR</center></a>
-<ul>
-<li><a href="#key-object-selection-ko">Key Object Selection (KO)</a></li>
-<li><a href="#presentation-state-pr-or-gsps">Presentation State (PR or GSPS)</a></li>
-<li><a href="#exporting-key-object-selection-or-presentation-state">Exporting Key Object Selection or Presentation State</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#centerhow-to-build-and-export-dicom-ko-and-prcenter"><!-- raw HTML omitted -->How to build and export DICOM KO and PR<!-- raw HTML omitted --></a>
+      <ul>
+        <li><a href="#key-object-selection-ko">Key Object Selection (KO)</a></li>
+        <li><a href="#presentation-state-pr-or-gsps">Presentation State (PR or GSPS)</a></li>
+        <li><a href="#exporting-key-object-selection-or-presentation-state">Exporting Key Object Selection or Presentation State</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -1294,41 +1292,37 @@
 
 
 
-
-
-<h2 id="center-how-to-build-and-export-dicom-ko-and-pr-center"><center>How to build and export DICOM KO and PR</center></h2>
-
+<h2 id="centerhow-to-build-and-export-dicom-ko-and-prcenter"><!-- raw HTML omitted -->How to build and export DICOM KO and PR<!-- raw HTML omitted --></h2>
 <h3 id="key-object-selection-ko">Key Object Selection (KO)</h3>
-
 <ul>
-<li>To display KO Toolbar, select in menu: View &gt; Toolbars &gt; Key Object Selection Toolbar</li>
-
-<li><p>Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &lsquo;k&rsquo;) to create in a new KO or to add the key image.</p>
-
-<p><img src="/tuto/ko-pr/build-ko.jpg?height=350" alt="Build KO" /></p></li>
+<li>
+<p>To display KO Toolbar, select in menu: View &gt; Toolbars &gt; Key Object Selection Toolbar</p>
+</li>
+<li>
+<p>Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &lsquo;k&rsquo;) to create in a new KO or to add the key image.</p>
+<p><img src="/tuto/ko-pr/build-ko.jpg?height=350" alt="Build KO"></p>
+</li>
 </ul>
-
 <h3 id="presentation-state-pr-or-gsps">Presentation State (PR or GSPS)</h3>
-
 <ul>
-<li>Open PR: Since Weasis 2.6.0 PRs are not applied to the image by default (requires to select the right icon over the image). To apply the most recent PR by default, change it in the <a href="../../basics/customize/preferences/">preferences</a>.</li>
-
-<li><p>Create PR: Any type of annotations can be exported in DICOM Presentation State. Image presentation (zoom, W/L, LUT&hellip;) will be exported in a future version.</p>
-
-<p><img src="/tuto/ko-pr/build-pr.jpg?height=350" alt="Build PR" /></p></li>
+<li>
+<p>Open PR: Since Weasis 2.6.0 PRs are not applied to the image by default (requires to select the right icon over the image). To apply the most recent PR by default, change it in the <a href="../../basics/customize/preferences/">preferences</a>.</p>
+</li>
+<li>
+<p>Create PR: Any type of annotations can be exported in DICOM Presentation State. Image presentation (zoom, W/L, LUT&hellip;) will be exported in a future version.</p>
+<p><img src="/tuto/ko-pr/build-pr.jpg?height=350" alt="Build PR"></p>
+</li>
 </ul>
-
 <h3 id="exporting-key-object-selection-or-presentation-state">Exporting Key Object Selection or Presentation State</h3>
-
 <ul>
 <li>To export KO or PR, select in the menu: File &gt; Export &gt; DICOM
-
 <ol>
 <li>Locally
-<img src="/tuto/ko-pr/export-local.png?height=250" alt="Export KO locally" /></li>
+<img src="/tuto/ko-pr/export-local.png?height=250" alt="Export KO locally"></li>
 <li>Remotely
-<img src="/tuto/ko-pr/export-remote.png?height=250" alt="Export KO remotely" /></li>
-</ol></li>
+<img src="/tuto/ko-pr/export-remote.png?height=250" alt="Export KO remotely"></li>
+</ol>
+</li>
 </ul>
 
 
@@ -1487,34 +1481,6 @@
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -1533,110 +1499,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
             
         
@@ -1715,34 +1577,6 @@
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -1761,110 +1595,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
             
         
@@ -2158,19 +1888,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1584808539"></script>
-    <script src="/js/perfect-scrollbar.min.js?1584808539"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1584808539"></script>
-    <script src="/js/jquery.sticky.js?1584808539"></script>
-    <script src="/js/featherlight.min.js?1584808539"></script>
-    <script src="/js/highlight.pack.js?1584808539"></script>
+    <script src="/js/clipboard.min.js?1589230939"></script>
+    <script src="/js/perfect-scrollbar.min.js?1589230939"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1589230939"></script>
+    <script src="/js/jquery.sticky.js?1589230939"></script>
+    <script src="/js/featherlight.min.js?1589230939"></script>
+    <script src="/js/highlight.pack.js?1589230939"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1584808539"></script>
-    <script src="/js/learn.js?1584808539"></script>
-    <script src="/js/hugo-learn.js?1584808539"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1589230939"></script>
+    <script src="/js/learn.js?1589230939"></script>
+    <script src="/js/hugo-learn.js?1589230939"></script>
 
-    <link href="/mermaid/mermaid.css?1584808539" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1584808539"></script>
+    <link href="/mermaid/mermaid.css?1589230939" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1589230939"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
