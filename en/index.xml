@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Weasis Medical Viewer on Weasis Documentation</title>
@@ -18,7 +18,7 @@
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
 Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis was launched with Java Webstart is still available here.
- For dcm4chee-arc-light ![dcm4chee-arc-light](/gallery-dcm4chee/1Weasis in dcm4chee-arc-light.png?classes=border &amp;ldquo;dcm4chee-arc-light&amp;rdquo;)</description>
+ For dcm4chee-arc-light For a simpler and faster installation without server components, please follow these instructions; no need to consider the following points on this page.</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Weasis is launched from the dcm4chee administrative web interface with the weasi
       <guid>https://nroduit.github.io/en/old/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface.
 Weasis is launched from the dcm4chee administrative web interface with Java Webstart, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.
-Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 releaseand because the end of public Oracle Java 8 updates from April 2019.</description>
+Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ Use the weasis protocol instead of Java Web Start because it has been removed fr
       
       <guid>https://nroduit.github.io/en/basics/customize/integration/</guid>
       <description>How to launch Weasis from any environments Here we present how to launch Weasis with associated images from any context either using weasis-pacs-connector or by building your own connector. The launch of the application is based on the weasis protocol available since version 3.5. However, it is still possible to use weasis 3.5 with Java Webstart (but only with Java 8 to 10), see the old documentation.
-Using weasis-pacs-connectorallows a high degree of integration and facilitates connection to a PACS.</description>
+Using weasis-pacs-connector allows a high degree of integration and facilitates connection to a PACS.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Using weasis-pacs-connectorallows a high degree of integration and facilitates c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/basics/architecture/</guid>
-      <description>Weasis has a modular architecture based on OSGi: the dynamic module system for Java. It uses the Apache Felix OSGi frameworkwhich is an open source implementation of the OSGi Release 4.2 specification (OSGi Certified).
+      <description>Weasis has a modular architecture based on OSGi: the dynamic module system for Java. It uses the Apache Felix OSGi framework which is an open source implementation of the OSGi Release 4.2 specification (OSGi Certified).
 The following schemas show the main different plug-in types (bundle in OSGi language) and their relationships. Viewer, Viewer Tool Pane, Tool Bar, Data Explorer and Codec bundles are registered dynamically by the Declarative Services (a way to push or to consume services in OSGi environment).</description>
     </item>
     
@@ -59,7 +59,7 @@ The following schemas show the main different plug-in types (bundle in OSGi lang
       
       <guid>https://nroduit.github.io/en/old/integration/</guid>
       <description>How to launch Weasis from any environments There are two Weasis distributions: the WEB distribution (weasis.war) and the portable distribution (weasis-portable.zip). Here we are presenting how to connect the WEB distribution with any web application. This documentation is adapted for Weasis 2.5 and superior working with Java Webstart. The easiest way to launch Weasis from a web context is to use weasis-pacs-connector.
-Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 releaseand because the end of public Oracle Java 8 updates from April 2019.</description>
+Use the weasis protocol instead of Java Web Start because it has been removed from Java 11 release and because the end of public Oracle Java 8 updates from April 2019.</description>
     </item>
     
     <item>
@@ -90,8 +90,8 @@ Local preferences can be modified:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/basics/shortcuts/</guid>
-      <description>Keyboard and Mouse Shortcuts IHErecommendations in Basic Image Reviewprofile.
-Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) the image canvas    W Window / Level    S Series scroll    Z Zoom    R Rotation   H Crosshair: in multiview mode synchronizes the crosshair position to all the views (Note: Ctrl + click or Ctrl + Shift + click allows changing the Window / Level values)   C Cine Start / Stop   M Measure   D Distance measurement    A Angle measurement    Y Polyline measurement   B Textbox   Q Context menu   Ctrl + Spacebar Change to the next action   Ctrl + mouse drag Accelerate the current action    Ctrl + Shift + mouse drag Accelerate more the current action   Alt + R 90° rotation (clockwise)   Alt + L 90° rotation (counterclockwise)   Alt + F Flip horizontally (after rotation action)   0 1 2 3&amp;hellip; DICOM presets   K Toggle key image state   Spacebar Show/Hide all the annotations (three states)   I Show/Hide all the annotations (three states)    Escape Reset the selected view    P Print view(s) with the operating system printer    Right-click Open the contextual menu for more options   Double click Toggle fullscreen   Drag files/directories(from the OS file manager) Open DICOMs files    DICOM explorer    Shortcut Action     Ctrl + click on the thumbnail Select multiple series   Click on a thumbnail and then Shift + click on another one Select all series between   Enter Open the selected series in the default viewer   Click + drag a thumbnail in the main view Display a series   Right-click Open the contextual menu for more options    Downloading Priorities: Selecting a thumbnail gives the best priority to download.</description>
+      <description>Keyboard and Mouse Shortcuts  IHE recommendations in Basic Image Review profile.
+Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) the image canvas    W Window / Level    S Series scroll    Z Zoom    R Rotation   H Crosshair: in multiview mode synchronizes the crosshair position to all the views (Note: Ctrl + click or Ctrl + Shift + click allows changing the Window / Level values)   C Cine Start / Stop   M Measure   D Distance measurement    A Angle measurement    Y Polyline measurement   B Textbox   Q Context menu   Ctrl + Spacebar Change to the next action   Ctrl + mouse drag Accelerate the current action    Ctrl + Shift + mouse drag Accelerate more the current action   Alt + R 90° rotation (clockwise)   Alt + L 90° rotation (counterclockwise)   Alt + F Flip horizontally (after rotation action)   0 1 2 3&amp;hellip; DICOM presets   K Toggle key image state   Spacebar Show/Hide all the annotations (three states)   I Show/Hide all the annotations (three states)    Escape Reset the selected view    P Print view(s) with the operating system printer    Right-click Open the contextual menu for more options   Double click Toggle fullscreen   Drag files/directories</description>
     </item>
     
     <item>
@@ -123,7 +123,8 @@ List of plug-ins types  Media viewer or editor (main central panel that implemen
       <guid>https://nroduit.github.io/en/getting-started/building-weasis/</guid>
       <description>These instructions describe how to build Weasis directly from the Git repository on any platform. For building Weasis from an IDE, see Weasis plug-in development guidelines.
 Prerequisites
- JDK 11 or higher Maven 3.5 or higherIf your computer is behind a proxy server, configure maven. Git or directly download source from github  Getting the Source To clone the repository, first install GIT and either clone using a graphical GIT client or directly from the command line using the command:</description>
+ JDK 11 or higher Maven 3.5 or higher
+If your computer is behind a proxy server, configure maven. Git or directly download source from github  Getting the Source To clone the repository, first install GIT and either clone using a graphical GIT client or directly from the command line using the command:</description>
     </item>
     
     <item>
@@ -162,7 +163,7 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/old/rebuild-dcm4chee-web/</guid>
-      <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems   JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
+      <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems  JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
     </item>
     
     <item>
@@ -171,7 +172,7 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/getting-started/translating/</guid>
-      <description>The translation files are now hosted and managed on Transifexwebsite. Get an account at Transifexand help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
+      <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
 Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
  Special characters: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated.</description>
     </item>
@@ -215,9 +216,8 @@ The layout list is built dynamically according to the window size. So changing t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/build-ko-pr/</guid>
-      <description>How to build and export DICOM KO and PR Key Object Selection (KO)   To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar
-  Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
-  Presentation State (PR or GSPS)   Open PR: Since Weasis 2.</description>
+      <description>How to build and export DICOM KO and PR Key Object Selection (KO)  To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
+  Presentation State (PR or GSPS)  Open PR: Since Weasis 2.</description>
     </item>
     
     <item>
@@ -237,7 +237,7 @@ To fill in the fields you must refer to the Java documentation.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/calibration/</guid>
-      <description>How to change the spatial calibration   </description>
+      <description> How to change the spatial calibration   </description>
     </item>
     
     <item>
@@ -276,7 +276,7 @@ Changing the default look and feel value See preferences</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/faq/</guid>
-      <description>Frequently Asked Questions  Why is the Weasis license Eclipse Public License? Can Weasis be incorporated in DICOM CDs or other removable media? How to enable Weasis logging? Is it possible to download DICOM files without having a WADO server?  Why is the Weasis license Eclipse Public License? The Eclipse Public Licenseis an OSI approvedlicense and a commercially friendly copyleft license.
+      <description>Frequently Asked Questions  Why is the Weasis license Eclipse Public License? Can Weasis be incorporated in DICOM CDs or other removable media? How to enable Weasis logging? Is it possible to download DICOM files without having a WADO server?  Why is the Weasis license Eclipse Public License? The Eclipse Public License is an OSI approved license and a commercially friendly copyleft license.
 EPL is more business-friendly about some patent retaliation and reverse engineering clauses than LGPL.</description>
     </item>
     
@@ -286,8 +286,8 @@ EPL is more business-friendly about some patent retaliation and reverse engineer
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/get-involved/</guid>
-      <description>Report Bugs and Enhancements First, look at the GitHub issues system, the forumand/or this website (like FAQs or Getting Started) to see if your problem has not been reported yet.
-Only then, fill a bug on GitHubwith the most details from a template.
+      <description>Report Bugs and Enhancements First, look at the GitHub issues system, the forum and/or this website (like FAQs or Getting Started) to see if your problem has not been reported yet.
+Only then, fill a bug on GitHub with the most details from a template.
 Become a Committer  Become a committer on an existing project or on one of the incubating projects, for Weasis use pull requests.  Share Your Knowledge  Do you or your company have a success story about Weasis?</description>
     </item>
     

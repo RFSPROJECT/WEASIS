@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="description" content="Weasis: an open source DICOM viewer which is modular, multiplatform, web-based and mulitlingual. It can be easly integrated in any medical system">
 <meta name="keywords" content="dcm4chee web, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,18 +13,18 @@
     <title>Rebuild dcm4chee-web :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1589230939" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1589230939" rel="stylesheet">
-    <link href="/css/hybrid.css?1589230939" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1589230939" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1589230939" rel="stylesheet">
-    <link href="/css/auto-complete.css?1589230939" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1589230939" rel="stylesheet">
-    <link href="/css/theme.css?1589230939" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1589230939" rel="stylesheet">
+    <link href="/css/nucleus.css?1584808539" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1584808539" rel="stylesheet">
+    <link href="/css/hybrid.css?1584808539" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1584808539" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1584808539" rel="stylesheet">
+    <link href="/css/auto-complete.css?1584808539" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1584808539" rel="stylesheet">
+    <link href="/css/theme.css?1584808539" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1584808539" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1589230939"></script>
+    <script src="/js/jquery-3.3.1.min.js?1584808539"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1589230939"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1589230939"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1584808539"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1584808539"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1589230939"></script>
+<script type="text/javascript" src="/js/search.js?1584808539"></script>
 
     
   </div>
@@ -1259,14 +1259,21 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#build-dcm4chee-web-2150-2162-or-2170">Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0</a></li>
-        <li><a href="#rebuild-dcm4chee-web-from-any-version-draft">Rebuild dcm4chee-web from any version (Draft)</a></li>
-      </ul>
-    </li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#build-dcm4chee-web-2-15-0-2-16-2-or-2-17-0">Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0</a>
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#getting-the-source">Getting the Source</a></li>
+<li><a href="#building-dcm4chee-web-war">Building dcm4chee-web.war</a></li>
+</ul></li>
+<li><a href="#rebuild-dcm4chee-web-from-any-version-draft">Rebuild dcm4chee-web from any version (Draft)</a></li>
+</ul></li>
+</ul></li>
+</ul>
 </nav>
     </div>
 </div>
@@ -1291,49 +1298,59 @@
 
 
 
-<h3 id="build-dcm4chee-web-2150-2162-or-2170">Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0</h3>
+
+
+<h3 id="build-dcm4chee-web-2-15-0-2-16-2-or-2-17-0">Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0</h3>
+
 <h4 id="prerequisites">Prerequisites</h4>
+
 <ol>
 <li>Subversion (SVN), one of the following client:
+
 <ul>
 <li>Subversion - The core system (server, client, libs)</li>
 <li>Subversive - SVN Team Client (Eclipse plugin)</li>
 <li>TortoiseSVN - Handy SVN client for Windows systems</li>
-</ul>
-</li>
+</ul></li>
 <li>JDK 6 or higher</li>
 <li>Ant 1.6 or higher</li>
 </ol>
+
 <h4 id="getting-the-source">Getting the Source</h4>
+
 <p>To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</p>
+
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ svn co https://svn.code.sf.net/p/dcm4che/svn/weasis/weasis_dcm4chee/trunk/2.17.0 weasis-dcm4chee-2.17.0</code></pre></div>
+
 <p>This command will copy the current development code (the &ldquo;trunk&rdquo;) into a local directory named weasis-dcm4chee-2.17.0.</p>
-<h4 id="building-dcm4chee-webwar">Building dcm4chee-web.war</h4>
+
+<h4 id="building-dcm4chee-web-war">Building dcm4chee-web.war</h4>
+
 <ol>
-<li>
-<p>Go in the weasis-dcm4chee directory</p>
-</li>
-<li>
-<p>Compile and make the dcm4chee-web.war (in weasis-dcm4chee/dist folder)
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ant dist</code></pre></div></p>
-</li>
-<li>
-<p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+<li>Go in the weasis-dcm4chee directory</li>
+<li>Compile and make the dcm4chee-web.war (in weasis-dcm4chee/dist folder)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ant dist</code></pre></div></li>
+
+<li><p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+
 <blockquote>
-<p>folder.*=edit,move,delete,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+<p>folder.*=edit,move,delete,<span style="color:red">view</span>,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+
 <p>&hellip;</p>
-<p>folder=WebUser(send,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->);DatacareUser(edit,move,delete,export_xds,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->);WebAdmin(*)</p>
-</blockquote>
-</li>
-<li>
-<p>Place the dcm4chee-web.war and the weasis.war to the deploy folder of dcm4chee</p>
-</li>
+
+<p>folder=WebUser(send,<span style="color:red">view</span>);DatacareUser(edit,move,delete,export_xds,<span style="color:red">view</span>);WebAdmin(*)</p>
+</blockquote></li>
+
+<li><p>Place the dcm4chee-web.war and the weasis.war to the deploy folder of dcm4chee</p></li>
 </ol>
-<hr>
+
+<hr />
+
 <h3 id="rebuild-dcm4chee-web-from-any-version-draft">Rebuild dcm4chee-web from any version (Draft)</h3>
+
 <ol>
-<li>Make a project to rebuild dcm4chee-web</li>
-</ol>
+<li><p>Make a project to rebuild dcm4chee-web</p>
+
 <ul>
 <li>Download a dcm4chee package (any db package, ex. dcm4chee-2.14.7-mysql.zip)</li>
 <li>Create new Java project (see example of dcm4chee-web 2.17.0, Eclipse project)</li>
@@ -1345,25 +1362,25 @@
 <li>Add java sources in src folder</li>
 <li>Move the content of the WEB-INF/classes in etc/message</li>
 <li>Copy build.xml and modify it if necessary</li>
-</ul>
-<ol start="2">
-<li>
-<p>Replace in maverick.xml:</p>
-<p><code>&lt;controller class=&quot;org.dcm4chex.archive.web.maverick.FolderSubmitCtrl&quot; /&gt;</code> by <code>&lt;controller class=&quot;org.dcm4chex.archive.web.maverick.FolderSubmitCtrl2&quot; /&gt;</code></p>
-</li>
-<li>
-<p>Add text for Weasis button</p>
+</ul></li>
+
+<li><p>Replace in maverick.xml:</p>
+
+<p><code>&lt;controller class=&quot;org.dcm4chex.archive.web.maverick.FolderSubmitCtrl&quot; /&gt;</code> by <code>&lt;controller class=&quot;org.dcm4chex.archive.web.maverick.FolderSubmitCtrl2&quot; /&gt;</code></p></li>
+
+<li><p>Add text for Weasis button</p>
+
 <ul>
 <li>in dcm4chee-web/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;View selected Entities in Weasis&quot;&gt;</code></li>
 <li>in dcm4chee-web/de/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;Ausgewählte Entitäten in Weasis sehen&quot;&gt;</code></li>
 <li>in dcm4chee-web/fr/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;Visualiser la sélection dans Weasis&quot;&gt;</code></li>
 <li>in dcm4chee-web/jp/translate.dtd <code>&lt;!ENTITY ViewSelectedEntities &quot;View selected Entities in Weasis&quot;&gt;</code></li>
-</ul>
-</li>
-<li>
-<p>Modify dcm4chee-web/folder-tpl.xsl</p>
+</ul></li>
+
+<li><p>Modify dcm4chee-web/folder-tpl.xsl</p>
+
 <ul>
-<li>Add after &lt;xsl:param name=&quot;folder.delete&rdquo; select=&rdquo;&lsquo;false&rsquo;&rdquo; /&gt;
+<li>Add after <xsl:param name="folder.delete" select="'false'" />
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;xsl:param</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;folder.view&#34;</span> <span style="color:#a6e22e">select=</span><span style="color:#e6db74">&#34;&#39;false&#39;&#34;</span> <span style="color:#f92672">/&gt;</span></code></pre></div></li>
 <li>Add after <code>&lt;xsl:if test=&quot;$folder.delete='true'&quot;&gt; … &lt;/xsl:if&gt;</code>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;xsl:if</span> <span style="color:#a6e22e">test=</span><span style="color:#e6db74">&#34;$folder.view=&#39;true&#39;&#34;</span><span style="color:#f92672">&gt;</span>
@@ -1377,22 +1394,21 @@
        <span style="color:#f92672">&lt;/input&gt;</span>
    <span style="color:#f92672">&lt;/td&gt;</span>
 <span style="color:#f92672">&lt;/xsl:if&gt;</span></code></pre></div></li>
-</ul>
-</li>
-<li>
-<p>Rebuild WAR with &ldquo;ant dist&rdquo; and get dcm4chee-web.war in dist folder</p>
-</li>
-<li>
-<p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+</ul></li>
+
+<li><p>Rebuild WAR with &ldquo;ant dist&rdquo; and get dcm4chee-web.war in dist folder</p></li>
+
+<li><p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+
 <blockquote>
-<p>folder.*=edit,move,delete,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+<p>folder.*=edit,move,delete,<span style="color:red">view</span>,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+
 <p>&hellip;</p>
-<p>folder=WebUser(send,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->);DatacareUser(edit,move,delete,export_xds,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->);WebAdmin(*)</p>
-</blockquote>
-</li>
-<li>
-<p>Place the dcm4chee-web.war and the weasis.war to the deploy folder of dcm4chee</p>
-</li>
+
+<p>folder=WebUser(send,<span style="color:red">view</span>);DatacareUser(edit,move,delete,export_xds,<span style="color:red">view</span>);WebAdmin(*)</p>
+</blockquote></li>
+
+<li><p>Place the dcm4chee-web.war and the weasis.war to the deploy folder of dcm4chee</p></li>
 </ol>
 
 
@@ -1551,27 +1567,10 @@
 
                     
                     
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -1637,6 +1636,37 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1665,6 +1695,256 @@
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
             
         
@@ -1955,19 +2235,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1589230939"></script>
-    <script src="/js/jquery.sticky.js?1589230939"></script>
-    <script src="/js/featherlight.min.js?1589230939"></script>
-    <script src="/js/highlight.pack.js?1589230939"></script>
+    <script src="/js/clipboard.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1584808539"></script>
+    <script src="/js/jquery.sticky.js?1584808539"></script>
+    <script src="/js/featherlight.min.js?1584808539"></script>
+    <script src="/js/highlight.pack.js?1584808539"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1589230939"></script>
-    <script src="/js/learn.js?1589230939"></script>
-    <script src="/js/hugo-learn.js?1589230939"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1584808539"></script>
+    <script src="/js/learn.js?1584808539"></script>
+    <script src="/js/hugo-learn.js?1584808539"></script>
 
-    <link href="/mermaid/mermaid.css?1589230939" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1589230939"></script>
+    <link href="/mermaid/mermaid.css?1584808539" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1584808539"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="description" content="How installing Weasis to be the default web viewer of dcm4chee web interface">
 <meta name="keywords" content="dcm4chee, dcm4chee web, dcm4chee integration, dcm4chee viewer, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,18 +13,18 @@
     <title>Embedding in dcm4chee (deprecated) :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1589230939" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1589230939" rel="stylesheet">
-    <link href="/css/hybrid.css?1589230939" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1589230939" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1589230939" rel="stylesheet">
-    <link href="/css/auto-complete.css?1589230939" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1589230939" rel="stylesheet">
-    <link href="/css/theme.css?1589230939" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1589230939" rel="stylesheet">
+    <link href="/css/nucleus.css?1584808539" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1584808539" rel="stylesheet">
+    <link href="/css/hybrid.css?1584808539" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1584808539" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1584808539" rel="stylesheet">
+    <link href="/css/auto-complete.css?1584808539" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1584808539" rel="stylesheet">
+    <link href="/css/theme.css?1584808539" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1584808539" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1589230939"></script>
+    <script src="/js/jquery-3.3.1.min.js?1584808539"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1589230939"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1589230939"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1584808539"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1584808539"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1589230939"></script>
+<script type="text/javascript" src="/js/search.js?1584808539"></script>
 
     
   </div>
@@ -1259,16 +1259,18 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#for-dcm4chee-arc-light">For dcm4chee-arc-light</a></li>
-        <li><a href="#for-dcm4chee-web3">For dcm4chee-web3</a></li>
-        <li><a href="#for-dcm4chee-web-old-web-interface---before-2171">For dcm4chee-web (old web interface - before 2.17.1)</a></li>
-        <li><a href="#write-weasis-portable-to-dicom-cds-with-dcm4chee-cdw">Write weasis-portable to DICOM CDs with dcm4chee-cdw</a></li>
-      </ul>
-    </li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#for-dcm4chee-arc-light">For dcm4chee-arc-light</a></li>
+<li><a href="#for-dcm4chee-web3">For dcm4chee-web3</a></li>
+<li><a href="#for-dcm4chee-web-old-web-interface-before-2-17-1">For dcm4chee-web (old web interface - before 2.17.1)</a></li>
+<li><a href="#write-weasis-portable-to-dicom-cds-with-dcm4chee-cdw">Write weasis-portable to DICOM CDs with dcm4chee-cdw</a></li>
+</ul></li>
+</ul></li>
+</ul>
 </nav>
     </div>
 </div>
@@ -1293,12 +1295,17 @@
 
 
 
+
+
 <p>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface.</p>
+
 <p>Weasis is launched from the dcm4chee administrative web interface with Java Webstart, as shown in the pictures below. It may also be copied to a CD (or other removable devices) with images.</p>
 
-<div class="notices warning" ><p>Use the <a href="../../getting-started/weasis-protocol">weasis protocol</a> instead of Java Web Start because it has been removed from <!-- raw HTML omitted -->Java 11 release<!-- raw HTML omitted --> and because the end of public Oracle Java 8 updates from April 2019.<!-- raw HTML omitted -->
+
+<div class="notices warning" ><p>Use the <a href="../../getting-started/weasis-protocol">weasis protocol</a> instead of Java Web Start because it has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
 Prefer <a href="../../getting-started/dcm4chee">this page instead</a>.</p>
 </div>
+
 
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
@@ -1401,152 +1408,138 @@ Prefer <a href="../../getting-started/dcm4chee">this page instead</a>.</p>
 
 
  </p>
+
 <h3 id="for-dcm4chee-arc-light">For dcm4chee-arc-light</h3>
+
 <ol>
-<li>
-<p><!-- raw HTML omitted -->Install dcm4chee<!-- raw HTML omitted -->, if not already done.</p>
-</li>
-<li>
-<p>Go <!-- raw HTML omitted -->here<!-- raw HTML omitted --> and download these Weasis files.
+<li><a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki">Install dcm4chee</a>, if not already done.</li>
+
+<li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download these Weasis files.
 
 <div class="notices warning" ><p><strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.</p>
 </div>
 </p>
+
 <ul>
 <li>From the folder with the latest version number:
+
 <ul>
 <li>weasis.war</li>
 <li>weasis-i18n.war (Optional for internationalization)</li>
-</ul>
-</li>
+</ul></li>
 <li>From weasis-pacs-connector folder:
+
 <ul>
 <li>the latest version of weasis-pacs-connector.war</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Open the <!-- raw HTML omitted -->wildfly management console<!-- raw HTML omitted --> (at <code>http://&lt;your-host&gt;:9990</code>).</p>
+</ul></li>
+</ul></li>
+
+<li><p>Open the <a target="_blank" href="http://localhost:9990/">wildfly management console</a> (at <code>http://&lt;your-host&gt;:9990</code>).</p>
+
 <ul>
 <li>Select the “Deployments” tab</li>
 <li>Add the .war files using the “Add” button (Choose Upload a new deployment or select Replace when the file already exists)</li>
-</ul>
-</li>
-<li>
-<p>Configure weasis-pacs-connector 6.x and superior. The default configuration is stored in two files inside weasis-pacs-connector.war . To override the default configuration:</p>
-<ul>
-<li>
-<p>Download the current <!-- raw HTML omitted -->weasis-pacs-connector.properties<!-- raw HTML omitted --> and <!-- raw HTML omitted -->dicom-dcm4chee-arc.properties<!-- raw HTML omitted --> (configuration of the dcm4chee archive)</p>
-</li>
-<li>
-<p>Edit the configuration as needed. For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed. If so, edit <code>weasis-pacs-connector.properties</code> or <code>dicom-dcm4chee-arc.properties</code> (Change pacs.host, pacs.port, and pacs.aet).</p>
-</li>
-<li>
-<p>Copy <code>weasis-pacs-connector.properties</code> and <code>dicom-dcm4chee-arc.properties</code> into wildfly/standalone/configuration. With the docker installation use the docker copy command: docker cp &hellip;
+</ul></li>
 
-<div class="notices tip" ><p>Instead of copying the files into wildfly/standalone/configuration, JBoss Command Line Interface Console can be used to override files in the war. Add the two configuration files with the deployment-overlay command:<!-- raw HTML omitted --></p>
+<li><p>Configure weasis-pacs-connector 6.x and superior. The default configuration is stored in two files inside weasis-pacs-connector.war . To override the default configuration:</p>
+
+<ul>
+<li>Download the current <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/weasis-pacs-connector.properties" download>weasis-pacs-connector.properties</a> and <a target="_blank" href="https://raw.githubusercontent.com/nroduit/weasis-pacs-connector/master/src/main/resources/dicom-dcm4chee-arc.properties" download>dicom-dcm4chee-arc.properties</a> (configuration of the dcm4chee archive)</li>
+<li>Edit the configuration as needed. For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed. If so, edit <code>weasis-pacs-connector.properties</code> or <code>dicom-dcm4chee-arc.properties</code> (Change pacs.host, pacs.port, and pacs.aet).</li>
+
+<li><p>Copy <code>weasis-pacs-connector.properties</code> and <code>dicom-dcm4chee-arc.properties</code> into wildfly/standalone/configuration. With the docker installation use the docker copy command: docker cp &hellip;
+
+<div class="notices tip" ><p>Instead of copying the files into wildfly/standalone/configuration, JBoss Command Line Interface Console can be used to override files in the war. Add the two configuration files with the deployment-overlay command:<br></p>
 </div>
 </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">deployment-overlay add --name=dcm4chee-arc --deployments=weasis-pacs-connector.war --content=WEB-INF/classes/weasis-pacs-connector.properties=/tmp/weasis-pacs-connector.properties,WEB-INF/classes/dicom-dcm4chee-arc.properties=/tmp/dicom-dcm4chee-arc.properties --redeploy-affected
-</code></pre></div></li>
-<li>
-<p>For applying the new configuration, from the management console &ldquo;Disable&rdquo; weasis-pacs-connector.war and then &ldquo;Enable&rdquo;</p>
-</li>
-<li>
-<p>Optional: add new properties or arguments in the JNLP file, see the <!-- raw HTML omitted -->configuration of weasis-pacs-connector<!-- raw HTML omitted --></p>
-</li>
-</ul>
-</li>
-<li>
-<p>To activate Weasis in dcm4chee-arc-light user interface (required 5.10.2 or superior), you need need to changes two attributes in the configuration</p>
-</li>
-</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">deployment-overlay add --name=dcm4chee-arc --deployments=weasis-pacs-connector.war --content=WEB-INF/classes/weasis-pacs-connector.properties=/tmp/weasis-pacs-connector.properties,WEB-INF/classes/dicom-dcm4chee-arc.properties=/tmp/dicom-dcm4chee-arc.properties --redeploy-affected</code></pre></div></li>
+
+<li><p>For applying the new configuration, from the management console &ldquo;Disable&rdquo; weasis-pacs-connector.war and then &ldquo;Enable&rdquo;</p></li>
+
+<li><p>Optional: add new properties or arguments in the JNLP file, see the <a target="_blank" href="https://github.com/nroduit/">configuration of weasis-pacs-connector</a></p></li>
+</ul></li>
+
+<li><p>To activate Weasis in dcm4chee-arc-light user interface (required 5.10.2 or superior), you need need to changes two attributes in the configuration</p>
+
 <ul>
-<li>
-<p>Add the following properties from the left menu Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Edit extension &gt; Child Objects &gt; Web Applications &gt; DCM4CHEE 
-(add <code>&amp;cdb</code> to the URL if weasis.war has not been deployed on the server-side): </p>
-<ul>
-<li>
-<p><code>IID_PATIENT_URL=../../weasis-pacs-connector/viewer?&amp;patientID={}&amp;target=_self&amp;access_token={}</code></p>
-</li>
-<li>
-<p><code>IID_STUDY_URL=../../weasis-pacs-connector/viewer?&amp;studyUID={}&amp;target=_self&amp;access_token={}</code>
+<li><p>Add the following properties from the left menu Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Edit extension &gt; Child Objects &gt; Web Applications &gt; DCM4CHEE 
+(add <code>&amp;cdb</code> to the URL if weasis.war has not been deployed on the server-side): </p></li>
+
+<li><p><code>IID_PATIENT_URL=../../weasis-pacs-connector/viewer?&amp;patientID={}&amp;target=_self&amp;access_token={}</code></p></li>
+
+<li><p><code>IID_STUDY_URL=../../weasis-pacs-connector/viewer?&amp;studyUID={}&amp;target=_self&amp;access_token={}</code>
 
 <div class="notices tip" ><p><strong>Absolute path</strong>: The values above starting by &ldquo;../&rdquo; are the default relative path when weasis-pacs-connector is installed in the same JBoss as dcm4chee. Otherwise replace the relative URL by an absolute value, ex: <code>http://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code></p>
 </div>
 
 
-<div class="notices note" ><p><!-- raw HTML omitted -->The new way of launching Java Westart<!-- raw HTML omitted --> file (jnlp) will also require an absolute URL as the scheme of the URL is different:<!-- raw HTML omitted -->
-<code>jnlp://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code><!-- raw HTML omitted --> <code>jnlps://&lt;your-host&gt;:8443/weasis-pacs-connector/...</code> (TLS connection)<!-- raw HTML omitted --> Replace &ldquo;&lt;your-host&gt;&rdquo; with your server hostname</p>
+<div class="notices note" ><p><a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/tree/6.x/#new-way-to-launch-jnlp">The new way of launching Java Westart</a> file (jnlp) will also require an absolute URL as the scheme of the URL is different:<br>
+<code>jnlp://&lt;your-host&gt;:8080/weasis-pacs-connector/...</code><br> <code>jnlps://&lt;your-host&gt;:8443/weasis-pacs-connector/...</code> (TLS connection)<br> Replace &ldquo;&lt;your-host&gt;&rdquo; with your server hostname</p>
 </div>
-</p>
-</li>
-<li>
-<p>Refresh the web page and the view button should appear as in the screenshot above</p>
-</li>
-<li>
-<p>An alternative way to configure the activation is with an LDAP manager (like Apache Directory Studio)</p>
+</p></li>
+
+<li><p>Refresh the web page and the view button should appear as in the screenshot above</p></li>
+
+<li><p>An alternative way to configure the activation is with an LDAP manager (like Apache Directory Studio)</p>
+
 <ol>
-<li>Connect to LDAP, see <!-- raw HTML omitted -->dcm4chee configuration<!-- raw HTML omitted --></li>
-<li>Import <!-- raw HTML omitted -->weasis.ldif<!-- raw HTML omitted --></li>
+<li>Connect to LDAP, see <a target="_blank" href="https://github.com/dcm4che/dcm4chee-arc-light/wiki/Installation#import-default-configuration-into-ldap-server">dcm4chee configuration</a></li>
+<li>Import <a target="_blank" href="/attachments/weasis.ldif" download>weasis.ldif</a></li>
+</ol></li>
+</ul></li>
 </ol>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
+
+<hr />
+
 <h3 id="for-dcm4chee-web3">For dcm4chee-web3</h3>
+
 <ol>
-<li>
-<p><!-- raw HTML omitted -->Install dcm4chee<!-- raw HTML omitted -->, if not already done. For security see also how to limit the <!-- raw HTML omitted -->server access<!-- raw HTML omitted -->.</p>
+<li><p><a target="_blank" href="https://dcm4che.atlassian.net/wiki/spaces/ee2/pages/2555918/Installation">Install dcm4chee</a>, if not already done. For security see also how to limit the <a target="_blank" href="https://github.com/nroduit/openmediavault-dcm4chee/wiki/Configuration-of-dcm4chee#security">server access</a>.</p>
+
 <ul>
 <li>dcm4chee-web3 is not compatible with versions of dcm4chee before 2.16.0</li>
 <li>dcm4chee 2.16.0 to 2.17.0 are compatible with dcm4chee-web3, but the older dcm4chee-web is installed by default.</li>
 <li>For dcm4chee 2.17.1+, dcm4chee-web3 is already installed. To check if it is the latest version, start dcm4chee-web3 (<code>http://&lt;your-host&gt;:8080/dcm4chee-web3/</code>), log in, and mouse over the dcm4chee.org icon in the upper right corner.</li>
-</ul>
-</li>
-<li>
-<p>Go <!-- raw HTML omitted -->here<!-- raw HTML omitted --> and download these Weasis files.
+</ul></li>
+
+<li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download these Weasis files.
 
 <div class="notices warning" ><p><strong>Download issue</strong>: Some browsers (Internet Explorer) may rename war files to zip. If so, use the Save As option when downloading and change the name back to war.</p>
 </div>
 </p>
+
 <ul>
 <li>From the folder with the latest version number:
+
 <ul>
 <li>weasis.war</li>
 <li>weasis-i18n.war (Optional for internationalization)</li>
-</ul>
-</li>
+</ul></li>
 <li>From weasis-pacs-connector folder:
+
 <ul>
 <li>dcm4chee-web-weasis.jar</li>
 <li>weasis-pacs-connector.war (requires the version 6.1.x, the version 7.x is not supported)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Place these files in the dcm4chee deploy folder (server/default/deploy/).</p>
-</li>
-<li>
-<p>To activate Weasis, go to the JMX console (at <code>http://&lt;your-host&gt;:8080/jmx-console</code>)</p>
+</ul></li>
+</ul></li>
+
+<li><p>Place these files in the dcm4chee deploy folder (server/default/deploy/).</p></li>
+
+<li><p>To activate Weasis, go to the JMX console (at <code>http://&lt;your-host&gt;:8080/jmx-console</code>)</p>
+
 <ul>
-<li>
-<p>In <em>dcm4chee.web</em> select <em>service=WebConfig</em> and set these two values:
+<li><p>In <em>dcm4chee.web</em> select <em>service=WebConfig</em> and set these two values:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">WebviewerNames</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">weasis</span>
 <span style="color:#a6e22e">WebviewerBaseUrl</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">NONE</span></code></pre></div>
 From weasis-pacs-connector 5.0 WebviewerBaseUrl can have different values:</p>
+
 <ul>
-<li>
-<p>Launch Weasis as an external application (default value when NONE): WebviewerBaseUrl = <code>weasis:/weasis-pacs-connector/viewer</code></p>
-</li>
-<li>
-<p>Launch Weasis as an Applet in the web browser (not recommended as several browsers block Java plugin) : WebviewerBaseUrl = <code>weasis:/weasis-pacs-connector/viewer-applet</code></p>
-</li>
-<li>
-<p>Launching Weasis from jnlp protocol. The new way of <!-- raw HTML omitted -->launching Java Westart<!-- raw HTML omitted --> file (jnlp) will require an absolute URL:</p>
+<li>Launch Weasis as an external application (default value when NONE): WebviewerBaseUrl = <code>weasis:/weasis-pacs-connector/viewer</code></li>
+
+<li><p>Launch Weasis as an Applet in the web browser (not recommended as several browsers block Java plugin) : WebviewerBaseUrl = <code>weasis:/weasis-pacs-connector/viewer-applet</code></p></li>
+
+<li><p>Launching Weasis from jnlp protocol. The new way of <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/tree/6.x/#new-way-to-launch-jnlp">launching Java Westart</a> file (jnlp) will require an absolute URL:</p>
+
 <ul>
 <li>weasis:jnlp://&lt;your-host&gt;:8080/weasis-pacs-connector/viewer</li>
 <li>weasis:jnlps://&lt;your-host&gt;:8443/weasis-pacs-connector/viewer
@@ -1555,97 +1548,93 @@ From weasis-pacs-connector 5.0 WebviewerBaseUrl can have different values:</p>
 </div>
 </li>
 </ul>
+
 <p>From dcm4chee 2.18.3, it possible to reuse the default host name of dcm4chee:</p>
+
 <ul>
 <li>weasis:jnlp://${server.host}:8080/weasis-pacs-connector/viewer</li>
 <li>weasis:jnlps://${server.host}:8443/weasis-pacs-connector/viewer</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Click the <em>Apply Changes</em> button</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Configure Weasis (This step is optional if you just want to keep the default configuration. It is required when the AETitle DCM4CHEE has been changed)
+</ul></li>
+</ul></li>
+
+<li><p>Click the <em>Apply Changes</em> button</p></li>
+</ul></li>
+
+<li><p>Configure Weasis (This step is optional if you just want to keep the default configuration. It is required when the AETitle DCM4CHEE has been changed)
 The default configuration is stored in two files inside weasis-pacs-connector.war.
 To override the default configuration:</p>
+
 <ul>
-<li>
-<p>According to the version of  weasis-pacs-connector:</p>
+<li><p>According to the version of  weasis-pacs-connector:</p>
+
 <ul>
-<li>
-<p>weasis-pacs-connector 4.x and 5.x: Download <!-- raw HTML omitted -->weasis-connector-default.properties<!-- raw HTML omitted --> and rename it <code>weasis-pacs-connector.properties</code></p>
-</li>
-<li>
-<p>weasis-pacs-connector 6.x: Download the current <!-- raw HTML omitted -->weasis-connector-default.properties<!-- raw HTML omitted --> and rename it <code>weasis-pacs-connector.properties</code>, and download <!-- raw HTML omitted -->dicom-dcm4chee.properties<!-- raw HTML omitted --> (configuration of the dcm4chee archive)</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Copy the files into a folder in the classpath of the servlet container. In JBoss (inferior to version 7), the best location would typically be server/default/conf.</p>
-</li>
-<li>
-<p>Edit the configuration as needed.
+<li><p>weasis-pacs-connector 4.x and 5.x: Download <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/raw/58221aeed3d2abc1929c0753ebeaa53c67fcc46a/src/main/resources/weasis-connector-default.properties" download>weasis-connector-default.properties</a> and rename it <code>weasis-pacs-connector.properties</code></p></li>
+
+<li><p>weasis-pacs-connector 6.x: Download the current <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/raw/6.x/src/main/resources/weasis-connector-default.properties" download>weasis-connector-default.properties</a> and rename it <code>weasis-pacs-connector.properties</code>, and download <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/raw/6.x/src/main/resources/dicom-dcm4chee.properties" download>dicom-dcm4chee.properties</a> (configuration of the dcm4chee archive)</p></li>
+</ul></li>
+
+<li><p>Copy the files into a folder in the classpath of the servlet container. In JBoss (inferior to version 7), the best location would typically be server/default/conf.</p></li>
+
+<li><p>Edit the configuration as needed.
 For example, dcm4chee may be running on a different computer than Weasis, or the AE Title of dcm4chee may have been changed.</p>
-<p>If so, edit <em>weasis-pacs-connector.properties</em> or <em>dicom-dcm4chee.properties</em> for weasis-pacs-connector 6.x. Edit the properties: pacs.host, pacs.port, pacs.aet&hellip;</p>
-</li>
-<li>
-<p>Optional: add new properties or arguments in the JNLP file, see <!-- raw HTML omitted -->configuration of weasis-pacs-connector<!-- raw HTML omitted --></p>
-</li>
-</ul>
-</li>
-<li>
-<p>That&rsquo;s all, now restart dcm4chee and launch Weasis from the dcm4chee-web3 portal.</p>
-</li>
+
+<p>If so, edit <em>weasis-pacs-connector.properties</em> or <em>dicom-dcm4chee.properties</em> for weasis-pacs-connector 6.x. Edit the properties: pacs.host, pacs.port, pacs.aet&hellip;</p></li>
+
+<li><p>Optional: add new properties or arguments in the JNLP file, see <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector/tree/6.x/#configuration-of-weasis-pacs-connector">configuration of weasis-pacs-connector</a></p></li>
+</ul></li>
+
+<li><p>That&rsquo;s all, now restart dcm4chee and launch Weasis from the dcm4chee-web3 portal.</p></li>
 </ol>
-<hr>
-<h3 id="for-dcm4chee-web-old-web-interface---before-2171">For dcm4chee-web (old web interface - before 2.17.1)</h3>
+
+<hr />
+
+<h3 id="for-dcm4chee-web-old-web-interface-before-2-17-1">For dcm4chee-web (old web interface - before 2.17.1)</h3>
+
 <ol>
-<li>
-<p>Go <!-- raw HTML omitted -->here<!-- raw HTML omitted --> and download:</p>
+<li><p>Go <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">here</a> and download:</p>
+
 <ul>
 <li>The last Weasis version: weasis.war</li>
 <li>The Weasis internationalization (translation): weasis-i18n.war (optional)</li>
-<li>The modified <!-- raw HTML omitted -->dcm4chee web interface<!-- raw HTML omitted --> dcm4chee-web/<em>version</em>/dcm4chee-web.war)
+<li>The modified <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/dcm4chee-web/">dcm4chee web interface</a> dcm4chee-web/<em>version</em>/dcm4chee-web.war)
 
 <div class="notices info" ><p><strong>dcm4chee version</strong>:   dcm4chee-web.war has been built only for some dcm4chee versions. For other versions see <a href="../rebuild-dcm4chee-web">rebuild dcm4chee-web</a> from any version.</p>
 </div>
 </li>
-</ul>
-</li>
-<li>
-<p>Place these three files into the deploy folder (server/default/deploy/) of dcm4chee.</p>
-</li>
-<li>
-<p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+</ul></li>
+
+<li><p>Place these three files into the deploy folder (server/default/deploy/) of dcm4chee.</p></li>
+
+<li><p>Modify the permission in /dcm4jboss-web/src/etc/conf/dcm4chee-web/folder.permissions or in server/default/conf/dcm4chee-web if dcm4chee is already installed:</p>
+
 <blockquote>
-<p>folder.*=edit,move,delete,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+<p>folder.*=edit,move,delete,<span style="color:red">view</span>,*export,edit.newStudyUID,mergepat,study_permission,study_permission.free_role_action,query_has_issuer folder.*export=export_tf,export_xds</p>
+
 <p>&hellip;</p>
-<p>folder=WebUser(send,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->);DatacareUser(edit,move,delete,export_xds,<!-- raw HTML omitted -->view<!-- raw HTML omitted -->);WebAdmin(*)</p>
-</blockquote>
-</li>
-<li>
-<p>That&rsquo;s all, now restart dcm4chee and launch Weasis from the web portal.</p>
-</li>
+
+<p>folder=WebUser(send,<span style="color:red">view</span>);DatacareUser(edit,move,delete,export_xds,<span style="color:red">view</span>);WebAdmin(*)</p>
+</blockquote></li>
+
+<li><p>That&rsquo;s all, now restart dcm4chee and launch Weasis from the web portal.</p></li>
 </ol>
-<hr>
+
+<hr />
+
 <h3 id="write-weasis-portable-to-dicom-cds-with-dcm4chee-cdw">Write weasis-portable to DICOM CDs with dcm4chee-cdw</h3>
+
 <ol>
-<li>Install <!-- raw HTML omitted -->dcm4chee-cdw<!-- raw HTML omitted --> (see doc/INSTALL.txt in the archive)</li>
-<li>Extract <!-- raw HTML omitted -->weasis-portable.zip<!-- raw HTML omitted --> into the ../dcm4chee/server/default/data/mergedir directory</li>
+<li>Install <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/dcm4chee-cdw/">dcm4chee-cdw</a> (see doc/INSTALL.txt in the archive)</li>
+<li>Extract <a target="_blank" href="http://sourceforge.net/projects/dcm4che/files/Weasis/">weasis-portable.zip</a> into the ../dcm4chee/server/default/data/mergedir directory</li>
 <li>Go to the dcm4che jmx console (dcm4chee.cdw):
+
 <ul>
 <li>Select the MediaCreationMgtSCP item and set to <code>true</code> the value of DefaultIncludeDisplayApplication</li>
 <li>Select the MakeIsoImage item and set to <code>4</code> the value of isoLevel</li>
-</ul>
-</li>
+</ul></li>
 <li>Click on the <em>Apply Changes</em> button
 
-<div class="notices tip" ><p><strong>Embedding a Java Runtime for Windows</strong>: The executable (viewer-win32.exe) allows to embed a JRE in the relative directory &ldquo;jre/windows&rdquo; (e.g. weasis-portable/jre/windows/bin/java.exe). To support 32 and 64-bit architecture, copy 32-bit Java Runtime from its installed directory.<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Note: the embedded Java Runtime is used only when no runtime is available on the system. When Java is run from CD, it could be a little slow.</p>
+<div class="notices tip" ><p><strong>Embedding a Java Runtime for Windows</strong>: The executable (viewer-win32.exe) allows to embed a JRE in the relative directory &ldquo;jre/windows&rdquo; (e.g. weasis-portable/jre/windows/bin/java.exe). To support 32 and 64-bit architecture, copy 32-bit Java Runtime from its installed directory.<br>
+<br>Note: the embedded Java Runtime is used only when no runtime is available on the system. When Java is run from CD, it could be a little slow.</p>
 </div>
 </li>
 </ol>
@@ -1806,27 +1795,10 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
 
                     
                     
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -1892,6 +1864,37 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1920,6 +1923,256 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
             
         
@@ -2210,19 +2463,19 @@ For example, dcm4chee may be running on a different computer than Weasis, or the
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1589230939"></script>
-    <script src="/js/jquery.sticky.js?1589230939"></script>
-    <script src="/js/featherlight.min.js?1589230939"></script>
-    <script src="/js/highlight.pack.js?1589230939"></script>
+    <script src="/js/clipboard.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1584808539"></script>
+    <script src="/js/jquery.sticky.js?1584808539"></script>
+    <script src="/js/featherlight.min.js?1584808539"></script>
+    <script src="/js/highlight.pack.js?1584808539"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1589230939"></script>
-    <script src="/js/learn.js?1589230939"></script>
-    <script src="/js/hugo-learn.js?1589230939"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1584808539"></script>
+    <script src="/js/learn.js?1584808539"></script>
+    <script src="/js/hugo-learn.js?1584808539"></script>
 
-    <link href="/mermaid/mermaid.css?1589230939" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1589230939"></script>
+    <link href="/mermaid/mermaid.css?1584808539" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1584808539"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on Weasis Documentation</title>
@@ -18,7 +18,7 @@
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
 Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis was launched with Java Webstart is still available here.
- For dcm4chee-arc-light ![dcm4chee-arc-light](/gallery-dcm4chee/1Weasis in dcm4chee-arc-light.png?classes=border &amp;ldquo;dcm4chee-arc-light&amp;rdquo;)</description>
+ For dcm4chee-arc-light For a simpler and faster installation without server components, please follow these instructions; no need to consider the following points on this page.</description>
     </item>
     
     <item>
@@ -40,7 +40,8 @@ Requires Weasis 3.5 (or superior) installed on the system with a native installe
       <guid>https://nroduit.github.io/en/getting-started/building-weasis/</guid>
       <description>These instructions describe how to build Weasis directly from the Git repository on any platform. For building Weasis from an IDE, see Weasis plug-in development guidelines.
 Prerequisites
- JDK 11 or higher Maven 3.5 or higherIf your computer is behind a proxy server, configure maven. Git or directly download source from github  Getting the Source To clone the repository, first install GIT and either clone using a graphical GIT client or directly from the command line using the command:</description>
+ JDK 11 or higher Maven 3.5 or higher
+If your computer is behind a proxy server, configure maven. Git or directly download source from github  Getting the Source To clone the repository, first install GIT and either clone using a graphical GIT client or directly from the command line using the command:</description>
     </item>
     
     <item>
@@ -59,7 +60,7 @@ We recommend the use of Eclipse IDE, because all the following instructions are 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/getting-started/translating/</guid>
-      <description>The translation files are now hosted and managed on Transifexwebsite. Get an account at Transifexand help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
+      <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
 Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
  Special characters: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated.</description>
     </item>

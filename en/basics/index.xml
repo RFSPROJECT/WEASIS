@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics on Weasis Documentation</title>
@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/basics/architecture/</guid>
-      <description>Weasis has a modular architecture based on OSGi: the dynamic module system for Java. It uses the Apache Felix OSGi frameworkwhich is an open source implementation of the OSGi Release 4.2 specification (OSGi Certified).
+      <description>Weasis has a modular architecture based on OSGi: the dynamic module system for Java. It uses the Apache Felix OSGi framework which is an open source implementation of the OSGi Release 4.2 specification (OSGi Certified).
 The following schemas show the main different plug-in types (bundle in OSGi language) and their relationships. Viewer, Viewer Tool Pane, Tool Bar, Data Explorer and Codec bundles are registered dynamically by the Declarative Services (a way to push or to consume services in OSGi environment).</description>
     </item>
     
@@ -26,8 +26,8 @@ The following schemas show the main different plug-in types (bundle in OSGi lang
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/basics/shortcuts/</guid>
-      <description>Keyboard and Mouse Shortcuts IHErecommendations in Basic Image Reviewprofile.
-Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) the image canvas    W Window / Level    S Series scroll    Z Zoom    R Rotation   H Crosshair: in multiview mode synchronizes the crosshair position to all the views (Note: Ctrl + click or Ctrl + Shift + click allows changing the Window / Level values)   C Cine Start / Stop   M Measure   D Distance measurement    A Angle measurement    Y Polyline measurement   B Textbox   Q Context menu   Ctrl + Spacebar Change to the next action   Ctrl + mouse drag Accelerate the current action    Ctrl + Shift + mouse drag Accelerate more the current action   Alt + R 90° rotation (clockwise)   Alt + L 90° rotation (counterclockwise)   Alt + F Flip horizontally (after rotation action)   0 1 2 3&amp;hellip; DICOM presets   K Toggle key image state   Spacebar Show/Hide all the annotations (three states)   I Show/Hide all the annotations (three states)    Escape Reset the selected view    P Print view(s) with the operating system printer    Right-click Open the contextual menu for more options   Double click Toggle fullscreen   Drag files/directories(from the OS file manager) Open DICOMs files    DICOM explorer    Shortcut Action     Ctrl + click on the thumbnail Select multiple series   Click on a thumbnail and then Shift + click on another one Select all series between   Enter Open the selected series in the default viewer   Click + drag a thumbnail in the main view Display a series   Right-click Open the contextual menu for more options    Downloading Priorities: Selecting a thumbnail gives the best priority to download.</description>
+      <description>Keyboard and Mouse Shortcuts  IHE recommendations in Basic Image Review profile.
+Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) the image canvas    W Window / Level    S Series scroll    Z Zoom    R Rotation   H Crosshair: in multiview mode synchronizes the crosshair position to all the views (Note: Ctrl + click or Ctrl + Shift + click allows changing the Window / Level values)   C Cine Start / Stop   M Measure   D Distance measurement    A Angle measurement    Y Polyline measurement   B Textbox   Q Context menu   Ctrl + Spacebar Change to the next action   Ctrl + mouse drag Accelerate the current action    Ctrl + Shift + mouse drag Accelerate more the current action   Alt + R 90° rotation (clockwise)   Alt + L 90° rotation (counterclockwise)   Alt + F Flip horizontally (after rotation action)   0 1 2 3&amp;hellip; DICOM presets   K Toggle key image state   Spacebar Show/Hide all the annotations (three states)   I Show/Hide all the annotations (three states)    Escape Reset the selected view    P Print view(s) with the operating system printer    Right-click Open the contextual menu for more options   Double click Toggle fullscreen   Drag files/directories</description>
     </item>
     
     <item>

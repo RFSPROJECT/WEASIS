@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="description" content="DICOM Conformance Statements of Weasis">
 <meta name="keywords" content="DICOM Conformance Statements, IHE, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,18 +13,18 @@
     <title>Dicom Conformance :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1589230939" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1589230939" rel="stylesheet">
-    <link href="/css/hybrid.css?1589230939" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1589230939" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1589230939" rel="stylesheet">
-    <link href="/css/auto-complete.css?1589230939" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1589230939" rel="stylesheet">
-    <link href="/css/theme.css?1589230939" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1589230939" rel="stylesheet">
+    <link href="/css/nucleus.css?1584808539" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1584808539" rel="stylesheet">
+    <link href="/css/hybrid.css?1584808539" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1584808539" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1584808539" rel="stylesheet">
+    <link href="/css/auto-complete.css?1584808539" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1584808539" rel="stylesheet">
+    <link href="/css/theme.css?1584808539" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1584808539" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1589230939"></script>
+    <script src="/js/jquery-3.3.1.min.js?1584808539"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1589230939"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1589230939"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1584808539"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1584808539"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1589230939"></script>
+<script type="text/javascript" src="/js/search.js?1584808539"></script>
 
     
   </div>
@@ -1259,14 +1259,16 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#compatibility-of-dicom-transfer-syntax">Compatibility of DICOM Transfer Syntax</a></li>
-        <li><a href="#supported-photometric-interpretation-pixel-format">Supported &ldquo;Photometric Interpretation&rdquo; pixel format</a></li>
-      </ul>
-    </li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#compatibility-of-dicom-transfer-syntax">Compatibility of DICOM Transfer Syntax</a></li>
+<li><a href="#supported-photometric-interpretation-pixel-format">Supported &ldquo;Photometric Interpretation&rdquo; pixel format</a></li>
+</ul></li>
+</ul></li>
+</ul>
 </nav>
     </div>
 </div>
@@ -1291,7 +1293,10 @@
 
 
 
+
+
 <h3 id="compatibility-of-dicom-transfer-syntax">Compatibility of DICOM Transfer Syntax</h3>
+
 <table>
 <thead>
 <tr>
@@ -1300,72 +1305,86 @@
 <th>Supported</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>1.2.840.10008.1.2</td>
 <td>Implicit VR - Little Endian</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.1</td>
 <td>Explicit VR - Little Endian</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.2</td>
 <td>Explicit VR - Big Endian</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.5</td>
 <td>RLE (Run Length Encoding) Lossless</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.50</td>
 <td>JPEG Baseline (Process 1): Default Transfer Syntax for Lossy JPEG 8 Bit Image Compression</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.51</td>
 <td>JPEG Extended (Process 2 &amp; 4): Default Transfer Syntax for Lossy JPEG 12 Bit Image Compression (Process 4 only)</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.57</td>
 <td>JPEG Lossless, Non-Hierarchical (Process 14)</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.70</td>
 <td>JPEG Lossless, Non-Hierarchical, First-Order Prediction (Process 14 [Selection Value 1]): Default Transfer Syntax for Lossless JPEG Image Compression</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.80</td>
 <td>JPEG-LS Lossless Image Compression</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.81</td>
 <td>JPEG-LS Lossy (Near-Lossless) Image Compression</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.90</td>
 <td>JPEG 2000 Image Compression (Lossless Only)</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.91</td>
 <td>JPEG 2000 Image Compression</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.92</td>
 <td>JPEG 2000 Part 2 Multi-component Image Compression (Lossless Only)</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.93</td>
 <td>JPEG 2000 Part 2 Multi-component Image Compression</td>
@@ -1374,8 +1393,10 @@
 </tbody>
 </table>
 
+
 <div class="notices note" ><p>These TSUIDs are available with Weasis 2.5 and later for Windows, Mac OS X and Linux.</p>
 </div>
+
 
 <table>
 <thead>
@@ -1385,42 +1406,50 @@
 <th>Supported</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>1.2.840.10008.1.2.6.1</td>
 <td>RFC 2557 MIME Encapsulation</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.100</td>
 <td>MPEG-2 Main Profile Main Level</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.101</td>
 <td>MPEG-2 Main Profile High Level</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.102</td>
 <td>MPEG-4 AVC/H.264 High Profile / Level 4.1</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.103</td>
 <td>MPEG-4 AVC/H.264 BD-compatible High Profile / Level 4.1</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.104</td>
 <td>MPEG-4 AVC/H.264 High Profile / Level 4.2 For 2D Video</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.105</td>
 <td>MPEG-4 AVC/H.264 High Profile / Level 4.2 For 3D Video</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>1.2.840.10008.1.2.4.106</td>
 <td>MPEG-4 AVC/H.264 Stereo High Profile / Level 4.2</td>
@@ -1429,10 +1458,13 @@
 </tbody>
 </table>
 
+
 <div class="notices note" ><p>These TSUIDs are open by the default system application associated to the MIME type.</p>
 </div>
 
+
 <h3 id="supported-photometric-interpretation-pixel-format">Supported &ldquo;Photometric Interpretation&rdquo; pixel format</h3>
+
 <table>
 <thead>
 <tr>
@@ -1441,32 +1473,38 @@
 <th>Supported</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>MONOCHROME1</td>
 <td>grey level image description (high values=dark, low values=bright)</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>MONOCHROME2</td>
 <td>grey level image description (high values=bright, low values=dark)</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>PALETTE COLOR</td>
 <td>pseudo color image description</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>RGB</td>
 <td>true color image description</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>YBR_FULL</td>
 <td>true color image description</td>
 <td>yes</td>
 </tr>
+
 <tr>
 <td>YBR_FULL_422</td>
 <td>true color image description</td>
@@ -1635,27 +1673,10 @@
 
                     
                     
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -1721,6 +1742,37 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1742,6 +1794,88 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1762,8 +1896,176 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2025,10 +2327,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/basics/commands/" title="Weasis Commands"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/basics/customize/build-plugins/" title="Build Plug-ins"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/tutorials/" title="Tutorials" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/basics/customize/" title="Customize" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2038,19 +2340,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1589230939"></script>
-    <script src="/js/jquery.sticky.js?1589230939"></script>
-    <script src="/js/featherlight.min.js?1589230939"></script>
-    <script src="/js/highlight.pack.js?1589230939"></script>
+    <script src="/js/clipboard.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1584808539"></script>
+    <script src="/js/jquery.sticky.js?1584808539"></script>
+    <script src="/js/featherlight.min.js?1584808539"></script>
+    <script src="/js/highlight.pack.js?1584808539"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1589230939"></script>
-    <script src="/js/learn.js?1589230939"></script>
-    <script src="/js/hugo-learn.js?1589230939"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1584808539"></script>
+    <script src="/js/learn.js?1584808539"></script>
+    <script src="/js/hugo-learn.js?1584808539"></script>
 
-    <link href="/mermaid/mermaid.css?1589230939" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1589230939"></script>
+    <link href="/mermaid/mermaid.css?1584808539" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1584808539"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

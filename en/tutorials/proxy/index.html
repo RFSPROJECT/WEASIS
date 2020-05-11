@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.57.2" />
     <meta name="description" content="How to configure a proxy server">
 <meta name="keywords" content="network, porxy, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,18 +13,18 @@
     <title>Proxy server :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1589230939" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1589230939" rel="stylesheet">
-    <link href="/css/hybrid.css?1589230939" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1589230939" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1589230939" rel="stylesheet">
-    <link href="/css/auto-complete.css?1589230939" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1589230939" rel="stylesheet">
-    <link href="/css/theme.css?1589230939" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1589230939" rel="stylesheet">
+    <link href="/css/nucleus.css?1584808539" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1584808539" rel="stylesheet">
+    <link href="/css/hybrid.css?1584808539" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1584808539" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1584808539" rel="stylesheet">
+    <link href="/css/auto-complete.css?1584808539" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1584808539" rel="stylesheet">
+    <link href="/css/theme.css?1584808539" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1584808539" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1589230939"></script>
+    <script src="/js/jquery-3.3.1.min.js?1584808539"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -407,14 +407,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1589230939"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1589230939"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1584808539"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1584808539"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1589230939"></script>
+<script type="text/javascript" src="/js/search.js?1584808539"></script>
 
     
   </div>
@@ -1259,14 +1259,21 @@
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-  <ul>
-    <li><a href="#centerhow-to-configure-a-proxy-servercenter"><!-- raw HTML omitted -->How to configure a proxy server<!-- raw HTML omitted --></a>
-      <ul>
-        <li><a href="#manual-configuration-from-the-user-interface">Manual configuration from the user interface</a></li>
-        <li><a href="#configuration-at-launch">Configuration at launch</a></li>
-      </ul>
-    </li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#center-how-to-configure-a-proxy-server-center"><center>How to configure a proxy server</center></a>
+<ul>
+<li><a href="#manual-configuration-from-the-user-interface">Manual configuration from the user interface</a></li>
+<li><a href="#configuration-at-launch">Configuration at launch</a>
+<ul>
+<li><a href="#set-the-default-system-proxy">Set the default system proxy</a></li>
+<li><a href="#set-a-local-proxy-like-squid">Set a local proxy like Squid</a></li>
+<li><a href="#set-a-proxy-in-specific-domain">Set a proxy in specific domain</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 </nav>
     </div>
 </div>
@@ -1291,22 +1298,38 @@
 
 
 
-<h2 id="centerhow-to-configure-a-proxy-servercenter"><!-- raw HTML omitted -->How to configure a proxy server<!-- raw HTML omitted --></h2>
-<h3 id="manual-configuration-from-the-user-interface">Manual configuration from the user interface</h3>
-<p>From the main menu, open File &gt; Preferences (Alt + P) and select <em>Proxy Server</em>.</p>
-<p>The default configuration is <em>Direct connection (no proxy)</em> and by clicking on <em>Manual proxy configuration</em> you can define a custom proxy server (in the image below, a local proxy like Squid).</p>
-<p>To fill in the fields you must refer to the <a href="https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/net/doc-files/net-properties.html">Java documentation</a>.</p>
-<p><img src="/tuto/proxy/proxy-ui.png" alt="dcm4chee-web3"></p>
-<h3 id="configuration-at-launch">Configuration at launch</h3>
-<p>For setting JVM properties at launch, the selection in user interface must be <em>Direct connection (no proxy) or configuration at launch</em>. The Java options can be set in the section &ldquo;[JavaOptions]&rdquo; of Weasis.cfg.</p>
-<h4 id="set-the-default-system-proxy">Set the default system proxy</h4>
-<p>-Djava.net.useSystemProxies=true</p>
-<h4 id="set-a-local-proxy-like-squid">Set a local proxy like Squid</h4>
-<p>-Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3128</p>
-<h4 id="set-a-proxy-in-specific-domain">Set a proxy in specific domain</h4>
-<p>-Dhttps.proxyHost=&quot;proxy.mydomain.com&rdquo; -Dhttps.proxyPort=&quot;8080&rdquo; -Dhttp.proxyHost=&quot;proxy.mydomain.com&rdquo; -Dhttp.proxyPort=&quot;8080&rdquo; -Dhttp.nonProxyHosts=&rdquo;*.mydomain.com|localhost&rdquo; -Dhttp.proxyUser=&quot;user&rdquo; -Dhttp.proxyPassword=&quot;password&rdquo;</p>
 
-<div class="notices note" ><p>The Java options can also be passed in the <!-- raw HTML omitted -->parameters<!-- raw HTML omitted --> of the URL (e.g. http://localhost:8080/weasis-pacs-connector/weasis?patientID=9702672&amp;pro=&quot;https.proxyHost%20127.0.0.1&rdquo;&amp;pro=&quot;https.proxyPort%203128&rdquo;).</p>
+
+<h2 id="center-how-to-configure-a-proxy-server-center"><center>How to configure a proxy server</center></h2>
+
+<h3 id="manual-configuration-from-the-user-interface">Manual configuration from the user interface</h3>
+
+<p>From the main menu, open File &gt; Preferences (Alt + P) and select <em>Proxy Server</em>.</p>
+
+<p>The default configuration is <em>Direct connection (no proxy)</em> and by clicking on <em>Manual proxy configuration</em> you can define a custom proxy server (in the image below, a local proxy like Squid).</p>
+
+<p>To fill in the fields you must refer to the <a href="https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/net/doc-files/net-properties.html">Java documentation</a>.</p>
+
+<p><img src="/tuto/proxy/proxy-ui.png" alt="dcm4chee-web3" /></p>
+
+<h3 id="configuration-at-launch">Configuration at launch</h3>
+
+<p>For setting JVM properties at launch, the selection in user interface must be <em>Direct connection (no proxy) or configuration at launch</em>. The Java options can be set in the section &ldquo;[JavaOptions]&rdquo; of Weasis.cfg.</p>
+
+<h4 id="set-the-default-system-proxy">Set the default system proxy</h4>
+
+<p>-Djava.net.useSystemProxies=true</p>
+
+<h4 id="set-a-local-proxy-like-squid">Set a local proxy like Squid</h4>
+
+<p>-Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3128</p>
+
+<h4 id="set-a-proxy-in-specific-domain">Set a proxy in specific domain</h4>
+
+<p>-Dhttps.proxyHost=&ldquo;proxy.mydomain.com&rdquo; -Dhttps.proxyPort=&ldquo;8080&rdquo; -Dhttp.proxyHost=&ldquo;proxy.mydomain.com&rdquo; -Dhttp.proxyPort=&ldquo;8080&rdquo; -Dhttp.nonProxyHosts=&rdquo;*.mydomain.com|localhost&rdquo; -Dhttp.proxyUser=&ldquo;user&rdquo; -Dhttp.proxyPassword=&ldquo;password&rdquo;</p>
+
+
+<div class="notices note" ><p>The Java options can also be passed in the <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters">parameters</a> of the URL (e.g. <a href="http://localhost:8080/weasis-pacs-connector/weasis?patientID=9702672&amp;pro=&quot;https.proxyHost%20127.0.0.1&quot;&amp;pro=&quot;https.proxyPort%203128&quot;">http://localhost:8080/weasis-pacs-connector/weasis?patientID=9702672&amp;pro=&quot;https.proxyHost%20127.0.0.1&quot;&amp;pro=&quot;https.proxyPort%203128&quot;</a>).</p>
 </div>
 
 
@@ -1466,27 +1489,10 @@
 
                     
                     
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -1552,6 +1558,37 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1580,6 +1617,256 @@
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
             
         
@@ -1873,19 +2160,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.min.js?1589230939"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1589230939"></script>
-    <script src="/js/jquery.sticky.js?1589230939"></script>
-    <script src="/js/featherlight.min.js?1589230939"></script>
-    <script src="/js/highlight.pack.js?1589230939"></script>
+    <script src="/js/clipboard.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.min.js?1584808539"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1584808539"></script>
+    <script src="/js/jquery.sticky.js?1584808539"></script>
+    <script src="/js/featherlight.min.js?1584808539"></script>
+    <script src="/js/highlight.pack.js?1584808539"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1589230939"></script>
-    <script src="/js/learn.js?1589230939"></script>
-    <script src="/js/hugo-learn.js?1589230939"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1584808539"></script>
+    <script src="/js/learn.js?1584808539"></script>
+    <script src="/js/hugo-learn.js?1584808539"></script>
 
-    <link href="/mermaid/mermaid.css?1589230939" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1589230939"></script>
+    <link href="/mermaid/mermaid.css?1584808539" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1584808539"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
