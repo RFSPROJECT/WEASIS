@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials on Weasis Documentation</title>
@@ -60,8 +60,9 @@ The layout list is built dynamically according to the window size. So changing t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/build-ko-pr/</guid>
-      <description>How to build and export DICOM KO and PR Key Object Selection (KO)  To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
-  Presentation State (PR or GSPS)  Open PR: Since Weasis 2.</description>
+      <description>How to build and export DICOM KO and PR Key Object Selection (KO)   To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar
+  Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
+  Presentation State (PR or GSPS)   Open PR: Since Weasis 2.</description>
     </item>
     
     <item>
@@ -81,7 +82,7 @@ To fill in the fields you must refer to the Java documentation.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/calibration/</guid>
-      <description> How to change the spatial calibration   </description>
+      <description>How to change the spatial calibration   </description>
     </item>
     
     <item>

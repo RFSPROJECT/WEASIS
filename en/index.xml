@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Weasis Medical Viewer on Weasis Documentation</title>
@@ -18,7 +18,7 @@
       <guid>https://nroduit.github.io/en/getting-started/dcm4chee/</guid>
       <description>This page describes how installing Weasis to be the default web viewer of dcm4chee web interface. See How to launch Weasis from any environments to integrate Weasis into your own user interface.
 Weasis is launched from the dcm4chee administrative web interface with the weasis protocol, as shown in the pictures below. The documentation where Weasis was launched with Java Webstart is still available here.
- For dcm4chee-arc-light For a simpler and faster installation without server components, please follow these instructions; no need to consider the following points on this page.</description>
+ For dcm4chee-arc-light ![dcm4chee-arc-light](/gallery-dcm4chee/1Weasis in dcm4chee-arc-light.png?classes=border &amp;ldquo;dcm4chee-arc-light&amp;rdquo;)</description>
     </item>
     
     <item>
@@ -163,7 +163,7 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/old/rebuild-dcm4chee-web/</guid>
-      <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems  JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
+      <description>Build dcm4chee-web 2.15.0, 2.16.2 or 2.17.0 Prerequisites  Subversion (SVN), one of the following client:  Subversion - The core system (server, client, libs) Subversive - SVN Team Client (Eclipse plugin) TortoiseSVN - Handy SVN client for Windows systems   JDK 6 or higher Ant 1.6 or higher  Getting the Source To check out the code, first install Subversion and either checkout the trunk branch using a graphical Subversion client (such as TortoiseSVN) or directly from the command line using the command:</description>
     </item>
     
     <item>
@@ -216,8 +216,9 @@ The layout list is built dynamically according to the window size. So changing t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/build-ko-pr/</guid>
-      <description>How to build and export DICOM KO and PR Key Object Selection (KO)  To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
-  Presentation State (PR or GSPS)  Open PR: Since Weasis 2.</description>
+      <description>How to build and export DICOM KO and PR Key Object Selection (KO)   To display KO Toolbar, select in menu: View &amp;gt; Toolbars &amp;gt; Key Object Selection Toolbar
+  Click on the right icon over the image to select the Key Object Selection. Click on the star icon (or press &amp;lsquo;k&amp;rsquo;) to create in a new KO or to add the key image.
+  Presentation State (PR or GSPS)   Open PR: Since Weasis 2.</description>
     </item>
     
     <item>
@@ -237,7 +238,7 @@ To fill in the fields you must refer to the Java documentation.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/calibration/</guid>
-      <description> How to change the spatial calibration   </description>
+      <description>How to change the spatial calibration   </description>
     </item>
     
     <item>
