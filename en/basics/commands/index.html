@@ -13,19 +13,19 @@
     <title>Weasis Commands :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1592037878" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1592037878" rel="stylesheet">
-    <link href="/css/hybrid.css?1592037878" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1592037878" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1592037878" rel="stylesheet">
-    <link href="/css/auto-complete.css?1592037878" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1592037878" rel="stylesheet">
-    <link href="/css/theme.css?1592037878" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1592037878" rel="stylesheet">
+    <link href="/css/nucleus.css?1593969036" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1593969036" rel="stylesheet">
+    <link href="/css/hybrid.css?1593969036" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1593969036" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1593969036" rel="stylesheet">
+    <link href="/css/auto-complete.css?1593969036" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1593969036" rel="stylesheet">
+    <link href="/css/theme.css?1593969036" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1593969036" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1592037878"></script>
+    <script src="/js/jquery-3.3.1.min.js?1593969036"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1592037878"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1592037878"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1593969036"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1593969036"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1592037878"></script>
+<script type="text/javascript" src="/js/search.js?1593969036"></script>
 
     
   </div>
@@ -1510,6 +1510,14 @@ arg is an XML text in UTF8 or an url with the option &#39;--url&#39;
 <div class="notices note" ><p>For identifying the commands at start-up, the symbol &ldquo;$&rdquo; must be added before the command (not required in the OSGI console). See examples below.</p>
 </div>
 
+
+<div class="notices warning" ><p><strong>Special characters</strong>:
+A command containing special characters like &lsquo;&amp;&rsquo; or space must be within quotes or double quotes. Example: 
+dicom:get -w <strong>&ldquo;<a href="https://dicom.com/test&amp;sopuid=322344%22">https://dicom.com/test&amp;sopuid=322344&quot;</a></strong>
+<br><br>
+Depending the command line system, quotes or double quote needs to be escaped with a backslash. Ex. simple quote must be escaped in Eclipse but not in Intellij.</p>
+</div>
+
 <h3 id="weasis-portable-distribution">Weasis Portable distribution</h3>
 
 <div class="notices note" ><p>The native installer will progressively replace the portable and the web distribution with the <a href="../../getting-started/weasis-protocol">weasis protocol</a>.</p>
@@ -1540,20 +1548,12 @@ arg is an XML text in UTF8 or an url with the option &#39;--url&#39;
 <span style="color:#75715e"># Open non DICOM images (Local and URL):</span>
 ./viewer-linux.sh <span style="color:#e6db74">&#39;$image:get -f &#34;/home/Images/test.png&#34; -u https://dcm4che.atlassian.net/wiki/download/attachments/3670024/weasis-mpr.png&#39;</span></code></pre></div></li>
 <li>Windows commands
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">viewer-win32.exe $dicom:get -l <span style="color:#e6db74">&#34;E:\\DICOM\\Overlay&#34;</span> -l <span style="color:#e6db74">&#34;E:\\DICOM\\Shutter&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">viewer-win32.exe $dicom:get -l <span style="color:#e6db74">&#34;E:\DICOM\Overlay&#34;</span> -l <span style="color:#e6db74">&#34;E:\DICOM\Shutter&#34;</span>
  
 viewer-win32.exe $dicom:get -l <span style="color:#e6db74">&#34;E:/DICOM/Overlay&#34;</span> -l <span style="color:#e6db74">&#34;E:/DICOM/Shutter&#34;</span></code></pre></div></li>
 </ul>
 </li>
 </ol>
-
-<div class="notices warning" ><p><strong>Special characters</strong>:
-The command interpreter has changed from weasis 2.6.0. Command containing special characters like &lsquo;&amp;&rsquo; must be within quotes or double quotes. Example: 
-dicom:get -w <strong>&ldquo;url&rdquo;</strong>
-<br><br>
-It also depends on the command line system. For instance in the Eclipse launcher parameters, ‘&amp;’ within URLs needs to be escaped with a backslash.</p>
-</div>
-
 
 
 <footer class="footline">
@@ -2117,19 +2117,19 @@ It also depends on the command line system. For instance in the Eclipse launcher
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1592037878"></script>
-    <script src="/js/perfect-scrollbar.min.js?1592037878"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1592037878"></script>
-    <script src="/js/jquery.sticky.js?1592037878"></script>
-    <script src="/js/featherlight.min.js?1592037878"></script>
-    <script src="/js/highlight.pack.js?1592037878"></script>
+    <script src="/js/clipboard.min.js?1593969036"></script>
+    <script src="/js/perfect-scrollbar.min.js?1593969036"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1593969036"></script>
+    <script src="/js/jquery.sticky.js?1593969036"></script>
+    <script src="/js/featherlight.min.js?1593969036"></script>
+    <script src="/js/highlight.pack.js?1593969036"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1592037878"></script>
-    <script src="/js/learn.js?1592037878"></script>
-    <script src="/js/hugo-learn.js?1592037878"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1593969036"></script>
+    <script src="/js/learn.js?1593969036"></script>
+    <script src="/js/hugo-learn.js?1593969036"></script>
 
-    <link href="/mermaid/mermaid.css?1592037878" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1592037878"></script>
+    <link href="/mermaid/mermaid.css?1593969036" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1593969036"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
