@@ -47,7 +47,7 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/basics/dicom/</guid>
-      <description>Compatibility of DICOM Transfer Syntax    Transfer Syntax UID Description Supported     1.2.840.10008.1.2 Implicit VR - Little Endian yes   1.2.840.10008.1.2.1 Explicit VR - Little Endian yes   1.2.840.10008.1.2.2 Explicit VR - Big Endian yes   1.2.840.10008.1.2.5 RLE (Run Length Encoding) Lossless yes   1.2.840.10008.1.2.4.50 JPEG Baseline (Process 1): Default Transfer Syntax for Lossy JPEG 8 Bit Image Compression yes   1.</description>
+      <description>Compatibility of DICOM Transfer Syntax    Transfer Syntax UID Description Supported     1.2.840.10008.1.2 Implicit VR - Little Endian yes   1.2.840.10008.1.2.1 Explicit VR - Little Endian yes   1.2.840.10008.1.2.2 Explicit VR Big Endian (Retired) yes   1.2.840.10008.1.2.5 RLE (Run Length Encoding) Lossless yes   1.2.840.10008.1.2.4.50 JPEG Baseline (Process 1): Default Transfer Syntax for Lossy JPEG 8 Bit Image Compression yes   1.</description>
     </item>
     
   </channel>

@@ -13,19 +13,19 @@
     <title>Dicom Conformance :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1596044376" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1596044376" rel="stylesheet">
-    <link href="/css/hybrid.css?1596044376" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1596044376" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1596044376" rel="stylesheet">
-    <link href="/css/auto-complete.css?1596044376" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1596044376" rel="stylesheet">
-    <link href="/css/theme.css?1596044376" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1596044376" rel="stylesheet">
+    <link href="/css/nucleus.css?1596724446" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1596724446" rel="stylesheet">
+    <link href="/css/hybrid.css?1596724446" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1596724446" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1596724446" rel="stylesheet">
+    <link href="/css/auto-complete.css?1596724446" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1596724446" rel="stylesheet">
+    <link href="/css/theme.css?1596724446" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1596724446" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1596044376"></script>
+    <script src="/js/jquery-3.3.1.min.js?1596724446"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1596044376"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1596044376"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1596724446"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1596724446"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1596044376"></script>
+<script type="text/javascript" src="/js/search.js?1596724446"></script>
 
     
   </div>
@@ -1324,7 +1324,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#compatibility-of-dicom-transfer-syntax">Compatibility of DICOM Transfer Syntax</a></li>
+        <li><a href="#compatibility-of-dicom-transfer-syntaxhttpdicomnemaorgmedicaldicomcurrentoutputchtmlpart06chapter_ahtml">Compatibility of <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_A.html">DICOM Transfer Syntax</a></a></li>
         <li><a href="#supported-photometric-interpretation-pixel-format">Supported &ldquo;Photometric Interpretation&rdquo; pixel format</a></li>
       </ul>
     </li>
@@ -1352,7 +1352,7 @@
         
 
 
-<h3 id="compatibility-of-dicom-transfer-syntax">Compatibility of DICOM Transfer Syntax</h3>
+<h3 id="compatibility-of-dicom-transfer-syntaxhttpdicomnemaorgmedicaldicomcurrentoutputchtmlpart06chapter_ahtml">Compatibility of <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part06/chapter_A.html" target="_blank">DICOM Transfer Syntax</a></h3>
 <table>
 <thead>
 <tr>
@@ -1374,7 +1374,7 @@
 </tr>
 <tr>
 <td>1.2.840.10008.1.2.2</td>
-<td>Explicit VR - Big Endian</td>
+<td>Explicit VR Big Endian (Retired)</td>
 <td>yes</td>
 </tr>
 <tr>
@@ -1390,6 +1390,16 @@
 <tr>
 <td>1.2.840.10008.1.2.4.51</td>
 <td>JPEG Extended (Process 2 &amp; 4): Default Transfer Syntax for Lossy JPEG 12 Bit Image Compression (Process 4 only)</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>1.2.840.10008.1.2.4.53</td>
+<td>JPEG Spectral Selection, Non-Hierarchical (Process 6 &amp; 8) (Retired)</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>1.2.840.10008.1.2.4.55</td>
+<td>JPEG Full Progression, Non-Hierarchical (Process 10 &amp; 12) (Retired)</td>
 <td>yes</td>
 </tr>
 <tr>
@@ -1531,6 +1541,26 @@
 <tr>
 <td>YBR_FULL_422</td>
 <td>true color image description</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>YBR_PARTIAL_422</td>
+<td>true color image description (Retired)</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>YBR_PARTIAL_420</td>
+<td>true color image description</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>YBR_ICT</td>
+<td>true color image description (JPEG-2000)</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>YBR_RCT</td>
+<td>true color image description (JPEG-2000)</td>
 <td>yes</td>
 </tr>
 </tbody>
@@ -2098,19 +2128,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1596044376"></script>
-    <script src="/js/perfect-scrollbar.min.js?1596044376"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1596044376"></script>
-    <script src="/js/jquery.sticky.js?1596044376"></script>
-    <script src="/js/featherlight.min.js?1596044376"></script>
-    <script src="/js/highlight.pack.js?1596044376"></script>
+    <script src="/js/clipboard.min.js?1596724446"></script>
+    <script src="/js/perfect-scrollbar.min.js?1596724446"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1596724446"></script>
+    <script src="/js/jquery.sticky.js?1596724446"></script>
+    <script src="/js/featherlight.min.js?1596724446"></script>
+    <script src="/js/highlight.pack.js?1596724446"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1596044376"></script>
-    <script src="/js/learn.js?1596044376"></script>
-    <script src="/js/hugo-learn.js?1596044376"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1596724446"></script>
+    <script src="/js/learn.js?1596724446"></script>
+    <script src="/js/hugo-learn.js?1596724446"></script>
 
-    <link href="/mermaid/mermaid.css?1596044376" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1596044376"></script>
+    <link href="/mermaid/mermaid.css?1596724446" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1596724446"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -13,19 +13,19 @@
     <title>Building Weasis :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1596044376" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1596044376" rel="stylesheet">
-    <link href="/css/hybrid.css?1596044376" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1596044376" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1596044376" rel="stylesheet">
-    <link href="/css/auto-complete.css?1596044376" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1596044376" rel="stylesheet">
-    <link href="/css/theme.css?1596044376" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1596044376" rel="stylesheet">
+    <link href="/css/nucleus.css?1596724446" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1596724446" rel="stylesheet">
+    <link href="/css/hybrid.css?1596724446" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1596724446" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1596724446" rel="stylesheet">
+    <link href="/css/auto-complete.css?1596724446" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1596724446" rel="stylesheet">
+    <link href="/css/theme.css?1596724446" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1596724446" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1596044376"></script>
+    <script src="/js/jquery-3.3.1.min.js?1596724446"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1596044376"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1596044376"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1596724446"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1596724446"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1596044376"></script>
+<script type="text/javascript" src="/js/search.js?1596724446"></script>
 
     
   </div>
@@ -1357,7 +1357,7 @@
 <p><strong>Prerequisites</strong></p>
 <ol>
 <li>JDK 11 or higher</li>
-<li>Maven 3.5 or higher<br>
+<li>Maven 3.5.3 or higher<br>
 If your computer is behind a proxy server, <a target="_blank" href="http://maven.apache.org/guides/mini/guide-proxies.html">configure maven</a>.</li>
 <li>Git or directly download source from <a target="_blank" href="https://github.com/nroduit/Weasis">github</a></li>
 </ol>
@@ -1378,7 +1378,7 @@ If your computer is behind a proxy server, <a target="_blank" href="http://maven
 <h3 id="building-weasis-distributions">Building Weasis Distributions</h3>
 
 <div class="notices note" ><p>The native installer will progressively replace the portable and the web distribution. It uses the <a href="../../getting-started/weasis-protocol">weasis protocol</a> (which not requires jar signing) instead of Java Web Start which has been removed from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/11-relnote-issues-5012449.html#JDK-8185077">Java 11 release</a> and because the end of public Oracle Java 8 updates from April 2019.<br>
-The documentation for building the native installer is not yet available.</p>
+The documentation for building the native installer we be available from Weasis 4.</p>
 </div>
 
 <ul>
@@ -1395,7 +1395,13 @@ $ mvn clean package -Dportable<span style="color:#f92672">=</span>true -P compre
 </div>
 
 The parameters must be placed in the maven user setting or has to be the options in the Maven command:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean package -Djarsigner.alias<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_alias&#34;</span> -Djarsigner.storepass<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_pwd&#34;</span> -Djarsigner.keystore<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_path/keystore&#34;</span> -Dportable<span style="color:#f92672">=</span>true -P compressXZ</code></pre></div></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean package -Djarsigner.alias<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_alias&#34;</span> -Djarsigner.storepass<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_pwd&#34;</span> -Djarsigner.keystore<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;your_path/keystore&#34;</span> -Dportable<span style="color:#f92672">=</span>true -P compressXZ</code></pre></div>
+
+<div class="notices tip" ><p>For production, version must not end with SNAPSHOT (otherwise packages will not be kept in cache). So to remove SNAPASHOT or to make your own release (for avoiding package mix-up in cache), modify the changelist property. From the Weasis root folder, execute:</p>
+</div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean install -Dchangelist<span style="color:#f92672">=</span>-mybuild
+$ mvn clean package -Dchangelist<span style="color:#f92672">=</span>-mybuild -Dportable<span style="color:#f92672">=</span>true -P compressXZ -f weasis-distributions</code></pre></div></li>
 </ul>
 <!-- -->
 <ul>
@@ -1979,19 +1985,19 @@ The parameters must be placed in the maven user setting or has to be the options
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1596044376"></script>
-    <script src="/js/perfect-scrollbar.min.js?1596044376"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1596044376"></script>
-    <script src="/js/jquery.sticky.js?1596044376"></script>
-    <script src="/js/featherlight.min.js?1596044376"></script>
-    <script src="/js/highlight.pack.js?1596044376"></script>
+    <script src="/js/clipboard.min.js?1596724446"></script>
+    <script src="/js/perfect-scrollbar.min.js?1596724446"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1596724446"></script>
+    <script src="/js/jquery.sticky.js?1596724446"></script>
+    <script src="/js/featherlight.min.js?1596724446"></script>
+    <script src="/js/highlight.pack.js?1596724446"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1596044376"></script>
-    <script src="/js/learn.js?1596044376"></script>
-    <script src="/js/hugo-learn.js?1596044376"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1596724446"></script>
+    <script src="/js/learn.js?1596724446"></script>
+    <script src="/js/hugo-learn.js?1596724446"></script>
 
-    <link href="/mermaid/mermaid.css?1596044376" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1596044376"></script>
+    <link href="/mermaid/mermaid.css?1596724446" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1596724446"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

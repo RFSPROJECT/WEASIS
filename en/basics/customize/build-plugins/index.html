@@ -13,19 +13,19 @@
     <title>Build Plug-ins :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1596044376" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1596044376" rel="stylesheet">
-    <link href="/css/hybrid.css?1596044376" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1596044376" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1596044376" rel="stylesheet">
-    <link href="/css/auto-complete.css?1596044376" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1596044376" rel="stylesheet">
-    <link href="/css/theme.css?1596044376" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1596044376" rel="stylesheet">
+    <link href="/css/nucleus.css?1596724446" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1596724446" rel="stylesheet">
+    <link href="/css/hybrid.css?1596724446" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1596724446" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1596724446" rel="stylesheet">
+    <link href="/css/auto-complete.css?1596724446" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1596724446" rel="stylesheet">
+    <link href="/css/theme.css?1596724446" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1596724446" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1596044376"></script>
+    <script src="/js/jquery-3.3.1.min.js?1596724446"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1596044376"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1596044376"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1596724446"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1596724446"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1596044376"></script>
+<script type="text/javascript" src="/js/search.js?1596724446"></script>
 
     
   </div>
@@ -1381,7 +1381,7 @@
 
 <h3 id="build-plug-ins-from-maven-archetype">Build plug-ins from Maven archetype</h3>
 <ol>
-<li>From the root directory of an archetype execute: mvn install</li>
+<li>From the folder Weasis/archetype execute: mvn install</li>
 <li>Generate a sample project by executing the following command: mvn archetype:generate -DarchetypeCatalog=local</li>
 <li>Select the archetype:
 <ul>
@@ -1391,7 +1391,13 @@
 </li>
 </ol>
 
-<div class="notices note" ><p>From Eclipse: File &gt; New &gt; Maven Project and Search for weasis archetype in catalog filter.</p>
+<div class="notices note" ><p>From Eclipse: File &gt; New &gt; Maven Project and Search for weasis archetype in catalog filter.<br>
+From Intellij: File &gt; New Project &gt; Maven, check &ldquo;Create from archetype&rdquo; and select a Weasis archetype</p>
+</div>
+
+
+<div class="notices tip" ><p>In the pom.xml of the new plug-in, the tag &lt;relativePath&gt; must be adapted to your relative path of Weasis sources.<br>
+The default value is &lt;relativePath&gt;../Weasis/weasis-parent/pom.xml&lt;/relativePath&gt;</p>
 </div>
 
 <h3 id="install-plug-ins">Install plug-ins</h3>
@@ -1438,20 +1444,20 @@ On macOS: <code>felix.auto.start.85=file:///Users/Username/path/to/weasis-isowri
 </span><span style="color:#e6db74"> ${weasis.codebase.ext.url}/plugin1.jar \
 </span><span style="color:#e6db74"> ${weasis.codebase.ext.url}/plugin2.jar</span></code></pre></div>
 
-<div class="notices note" ><p>Using <code>${weasis.codebase.ext.url}</code> allows to keep the base URL abstract, so moving the package to another server won’t be a problem. Otherwise absolute URLs must be used. The default value of <code>${weasis.codebase.ext.url}</code> is <code>${weasis.codebase.url}-ext</code>.</p>
+<div class="notices note" ><p>Using <code>${weasis.codebase.ext.url}</code> allows to keep the base URL abstract, so moving the package to another server won’t be a problem. Otherwise absolute URLs must be used. The default value of <code>${weasis.codebase.ext.url}</code> is ${weasis.codebase.url}-ext.</p>
 </div>
 </p>
 </li>
 <li>
 <p>weasis-ext is the default web context when launching Weasis, using another web context requires modifying the property weasis.ext.url, it can be done by:</p>
-<ul>
-<li>changing the property in jnlp template in <a target="_blank" href="https://github.com/nroduit/">weasis-pacs-connector configuration</a>.
+</li>
+<li>
+<p>changing the property in jnlp template in <a target="_blank" href="https://github.com/nroduit/">weasis-pacs-connector configuration</a>.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">weasis.ext.url</span><span style="color:#f92672">=</span><span style="color:#e6db74">${server.base.url}/weasis-newext</span></code></pre></div>
 
 <div class="notices note" ><p>It is also possible to add the code base for plugins (cdb-ext) directly in the URL: <code>http://localhost:8080/weasis-pacs-connector/viewer?patientID=9702672&amp;cdb-ext=http://localhost:8080/plugins/weasis-ext</code></p>
 </div>
-</li>
-</ul>
+</p>
 </li>
 </ul>
 
@@ -1474,10 +1480,10 @@ On macOS: <code>felix.auto.start.85=file:///Users/Username/path/to/weasis-isowri
 <ol>
 <li>
 <p>Create a class implementing one of the plug-in types and add at least the annotations <em>@Component</em> and <em>@Service</em>, for instance:
-﻿<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Component</span><span style="color:#f92672">(</span>immediate <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">)</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Component</span><span style="color:#f92672">(</span>immediate <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">)</span>
 <span style="color:#a6e22e">@Service</span>
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SamplePrefFactory</span> <span style="color:#66d9ef">implements</span> PreferencesPageFactory <span style="color:#f92672">{</span>
-  <span style="color:#960050;background-color:#1e0010">﻿</span><span style="color:#f92672">...</span>
+  <span style="color:#f92672">...</span>
 <span style="color:#f92672">}</span></code></pre></div>
 
 <div class="notices tip" ><p>For more information about annotations see the <a target="_blank" href="http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html">Apache Felix SCR Annotations</a>.</p>
@@ -1486,7 +1492,7 @@ On macOS: <code>felix.auto.start.85=file:///Users/Username/path/to/weasis-isowri
 </li>
 <li>
 <p>Add in pom.xml of the plug-in the maven-scr-plugin (to generate XML file from the Java annotations) and the property for loading any XML file in maven-bundle-plugin:
-﻿<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;build&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;build&gt;</span>
     <span style="color:#f92672">&lt;plugins&gt;</span>
      <span style="color:#f92672">&lt;plugin&gt;</span>
         <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.felix<span style="color:#f92672">&lt;/groupId&gt;</span>
@@ -2066,19 +2072,19 @@ On macOS: <code>felix.auto.start.85=file:///Users/Username/path/to/weasis-isowri
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1596044377"></script>
-    <script src="/js/perfect-scrollbar.min.js?1596044377"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1596044377"></script>
-    <script src="/js/jquery.sticky.js?1596044377"></script>
-    <script src="/js/featherlight.min.js?1596044377"></script>
-    <script src="/js/highlight.pack.js?1596044377"></script>
+    <script src="/js/clipboard.min.js?1596724446"></script>
+    <script src="/js/perfect-scrollbar.min.js?1596724446"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1596724446"></script>
+    <script src="/js/jquery.sticky.js?1596724446"></script>
+    <script src="/js/featherlight.min.js?1596724446"></script>
+    <script src="/js/highlight.pack.js?1596724446"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1596044377"></script>
-    <script src="/js/learn.js?1596044377"></script>
-    <script src="/js/hugo-learn.js?1596044377"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1596724446"></script>
+    <script src="/js/learn.js?1596724446"></script>
+    <script src="/js/hugo-learn.js?1596724446"></script>
 
-    <link href="/mermaid/mermaid.css?1596044377" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1596044377"></script>
+    <link href="/mermaid/mermaid.css?1596724446" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1596724446"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
