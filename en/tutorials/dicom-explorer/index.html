@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.68.3" />
-    <meta name="description" content="How to change the spatial calibration of an image or a series">
-<meta name="keywords" content="image calibration, spatial calibration, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
+    <meta name="description" content="Structure and display of Patients/Studies/Series">
+<meta name="keywords" content="dicom explorer, patient, study, series, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Spatial Calibration :: Weasis Documentation</title>
+    <title>DICOM Explorer :: Weasis Documentation</title>
 
     
     <link href="/css/nucleus.css?1601219521" rel="stylesheet">
@@ -45,7 +45,7 @@
 </script>
 
   </head>
-  <body class="" data-url="/en/tutorials/calibration/">
+  <body class="" data-url="/en/tutorials/dicom-explorer/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -826,7 +826,7 @@
  
   
     
-      <li data-nav-id="/en/tutorials/dicom-explorer/" title="DICOM Explorer" class="dd-item ">
+      <li data-nav-id="/en/tutorials/dicom-explorer/" title="DICOM Explorer" class="dd-item active">
         <a href="/en/tutorials/dicom-explorer/">
         DICOM Explorer
         <i class="fas fa-check read-icon"></i>
@@ -973,7 +973,7 @@
  
   
     
-      <li data-nav-id="/en/tutorials/calibration/" title="Spatial Calibration" class="dd-item active">
+      <li data-nav-id="/en/tutorials/calibration/" title="Spatial Calibration" class="dd-item ">
         <a href="/en/tutorials/calibration/">
         Spatial Calibration
         <i class="fas fa-check read-icon"></i>
@@ -1234,7 +1234,7 @@
                   
                     
                     
-                      <option id="en" value="https://nroduit.github.io/en/tutorials/calibration/" selected>English</option>
+                      <option id="en" value="https://nroduit.github.io/en/tutorials/dicom-explorer/" selected>English</option>
                     
                   
               
@@ -1297,7 +1297,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/tutorials/calibration.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/tutorials/dicom-explorer.en.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1328,7 +1328,7 @@
             
           
           
-            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/tutorials/'>Tutorials</a> > Spatial Calibration
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/tutorials/'>Tutorials</a> > DICOM Explorer
           
         
           
@@ -1343,7 +1343,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#centerhow-to-change-the-spatial-calibrationcenter"><center>How to change the spatial calibration</center></a></li>
+    <li><a href="#centerstructure-and-display-of-patientsstudiesseriescenter"><center>Structure and display of Patients/Studies/Series</center></a>
+      <ul>
+        <li><a href="#dicom-explorer">DICOM Explorer</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -1361,19 +1365,53 @@
           
             <h1>
               
-              Spatial Calibration
+              DICOM Explorer
             </h1>
           
 
         
 
 
-<h2 id="centerhow-to-change-the-spatial-calibrationcenter"><center>How to change the spatial calibration</center></h2>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/v8CgcpYT1r8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+<h2 id="centerstructure-and-display-of-patientsstudiesseriescenter"><center>Structure and display of Patients/Studies/Series</center></h2>
+<h3 id="dicom-explorer">DICOM Explorer</h3>
+<p>The DICOM Explorer is the panel on the left that displays the <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html" target="_blank">Patient/Study/Series representation</a> defined in the DICOM standard.</p>
+<p>The data displayed in the DICOM Explorer can be imported locally (from the Import/Open menu or by drag and drop) or <a href="../../basics/customize/integration">remotely</a>.</p>
+<p><img src="/tuto/explorer/structure.png" alt="DICOM EXplorer"></p>
+<h4 id="patient-level">Patient Level</h4>
+<ul>
+<li>Weasis allows multi-patient display. By default, when images are imported a tab with the patient&rsquo;s name opens in the main area.</li>
+<li>A tab containing a multi-view layout can only display images from a single patient.</li>
+<li>Changing patients can be done either through the first combobox in the DICOM Explorer (see image above) or by selecting a tab in the main area.</li>
+<li>In the combobox the patients are sorted in alphabetical order regardless of case and according to the <a href="../locale">regional setting</a>.</li>
+<li>Studies and Series are displayed within the same patient when the metadata Patient Name and Patient ID are the same. Otherwise new patients are displayed.</li>
+</ul>
+<h4 id="study-level">Study Level</h4>
+<ul>
+<li>An study contains one or more series (thumbnails) belonging to a patient. A line representing the study surrounds its series (see image above).</li>
+<li>The studies are sorted by reverse chronology (most recent first). If there is no study date then the studies are sorted alphabetically according to the Study Description.</li>
+<li>By default all the studies are displayed, however you can choose to display only one of them from the study combobox.</li>
+</ul>
+<h4 id="series-level">Series Level</h4>
+<p><img src="/tuto/explorer/thumbnail.png" alt="Thumbnails"></p>
+<ul>
+<li>A series is represented by a thumbnail that contains a certain number of images (number displayed at the bottom left).</li>
+<li>According to <a href="https://github.com/nroduit/Weasis/blob/master/weasis-distributions/resources/series-splitting-rules.xml" target="_blank">predefined rules</a>, some series are separated into sub-series also represented by a thumbnail with a number preceded by &lsquo;#&rsquo; in the upper right corner. Series splitting is necessary for the consistency of some tools such as the MPR, cross-lines and synchronization of series.</li>
+<li>The sorting of the series is done by the serial number and if this last one is not present then in a chronological way by the date of the series or other dates.</li>
+<li>To open new series:
+<ul>
+<li>Drag and drop a thumbnail in the main area (if the series is dropped in a view of the same patient then the series is replaced otherwise a new tab is created).</li>
+<li>Double click or press return on an selected thumbnail (if a view of the same patient exists then the series in the view surrounded by an orange line is replaced)</li>
+<li>Select one or more thumbnails and choose an action from the &ldquo;2D DICOM Viewer&rdquo; context menu:
+<ul>
+<li>Open: Opens the series in the most appropriate layout (replaces the series if the patient&rsquo;s tab already exists)</li>
+<li>Open in new tab: Opens the series in the most appropriate layout in a new tab.</li>
+<li>Open in screen: Opens the series in the most appropriate layout in a specific screen.</li>
+<li>Add: Adds the series to the current patient&rsquo;s layout if exists.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
 <footer class="footline">
@@ -1670,6 +1708,23 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1784,26 +1839,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1940,10 +1975,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/tutorials/proxy/" title="Proxy server"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/tutorials/" title="Tutorials"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/tutorials/locale/" title="Translation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/tutorials/zoom/" title="Zoom" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

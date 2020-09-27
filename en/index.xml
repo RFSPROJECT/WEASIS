@@ -74,6 +74,17 @@ Requires Weasis 3.5 (or superior) installed on the system with a native installe
     </item>
     
     <item>
+      <title>DICOM Explorer</title>
+      <link>https://nroduit.github.io/en/tutorials/dicom-explorer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/dicom-explorer/</guid>
+      <description>Structure and display of Patients/Studies/Series DICOM Explorer The DICOM Explorer is the panel on the left that displays the Patient/Study/Series representation defined in the DICOM standard.
+The data displayed in the DICOM Explorer can be imported locally (from the Import/Open menu or by drag and drop) or remotely.
+Patient Level  Weasis allows multi-patient display. By default, when images are imported a tab with the patient&amp;rsquo;s name opens in the main area.</description>
+    </item>
+    
+    <item>
       <title>Preferences</title>
       <link>https://nroduit.github.io/en/basics/customize/preferences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
