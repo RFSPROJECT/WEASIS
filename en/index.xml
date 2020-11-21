@@ -311,7 +311,7 @@ Become a Committer  Become a committer on an existing project or on one of the i
       <guid>https://nroduit.github.io/en/demo/</guid>
       <description>Demo with multiple DICOM Samples This page shows a list of DICOM samples for testing viewer capabilities.
 Naming convention
- Patient name starting with &amp;ldquo;TEST^&amp;rdquo; and then the general test purpose. &amp;ldquo;TEST-i18n-&amp;rdquo; prefix is for internationalization test. In study description: general test description In series description: test description   The demo server is on a free cloud system, so sometimes it requires to launch two times the viewer because the server has to wake up (is turned &amp;ldquo;idle&amp;rdquo; after a period of inactivity).</description>
+ Patient name starting with &amp;ldquo;TEST^&amp;rdquo; and then the general test purpose. &amp;ldquo;TEST-i18n-&amp;rdquo; prefix is for internationalization test. In study description: general test description In series description: test description   How to launch Weasis To display the DICOM samples on this page, you need to install a recent version of Weasis.</description>
     </item>
     
   </channel>
