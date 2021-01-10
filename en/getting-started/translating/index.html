@@ -13,19 +13,19 @@
     <title>Internationalization :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1609944634" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1609944634" rel="stylesheet">
-    <link href="/css/hybrid.css?1609944634" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1609944634" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1609944634" rel="stylesheet">
-    <link href="/css/auto-complete.css?1609944634" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1609944634" rel="stylesheet">
-    <link href="/css/theme.css?1609944634" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1609944634" rel="stylesheet">
+    <link href="/css/nucleus.css?1610314137" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1610314137" rel="stylesheet">
+    <link href="/css/hybrid.css?1610314137" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1610314137" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1610314137" rel="stylesheet">
+    <link href="/css/auto-complete.css?1610314137" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1610314137" rel="stylesheet">
+    <link href="/css/theme.css?1610314137" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1610314137" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1609944634"></script>
+    <script src="/js/jquery-3.3.1.min.js?1610314137"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1609944634"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1609944634"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1610314137"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1610314137"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1609944634"></script>
+<script type="text/javascript" src="/js/search.js?1610314137"></script>
 
     
   </div>
@@ -1272,7 +1272,7 @@
 </center>
 <br>
 <center>
-<a href="https://github.com/nroduit/nroduit.github.io">Documentation </a> licensed under <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i> 4</a>
+<a href="https://github.com/nroduit/nroduit.github.io">Documentation </a> licensed under <a href="https://en.wikipedia.org/wiki/Creative_Commons_license"><i class="fab fa-creative-commons-share"></i> 4</a>
 
 <p>Built with <a href="http://gohugo.io/">Hugo</a> and <a href="https://github.com/matcornic/hugo-theme-learn">learn theme</a></p>
 </center>
@@ -1386,13 +1386,14 @@ For special words or particular contexts look at the &ldquo;Instructions&rdquo; 
 
 <h2 id="building-weasis-i18n">Building Weasis-i18n</h2>
 <p><a target="_blank" href="https://github.com/nroduit/weasis-i18n">weasis-i18n</a> is the internationalization project (i18n) of Weasis. As a separate project, it can have its own release cycle. The <a target="_blank" href="https://www.osgi.org">OSGi</a> fragments of plug-ins contain only the translation files which are merged during runtime to the matching module of the application.</p>
+<p>To obtain daily built packages, see this <a href="https://github.com/nroduit/weasis-i18n" target="_blank">page</a>.</p>
 
 <div class="notices note" ><p>That means the weasis-i18n.war file can be deployed at any time, it does not need to follow the Weasis life cycle. The plug-in translation will be updated by Weasis only if the timestamp number has changed. This timestamp is set during the build phase described below.</p>
 </div>
 
 
-<div class="notices info" ><p>**Additional projects to obtain a full translation of Weasis:**<br>
-The <a target="_blank" href="https://www.transifex.com/organization/weasis/dashboard/java-swing-dialogs">java-swing-dialogs</a> translations must be updated manually in the weasis-launcher module and <a target="_blank" href="https://www.transifex.com/weasis/docking-frames">docking-frames</a> translations must be packaged with the library.</p>
+<div class="notices info" ><p>Additional projects to obtain a full translation of Weasis:<br>
+The <a target="_blank" href="https://www.transifex.com/organization/weasis/dashboard/java-swing-dialogs">java-swing-dialogs</a> translations must be updated manually in the weasis-launcher module and <a target="_blank" href="https://www.transifex.com/weasis/docking-frames">docking-frames</a> translations must be packaged witin the library.</p>
 </div>
 
 <h3 id="prerequisites">Prerequisites</h3>
@@ -1412,7 +1413,7 @@ If your computer is behind a proxy server, <a target="_blank" href="http://maven
 <p>Command if you are behind a proxy server:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn clean install -DproxySet<span style="color:#f92672">=</span>true -DproxyHost<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;host&#34;</span> -DproxyPort<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;port&#34;</span> -Dtransifex.credential<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;username:password&#34;</span></code></pre></div></p>
 
-<div class="notices info" ><p>The distribution files are located in the <em>weasis-i18n-dist/target/dist</em> folder. weasis-i18n.war must be placed in the same base context as weasis.war (if in other web context, the value of the property <em>weasis.i18n</em> in JNLP file must be adapted).<br><br>
+<div class="notices info" ><p>The distribution files are located in the <em>weasis-i18n-dist/target/dist</em> folder. weasis-i18n.war must be placed in the same base context as weasis.war (if in other web context, the launch property <em>weasis.i18n</em> must be adapted).<br><br>
 To update translation packs in weasis-portable, unzip weasis-i18n.zip and replace files in weasis-portable/weasis/bundle-i18n/.</p>
 </div>
 
@@ -1996,19 +1997,19 @@ To update translation packs in weasis-portable, unzip weasis-i18n.zip and replac
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1609944634"></script>
-    <script src="/js/perfect-scrollbar.min.js?1609944634"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1609944634"></script>
-    <script src="/js/jquery.sticky.js?1609944634"></script>
-    <script src="/js/featherlight.min.js?1609944634"></script>
-    <script src="/js/highlight.pack.js?1609944634"></script>
+    <script src="/js/clipboard.min.js?1610314137"></script>
+    <script src="/js/perfect-scrollbar.min.js?1610314137"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1610314137"></script>
+    <script src="/js/jquery.sticky.js?1610314137"></script>
+    <script src="/js/featherlight.min.js?1610314137"></script>
+    <script src="/js/highlight.pack.js?1610314137"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1609944634"></script>
-    <script src="/js/learn.js?1609944634"></script>
-    <script src="/js/hugo-learn.js?1609944634"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1610314137"></script>
+    <script src="/js/learn.js?1610314137"></script>
+    <script src="/js/hugo-learn.js?1610314137"></script>
 
-    <link href="/mermaid/mermaid.css?1609944634" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1609944634"></script>
+    <link href="/mermaid/mermaid.css?1610314137" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1610314137"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
