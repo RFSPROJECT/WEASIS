@@ -1,136 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://nroduit.github.io/en/getting-started/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/getting-started/dcm4chee/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/old/dcm4chee/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/customize/integration/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/architecture/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/old/integration/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/getting-started/weasis-protocol/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/dicom-explorer/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/customize/preferences/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/shortcuts/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/</loc>
-  </url>
-  
-  <url>
-    <loc>https://nroduit.github.io/en/tutorials/zoom/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/customize/build-plugins/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/getting-started/building-weasis/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/customize/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/getting-started/guidelines/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/stories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/commands/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/basics/dicom/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/old/rebuild-dcm4chee-web/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/getting-started/translating/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://nroduit.github.io/en/tutorials/zoom/</loc>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/histo/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/print/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/build-ko-pr/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/proxy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/calibration/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/old/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/locale/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tutorials/theme/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/stories/touch/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -142,21 +77,13 @@
                 hreflang="en"
                 href="https://nroduit.github.io/en/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/faq/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/get-involved/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/demo/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -168,9 +95,7 @@
                 hreflang="en"
                 href="https://nroduit.github.io/en/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://nroduit.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
@@ -183,5 +108,4 @@
                 href="https://nroduit.github.io/en/"
                 />
   </url>
-  
 </urlset>

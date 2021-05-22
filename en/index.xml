@@ -5,11 +5,7 @@
     <link>https://nroduit.github.io/en/</link>
     <description>Recent content in Weasis Medical Viewer on Weasis Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    
-	<atom:link href="https://nroduit.github.io/en/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-US</language><atom:link href="https://nroduit.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Embedding in dcm4chee</title>
       <link>https://nroduit.github.io/en/getting-started/dcm4chee/</link>
@@ -90,9 +86,9 @@ Patient Level  Weasis allows multi-patient display. By default, when images are 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/basics/customize/preferences/</guid>
-      <description>The WEB distribution (weasis.war) allows to deliver preferences from the server side to the client side. Some preferences on the server side are used by Weasis only during the first launch, because they can be changed lately in the Weasis user interface. The other preferences at server side are used by Weasis at every launch.
+      <description>The WEB distribution (weasis.war) allows delivering preferences from the server-side to the client-side. Some preferences on the server-side are used by Weasis only during the first launch because they can be changed later in the Weasis user interface. The other preferences at the server-side are used by Weasis at every launch.
 Local preferences can be modified:
- in the Weasis user interface: File &amp;gt; Preferences in files stored in ${user.</description>
+ In the Weasis user interface: File &amp;gt; Preferences By the weasis protocol with the command weasis:config  Preferences on the server-side can be modified:</description>
     </item>
     
     <item>
@@ -103,17 +99,6 @@ Local preferences can be modified:
       <guid>https://nroduit.github.io/en/basics/shortcuts/</guid>
       <description>Keyboard and Mouse Shortcuts  IHE recommendations in Basic Image Review profile.
 Selected view of the 2D DICOM Viewer    Shortcut Action     T Translate (pan) the image canvas    W Window / Level    S Series scroll    Z Zoom    R Rotation   H Crosshair: in multiview mode synchronizes the crosshair position to all the views (Note: Ctrl + click or Ctrl + Shift + click allows changing the Window / Level values)   C Cine Start / Stop   M Measure   D Distance measurement    A Angle measurement    Y Polyline measurement   B Textbox   Q Context menu   Ctrl + Spacebar Change to the next action   Ctrl + mouse drag Accelerate the current action    Ctrl + Shift + mouse drag Accelerate more the current action   Alt + R 90° rotation (clockwise)   Alt + L 90° rotation (counterclockwise)   Alt + F Flip horizontally (after rotation action)   0 1 2 3&amp;hellip; DICOM presets   K Toggle key image state   Spacebar Show/Hide all the annotations (three states)   I Show/Hide all the annotations (three states)    Escape Reset the selected view    P Print view(s) with the operating system printer    Right-click Open the contextual menu for more options   Double click Toggle fullscreen   Drag files/directories</description>
-    </item>
-    
-    <item>
-      <title>Zoom</title>
-      <link>https://nroduit.github.io/en/tutorials/zoom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nroduit.github.io/en/tutorials/zoom/</guid>
-      <description>Zoom tool The zoom tool can be associated with one of three mouse buttons or with the mouse scroll (top left toolbar). In the image below the zoom tool is associated with the left mouse button.
-The zoom factor can be modified from different locations:
- by dragging the cursor over the image with the configured mouse button by scrolling the mouse wheel when configured by selecting an item in the zoom dropdown button in the toolbar from the context menu: right-click on the image &amp;gt; Zoom form the slider in the image tool panel  The zoom function always zooms in/out to the center of the screen regardless of where the cursor is.</description>
     </item>
     
     <item>
@@ -144,8 +129,8 @@ If your computer is behind a proxy server, configure maven. Git or directly down
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/getting-started/guidelines/</guid>
-      <description>Weasis Plug-in Development This page is intended for developers who want to contribute to Weasis and it is a recommendation for developers who want to create their own plug-ins, see also How to build and install a plug-in.
-We recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless, for having a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in Debug or Run from Eclipse.</description>
+      <description>Weasis Plug-in Development This page describes the necessary configurations to be able to debug Weasis using an IDE. For developers who want to create new plug-ins, you can visit How to build and install a plug-in.
+We recommend the use of IntelliJ IDEA because the following instructions are based on it. Nevertheless, it is possible to use other IDEs by configuring weasis-launcher with similar instructions described in Add a launcher.</description>
     </item>
     
     <item>
@@ -186,6 +171,17 @@ This page matches to Weasis 2.5.1 or higher. The syntax of usage comes from POSI
       <description>The translation files are now hosted and managed on Transifex website. Get an account at Transifex and help to translate to your language! If your language is missing, just head over to Transifex and request a new language.
 Text length: The translations for many languages frequently exceed the length of the corresponding English source. It could be a problem for the layout of graphical components (e.g. buttons).
  Special characters: Some characters representing values (%d, %s), newline (\n) and HTML tags must not be translated.</description>
+    </item>
+    
+    <item>
+      <title>Zoom</title>
+      <link>https://nroduit.github.io/en/tutorials/zoom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/zoom/</guid>
+      <description>Zoom tool The zoom tool can be associated with one of three mouse buttons or with the mouse scroll (top left toolbar). In the image below the zoom tool is associated with the left mouse button.
+The zoom factor can be modified from different locations:
+ by dragging the cursor over the image with the configured mouse button by scrolling the mouse wheel when configured by selecting an item in the zoom dropdown button in the toolbar from the context menu: right-click on the image &amp;gt; Zoom form the slider in the image tool panel  The zoom function always zooms in/out to the center of the screen regardless of where the cursor is.</description>
     </item>
     
     <item>

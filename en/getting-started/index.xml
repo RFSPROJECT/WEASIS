@@ -5,11 +5,7 @@
     <link>https://nroduit.github.io/en/getting-started/</link>
     <description>Recent content in Getting Started on Weasis Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    
-	<atom:link href="https://nroduit.github.io/en/getting-started/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-US</language><atom:link href="https://nroduit.github.io/en/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Embedding in dcm4chee</title>
       <link>https://nroduit.github.io/en/getting-started/dcm4chee/</link>
@@ -50,8 +46,8 @@ If your computer is behind a proxy server, configure maven. Git or directly down
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/getting-started/guidelines/</guid>
-      <description>Weasis Plug-in Development This page is intended for developers who want to contribute to Weasis and it is a recommendation for developers who want to create their own plug-ins, see also How to build and install a plug-in.
-We recommend the use of Eclipse IDE, because all the following instructions are based on it and some settings and the coding conventions can be imported directly into Eclipse. Nevertheless, for having a better Maven integration, it is possible to use IntelliJ IDEA or Netbeans by configuring weasis-launcher with similar instructions described in Debug or Run from Eclipse.</description>
+      <description>Weasis Plug-in Development This page describes the necessary configurations to be able to debug Weasis using an IDE. For developers who want to create new plug-ins, you can visit How to build and install a plug-in.
+We recommend the use of IntelliJ IDEA because the following instructions are based on it. Nevertheless, it is possible to use other IDEs by configuring weasis-launcher with similar instructions described in Add a launcher.</description>
     </item>
     
     <item>

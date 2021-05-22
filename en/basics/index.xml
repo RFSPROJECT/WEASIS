@@ -5,11 +5,7 @@
     <link>https://nroduit.github.io/en/basics/</link>
     <description>Recent content in Basics on Weasis Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    
-	<atom:link href="https://nroduit.github.io/en/basics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-US</language><atom:link href="https://nroduit.github.io/en/basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Weasis Architecture</title>
       <link>https://nroduit.github.io/en/basics/architecture/</link>

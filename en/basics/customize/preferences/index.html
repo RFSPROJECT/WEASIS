@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.83.1" />
     <meta name="description" content="Manage the Weasis preferences">
 <meta name="keywords" content="preferences, weasis preferences, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, dicom, pacs, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
@@ -13,19 +13,19 @@
     <title>Preferences :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1612614429" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1612614429" rel="stylesheet">
-    <link href="/css/hybrid.css?1612614429" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1612614429" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1612614429" rel="stylesheet">
-    <link href="/css/auto-complete.css?1612614429" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1612614429" rel="stylesheet">
-    <link href="/css/theme.css?1612614429" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1612614429" rel="stylesheet">
+    <link href="/css/nucleus.css?1621711205" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1621711205" rel="stylesheet">
+    <link href="/css/hybrid.css?1621711205" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1621711205" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1621711205" rel="stylesheet">
+    <link href="/css/auto-complete.css?1621711205" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1621711205" rel="stylesheet">
+    <link href="/css/theme.css?1621711205" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1621711205" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1612614429"></script>
+    <script src="/js/jquery-3.3.1.min.js?1621711205"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1612614429"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1612614429"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1621711205"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1621711205"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1612614429"></script>
+<script type="text/javascript" src="/js/search.js?1621711205"></script>
 
     
   </div>
@@ -1358,7 +1358,7 @@
       <ul>
         <li><a href="#examples-of-properties-in-ext-configproperties">Examples of properties in ext-config.properties</a></li>
         <li><a href="#customizeresources">Customize resources</a></li>
-        <li><a href="#how-to-add-dicom-node-or-dicom-printers-configuration-at-the-server-side-only-from-weasis-250">How to add DICOM node or DICOM printers configuration at the server side (only from Weasis 2.5.0)</a></li>
+        <li><a href="#how-to-add-dicom-nodes-or-dicom-printers-at-the-server-side">How to add DICOM nodes or DICOM printers at the server-side</a></li>
       </ul>
     </li>
   </ul>
@@ -1385,16 +1385,16 @@
         
 
 
-<p>The WEB distribution (weasis.war) allows to deliver preferences from the server side to the client side. Some preferences on the server side are used by Weasis only during the first launch, because they can be changed lately in the Weasis user interface. The other preferences at server side are used by Weasis at every launch.</p>
+<p>The WEB distribution (weasis.war) allows delivering preferences from the server-side to the client-side. Some preferences on the server-side are used by Weasis only during the first launch because they can be changed later in the Weasis user interface. The other preferences at the server-side are used by Weasis at every launch.</p>
 <p>Local preferences can be modified:</p>
 <ul>
-<li>in the Weasis user interface: File &gt; Preferences</li>
-<li>in files stored in ${user.home}/.weasis/preferences/ (not recommended)</li>
+<li>In the Weasis user interface: File &gt; Preferences</li>
+<li>By the weasis protocol with the command <a href="../../../getting-started/weasis-protocol/#modify-the-launch-parameters">weasis:config</a></li>
 </ul>
-<p>Preferences on the server side can be modified:</p>
+<p>Preferences on the server-side can be modified:</p>
 <ul>
-<li>in the jnlp file (see how to configure weasis-jnlp.xml at <a href="../../../getting-started/dcm4chee">Installing Weasis in DCM4CHEE</a>)</li>
-<li>in ext-config.properties which extends (override) the configuration of config.properties.</li>
+<li>In ext-config.properties which extends (override) the configuration of config.properties.</li>
+<li>Using <a href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters" target="_blank">query parameters in weasis-pacs-connector</a></li>
 </ul>
 
 <div class="notices tip" ><p>How to modify ext-config.properties:</p>
@@ -1407,9 +1407,9 @@
 <h3 id="priority-order-for-loading-a-property">Priority order for loading a property</h3>
 <p>Here is the priority order to set a property:</p>
 <ol>
-<li>Java System property (can be passed as parameter in the <a href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters" target="_blank">launching URI</a>)</li>
+<li>Java System property (can be passed as a parameter in the <a href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters" target="_blank">launching URI</a>)</li>
 <li>Property defined in weasis/conf/ext-config.properties or in weasis/conf/config.properties</li>
-<li>Default value of the property (see table below)</li>
+<li>The default value of the property (see table below)</li>
 </ol>
 <p>Example to change language property (It will work only during the first launch of Weasis on a user session, otherwise delete ${user.home}/.weasis/preferences/).</p>
 <ol>
@@ -1794,6 +1794,13 @@
 <td>Apply by default the most recent Presentation State to the related image</td>
 </tr>
 <tr>
+<td>weasis.user</td>
+<td>system user</td>
+<td>no</td>
+<td>A</td>
+<td>Defines a user with its own preferences</td>
+</tr>
+<tr>
 <td><strong>ONLY from Weasis 3.5.3</strong></td>
 <td></td>
 <td></td>
@@ -1810,14 +1817,6 @@
 </tbody>
 </table>
 </font>
-
-<div class="notices info" ><p>Preferences of the portable distribution (weasis-portable.zip)</p>
-<ul>
-<li>ext-config.properties is located in weasis/conf</li>
-<li>file resources are located in weasis/resources</li>
-</ul>
-</div>
-
 <h3 id="examples-of-properties-in-ext-configproperties">Examples of properties in ext-config.properties</h3>
 <p>Changing the default Look and feel</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Define the Look an Feel for the first launch according to the platform (macosx, linux, windows)</span>
@@ -1825,18 +1824,18 @@
 <span style="color:#a6e22e">weasis.look.macosx</span><span style="color:#f92672">=</span><span style="color:#e6db74">com.apple.laf.AquaLookAndFeel</span>
 <span style="color:#a6e22e">weasis.look.linux</span><span style="color:#f92672">=</span><span style="color:#e6db74">org.pushingpixels.substance.api.skin.SubstanceGraphiteAquaLookAndFeel</span></code></pre></div>
 <h3 id="customizeresources">Customize resources</h3>
-<p>The resources are located:</p>
+<p>The default resources are located:</p>
 <ul>
-<li>in web distribution: in &ldquo;resources.zip&rdquo; at root of weasis.war (see above how to set a new URL for resources)</li>
-<li>in portable distribution:  in ./weasis/resources</li>
+<li>For the web distribution in &ldquo;resources.zip&rdquo; at the root of weasis.war (see above how to set a new URL for resources)</li>
+<li>For the portable distribution in ./weasis/resources</li>
 </ul>
-<h3 id="how-to-add-dicom-node-or-dicom-printers-configuration-at-the-server-side-only-from-weasis-250">How to add DICOM node or DICOM printers configuration at the server side (only from Weasis 2.5.0)</h3>
+<h3 id="how-to-add-dicom-nodes-or-dicom-printers-at-the-server-side">How to add DICOM nodes or DICOM printers at the server-side</h3>
 <ul>
 <li>From the graphical user interface, configure the DICOM printers (File &gt; Print &gt; DICOM Print) or DICOM nodes (File &gt; Preferences &gt; Dicom node list)</li>
 <li>Go to he folder ${user.home}/.weasis/data/weasis-dicom-explorer</li>
 <li>Copy the desired configuration files: dicomNodes.xml, dicomPrinterNodes.xml, dicomWebNodes.xml and dicomCallingNodes.xml</li>
-<li>Paste at the root path of ressources. For web distribution, unzip, place files and zip again.</li>
-<li>The new configurations should appear for all the users as non-editable configurations.</li>
+<li>Paste at the root path of resources. For web distribution, unzip, place files and zip again.</li>
+<li>The new configurations should appear for all the users as non-editable configurations in Weasis.</li>
 </ul>
 
 
@@ -2421,19 +2420,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1612614429"></script>
-    <script src="/js/perfect-scrollbar.min.js?1612614429"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1612614429"></script>
-    <script src="/js/jquery.sticky.js?1612614429"></script>
-    <script src="/js/featherlight.min.js?1612614429"></script>
-    <script src="/js/highlight.pack.js?1612614429"></script>
+    <script src="/js/clipboard.min.js?1621711205"></script>
+    <script src="/js/perfect-scrollbar.min.js?1621711205"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1621711205"></script>
+    <script src="/js/jquery.sticky.js?1621711205"></script>
+    <script src="/js/featherlight.min.js?1621711205"></script>
+    <script src="/js/highlight.pack.js?1621711205"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1612614429"></script>
-    <script src="/js/learn.js?1612614429"></script>
-    <script src="/js/hugo-learn.js?1612614429"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1621711205"></script>
+    <script src="/js/learn.js?1621711205"></script>
+    <script src="/js/hugo-learn.js?1621711205"></script>
 
-    <link href="/mermaid/mermaid.css?1612614429" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1612614429"></script>
+    <link href="/mermaid/mermaid.css?1621711205" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1621711205"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

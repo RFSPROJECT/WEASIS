@@ -5,11 +5,7 @@
     <link>https://nroduit.github.io/en/old/</link>
     <description>Recent content in Old Documentation on Weasis Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    
-	<atom:link href="https://nroduit.github.io/en/old/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-US</language><atom:link href="https://nroduit.github.io/en/old/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Embedding in dcm4chee (deprecated)</title>
       <link>https://nroduit.github.io/en/old/dcm4chee/</link>
