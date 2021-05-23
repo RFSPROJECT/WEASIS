@@ -23,8 +23,8 @@ Using weasis-pacs-connector allows a high degree of integration and facilitates 
       
       <guid>https://nroduit.github.io/en/basics/customize/preferences/</guid>
       <description>The WEB distribution (weasis.war) allows delivering preferences from the server-side to the client-side. Some preferences on the server-side are used by Weasis only during the first launch because they can be changed later in the Weasis user interface. The other preferences at the server-side are used by Weasis at every launch.
-Local preferences can be modified:
- In the Weasis user interface: File &amp;gt; Preferences By the weasis protocol with the command weasis:config  Preferences on the server-side can be modified:</description>
+Local preferences can be changed by:
+ The Weasis user interface: File &amp;gt; Preferences The weasis protocol with the command weasis:config and the pro parameter  Preferences on the server-side can be changed by:</description>
     </item>
     
     <item>

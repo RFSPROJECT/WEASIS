@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="https://nroduit.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Download Weasis DICOM Viewer</title>
+      <link>https://nroduit.github.io/en/getting-started/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/getting-started/download/</guid>
+      <description>Websites distibuting Weasis Weasis can also be retrieved from other websites or package management systems, here are some of them:
+ Windows store Chocolatey Community Repository Arclinux Sourceforge Softpedia Windows and Mac OS Mac Update  List of all the installers These native installers below no longer requires Java Runtimes to be installed on the system.
+ Operating System Architecture Package Size Weasis installer Comments  v3.7.0 publised on Feb 6, 2021   Linux x86 64-bit DEB 36.</description>
+    </item>
+    
+    <item>
       <title>Embedding in dcm4chee</title>
       <link>https://nroduit.github.io/en/getting-started/dcm4chee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -87,8 +98,8 @@ Patient Level  Weasis allows multi-patient display. By default, when images are 
       
       <guid>https://nroduit.github.io/en/basics/customize/preferences/</guid>
       <description>The WEB distribution (weasis.war) allows delivering preferences from the server-side to the client-side. Some preferences on the server-side are used by Weasis only during the first launch because they can be changed later in the Weasis user interface. The other preferences at the server-side are used by Weasis at every launch.
-Local preferences can be modified:
- In the Weasis user interface: File &amp;gt; Preferences By the weasis protocol with the command weasis:config  Preferences on the server-side can be modified:</description>
+Local preferences can be changed by:
+ The Weasis user interface: File &amp;gt; Preferences The weasis protocol with the command weasis:config and the pro parameter  Preferences on the server-side can be changed by:</description>
     </item>
     
     <item>

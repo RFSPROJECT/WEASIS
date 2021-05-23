@@ -13,19 +13,19 @@
     <title>Guidelines :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1621711205" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1621711205" rel="stylesheet">
-    <link href="/css/hybrid.css?1621711205" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1621711205" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1621711205" rel="stylesheet">
-    <link href="/css/auto-complete.css?1621711205" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1621711205" rel="stylesheet">
-    <link href="/css/theme.css?1621711205" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1621711205" rel="stylesheet">
+    <link href="/css/nucleus.css?1621782894" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1621782894" rel="stylesheet">
+    <link href="/css/hybrid.css?1621782894" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1621782894" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1621782894" rel="stylesheet">
+    <link href="/css/auto-complete.css?1621782894" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1621782894" rel="stylesheet">
+    <link href="/css/theme.css?1621782894" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1621782894" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1621711205"></script>
+    <script src="/js/jquery-3.3.1.min.js?1621782894"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1621711205"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1621711205"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1621782894"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1621782894"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1621711205"></script>
+<script type="text/javascript" src="/js/search.js?1621782894"></script>
 
     
   </div>
@@ -452,6 +452,27 @@
           
           
         
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/getting-started/download/" title="Download Weasis DICOM Viewer" class="dd-item ">
+        <a href="/en/getting-started/download/">
+        Download Weasis DICOM Viewer
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1378,17 +1399,13 @@
 <h2 id="centerweasis-plug-in-developmentcenter"><center>Weasis Plug-in Development</center></h2>
 <p>This page describes the necessary configurations to be able to debug Weasis using an IDE. For developers who want to create new plug-ins, you can visit <a href="../../basics/customize/build-plugins">How to build and install a plug-in</a>.</p>
 <p>We recommend the use of <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> because the following instructions are based on it. Nevertheless, it is possible to use other IDEs by configuring weasis-launcher with similar instructions described in <a href="#add-a-launcher">Add a launcher</a>.</p>
-
-<div class="notices tip" ><p>See also building the final <a href="%28../building-weasis#building-weasis-distributions%29">Weasis Distributions</a></p>
-</div>
-
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Install <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> (Community or Ultimate Edition)</li>
 <li>In <em>File &gt; Settings&hellip; &gt; Plugins</em> install google-java-format plugin from Marketplace and enable it from <em>google-java-format Settings</em></li>
 </ol>
 <h3 id="code-style-and-convention">Code style and convention</h3>
-<p>Weasis uses <a href="https://github.com/google/google-java-format" target="_blank">google-java-format</a> as coding conventions. The format can be applied by Maven through the <a href="https://github.com/diffplug/spotless/tree/main/plugin-maven" target="_blank">Spotless plugin</a> or a plugin in the IDE.</p>
+<p>Weasis uses <a href="https://github.com/google/google-java-format" target="_blank">google-java-format</a> as coding conventions. The format can be applied by Maven through the <a href="https://github.com/diffplug/spotless/tree/main/plugin-maven" target="_blank">Spotless plugin</a> or the IDE. Formatting code with an IDE is not 100% compatible with Spotless, so it is better to use the latter before submitting new commits. This guarantees identical code formatting regardless of the system or code editor used.</p>
 <ul>
 <li>From Maven command: <code>mvn spotless:apply</code></li>
 <li>From the Maven panel
@@ -1413,11 +1430,18 @@
 </ul>
 </li>
 </ul>
+
+<div class="notices tip" ><p>See also building the final <a href="%28../building-weasis#building-weasis-distributions%29">Weasis Distributions</a></p>
+</div>
+
 <h3 id="add-a-launcher">Add a launcher</h3>
 <p>For running or debugging Weasis, you need to create a launcher:</p>
 <ul>
-<li>Open <em>Run &gt; Edit Configurations&hellip;</em></li>
-<li>Create a new <em>Application</em>
+<li>
+<p>Open <em>Run &gt; Edit Configurations&hellip;</em></p>
+</li>
+<li>
+<p>Create a new <em>Application</em></p>
 <ul>
 <li>Select <em>weasis-launcher</em> as a module (field starting by <em>-cp</em>)</li>
 <li>Main Class: browse <em>org.weasis.launcher.AppLauncher</em></li>
@@ -1429,10 +1453,16 @@
 </ul>
 </li>
 <li>Working Directory: remove the current value and add <em>%MODULE_WORKING_DIR%</em> from the Insert Macros button
-<img src="/images/conf/launcher.png" alt="Launcher Configuration"><br></li>
+<img src="/images/conf/launcher.png" alt="Launcher Configuration">
+
+<div class="notices note" ><p>As the default build task has been removed it is necessary to apply the Maven command <em>install</em> on modules with modified code before launching the <em>Run</em> or <em>Debug</em> mode.<br>
+Keeping the build task and delegating the build to Maven does not seem configurable for a multi-module project, see this <a href="https://youtrack.jetbrains.com/issue/IDEA-198358" target="_blank">issue</a>.</p>
+</div>
+</li>
 </ul>
 </li>
-<li>Examples of launching parameters by entering values in the <em>Program arguments</em> text box
+<li>
+<p>Examples of launching parameters by entering values in the <em>Program arguments</em> text box</p>
 <ul>
 <li>Loading DICOM files from a local path:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:get -l \&#34;D:\images test\dicom\&#34;</code></pre></div>
@@ -1447,7 +1477,8 @@ For more commands at startup see also <a href="../../basics/commands">Weasis co
 </li>
 </ul>
 </li>
-<li>Examples of other possible VM options for overriding the default <a href="../../basics/customize/preferences">Preferences</a>
+<li>
+<p>Examples of other VM options for overriding the default <a href="../../basics/customize/preferences">Preferences</a></p>
 <ul>
 <li>Removing the possibility of exporting DICOM: <code>-Dweasis.export.dicom=false</code></li>
 <li>Defines a new user (for getting specific preferences): <code>-Dweasis.user=user1</code></li>
@@ -1518,6 +1549,22 @@ For more commands at startup see also <a href="../../basics/commands">Weasis co
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2041,19 +2088,19 @@ For more commands at startup see also <a href="../../basics/commands">Weasis co
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1621711205"></script>
-    <script src="/js/perfect-scrollbar.min.js?1621711205"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1621711205"></script>
-    <script src="/js/jquery.sticky.js?1621711205"></script>
-    <script src="/js/featherlight.min.js?1621711205"></script>
-    <script src="/js/highlight.pack.js?1621711205"></script>
+    <script src="/js/clipboard.min.js?1621782894"></script>
+    <script src="/js/perfect-scrollbar.min.js?1621782894"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1621782894"></script>
+    <script src="/js/jquery.sticky.js?1621782894"></script>
+    <script src="/js/featherlight.min.js?1621782894"></script>
+    <script src="/js/highlight.pack.js?1621782894"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1621711205"></script>
-    <script src="/js/learn.js?1621711205"></script>
-    <script src="/js/hugo-learn.js?1621711205"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1621782894"></script>
+    <script src="/js/learn.js?1621782894"></script>
+    <script src="/js/hugo-learn.js?1621782894"></script>
 
-    <link href="/mermaid/mermaid.css?1621711205" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1621711205"></script>
+    <link href="/mermaid/mermaid.css?1621782894" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1621782894"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

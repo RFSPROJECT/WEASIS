@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="https://nroduit.github.io/en/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Download Weasis DICOM Viewer</title>
+      <link>https://nroduit.github.io/en/getting-started/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/getting-started/download/</guid>
+      <description>Websites distibuting Weasis Weasis can also be retrieved from other websites or package management systems, here are some of them:
+ Windows store Chocolatey Community Repository Arclinux Sourceforge Softpedia Windows and Mac OS Mac Update  List of all the installers These native installers below no longer requires Java Runtimes to be installed on the system.
+ Operating System Architecture Package Size Weasis installer Comments  v3.7.0 publised on Feb 6, 2021   Linux x86 64-bit DEB 36.</description>
+    </item>
+    
+    <item>
       <title>Embedding in dcm4chee</title>
       <link>https://nroduit.github.io/en/getting-started/dcm4chee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -13,19 +13,19 @@
     <title>Preferences :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1621711205" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1621711205" rel="stylesheet">
-    <link href="/css/hybrid.css?1621711205" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1621711205" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1621711205" rel="stylesheet">
-    <link href="/css/auto-complete.css?1621711205" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1621711205" rel="stylesheet">
-    <link href="/css/theme.css?1621711205" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1621711205" rel="stylesheet">
+    <link href="/css/nucleus.css?1621782894" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1621782894" rel="stylesheet">
+    <link href="/css/hybrid.css?1621782894" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1621782894" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1621782894" rel="stylesheet">
+    <link href="/css/auto-complete.css?1621782894" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1621782894" rel="stylesheet">
+    <link href="/css/theme.css?1621782894" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1621782894" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1621711205"></script>
+    <script src="/js/jquery-3.3.1.min.js?1621782894"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1621711205"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1621711205"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1621782894"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1621782894"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1621711205"></script>
+<script type="text/javascript" src="/js/search.js?1621782894"></script>
 
     
   </div>
@@ -452,6 +452,27 @@
           
           
         
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/getting-started/download/" title="Download Weasis DICOM Viewer" class="dd-item ">
+        <a href="/en/getting-started/download/">
+        Download Weasis DICOM Viewer
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1386,15 +1407,16 @@
 
 
 <p>The WEB distribution (weasis.war) allows delivering preferences from the server-side to the client-side. Some preferences on the server-side are used by Weasis only during the first launch because they can be changed later in the Weasis user interface. The other preferences at the server-side are used by Weasis at every launch.</p>
-<p>Local preferences can be modified:</p>
+<p>Local preferences can be changed by:</p>
 <ul>
-<li>In the Weasis user interface: File &gt; Preferences</li>
-<li>By the weasis protocol with the command <a href="../../../getting-started/weasis-protocol/#modify-the-launch-parameters">weasis:config</a></li>
+<li>The Weasis user interface: File &gt; Preferences</li>
+<li>The weasis protocol with the command <a href="../../../getting-started/weasis-protocol/#modify-the-launch-parameters">weasis:config</a> and the <em>pro</em> parameter</li>
 </ul>
-<p>Preferences on the server-side can be modified:</p>
+<p>Preferences on the server-side can be changed by:</p>
 <ul>
-<li>In ext-config.properties which extends (override) the configuration of config.properties.</li>
+<li>Replacing <em>ext-config.properties</em> which extends and overrides <em>config.properties</em>, see the tip below.</li>
 <li>Using <a href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters" target="_blank">query parameters in weasis-pacs-connector</a></li>
+<li>The weasis protocol with the command <a href="../../../getting-started/weasis-protocol/#modify-the-launch-parameters">weasis:config</a> and the <em>pro</em> parameter</li>
 </ul>
 
 <div class="notices tip" ><p>How to modify ext-config.properties:</p>
@@ -1407,7 +1429,7 @@
 <h3 id="priority-order-for-loading-a-property">Priority order for loading a property</h3>
 <p>Here is the priority order to set a property:</p>
 <ol>
-<li>Java System property (can be passed as a parameter in the <a href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters" target="_blank">launching URI</a>)</li>
+<li>Java System property providing from parameters of <a href="../../../getting-started/weasis-protocol/#modify-the-launch-parameters">weasis:config</a> or the <a href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters" target="_blank">launching URI</a>)</li>
 <li>Property defined in weasis/conf/ext-config.properties or in weasis/conf/config.properties</li>
 <li>The default value of the property (see table below)</li>
 </ol>
@@ -1965,6 +1987,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -2420,19 +2458,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1621711205"></script>
-    <script src="/js/perfect-scrollbar.min.js?1621711205"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1621711205"></script>
-    <script src="/js/jquery.sticky.js?1621711205"></script>
-    <script src="/js/featherlight.min.js?1621711205"></script>
-    <script src="/js/highlight.pack.js?1621711205"></script>
+    <script src="/js/clipboard.min.js?1621782894"></script>
+    <script src="/js/perfect-scrollbar.min.js?1621782894"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1621782894"></script>
+    <script src="/js/jquery.sticky.js?1621782894"></script>
+    <script src="/js/featherlight.min.js?1621782894"></script>
+    <script src="/js/highlight.pack.js?1621782894"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1621711205"></script>
-    <script src="/js/learn.js?1621711205"></script>
-    <script src="/js/hugo-learn.js?1621711205"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1621782894"></script>
+    <script src="/js/learn.js?1621782894"></script>
+    <script src="/js/hugo-learn.js?1621782894"></script>
 
-    <link href="/mermaid/mermaid.css?1621711205" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1621711205"></script>
+    <link href="/mermaid/mermaid.css?1621782894" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1621782894"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
