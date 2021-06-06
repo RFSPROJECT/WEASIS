@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.83.1" />
-    <meta name="description" content="How to configure a proxy server">
-<meta name="keywords" content="network, porxy, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, pacs viewer">
+    <meta name="description" content="How to import DICOM files">
+<meta name="keywords" content="dicom import, dicom viewer, free dicom viewer, open source dicom viewer, weasis dicom viewer, multi-platform dicom viewer, pacs viewer">
 <meta name="author" content="Nicolas Roduit">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Proxy server :: Weasis Documentation</title>
+    <title>DICOM Import :: Weasis Documentation</title>
 
     
     <link href="/css/nucleus.css?1623012291" rel="stylesheet">
@@ -45,7 +45,7 @@
 </script>
 
   </head>
-  <body class="" data-url="/en/tutorials/proxy/">
+  <body class="" data-url="/en/tutorials/dicom-import/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -847,7 +847,7 @@
  
   
     
-      <li data-nav-id="/en/tutorials/dicom-import/" title="DICOM Import" class="dd-item ">
+      <li data-nav-id="/en/tutorials/dicom-import/" title="DICOM Import" class="dd-item active">
         <a href="/en/tutorials/dicom-import/">
         DICOM Import
         <i class="fas fa-check read-icon"></i>
@@ -1015,7 +1015,7 @@
  
   
     
-      <li data-nav-id="/en/tutorials/proxy/" title="Proxy server" class="dd-item active">
+      <li data-nav-id="/en/tutorials/proxy/" title="Proxy server" class="dd-item ">
         <a href="/en/tutorials/proxy/">
         Proxy server
         <i class="fas fa-check read-icon"></i>
@@ -1297,7 +1297,7 @@
                   
                     
                     
-                      <option id="en" value="https://nroduit.github.io/en/tutorials/proxy/" selected>English</option>
+                      <option id="en" value="https://nroduit.github.io/en/tutorials/dicom-import/" selected>English</option>
                     
                   
               
@@ -1360,7 +1360,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/tutorials/proxy.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/nroduit/nroduit.github.io/edit/hugo/content/tutorials/dicom-import.en.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1391,7 +1391,7 @@
             
           
           
-            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/tutorials/'>Tutorials</a> > Proxy server
+            <a href='/en/'>Weasis Medical Viewer</a> > <a href='/en/tutorials/'>Tutorials</a> > DICOM Import
           
         
           
@@ -1406,10 +1406,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#centerhow-to-configure-a-proxy-servercenter"><center>How to configure a proxy server</center></a>
+    <li><a href="#centerhow-to-import-dicom-filescenter"><center>How to import DICOM files</center></a>
       <ul>
-        <li><a href="#manual-configuration-from-the-user-interface">Manual configuration from the user interface</a></li>
-        <li><a href="#configuration-at-launch">Configuration at launch</a></li>
+        <li><a href="#from-the-system-file-explorer">From the system file explorer</a></li>
+        <li><a href="#from-weasis-menu-or-toolbar">From Weasis menu or toolbar</a></li>
+        <li><a href="#from-commands">From commands</a></li>
       </ul>
     </li>
   </ul>
@@ -1429,31 +1430,44 @@
           
             <h1>
               
-              Proxy server
+              DICOM Import
             </h1>
           
 
         
 
 
-<h2 id="centerhow-to-configure-a-proxy-servercenter"><center>How to configure a proxy server</center></h2>
-<h3 id="manual-configuration-from-the-user-interface">Manual configuration from the user interface</h3>
-<p>From the main menu, open File &gt; Preferences (Alt + P) and select <em>Proxy Server</em>.</p>
-<p>The default configuration is <em>Direct connection (no proxy)</em> and by clicking on <em>Manual proxy configuration</em> you can define a custom proxy server (in the image below, a local proxy like Squid).</p>
-<p>To fill in the fields you must refer to the <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/net/doc-files/net-properties.html" target="_blank">Java documentation</a>.</p>
-<p><img src="/tuto/proxy/proxy-ui.png" alt="dcm4chee-web3"></p>
-<h3 id="configuration-at-launch">Configuration at launch</h3>
-<p>For setting JVM properties at launch, the selection in user interface must be <em>Direct connection (no proxy) or configuration at launch</em>. The Java options can be set in the section &ldquo;[JavaOptions]&rdquo; of Weasis.cfg.</p>
-<h4 id="set-the-default-system-proxy">Set the default system proxy</h4>
-<p>-Djava.net.useSystemProxies=true</p>
-<h4 id="set-a-local-proxy-like-squid">Set a local proxy like Squid</h4>
-<p>-Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3128</p>
-<h4 id="set-a-proxy-in-specific-domain">Set a proxy in specific domain</h4>
-<p>-Dhttps.proxyHost=&ldquo;proxy.mydomain.com&rdquo; -Dhttps.proxyPort=&ldquo;8080&rdquo; -Dhttp.proxyHost=&ldquo;proxy.mydomain.com&rdquo; -Dhttp.proxyPort=&ldquo;8080&rdquo; -Dhttp.nonProxyHosts=&quot;*.mydomain.com|localhost&quot; -Dhttp.proxyUser=&ldquo;user&rdquo; -Dhttp.proxyPassword=&ldquo;password&rdquo;</p>
+<h2 id="centerhow-to-import-dicom-filescenter"><center>How to import DICOM files</center></h2>
+<h3 id="from-the-system-file-explorer">From the system file explorer</h3>
+<h4 id="drag-and-drop">Drag and drop</h4>
+<p>Files or folders selected from the system file explorer can be opened by dragging and dropping into the central area of Weasis (any files into empty area or specific files related to the view which is already open).</p>
+<h4 id="file-association">File association</h4>
+<p>Dicom files can be opened by double-clicking them from the system file explorer.
 
-<div class="notices note" ><p>The Java options can also be passed in the <a target="_blank" href="https://github.com/nroduit/weasis-pacs-connector#launch-weasis-with-other-parameters">parameters</a> of the URL (e.g. http://localhost:8080/weasis-pacs-connector/weasis?patientID=9702672&amp;pro=&ldquo;https.proxyHost%20127.0.0.1&rdquo;&amp;pro=&ldquo;https.proxyPort%203128&rdquo;).</p>
+<div class="notices note" ><p>On Windows only the files with the extension &ldquo;.dcm&rdquo; are associated with Weasis. With other systems DICOM without extension are associated with Weasis.</p>
+</div>
+</p>
+<h3 id="from-weasis-menu-or-toolbar">From Weasis menu or toolbar</h3>
+<p>From the main menu, open File &gt; Import &gt; DICOM or from the first import button in the toolbar.</p>
+<p><img src="/tuto/import/ImportDICOM.png" alt="DICOM EXplorer"></p>
+<p>Select a way to import DICOM</p>
+<ul>
+<li>Local Device: from a path (file or folder)</li>
+<li>DICOM ZIP: from a DICOM ZIP file</li>
+<li>DICOMDIR: from a DICOM CD/DVD or a folder containing a DICOMDIR</li>
+<li>DICOM Query/Retrieve:
+<ul>
+<li>With DICOM nodes: classic DIMSE C-Find with C-Move, C-Get or WADO-URI for retrieving DICOM files</li>
+<li>With DICOMWeb nodes: QIDO and WADO-RS for retrieving DICOM files</li>
+</ul>
+</li>
+</ul>
+
+<div class="notices tip" ><p>When a query is too long, try to click on the &ldquo;Clear&rdquo; button to cancel the request.</p>
 </div>
 
+<h3 id="from-commands">From commands</h3>
+<p>See this <a href="../../getting-started/weasis-protocol/#examples-to-load-images">page</a></p>
 
 
 <footer class="footline">
@@ -1766,6 +1780,23 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1896,26 +1927,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -2068,10 +2079,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/tutorials/build-ko-pr/" title="Build KO and PR"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/tutorials/" title="Tutorials"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/tutorials/calibration/" title="Spatial Calibration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/tutorials/dicom-export/" title="DICOM Export" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

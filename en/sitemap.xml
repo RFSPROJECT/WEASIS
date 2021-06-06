@@ -8,6 +8,8 @@
   </url><url>
     <loc>https://nroduit.github.io/en/basics/</loc>
   </url><url>
+    <loc>https://nroduit.github.io/en/tutorials/dicom-import/</loc>
+  </url><url>
     <loc>https://nroduit.github.io/en/getting-started/dcm4chee/</loc>
   </url><url>
     <loc>https://nroduit.github.io/en/old/dcm4chee/</loc>
@@ -20,7 +22,7 @@
   </url><url>
     <loc>https://nroduit.github.io/en/getting-started/weasis-protocol/</loc>
   </url><url>
-    <loc>https://nroduit.github.io/en/tutorials/dicom-explorer/</loc>
+    <loc>https://nroduit.github.io/en/tutorials/dicom-export/</loc>
   </url><url>
     <loc>https://nroduit.github.io/en/basics/customize/preferences/</loc>
   </url><url>
@@ -33,6 +35,8 @@
     <loc>https://nroduit.github.io/en/getting-started/building-weasis/</loc>
   </url><url>
     <loc>https://nroduit.github.io/en/basics/customize/</loc>
+  </url><url>
+    <loc>https://nroduit.github.io/en/tutorials/dicom-explorer/</loc>
   </url><url>
     <loc>https://nroduit.github.io/en/getting-started/guidelines/</loc>
   </url><url>

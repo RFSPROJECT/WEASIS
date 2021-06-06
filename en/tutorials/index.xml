@@ -7,14 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="https://nroduit.github.io/en/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>DICOM Import</title>
+      <link>https://nroduit.github.io/en/tutorials/dicom-import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/dicom-import/</guid>
+      <description>How to import DICOM files From the system file explorer Drag and drop Files or folders selected from the system file explorer can be opened by dragging and dropping into the central area of Weasis (any files into empty area or specific files related to the view which is already open).
+File association Dicom files can be opened by double-clicking them from the system file explorer. On Windows only the files with the extension &amp;ldquo;.</description>
+    </item>
+    
+    <item>
+      <title>DICOM Export</title>
+      <link>https://nroduit.github.io/en/tutorials/dicom-export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nroduit.github.io/en/tutorials/dicom-export/</guid>
+      <description>How to export DICOM files </description>
+    </item>
+    
+    <item>
       <title>DICOM Explorer</title>
       <link>https://nroduit.github.io/en/tutorials/dicom-explorer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nroduit.github.io/en/tutorials/dicom-explorer/</guid>
       <description>Structure and display of Patients/Studies/Series DICOM Explorer The DICOM Explorer is the panel on the left that displays the Patient/Study/Series representation defined in the DICOM standard.
-The data displayed in the DICOM Explorer can be imported locally (from the Import/Open menu or by drag and drop) or remotely.
-Patient Level  Weasis allows multi-patient display. By default, when images are imported a tab with the patient&amp;rsquo;s name opens in the main area.</description>
+The data displayed in the DICOM Explorer can be imported form different ways.
+Patient Level  Weasis allows multi-patient display. By default, when images are imported a tab with the patient&amp;rsquo;s name opens in the main area. A tab containing a multi-view layout can only display images from a single patient.</description>
     </item>
     
     <item>

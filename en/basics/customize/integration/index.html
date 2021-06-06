@@ -13,19 +13,19 @@
     <title>Integration :: Weasis Documentation</title>
 
     
-    <link href="/css/nucleus.css?1621782894" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1621782894" rel="stylesheet">
-    <link href="/css/hybrid.css?1621782894" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1621782894" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1621782894" rel="stylesheet">
-    <link href="/css/auto-complete.css?1621782894" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1621782894" rel="stylesheet">
-    <link href="/css/theme.css?1621782894" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1621782894" rel="stylesheet">
+    <link href="/css/nucleus.css?1623012291" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1623012291" rel="stylesheet">
+    <link href="/css/hybrid.css?1623012291" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1623012291" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1623012291" rel="stylesheet">
+    <link href="/css/auto-complete.css?1623012291" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1623012291" rel="stylesheet">
+    <link href="/css/theme.css?1623012291" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1623012291" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1621782894"></script>
+    <script src="/js/jquery-3.3.1.min.js?1623012291"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -408,14 +408,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1621782894"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1621782894"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1623012291"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1623012291"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nroduit.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1621782894"></script>
+<script type="text/javascript" src="/js/search.js?1623012291"></script>
 
     
   </div>
@@ -837,6 +837,48 @@
           
           
         
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorials/dicom-import/" title="DICOM Import" class="dd-item ">
+        <a href="/en/tutorials/dicom-import/">
+        DICOM Import
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorials/dicom-export/" title="DICOM Export" class="dd-item ">
+        <a href="/en/tutorials/dicom-export/">
+        DICOM Export
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -1376,7 +1418,14 @@
       <ul>
         <li><a href="#build-an-xml-manifest">Build an XML manifest</a></li>
         <li><a href="#build-an-xml-manifest-no-wado-server">Build an XML manifest (no WADO server)</a></li>
-        <li><a href="#download-directly-with-dicomweb-restful-services">Download directly with DICOMWeb RESTful services</a></li>
+      </ul>
+    </li>
+    <li><a href="#download-directly-with-dicomweb-restful-services">Download directly with DICOMWeb RESTful services</a>
+      <ul>
+        <li><a href="#dcm4chee-arc-light">dcm4chee-arc-light</a></li>
+        <li><a href="#orthanc-web-server">Orthanc WEB Server</a></li>
+        <li><a href="#google-cloud-healthcare-api">Google Cloud Healthcare API</a></li>
+        <li><a href="#dicomcloud-for-azure-cloud">DICOMcloud (for Azure cloud)</a></li>
       </ul>
     </li>
   </ul>
@@ -1474,7 +1523,7 @@
 </div>
 </p>
 
-<div class="notices tip" ><p>From Weasis 2.5 it is possible to have multiple archives (allows to have several arcQuery tags) and the <a target="_blank" href="https://github.com/nroduit/Weasis/blob/master/weasis-dicom/weasis-dicom-explorer/src/main/resources/config/presentations.xsd">presentations</a> tag which contains the image annotations.</p>
+<div class="notices tip" ><p>From Weasis 2.5 it is possible to have multiple archives (allows to have several arcQuery tags) and the <a href="https://github.com/nroduit/Weasis/blob/master/weasis-dicom/weasis-dicom-explorer/src/main/resources/config/presentations.xsd" target="_blank">presentations</a></a> tag which contains the image annotations.</p>
 </div>
 
 <h3 id="build-an-xml-manifest-no-wado-server">Build an XML manifest (no WADO server)</h3>
@@ -1490,7 +1539,7 @@
 </ul>
 </div>
 
-<h3 id="download-directly-with-dicomweb-restful-services">Download directly with DICOMWeb RESTful services</h3>
+<h2 id="download-directly-with-dicomweb-restful-services">Download directly with DICOMWeb RESTful services</h2>
 <p>This integration requires a PACS/VNA with <a target="_blank" href="https://www.dicomstandard.org/dicomweb/">DICOMweb™</a> services (QUERY/RETRIEVE) where the requests are managed directly by Weasis. Here are some of the advantages:</p>
 <ul>
 <li>Straightforward integration</li>
@@ -1498,7 +1547,7 @@
 <li>Allow passing token directly in headers (not in the URL)</li>
 </ul>
 <p>Use <a href="../../commands/#dicom-rs">$dicom:rs</a> to load DICOM files. Here are some configurations of open source systems:</p>
-<h4 id="dcm4chee-arc-light">dcm4chee-arc-light</h4>
+<h3 id="dcm4chee-arc-light">dcm4chee-arc-light</h3>
 <p>This configuration requires at least dcm4chee-arc-light 5.22.2 and Weasis 3.6.0. To activate Weasis in dcm4chee-arc-light user interface, you need to add the four following properties in the web portal from the left menu <em>Configuration &gt; Devices &gt; dcm4chee-arc &gt; Extensions &gt; Edit extension &gt; Child Objects &gt; Web Applications &gt; DCM4CHEE</em>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">IID_PATIENT_URL=weasis://$dicom:rs --url &#34;{{qidoBaseURL}}{{qidoBasePath}}&#34; -r &#34;patientID={{patientID}}&#34; --query-ext &#34;&amp;includedefaults=false&#34; -H &#34;Authorization: Bearer {{access_token}}&#34;
 IID_STUDY_URL=weasis://$dicom:rs --url &#34;{{qidoBaseURL}}{{qidoBasePath}}&#34; -r &#34;studyUID={{studyUID}}&#34; --query-ext &#34;&amp;includedefaults=false&#34; -H &#34;Authorization: Bearer {{access_token}}&#34;
@@ -1518,7 +1567,7 @@ IID_URL_TARGET=_self</code></pre></div></p>
 </div>
 
 <p>Finally, refresh the page for having the viewer button.</p>
-<h4 id="orthanc-web-server">Orthanc WEB Server</h4>
+<h3 id="orthanc-web-server">Orthanc WEB Server</h3>
 <p><a href="https://www.orthanc-server.com/static.php?page=dicomweb">https://www.orthanc-server.com/static.php?page=dicomweb</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:rs --url &#34;https://demo.orthanc-server.com/dicom-web&#34; -r &#34;patientID=ozp00SjY2xG&#34;</code></pre></div>
 <p><a  href="weasis://%24dicom%3Ars%20--url%20%22https%3A%2F%2Fdemo.orthanc-server.com%2Fdicom-web%22%20-r%20%22patientID%3Dozp00SjY2xG%22" class="btn btn-default">Launch</a></p>
@@ -1526,7 +1575,7 @@ IID_URL_TARGET=_self</code></pre></div></p>
 <ul>
 <li>Thumbnail service is not implemented.</li>
 </ul>
-<h4 id="google-cloud-healthcare-api">Google Cloud Healthcare API</h4>
+<h3 id="google-cloud-healthcare-api">Google Cloud Healthcare API</h3>
 <p><a href="https://cloud.google.com/healthcare/docs/how-tos/dicomweb">https://cloud.google.com/healthcare/docs/how-tos/dicomweb</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$weasis:config pro=&#34;dicom.qido.query.multi.params true&#34; $dicom:rs --url &#34;https://healthcare.googleapis.com/v1beta1/projects/chc-nih-chest-xray/locations/us-central1/datasets/nih-chest-xray/dicomStores/nih-chest-xray/dicomWeb&#34; -r &#34;studyUID=1.3.6.1.4.1.11129.5.5.184301693334578016850836775758484230512396&#34; -H &#34;Authorization: Bearer &lt;your-token&gt;&#34;</code></pre></div>
 <p>Currently, the DICOMWeb service for getting thumbnails doesn&rsquo;t work in the Google API.</p>
@@ -1534,7 +1583,7 @@ IID_URL_TARGET=_self</code></pre></div></p>
 <div class="notices warning" ><p><code>&lt;your-token&gt;</code> must be replaced by the hostname of your dcm4che installation.</p>
 </div>
 
-<h4 id="dicomcloud-for-azure-cloud">DICOMcloud (for Azure cloud)</h4>
+<h3 id="dicomcloud-for-azure-cloud">DICOMcloud (for Azure cloud)</h3>
 <p><a href="https://github.com/DICOMcloud/DICOMcloud">https://github.com/DICOMcloud/DICOMcloud</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">$dicom:rs --url &#34;https://dicomcloud.azurewebsites.net/api&#34; -r &#34;studyUID=1.2.840.113619.2.25.1.1762157631.873231884.123&#34; -r &#34;studyUID=1.3.6.1.4.1.5962.99.1.2280943358.716200484.1363785608958.3.0&#34;</code></pre></div>
 <p><a  href="weasis://%24dicom%3Ars%20--url%20%22https%3A%2F%2Fdicomcloud.azurewebsites.net%2Fapi%22%20-r%20%22studyUID%3D1.2.840.113619.2.25.1.1762157631.873231884.123%22%20-r%20%22studyUID%3D1.3.6.1.4.1.5962.99.1.2280943358.716200484.1363785608958.3.0%22" class="btn btn-default">Launch</a></p>
@@ -2017,6 +2066,38 @@ IID_URL_TARGET=_self</code></pre></div></p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -2138,19 +2219,19 @@ IID_URL_TARGET=_self</code></pre></div></p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1621782894"></script>
-    <script src="/js/perfect-scrollbar.min.js?1621782894"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1621782894"></script>
-    <script src="/js/jquery.sticky.js?1621782894"></script>
-    <script src="/js/featherlight.min.js?1621782894"></script>
-    <script src="/js/highlight.pack.js?1621782894"></script>
+    <script src="/js/clipboard.min.js?1623012291"></script>
+    <script src="/js/perfect-scrollbar.min.js?1623012291"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1623012291"></script>
+    <script src="/js/jquery.sticky.js?1623012291"></script>
+    <script src="/js/featherlight.min.js?1623012291"></script>
+    <script src="/js/highlight.pack.js?1623012291"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1621782894"></script>
-    <script src="/js/learn.js?1621782894"></script>
-    <script src="/js/hugo-learn.js?1621782894"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1623012291"></script>
+    <script src="/js/learn.js?1623012291"></script>
+    <script src="/js/hugo-learn.js?1623012291"></script>
 
-    <link href="/mermaid/mermaid.css?1621782894" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1621782894"></script>
+    <link href="/mermaid/mermaid.css?1623012291" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1623012291"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
